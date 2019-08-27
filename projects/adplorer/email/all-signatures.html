@@ -1,0 +1,366 @@
+<!-- COPYRIGHT 2019 http://3pod.us -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adplorer all signatures</title>
+	<style>
+		body, html{
+			font-family: Calibri, Arial, sans-serif;
+			padding: 0;
+			margin:0;
+		}
+		#container-cards{
+			max-width: 60vw;
+		}
+		.button{
+			padding: 16px 28px;
+			border-radius: 25px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.is-primary{
+			background-color: #ff4500;
+			color: #fff;
+		}
+		.is-secundary{
+			background-color: #728099;
+			color: #fff;
+		}
+		
+		/*{outline: 1px solid #333;}*/
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/3pod-us/3pod-us.github.io@master/microcss.css">
+</head>
+<body>
+	<template id="template">
+		<table cellspacing="0" cellpadding="0" style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
+			<tr>
+				<td>
+					<table style="
+					font-family: Calibri, Arial, sans-serif;
+					font-weight: lighter;
+					width: 100%;
+					">
+						<tr style="vertical-align: middle;">
+							<td style="text-align: center;" rowspan="2">
+								<img style="width: 96px;border-radius: 100%;" src="{{ photo }}" >
+							</td>
+							<td style="padding-left: 15px">
+								<p style="font-size: 18px;font-weight: normal;color: #ff4500;margin:0;">{{ name }}</p>
+								<p style="margin:0;font-size: 14px;color: #ff4500;">
+									{{ whois }}
+								</p>
+								<hr style="width: 64px;margin:0;
+								display: block; height: 1px;
+		                        border: 0; border-top: 1px solid #ff4500;
+		                        marginpadding 3px 0; padding: 0;">
+							</td>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<table cellspacing="0" cellpadding="0" style="width: 100%;font-size: 12px;font-weight: lighter;">
+									<tr>
+										<td style="text-align: right;padding-right: 3px">
+											<img style="width: 15px;" src="https://i.ibb.co/TRFZpf1/email.gif">
+										</td>
+										<td>									
+											<a style="text-decoration: none;color: #434956" href="mailto:{{ email-to }}">
+												{{ email }}
+											</a>
+										</td>
+									</tr>
+									<tr class="phone-table">
+										<td style="text-align: right;padding-right: 3px">
+											<img style="width: 15px;" src="https://i.ibb.co/dQLb34s/telephone.gif">
+										</td>
+										<td style="padding:3px 0">
+											 <p style="color: #434956;margin: 0;">
+											 	{{ phone }}
+											 </p>
+										</td>
+									</tr>
+									<tr>
+										<td style="text-align: right;padding-right: 3px">
+											<img style="width: 15px;" src="https://i.ibb.co/Snf7zRJ/website.gif">
+										</td>
+										<td style="padding:3px 0">
+											 <a href="http://www.adplorer.com" style="color: #434956;margin: 0;text-decoration: none;">
+											 	www.adplorer.com
+											 </a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<hr style="width: 100%;margin:0;
+								display: block; height: 1px;
+		                        border: 0; border-top: 1px solid #ff4500;
+		                        marginpadding 3px 0; padding: 0;">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<table cellspacing="0" cellpadding="0" style="width: 100%;">
+									<tr>
+										<td style="width: 40%">
+											<a style="text-decoration: none;" href="http://www.adplorer.com">
+												<img style="width: 120px" src="https://i.ibb.co/Rv8rM74/03.gif">
+											</a>
+										</td>
+										<td style="width: 60%">
+											<table cellspacing="0" cellpadding="0" style="width: 100%;">
+												<tr>
+													<td style="text-align: left;padding-bottom: 8px;">
+														<a style="text-decoration: none;padding:0 6px;" href=" https://www.facebook.com/adfinitely">
+															<img style="width: 16px;" src="https://i.ibb.co/bN4r9CC/facebook.gif">
+														</a>
+														<a style="text-decoration: none;padding:0 6px;" href="https://www.instagram.com/adfinitelymarketing/">
+															<img style="width: 16px;" src="https://i.ibb.co/x2rqSt9/instagram.gif">
+														</a>
+														<a style="text-decoration: none;padding:0 6px;" href="https://www.linkedin.com/company/adfinitely/">
+															<img style="width: 16px;" src="https://i.ibb.co/8bm1YLz/linkedin.gif">
+														</a>
+														<a style="text-decoration: none;padding:0 6px;" href="https://twitter.com/adfinitely">
+															<img style="width: 16px;" src="https://i.ibb.co/3sKR31f/twitter.gif">
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														
+													</td>
+												</tr>
+											</table>									
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div style="text-align: center;" class="button-call">
+								<a href="{{ button }}" style="color: #fff;
+									text-decoration: none;
+									font-size: 16px;
+									padding: 3px 16px;
+									background-color: #ff4500;
+									border-radius: 5px;
+									cursor: pointer;
+								">
+									Schedule a calendar appoinment
+								</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>	
+			</tr>
+		</table>
+	</template>
+
+
+	<main id="main" class="grid article-full">
+		<section class="col_8 offset-2 offset-2-r" id="container-cards"></section>
+	</main>
+	<script>
+		var persons = [
+			{
+				name: "Deidre Brown",
+				whois: "Administrative/Billing",
+				phone: "470-481-3999",
+				email: "dbrown@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/w09k39p/Deidre-Brown.jpg"
+			},
+			{
+				name: "Jack Owen",
+				whois: "Marketing Support Coordinator",
+				phone: false,
+				email: "jack@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/G2Pb4QF/circle-orange.jpg"
+			},
+			{
+				name: "Parker Bedore",
+				whois: "Marketing Support Coordinator",
+				phone: false,
+				email: "parker@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/G2Pb4QF/circle-orange.jpg"
+			},
+			{
+				name: "Katie Stackable",
+				whois: "SEO Specialist",
+				phone: false,
+				email: "katie@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/vVwNhc8/Katie-Stackable.jpg"
+			},
+			{
+				name: "Justin Wagner",
+				whois: "VP, Operations",
+				phone: "470-481-3300",
+				email: "justin@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/Zz1kLF3/Justin-Wagner.jpg"
+			},
+			{
+				name: "Djénéba Cissé",
+				whois: "Search Engine Marketing Specialist",
+				phone: "470-446-7880",
+				email: "djeneba@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/Wy4p4qY/Djeneba-Cisse.jpg"
+			},
+			{
+				name: "Diann Cattani",
+				whois: "VP, Business Growth",
+				phone: "678-523-6487",
+				email: "diann@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/R6L8VZc/Diann-Cattani.jpg"
+			},
+			{
+				name: "Julia Toole",
+				whois: "Customer Success Manager",
+				phone: "470-591-5563",
+				email: "julia@adplorer.com",
+				button: "http://calendly.com/juliatoole",
+				photo: "https://i.ibb.co/XjcbHw4/Julia-Toole.jpg"
+			},
+			{
+				name: "Ryan Stackable",
+				whois: "Implementation Manager",
+				phone: "678-733-9636",
+				email: "ryan@adplorer.com",
+				button: "https://calendly.com/ryanadfinitely/45min",
+				photo: "https://i.ibb.co/ZJC0K75/Ryan-Stackable.jpg"
+			},
+			{
+				name: "Matthew Reitz",
+				whois: "Search Engine Marketing Manager",
+				phone: "678-842-4800",
+				email: "matt@adplorer.com",
+				button: "https://calendly.com/mattadfinitely/callwithmatt_adfinitely",
+				photo: "https://i.ibb.co/gZT7ZGZ/Matt-Reitz.jpg"
+			},
+			{
+				name: "Matt Rister",
+				whois: "Implementation Specialist",
+				phone: "770-676-9314",
+				email: "mrister@adplorer.com",
+				button: false,
+				photo: "https://i.ibb.co/5hpBQ48/Matt-Rister.jpg"
+			},
+		];
+	
+		var template = {
+			personCards: [],
+			tablesString: [],
+			container: document.getElementById("container-cards"),
+			element: document.getElementById("template"),
+			// email-to automatically will be generated...
+			items: ["name", "whois", "phone", "email", "email-to", "button", "photo"],
+			download: function( selector, content ){
+				selector.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(content);
+			},
+			render: function( strings ){
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = strings;
+				dom_elem = dom_elem.content.firstElementChild;		
+				return dom_elem;
+			},
+			Replace: function( item, replacement, HTML ){
+				item = `{{ ${item} }}`;				
+				HTML = HTML.replace(item, replacement);
+				return HTML;
+			},
+			toString: function( html ){
+				html = html.cloneNode(true);
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = "<div></div>";
+				dom_elem = dom_elem.content.firstElementChild;
+				dom_elem.appendChild(html);
+				return dom_elem.innerHTML;
+			},
+			column: function(data, person, key){
+				html = `
+				<div class="col_12">
+					<div class="col_6 one-card">
+							
+					</div>
+					<div class="col_6">
+						<a href="#" class="button is-primary" download="${person.name}.txt" onclick="template.download(this, template.tablesString[${key}].string)">Download .txt</a>
+						<a href="#" class="button is-secundary" download="${person.name}.html" onclick="template.download(this, template.tablesString[${key}].string)">Download .html</a>
+					</div>
+				</div>`;
+				html = template.render( html );
+				html.querySelector(".one-card").appendChild( data )
+				return html;
+			},
+			create: function( person ){
+				var app = this;
+				var table = app.element.content.firstElementChild;
+
+				// generate a empty table tags.
+				// this is to fill it, after finish the process.
+				var container = table.cloneNode( true );
+
+				var getHTMLText = table.innerHTML;
+
+				var eraseEls = [];
+
+				// give more items
+				person["email-to"] = person.email;
+				app.items.forEach(function( item ){
+					// if the item do not exist or is false don't make anything.
+					if(typeof person[item] === "undefined"){return;}
+					if(person[item] === false){
+						if(item === "button"){
+							eraseEls.push(".button-call");
+						}
+						else if(item === "phone"){
+							eraseEls.push(".phone-table");
+						}
+						return;
+					}
+					
+					getHTMLText = app.Replace(item, person[item], getHTMLText);
+				});
+				container.innerHTML = getHTMLText;
+				eraseEls.forEach(function(el){
+					container.querySelector( el ).remove();
+				});
+				return container;
+
+			}
+		}
+
+		window.addEventListener("load", function(){
+
+			persons.forEach(function( person, key ){
+				var card = template.create( person );
+				var id = "table-" + (key + 1)
+				card.id = id;
+
+				// store in a variable
+				template.personCards.push( {id: id, data: card} );
+				template.container.appendChild( template.column( card, person, key ) );
+
+			});
+
+
+			template.personCards.forEach(function( personCard, key ){
+				var id = "table-" + (key + 1);
+				var string = template.toString( personCard.data );
+				template.tablesString.push({id: id, string: string})
+			})
+
+
+
+		});		
+	</script>
+</body>
+</html>
