@@ -33,7 +33,7 @@
 </head>
 <body>
 	<template id="template">
-			<table cellpadding="0" cellspacing="0" style="width: 100%;min-width: 320px;max-width: 375px;font-family: 'Arial', Helvetica, Calibri, Arial, sans-serif;font-weight: lighter;margin-top: 12px;">
+			<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;font-family: 'Arial', Helvetica, Calibri, Arial, sans-serif;font-weight: lighter;margin-top: 12px;">
 		<tr>
 			<td>
 				<table cellpadding="0" cellspacing="0" style="width: 100%;border:inherit;">
@@ -47,15 +47,26 @@
 						<td style="width: 196px;padding-left: 12px;">
 							<table cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif;font-weight: light;font-size: 0.85rem;color: #565656">
 								<tr>
-									<td style="
+									<td colspan="2" style="
 
 										font-weight: bold;
 										font-size: 1.1rem;
+										padding-bottom: 6px;
 										font-family: 'Arial Black', sans-serif;
 										color: #000;
 									">
 										{{ name }}
 									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="margin:0;
+										padding-bottom: 8px;
+										font-weight: lighter;
+										margin-bottom: 0px;">
+											{{ whois }}
+										</p>						
+									</td>									
 									<td rowspan="2">
 										<a style="text-decoration: none;color: white" href="http://3pod.us">
 											<img style="width:68px;" src="https://i.ibb.co/CvrKrz3/3pod02-for-email.gif" />
@@ -63,54 +74,51 @@
 									</td>
 								</tr>
 								<tr>
-									<td>
-										<p style="margin:0;
-										font-weight: lighter;
-										margin-bottom: 0px;">
-											{{ whois }}
-										</p>						
+									<td colspan="2" style="padding:2px 0;font-size: 0.80rem">
+										<div style="float: left; margin-right: 5px;">
+											<img style="width: 8px;" src="https://i.ibb.co/9pxDVQW/phone.png">
+										</div>
+										<div style="float: left;">
+											<strong>{{ phone }}</strong>
+										</div>
 									</td>
 								</tr>
 								<tr>
-								<td style="font-family: Arial Black, sans-serif;color: #08f7ea">
-									<p style="margin:3px 0;
-										font-weight: lighter;">
-										<a style="text-decoration: none;color: #08f7ea" href="http://3pod.us">
-											<em>3POD GROUP</em>
-										</a>
-									</p>
-								</td>
-								</tr>
-								<tr>
-									<td>
-										<p style="margin:3px 0;
-											font-weight: lighter;">
-											{{ address }}
-										</p>										
+									<td colspan="2" style="padding:2px 0;font-size: 0.80rem">
+										<div style="float: left; margin-right: 3px;">
+											<img style="width: 12px;" src="https://i.ibb.co/NCRGd3r/mail.png">
+										</div>
+										<div style="float: left;">
+											<strong>{{ email }}</strong>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td style="color:;font-weight: bold">{{ phone }}</td>
-								</tr>
-								<tr>
-									<td style="color:;font-weight: bold">{{ email }}</td>
-								</tr>
+									<td colspan="2" style="padding:2px 0;font-size: 0.80rem">
+											<div style="float: left; margin-right: 3px;">
+												<img style="width: 12px;" src="https://i.ibb.co/MDBNKbN/address.png">
+											</div>					
+											<div style="font-weight: light;">
+												{{ address }}
+											</div>										
+									</td>						
+								</tr>													
 							</table>
 						</td>
-					</tr>					
+					</tr>								
 				</table>
 			</td>
 		</tr>
 		<!-- footer -->
 		<tr>
 			<td>
-				<table cellpadding="0" cellspacing="0" style="width: 100%;
+				<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;
 				border:inherit;
-				background-image: url('https://i.ibb.co/DQNYVbZ/background-3pod.png');
+				background-image: url('https://i.ibb.co/SDkhFC3/background-3pod.png');
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
-				margin-top: 18px;
+				margin-top: 8px;
 				background-color: #08f7ea">
 					<tr>
 						<td>
@@ -162,7 +170,7 @@
 			{
 				name: 	"Diego Sabogal",
 				whois: 	"CEO- Business Manager",
-				phone: 	"(800) 881-376",
+				phone: 	"(800) 881-3763",
 				email: 	"diego@3pod.us",
 				address: company.address,
 				photo: 	"https://i.ibb.co/NtPb3gG/diego-sagobal.jpg"
