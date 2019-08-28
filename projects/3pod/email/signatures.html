@@ -1,1 +1,310 @@
+<!-- COPYRIGHT 2019 http://3pod.us -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3pod all signatures</title>
+	<style>
+		body, html{
+			font-family: Calibri, Arial, sans-serif;
+			padding: 0;
+			margin:0;
+		}
+		#container-cards{
+			max-width: 60vw;
+		}
+		.button{
+			padding: 16px 28px;
+			border-radius: 25px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.is-primary{
+			background-color: #344eff;
+			color: #fff;
+		}
+		.is-secundary{
+			background-color: #728099;
+			color: #fff;
+		}
+		
+		/*{outline: 1px solid #333;}
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/3pod-us/3pod-us.github.io@master/microcss.css">
+</head>
+<body>
+	<template id="template">
+			<table cellpadding="0" cellspacing="0" style="width: 100%;min-width: 320px;max-width: 375px;font-family: 'Arial', Helvetica, Calibri, Arial, sans-serif;font-weight: lighter;margin-top: 12px;">
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" style="width: 100%;border:inherit;">
+					<tr>
+						<td colspan="6" style="width: 30%;padding-right: 6px;text-align: center;">
+							<img style="width: 90px;border-radius: 100%;margin:0 12px;" src="{{ photo }}" >
+						</td>
+						<td style="width: 2px;margin:0px 6px;background-color: #08f7ea;">
+							<!-- vertical line -->
+						</td>
+						<td style="width: 196px;padding-left: 12px;">
+							<table cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif;font-weight: light;font-size: 0.85rem;color: #565656">
+								<tr>
+									<td style="
 
+										font-weight: bold;
+										font-size: 1.1rem;
+										font-family: 'Arial Black', sans-serif;
+										color: #000;
+									">
+										{{ name }}
+									</td>
+									<td rowspan="2">
+										<a style="text-decoration: none;color: white" href="http://3pod.us">
+											<img style="width:68px;" src="https://i.ibb.co/CvrKrz3/3pod02-for-email.gif" />
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="margin:0;
+										font-weight: lighter;
+										margin-bottom: 0px;">
+											{{ whois }}
+										</p>						
+									</td>
+								</tr>
+								<tr>
+								<td style="font-family: Arial Black, sans-serif;color: #08f7ea">
+									<p style="margin:3px 0;
+										font-weight: lighter;">
+										<a style="text-decoration: none;color: #08f7ea" href="http://3pod.us">
+											<em>3POD GROUP</em>
+										</a>
+									</p>
+								</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="margin:3px 0;
+											font-weight: lighter;">
+											{{ address }}
+										</p>										
+									</td>
+								</tr>
+								<tr>
+									<td style="color:;font-weight: bold">{{ phone }}</td>
+								</tr>
+								<tr>
+									<td style="color:;font-weight: bold">{{ email }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					
+				</table>
+			</td>
+		</tr>
+		<!-- footer -->
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" style="width: 100%;
+				border:inherit;
+				background-image: url('https://i.ibb.co/DQNYVbZ/background-3pod.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				margin-top: 18px;
+				background-color: #08f7ea">
+					<tr>
+						<td>
+							<a style="text-decoration: none;color: white" href="http://3pod.us">
+								<p style="font-weight: bold;
+									margin: 0;
+									margin-left: 12px;
+									font-size: 0.95rem;
+									padding: 12px 0;
+									font-family: 'Arial Black', sans-serif;
+									color: #fff;">
+										<em>www.3pod.us</em>
+								</p>
+							</a>
+						</td>
+						<td style="text-align: right;">
+							<div style="margin-right: 20px;">
+								<a style="text-decoration: none;" href="https://www.instagram.com/3podgroup/">
+									<img style="width: 18px;padding:0 5px" src="https://i.ibb.co/GF3V6Zs/instagram.gif">
+								</a>
+								<a style="text-decoration: none;" href="https://www.facebook.com/3Pod.us/">
+									<img style="width: 18px;padding:0 5px" src="https://i.ibb.co/rFbjxGk/facebook.gif">
+								</a>			
+								<a style="text-decoration: none;" href="https://twitter.com/3podgroup?lang=es">
+									<img style="width: 18px;padding:0 5px" src="https://i.ibb.co/X2N10BF/twitter.gif">
+								</a>
+								<a style="text-decoration: none;" href="https://www.linkedin.com/company/3podgroup">
+									<img style="width: 18px;padding:0 5px" src="https://i.ibb.co/LPwRhfD/linkedin.gif">
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	</template>
+
+
+	<main id="main" class="grid article-full">
+		<section class="col_8 offset-2 offset-2-r" id="container-cards"></section>
+	</main>
+	<script>
+		var company = {
+			address: "1375 Peachtree Street NE Suite 300S  Atlanta, GA 30309",
+		};
+
+		var persons = [
+			{
+				name: 	"Diego Sabogal",
+				whois: 	"CEO- Business Manager",
+				phone: 	"(800) 881-376",
+				email: 	"diego@3pod.us",
+				address: company.address,
+				photo: 	"https://i.ibb.co/NtPb3gG/diego-sagobal.jpg"
+			},
+			{
+				name: 	"Carlos Zamora",
+				whois: 	"Commercial Manager",
+				phone: 	"(800) 881-3763",
+				email: 	"carlos@3pod.us",
+				address: company.address,
+				photo: 	"https://i.ibb.co/2qfrgsf/carlos-zamora.jpg"
+			},
+			{
+				name: 	"Santiago Rojas",
+				whois: 	"Director of Design",
+				phone: 	"(800) 881-3763",
+				email: 	"santiago@3pod.us",
+				address: company.address,
+				photo: 	"https://i.ibb.co/QrRf9wk/Santiago-Rojas.jpg"
+			},
+			{
+				name: 	"Julian Schieneman",
+				whois: 	"Sales Manager",
+				phone: 	"(800) 881-3763",
+				email: 	"Julian@3pod.us",
+				address: company.address,
+				photo: 	"https://i.ibb.co/0XQ5dBc/Julian-Schieneman.jpg"
+			},			
+			{
+				name: 	"Mary Johnson",
+				whois: 	"Office Assistance",
+				phone: 	"(800) 881-3763",
+				email: 	"mary@3pod.us",
+				address: company.address,
+				photo: 	"https://i.ibb.co/QpbSTCX/Mary-Johnson.jpg"
+			},
+		];
+
+
+
+
+
+		var template = {
+			personCards: [],
+			tablesString: [],
+			container: document.getElementById("container-cards"),
+			element: document.getElementById("template"),
+			// email-to automatically will be generated...
+			// fill this options depending on the user info.
+			items: ["name", "whois", "phone", "email", "button", "address", "photo"],
+			download: function( selector, content ){
+				selector.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(content);
+			},
+			render: function( strings ){
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = strings;
+				dom_elem = dom_elem.content.firstElementChild;		
+				return dom_elem;
+			},
+			Replace: function( item, replacement, HTML ){
+				item = `{{ ${item} }}`;				
+				HTML = HTML.replace(item, replacement);
+				return HTML;
+			},
+			toString: function( html ){
+				html = html.cloneNode(true);
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = "<div></div>";
+				dom_elem = dom_elem.content.firstElementChild;
+				dom_elem.appendChild(html);
+				return dom_elem.innerHTML;
+			},
+			column: function(data, person, key){
+				html = `
+				<div class="col_12">
+					<div class="col_6 one-card">
+							
+					</div>
+					<div class="col_6">
+						<a href="#" class="button is-primary" download="${person.name}.txt" onclick="template.download(this, template.tablesString[${key}].string)">Download .txt</a>
+						<a href="#" class="button is-secundary" download="${person.name}.html" onclick="template.download(this, template.tablesString[${key}].string)">Download .html</a>
+					</div>
+				</div>`;
+				html = template.render( html );
+				html.querySelector(".one-card").appendChild( data )
+				return html;
+			},
+			create: function( person ){
+				var app = this;
+				var table = app.element.content.firstElementChild;
+
+				// generate a empty table tags.
+				// this is to fill it, after finish the process.
+				var container = table.cloneNode( true );
+
+				var getHTMLText = table.innerHTML;
+
+				var eraseEls = [];
+
+				// give more items
+				app.items.forEach(function( item ){
+					// if the item do not exist or is false don't make anything.
+					if(typeof person[item] === "undefined"){return;}
+					if(person[item] === false){/*
+						else if(item === "phone"){
+							eraseEls.push(".phone-table");
+						}*/
+						return;
+					}
+					
+					getHTMLText = app.Replace(item, person[item], getHTMLText);
+				});
+				container.innerHTML = getHTMLText;
+				eraseEls.forEach(function(el){
+					container.querySelector( el ).remove();
+				});
+				return container;
+
+			}
+		}
+
+		window.addEventListener("load", function(){
+
+			persons.forEach(function( person, key ){
+				var card = template.create( person );
+				var id = "table-" + (key + 1)
+				card.id = id;
+
+				// store in a variable
+				template.personCards.push( {id: id, data: card} );
+				template.container.appendChild( template.column( card, person, key ) );
+
+			});
+
+
+			template.personCards.forEach(function( personCard, key ){
+				var id = "table-" + (key + 1);
+				var string = template.toString( personCard.data );
+				template.tablesString.push({id: id, string: string})
+			})
+
+		});		
+	</script>
+</body>
+</html>
