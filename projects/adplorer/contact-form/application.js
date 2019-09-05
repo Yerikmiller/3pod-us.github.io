@@ -30,10 +30,15 @@ window.addEventListener("load", function(){
 	}
 
 
-	Object.values(apForm.input).forEach(function(el, key){
-		el.style.paddingLeft = "2.8rem";
-		el.parentNode.style.position = "relative";
-		el.parentNode.appendChild( apForm.Inserticon(apForm.icons[key]) )
+	Object.values(apForm.input).forEach(function(input, key){
+		var newInput = document.cloneNode(input);
+		var container = input.parentNode;
+		container.appendChild( apForm.Inserticon(apForm.icons[key]) );
+		input.remove();
+
+		newInput.style.paddingLeft = "2.8rem";
+		newInput.parentNode.style.position = "relative";
+		container.appendChild(newInput);		
 	})
 
 	apForm.input.name.placeholder = "Name *";
