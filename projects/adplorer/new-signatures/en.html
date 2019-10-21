@@ -1,0 +1,330 @@
+<!-- COPYRIGHT 2019 http://3pod.us -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Adplorer all signatures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<style>
+		body, html{
+			font-family: Calibri, Arial, sans-serif;
+			padding: 0;
+			margin:0;
+		}
+		#container-cards{
+			max-width: 60vw;
+		}
+		.button{
+			padding: 6px 18px;
+			border-radius: 25px;
+			text-decoration: none;
+			font-weight: 400;
+			font-size:16px;
+		}
+		.is-primary{
+			background-color: #ff4500;
+			color: #fff;
+		}
+		.is-blue{
+			background-color: #5d99e2;
+			color: #fff;
+		}
+		.is-secundary{
+			background-color: #728099;
+			color: #fff;
+		}
+		/*{outline: 1px solid #333;}*/
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/3pod-us/3pod-us.github.io@master/microcss.css">
+</head>
+<body>
+<template id="template" style="display: none;color:#434956">
+<table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
+	<tr>
+		<td>
+			<img src="{{ photo }}" alt=" "/>
+		</td>
+		<td style="min-width: 224px;">
+			<table style="font-family: Calibri, sans-serif">
+				<tr>
+					<td style="color:#ff4500;font-weight: lighter;">
+						<span style="font-size:1.25rem;font-weight: 400">{{ name }}</span><br>
+						<span style="font-size:100%;">{{ whois }}</span>
+						<hr style="border:0.025rem solid #ff4500;width: 60%;margin: 3px 0" />
+					</td>
+				</tr>
+				<tr>
+					<table style="color:#434956;font-size: 12px;font-weight: 200">
+						<tr>
+							<td>	
+								<img style="padding:0 4px 0 0;" src="https://i.ibb.co/TRW9xjj/email.jpg">
+								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">{{ email }}</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{{ phone }}
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<img style="padding:0 4px 0 0px;" src="https://i.postimg.cc/3RvpNDgF/website.jpg">
+								<a style="color:#434956;text-decoration: none;" href="http://adplorer.com">www.adplorer.com</a>
+							</td>
+						</tr>								
+					</table>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
+	<tr>
+		<td colspan="2">
+			<hr style="border:0.025rem solid #ff4500;width: 100%;min-width: 320px;max-width: 320px;margin: 3px 0" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a style="text-decoration: none;" href="http://adplorer.com">
+				<img src="https://i.ibb.co/Y3YHqgZ/Publocity-Adplorer.gif" alt=" ">
+			</a>
+		</td>
+		<td>
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://www.facebook.com/adfinitely">
+					<img src="https://i.postimg.cc/R0zxSFJr/fb-new.jpg" alt=" ">
+				</a>
+			</span>
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
+					<img src="https://i.postimg.cc/8CBQjSL7/instagram.jpg" alt=" ">
+				</a>
+			</span>
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/adfinitely/">
+					<img src="https://i.postimg.cc/C1m3ssPY/linkedin.jpg" alt=" ">
+				</a>
+			</span>
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
+					<img src="https://i.postimg.cc/qqq9b6SK/twitter.jpg" alt=" ">
+				</a>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			{{ button }}			
+		</td>
+	</tr>
+</table>
+</template>
+	
+	<main id="main" class="grid article-full">
+		<section class="col_12" id="container-cards"></section>
+	</main>
+	<script>
+		var html_layout = function(content){
+			return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+					<html>
+					<head>
+						<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+						<title>Email Signature</title>
+						<style>
+							a{text-decoration:none;}
+						</style>
+					</head>
+					<body>
+						${content}
+					</body>
+					</html>`
+		}
+		var createPhone = function(data){
+			if(data === false){return "";}
+			return `<img style="padding:0 4px 0 0px;" src="https://i.postimg.cc/SK5CmGzK/phone.jpg">
+					${data}`
+		}
+		var buttonCall = function(data){
+			if(data === false){return "";}
+			return `<div style="text-align: center;">
+				<a href="${data}" style="color: #fff;
+					text-decoration: none;
+					font-size: 16px;
+					padding: 3px 16px;
+					background-color: #ff4500;
+					border-radius: 5px;
+					cursor: pointer;
+				">
+					Schedule a calendar appointment
+				</a>
+			</div>`;
+		}
+		var persons = [
+			{
+				name: "Dr. Constantin Lange",
+				whois: "CEO",
+				phone: createPhone("0049 170 456 1937"),
+				email: "constantin.lange@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/7Z0FfT25/Constantin-Lange.jpg"
+			},
+			{
+				name: "Deidre Brown",
+				whois: "Administrative/Billing",
+				phone: createPhone("470-481-3999"),
+				email: "deidre.brown@adplorer.com",
+				button: false,
+				photo: "https://i.postimg.cc/BbRzvqZ5/Deidre-Brown.jpg"
+			},
+			{
+				name: "Jack Owen",
+				whois: "Marketing Support Coordinator",
+				phone: createPhone(false),
+				email: "jack.owen@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/25FNXBks/avat-orange.jpg"
+			},
+			{
+				name: "Parker Bedore",
+				whois: "Marketing Support Coordinator",
+				phone: createPhone(false),
+				email: "parker.bedore@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/YC8QMdC8/Parker-Bedore.jpg"
+			},
+			{
+				name: "Katie Stackable",
+				whois: "SEO Specialist",
+				phone: createPhone(false),
+				email: "katie.stackable@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/gcBF5pp2/Katie-Stackable.jpg"
+			},
+			{
+				name: "Justin Wagner",
+				whois: "VP, Operations",
+				phone: createPhone("470-481-3300"),
+				email: "justin.wagner@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/MKCk6Yvk/Justin-Wagner.jpg"
+			},
+			{
+				name: "Djénéba Cissé",
+				whois: "Search Engine Marketing Specialist",
+				phone: createPhone("470-446-7880"),
+				email: "djeneba.cisse@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/FRrXts17/Djeneba-Cisse.jpg"
+			},
+			{
+				name: "Diann Cattani",
+				whois: "VP, Business Growth",
+				phone: createPhone("678-523-6487"),
+				email: "diann.cattani@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/28bRNtjF/Diann-Cattani.jpg"
+			},
+			{
+				name: "Julia Toole",
+				whois: "Customer Success Manager",
+				phone: createPhone("470-591-5563"),
+				email: "julia.toole@adplorer.com",
+				button: buttonCall("http://calendly.com/juliatoole"),
+				photo: "https://i.postimg.cc/3wMn0STh/Julia-Toole.jpg"
+			},
+			{
+				name: "Ryan Stackable",
+				whois: "Business Development Manager",
+				phone: createPhone("678-733-9636"),
+				email: "ryan.stackable@adplorer.com",
+				button: buttonCall("https://calendly.com/ryanadfinitely/45min"),
+				photo: "https://i.postimg.cc/QCVLt4QD/Ryan-Stackable.jpg"
+			},
+			{
+				name: "Matthew Reitz",
+				whois: "Search Engine Marketing Manager",
+				phone: createPhone("678-842-4800"),
+				email: "matthew.reitz@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/Fz6MJypL/Matt-Reitz.jpg"
+			},
+			{
+				name: "Matt Rister",
+				whois: "Implementation Specialist",
+				phone: createPhone("770-676-9314"),
+				email: "matt.rister@adplorer.com",
+				button: buttonCall("https://calendly.com/mattadfinitely/callwithmatt_adfinitely"),
+				photo: "https://i.postimg.cc/28rYhGC4/Matt-Rister.jpg"
+			},			
+		];
+		
+		var template = {
+			personCards: [],
+			tablesString: [],
+			container: document.getElementById("container-cards"),
+			elementTemplate: document.getElementById("template"),
+			download: function( selector, content ){
+				selector.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(content);
+			},
+			toHTML: function( strings ){
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = strings;
+				dom_elem = dom_elem.content.firstElementChild;		
+				return dom_elem;
+			},
+			render_template: function(replacemets, html){
+				var template = function(template, searchall, replaceby){
+					return template.split(searchall).join(replaceby);
+				}
+				var structure = html;		
+				replacemets.forEach(function( replacement ){
+					var items = Object.keys(replacement);
+					var values = Object.values(replacement);
+					items.forEach(function( item, key ){						
+						item = `{{ ${item} }}`;
+						if(html.search(item) >= 0){
+							structure = template(structure, item, values[key]);
+						}						
+					})
+				})				
+				return structure;
+			},
+			toString: function( html ){
+				html = html.cloneNode(true);
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = "<div></div>";
+				dom_elem = dom_elem.content.firstElementChild;
+				dom_elem.appendChild(html);
+				return dom_elem.innerHTML;
+			},
+		}
+
+		window.addEventListener("load", function(){
+			var cards = "";
+			persons.forEach(function( person, key ){				
+				var tableTarget = template.elementTemplate;
+				var content = template.render_template([persons[key]], tableTarget.innerHTML);
+				template.personCards.push(content);
+				var donwloadData = `html_layout(template.personCards[${key}])`;
+				html = `
+				<div class="col_12">
+					<div class="col_12">
+						<div class="col_12">
+							${content}
+						</div>					
+						<div class="col_12" style="max-width:320px;">
+							Donwload:<br><br>
+							<a href="#" style="max-width:320px;" class="button is-primary is-rounded is-small is-outlined" download="${person.name}.txt" onclick="template.download(this, ${donwloadData} )">.txt</a>
+							<a href="#" class="button is-secundary is-rounded is-small is-outlined" download="${person.name}.html" onclick="template.download(this, ${donwloadData} )">.html</a>
+						</div>
+					</div>
+				</div><hr style="max-width:350px;width:100%;margin:auto 0;border:1px dashed #bfbfbf" />`;
+				cards += html;
+			});
+			template.container.innerHTML = cards;
+		});		
+	</script>
+</body>
+</html>
