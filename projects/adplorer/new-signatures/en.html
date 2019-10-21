@@ -175,7 +175,7 @@
 				whois: "Administrative/Billing",
 				phone: createPhone("470-481-3999"),
 				email: "deidre.brown@adplorer.com",
-				button: false,
+				button: buttonCall(false),
 				photo: "https://i.postimg.cc/BbRzvqZ5/Deidre-Brown.jpg"
 			},
 			{
@@ -300,7 +300,6 @@
 				return dom_elem.innerHTML;
 			},
 		}
-
 		window.addEventListener("load", function(){
 			var cards = "";
 			persons.forEach(function( person, key ){				
