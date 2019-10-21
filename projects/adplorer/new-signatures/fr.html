@@ -49,7 +49,7 @@
 				<tr>
 					<td style="color:#ff4500;font-weight: lighter;">
 						<span style="font-size:1.25rem;">{{ name }}</span>
-						<hr style="border:0.025rem solid #ff4500;width: 60%;margin: 3px 0" />
+						<hr style="border:0.025rem solid #ff4500;width: 60%;margin: 5px 0 0px 0" />
 					</td>
 				</tr>
 				<tr>
@@ -57,25 +57,28 @@
 						<tr>
 							<td>	
 								<img style="padding:0 6px 0 0;" src="https://i.ibb.co/TRW9xjj/email.jpg">
-								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">{{ email }}</a>
+								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">	<span style="position:relative;bottom:2px;">{{ email }}</span>
+								</a>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<img style="padding:0 4px 0 0px;" src="https://i.postimg.cc/SK5CmGzK/phone.jpg">
-								{{ phone }}
+								<span style="position:relative;bottom:3px;">{{ phone }}</span>								
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<img style="padding:0 3px 0 0px;" src="https://i.postimg.cc/cC7nMykK/telephone.jpg">
-								{{ office }}
+								<span style="position:relative;bottom:4px;">{{ office }}</span>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<img style="padding:0 5px 0 0px;" src="https://i.postimg.cc/3RvpNDgF/website.jpg">
-								<a style="color:#434956;text-decoration: none;" href="http://adplorer.fr">www.adplorer.fr</a>
+								<span style="position:relative;bottom:4px;">
+									<a style="color:#434956;text-decoration: none;" href="http://adplorer.fr">www.adplorer.fr</a>
+								</span>
 							</td>
 						</tr>								
 					</table>
@@ -220,7 +223,6 @@
 				return dom_elem.innerHTML;
 			},
 		}
-
 		window.addEventListener("load", function(){
 			var cards = "";
 			persons.forEach(function( person, key ){				
