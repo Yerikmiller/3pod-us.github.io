@@ -1,0 +1,270 @@
+<!-- COPYRIGHT 2019 http://3pod.us -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PENCIL all signatures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<style>
+		body, html{
+			font-family: Calibri, Arial, sans-serif;
+			padding: 0;
+			margin:0;
+		}
+		#container-cards{
+			max-width: 60vw;
+		}
+		.button{
+			padding: 6px 18px;
+			border-radius: 25px;
+			text-decoration: none;
+			font-weight: 400;
+			font-size:16px;
+		}
+		.is-primary{
+			background-color: #ff4500;
+			color: #fff;
+		}
+		.is-blue{
+			background-color: #5d99e2;
+			color: #fff;
+		}
+		.is-secundary{
+			background-color: #728099;
+			color: #fff;
+		}
+		/*{outline: 1px solid #333;}*/
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/3pod-us/3pod-us.github.io@master/microcss.css">
+</head>
+<body>
+<template id="template" style="display: none;color:#000">
+<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;min-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-left:1px solid {{ color-primary }};border-right:1px solid {{ color-primary }};border-radius: 20px 20px 0 0">
+	<tr>
+		<td colspan="2" style="height: 16px;background-color: {{ color-primary }};border-radius:20px 20px 0 0">							
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">	
+			<img style="width: 100%;" src="https://i.postimg.cc/Zng6bZjY/bar.png" alt=" ">			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0 12px">
+			<img title="{{ name }}" src="{{ photo }}" alt=" "/>
+		</td>
+		<td>
+			<table style="font-family: Calibri, sans-serif">				
+				<tr>
+					<td style="color:#004a7f;font-weight: lighter;">
+						<img src="https://i.postimg.cc/02y8xDJN/the-pen.png" alt=" ">
+						<span style="font-size:1.25rem;font-weight:700">{{ name }}</span><br>
+						<span style="font-size:0.88rem;">{{ whois }}</span>						
+						<hr style="border:1px solid #203b8a;width: 80%;margin: 5px 0 0px 0" />
+					</td>
+				</tr>
+				<tr>
+					<table style="color:#000;font-size: 12px;font-weight: 200">
+						<tr>
+							<td>	
+								<img style="padding:0 2px 0 0;" src="https://i.postimg.cc/0N9c3hxB/email.png">
+								<a style="text-decoration: none;color: #000" href="mailto:{{ email }}">	<span style="position:relative;bottom:1px;">{{ email }}</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img style="padding:0 2px 0 3px;" src="https://i.postimg.cc/qvs11pfK/phone2.png">
+								<span style="position:relative;bottom:3px;">{{ phone }}</span>								
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img style="padding:0 2px 0 1px;" src="https://i.postimg.cc/4xk8vm0Z/address2.png">
+								<span style="position:relative;bottom:4px;">
+									{{ address }}
+								</span>
+							</td>
+						</tr>								
+					</table>
+				</tr>
+			</table>
+		</td>
+	</tr>	
+</table>
+<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;min-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-left:1px solid {{ color-secundary }};border-right:1px solid {{ color-secundary }};border-radius: 0 0 20px 20px;background-color: {{ color-secundary }};height: 40px">
+	<tr>
+		<td style="text-align: center;font-size: 0.89rem">
+			<a style="text-decoration: none;color: #fff;font-weight: 400" href="https://pencildesigns.net">
+				pencildesigns.net
+			</a>
+		</td>
+		<td style="text-align: center;">
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://www.facebook.com/unlimited.pencil/">
+					<img src="https://i.postimg.cc/50D5fbrH/facebook.png" alt=" ">
+				</a>
+			</span>
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://www.instagram.com/pencil.now/?hl=es">
+					<img src="https://i.postimg.cc/0QzdgbVR/instagram.png" alt=" ">
+				</a>
+			</span>
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/pencil-unlimited">
+					<img src="https://i.postimg.cc/brbxJ4Xm/linkedin.png" alt=" ">
+				</a>
+			</span>
+			<span style="padding:0 8px">
+				<a style="text-decoration: inherit;" href="https://twitter.com/Pencil_Now">
+					<img src="https://i.postimg.cc/fbTfKHXb/twitter.png" alt=" ">
+				</a>
+			</span>
+		</td>
+	</tr>
+</table>
+</template>
+	
+	<main id="main" class="grid article-full">
+		<section class="col_12" id="container-cards" style="margin:0"></section>
+	</main>
+	<script>
+		var html_layout = function(content){
+			return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+					<html>
+					<head>
+						<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+						<title>Email Signature</title>
+						<style>
+							a{text-decoration:none;}
+						</style>
+					</head>
+					<body>
+						${content}
+					</body>
+					</html>`
+		}
+		var company = {
+			address: "447 Broadway 2nd FL, New York 10013",
+			"color-primary": "#ffd900",
+			"color-secundary": "#203b8a",
+		};
+		var persons = [
+			{
+				name: 	"Diego Sabogal",
+				whois: 	"CEO - Business Manager",
+				phone: 	"(800) 881-3763",
+				email: 	"diego.sagobal@pencildesign.net",
+				address: company.address,
+				photo: 	"https://i.postimg.cc/mZj6sLhy/diego-sabogal.png",
+			},
+			{
+				name: 	"Santiago Rojas",
+				whois: 	"Director of Design",
+				phone: 	"(800) 881-3763",
+				email: 	"santiago.rojas@pencildesign.net",
+				address: "1375 Peachtree Street NE Suite 300S  Atlanta, GA 30309",
+				photo: 	"https://i.postimg.cc/ncLSVyDb/santiago-rojas.png",
+			},
+			{
+				name: 	"Anna Johnson",
+				whois: 	"Outreach Specialist",
+				phone: 	"(800) 881-3763",
+				email: 	"anna@pencildesign.net",
+				address: company.address,
+				photo: 	"https://i.postimg.cc/PJX3wcVD/anna-sabogal.png",
+			},
+			{
+				name: 	"Michael Sethi",
+				whois: 	"Outreach Specialist",
+				phone: 	"(800) 881-3763",
+				email: 	"michael@pencildesign.net",
+				address: company.address,
+				photo: 	"https://i.ibb.co/WcDhv6S/Michael-Sethi.jpg",
+			},
+			{
+				name: 	"Support Service",
+				whois: 	"",
+				phone: 	"(800) 881-3763",
+				email: 	"support@pencildesign.net",
+				address: company.address,
+				photo: 	"https://i.postimg.cc/8PnK7ZRF/support-pencil.png",
+			},
+		];
+		
+		var template = {
+			personCards: [],
+			tablesString: [],
+			container: document.getElementById("container-cards"),
+			elementTemplate: document.getElementById("template"),
+			download: function( selector, content ){
+				selector.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(content);
+			},
+			toHTML: function( strings ){
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = strings;
+				dom_elem = dom_elem.content.firstElementChild;		
+				return dom_elem;
+			},
+			render_template: function(replacemets, html){
+				var template = function(template, searchall, replaceby){
+					return template.split(searchall).join(replaceby);
+				}
+				var structure = html;		
+				replacemets.forEach(function( replacement ){
+					var items = Object.keys(replacement);
+					var values = Object.values(replacement);
+					items.forEach(function( item, key ){						
+						item = `{{ ${item} }}`;
+						if(html.search(item) >= 0){
+							structure = template(structure, item, values[key]);
+						}						
+					})
+				})				
+				return structure;
+			},
+			joinMoreElements: function(target, elements){
+				Object.values(elements).forEach(function(element, key){					
+					target[Object.keys(elements)[key]] = element;
+				})
+				return target;
+			},
+			toString: function( html ){
+				html = html.cloneNode(true);
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = "<div></div>";
+				dom_elem = dom_elem.content.firstElementChild;
+				dom_elem.appendChild(html);
+				return dom_elem.innerHTML;
+			},
+		}
+		window.addEventListener("load", function(){
+			var cards = "";
+			persons.forEach(function( person, key ){
+				// join more elements like corporative colors
+				person = template.joinMoreElements(person, company);
+
+				var tableTarget = template.elementTemplate;
+				var content = template.render_template([persons[key]], tableTarget.innerHTML);
+				template.personCards.push(content);
+				var donwloadData = `html_layout(template.personCards[${key}])`;
+				html = `
+				<div class="col_12">
+					<div class="col_12">
+						<div class="col_12">
+							${content}
+						</div>					
+						<div class="col_12" style="max-width:320px;">
+							Download:<br><br>
+							<a href="#" style="max-width:320px;" class="button is-primary is-rounded is-small is-outlined" download="${person.name}.txt" onclick="template.download(this, ${donwloadData} )">.txt</a>
+							<a href="#" class="button is-secundary is-rounded is-small is-outlined" download="${person.name}.html" onclick="template.download(this, ${donwloadData} )">.html</a>
+						</div>
+					</div>
+				</div><hr style="max-width:350px;width:100%;margin:auto 0;border:1px dashed #bfbfbf" />`;
+				cards += html;
+			});
+			template.container.innerHTML = cards;
+		});		
+	</script>
+</body>
+</html>
