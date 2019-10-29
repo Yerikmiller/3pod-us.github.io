@@ -1,3 +1,4 @@
+
 <!-- COPYRIGHT 2019 http://3pod.us -->
 <!DOCTYPE html>
 <html>
@@ -41,10 +42,10 @@
 <template id="template" style="display: none;color:#434956">
 <table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
 	<tr>
-		<td>
-			<img src="{{ photo }}" alt=" "/>
+		<td align="center" style="width:96px;height:96px;background-image: url('{{ photo }}');{{ backgroundProperties }}">
+			
 		</td>
-		<td style="min-width: 224px;">
+		<td>
 			<table style="font-family: Calibri, sans-serif">
 				<tr>
 					<td style="color:#ff4500;font-weight: lighter;">
@@ -57,7 +58,13 @@
 					<table style="color:#434956;font-size: 12px;font-weight: 200">
 						<tr>
 							<td >
-								<img style="padding:0 4px 0 0;" src="https://i.ibb.co/TRW9xjj/email.jpg">
+								<table style="display: inline-block;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td cellpadding="0" cellspacing="0" style="width:19px;height:10px;background-image: url('https://i.ibb.co/TRW9xjj/email.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
 								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">
 									<span style="position:relative;bottom:1px;">{{ email }}</span>
 								</a>									
@@ -68,10 +75,15 @@
 								{{ phone }}
 							</td>
 						</tr>
-						
 						<tr>
 							<td>
-								<img style="padding:0 4px 0 0px;" src="https://i.postimg.cc/3RvpNDgF/website.jpg">
+								<table style="display: inline-block;padding:0 3px 0 2px;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/3RvpNDgF/website.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
 								<span style="position:relative;bottom:4px;">
 									<a style="color:#434956;text-decoration: none;" href="http://adplorer.com">www.adplorer.com</a>
 								</span>
@@ -92,30 +104,52 @@
 	<tr>
 		<td>
 			<a style="text-decoration: none;" href="http://adplorer.com">
-				<img src="https://i.ibb.co/6rJLCSn/03-120.gif" alt=" ">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:120px;height:60px;background-image: url('https://i.ibb.co/6rJLCSn/03-120.gif');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
 			</a>
 		</td>
 		<td>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://www.facebook.com/adfinitely">
-					<img src="https://i.postimg.cc/R0zxSFJr/fb-new.jpg" alt=" ">
-				</a>
-			</span>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
-					<img src="https://i.postimg.cc/8CBQjSL7/instagram.jpg" alt=" ">
-				</a>
-			</span>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/adfinitely/">
-					<img src="https://i.postimg.cc/C1m3ssPY/linkedin.jpg" alt=" ">
-				</a>
-			</span>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
-					<img src="https://i.postimg.cc/qqq9b6SK/twitter.jpg" alt=" ">
-				</a>
-			</span>
+			<a style="text-decoration: inherit;" href="https://www.facebook.com/adfinitely">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/R0zxSFJr/fb-new.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
+			<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/8CBQjSL7/instagram.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
+			<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/adfinitely/">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/C1m3ssPY/linkedin.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
+			<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/qqq9b6SK/twitter.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
 		</td>
 	</tr>
 	<tr>
@@ -147,8 +181,15 @@
 		}
 		var createPhone = function(data){
 			if(data === false){return "";}
-			return `<img style="padding:0 4px 0 0px;" src="https://i.postimg.cc/SK5CmGzK/phone.jpg">
-					<span style="position:relative;bottom:3px;">${data}</span>`
+			return `
+			<table style="display: inline-block;padding:0 2px 0 2px;" cellpadding="0" cellspacing="0" >
+				<tr>
+					<tbody cellpadding="0" cellspacing="0">
+						<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/SK5CmGzK/phone.jpg');${company.backgroundProperties}"></td>
+					</tbody>
+				</tr>
+			</table>
+			<span style="position:relative;bottom:3px;">${data}</span>`
 		}
 		var buttonCall = function(data){
 			if(data === false){return "";}
@@ -164,6 +205,9 @@
 					Schedule a calendar appointment
 				</a>
 			</div>`;
+		}
+		var company = {
+			backgroundProperties: "background-size:contain;background-repeat:no-repeat;background-position:center;",
 		}
 		var persons = [
 			{
@@ -287,6 +331,12 @@
 				})				
 				return structure;
 			},
+			joinMoreElements: function(target, elements){
+				Object.values(elements).forEach(function(element, key){					
+					target[Object.keys(elements)[key]] = element;
+				})
+				return target;
+			},
 			toString: function( html ){
 				html = html.cloneNode(true);
 				var dom_elem = document.createElement("template");
@@ -298,7 +348,10 @@
 		}
 		window.addEventListener("load", function(){
 			var cards = "";
-			persons.forEach(function( person, key ){				
+			persons.forEach(function( person, key ){
+				// join more elements like corporative colors
+				person = template.joinMoreElements(person, company);
+
 				var tableTarget = template.elementTemplate;
 				var content = template.render_template([persons[key]], tableTarget.innerHTML);
 				template.personCards.push(content);
