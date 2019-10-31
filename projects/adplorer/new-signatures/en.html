@@ -57,36 +57,44 @@
 				<tr>
 					<table style="color:#434956;font-size: 12px;font-weight: 200">
 						<tr>
-							<td >
+							<td style="display:inline;vertical-align:middle;">
 								<table style="display: inline-block;" cellpadding="0" cellspacing="0" >
 									<tr>
 										<tbody cellpadding="0" cellspacing="0">
-											<td cellpadding="0" cellspacing="0" style="width:19px;height:10px;background-image: url('https://i.ibb.co/TRW9xjj/email.jpg');{{ backgroundProperties }}"></td>
+											<td cellpadding="0" cellspacing="0" style="width:15px;height:10px;background-image: url('https://i.ibb.co/TRW9xjj/email.jpg');{{ backgroundProperties }}"></td>
 										</tbody>
 									</tr>
 								</table>
+							</td>
+							<td style="display:contents;{{ font-family }}{{ font-small }}">
 								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">
 									<span style="position:relative;bottom:1px;">{{ email }}</span>
-								</a>									
+								</a>
 							</td>
 						</tr>
-						<tr>
-							<td>
+						<tr cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" >
 								{{ phone }}
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<table style="display: inline-block;padding:0 3px 0 2px;" cellpadding="0" cellspacing="0" >
-									<tr>
-										<tbody cellpadding="0" cellspacing="0">
-											<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/3RvpNDgF/website.jpg');{{ backgroundProperties }}"></td>
-										</tbody>
-									</tr>
+							<td cellpadding="0" cellspacing="0">
+								<table cellpadding="0" cellspacing="0">
+									<td style="display:inline;vertical-align:middle;">
+										<table style="display: inline-block;padding:0 2px 0 0;" cellpadding="0" cellspacing="0" >
+											<tr>
+												<tbody cellpadding="0" cellspacing="0">
+													<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/3RvpNDgF/website.jpg');{{ backgroundProperties }}"></td>
+												</tbody>
+											</tr>
+										</table>								
+									</td>
+									<td style="display:contents;{{ font-family }}{{ font-small }}">
+										<span style="position:relative;">
+											<a style="color:#434956;text-decoration: none;" href="http://adplorer.com">www.adplorer.com</a>
+										</span>
+									</td>
 								</table>
-								<span style="position:relative;bottom:4px;">
-									<a style="color:#434956;text-decoration: none;" href="http://adplorer.com">www.adplorer.com</a>
-								</span>
 							</td>
 						</tr>								
 					</table>
@@ -182,14 +190,20 @@
 		var createPhone = function(data){
 			if(data === false){return "";}
 			return `
-			<table style="display: inline-block;padding:0 2px 0 2px;" cellpadding="0" cellspacing="0" >
-				<tr>
-					<tbody cellpadding="0" cellspacing="0">
-						<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/SK5CmGzK/phone.jpg');${company.backgroundProperties}"></td>
-					</tbody>
-				</tr>
-			</table>
-			<span style="position:relative;bottom:3px;">${data}</span>`
+			<table cellpadding="0" cellspacing="0">
+			<td style="display:inline;vertical-align:middle;">
+				<table style="display: inline-block;padding:0 2px 0 0;" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/SK5CmGzK/phone.jpg');${company.backgroundProperties}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</td>
+			<td style="display:contents;${company["font-family"]}${company["font-small"]}">
+				<span style="position:relative;">${data}</span>
+			</td>
+			</table>`
 		}
 		var buttonCall = function(data){
 			if(data === false){return "";}
@@ -208,6 +222,8 @@
 		}
 		var company = {
 			backgroundProperties: "background-size:contain;background-repeat:no-repeat;background-position:center;",
+			"font-family": "font-family: Calibri, Arial, sans-serif;font-weight: lighter;",
+			"font-small": "font-size:12px;",
 		}
 		var persons = [
 			{
