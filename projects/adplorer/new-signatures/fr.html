@@ -1,3 +1,4 @@
+
 <!-- COPYRIGHT 2019 http://3pod.us -->
 <!DOCTYPE html>
 <html>
@@ -41,43 +42,69 @@
 <template id="template" style="display: none;color:#434956">
 <table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
 	<tr>
-		<td>
-			<img src="{{ photo }}" alt=" "/>
+		<td align="center" style="width:96px;height:96px;min-width: 96px;background-image: url('{{ photo }}');{{ backgroundProperties }}">
+			
 		</td>
 		<td style="min-width: 224px;">
-			<table style="font-family: Calibri, sans-serif">
+			<table style="font-family: Calibri, sans-serif;width: 100%;">
 				<tr>
 					<td style="color:#ff4500;font-weight: lighter;">
-						<span style="font-size:1.25rem;">{{ name }}</span>
-						<hr style="border:0.025rem solid #ff4500;width: 60%;margin: 5px 0 0px 0" />
+						<span style="font-size:1.25rem;font-weight: 400">{{ name }}</span><br>
+						<span style="font-size:90%;">{{ whois }}</span>
+						<hr style="background:#ff4500;border:0.06rem solid #ff4500;width: 45px;max-width:45px;min-width:45px;margin: 4px 0 0px 0" />
 					</td>
 				</tr>
 				<tr>
 					<table style="color:#434956;font-size: 12px;font-weight: 200">
 						<tr>
-							<td>	
-								<img style="padding:0 6px 0 0;" src="https://i.ibb.co/TRW9xjj/email.jpg">
-								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">	<span style="position:relative;bottom:1px;">{{ email }}</span>
-								</a>
+							<td >
+								<table style="display: inline-block;padding:0 3px 0 0px;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td cellpadding="0" cellspacing="0" style="width:19px;height:10px;background-image: url('https://i.ibb.co/TRW9xjj/email.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
+								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">
+									<span style="position:relative;bottom:1px;{{ font-small }}">{{ email }}</span>
+								</a>									
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<img style="padding:0 4px 0 0px;" src="https://i.postimg.cc/SK5CmGzK/phone.jpg">
-								<span style="position:relative;bottom:3px;">{{ phone }}</span>								
+								<table style="display: inline-block;padding:0 2px 0 2px;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/SK5CmGzK/phone.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
+								{{ phone }}
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<img style="padding:0 3px 0 0px;" src="https://i.postimg.cc/cC7nMykK/telephone.jpg">
-								<span style="position:relative;bottom:4px;">{{ office }}</span>
+								<table style="display: inline-block;padding:0 2px 0 2px;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/cC7nMykK/telephone.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
+								{{ office }}
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<img style="padding:0 5px 0 0px;" src="https://i.postimg.cc/3RvpNDgF/website.jpg">
-								<span style="position:relative;bottom:4px;">
-									<a style="color:#434956;text-decoration: none;" href="http://adplorer.fr">www.adplorer.fr</a>
+								<table style="display: inline-block;padding:0 3px 0 2px;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/3RvpNDgF/website.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
+								<span style="position:relative;bottom:4px;{{ font-small }}">
+									<a style="color:#434956;text-decoration: none;" href="https://adplorer.fr">www.adplorer.fr</a>
 								</span>
 							</td>
 						</tr>								
@@ -90,36 +117,58 @@
 <table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
 	<tr>
 		<td colspan="2">
-			<hr style="border:0.025rem solid #ff4500;width: 100%;min-width: 320px;max-width: 320px;margin: 3px 0" />
+			<hr style="background:#ff4500;border:0.06rem solid #ff4500;width: 100%;min-width: 320px;max-width: 320px;margin: 6px 0" />
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a style="text-decoration: none;" href="http://adplorer.fr">
-				<img src="https://i.ibb.co/Y3YHqgZ/Publocity-Adplorer.gif" alt=" ">
+			<a style="color:#434956;text-decoration: none;" href="http://adplorer.fr">
+				<table style="display: inline-block;" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:120px;height:60px;background-image: url('https://i.ibb.co/Y3YHqgZ/Publocity-Adplorer.gif');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
 			</a>
 		</td>
 		<td>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://www.facebook.com/publocity">
-					<img src="https://i.postimg.cc/R0zxSFJr/fb-new.jpg" alt=" ">
-				</a>
-			</span>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
-					<img src="https://i.postimg.cc/8CBQjSL7/instagram.jpg" alt=" ">
-				</a>
-			</span>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/publocity-france">
-					<img src="https://i.postimg.cc/C1m3ssPY/linkedin.jpg" alt=" ">
-				</a>
-			</span>
-			<span style="padding:0 8px">
-				<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
-					<img src="https://i.postimg.cc/qqq9b6SK/twitter.jpg" alt=" ">
-				</a>
-			</span>
+			<a style="text-decoration: inherit;" href="https://www.facebook.com/publocity">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/R0zxSFJr/fb-new.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
+			<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/8CBQjSL7/instagram.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
+			<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/publocity-france">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/C1m3ssPY/linkedin.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
+			<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
+				<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+					<tr>
+						<tbody cellpadding="0" cellspacing="0">
+							<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/qqq9b6SK/twitter.jpg');{{ backgroundProperties }}"></td>
+						</tbody>
+					</tr>
+				</table>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -144,6 +193,38 @@
 					</body>
 					</html>`
 		}
+		var createPhone = function(data){
+			if(data === false){return "";}
+			return `
+			<table style="display: inline-block;padding:0 2px 0 2px;" cellpadding="0" cellspacing="0" >
+				<tr>
+					<tbody cellpadding="0" cellspacing="0">
+						<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/SK5CmGzK/phone.jpg');${company.backgroundProperties}"></td>
+					</tbody>
+				</tr>
+			</table>
+			<span style="position:relative;bottom:3px;${company["font-small"]}">${data}</span>`
+		}
+		var buttonCall = function(data){
+			if(data === false){return "";}
+			return `<div style="text-align: center;">
+				<a href="${data}" style="color: #fff;
+					text-decoration: none;
+					font-size: 16px;
+					padding: 3px 16px;
+					background-color: #ff4500;
+					border-radius: 5px;
+					cursor: pointer;
+				">
+					Schedule a calendar appointment
+				</a>
+			</div>`;
+		}
+		var company = {
+			backgroundProperties: "background-size:contain;background-repeat:no-repeat;background-position:center;",
+			"font-small": "font-family: Calibri, Arial, sans-serif;font-weight: lighter;font-size:12px;",
+		}
+		var default_address = "Richard-Wagner-Str. 1-3, 50859 Köln";
 		var persons = [
 			{
 				name: "Stéphanie Lelièvre",
@@ -182,7 +263,7 @@
 				photo: "https://i.ibb.co/Tc9k1w7/mathilde-thomas-publocity.jpg"
 			},			
 		];
-		
+
 		var template = {
 			personCards: [],
 			tablesString: [],
@@ -214,6 +295,12 @@
 				})				
 				return structure;
 			},
+			joinMoreElements: function(target, elements){
+				Object.values(elements).forEach(function(element, key){					
+					target[Object.keys(elements)[key]] = element;
+				})
+				return target;
+			},
 			toString: function( html ){
 				html = html.cloneNode(true);
 				var dom_elem = document.createElement("template");
@@ -225,7 +312,10 @@
 		}
 		window.addEventListener("load", function(){
 			var cards = "";
-			persons.forEach(function( person, key ){				
+			persons.forEach(function( person, key ){
+				// join more elements like corporative colors
+				person = template.joinMoreElements(person, company);
+
 				var tableTarget = template.elementTemplate;
 				var content = template.render_template([persons[key]], tableTarget.innerHTML);
 				template.personCards.push(content);
