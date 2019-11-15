@@ -476,6 +476,7 @@
 			},
 			{
 				footer: template.render_template([company], document.getElementById("footer-2").innerHTML),
+				styleContainer: "padding-bottom:54px;"
 			},
 		];
 		window.addEventListener("load", function(){			
@@ -486,15 +487,19 @@
 				persons.forEach(function( person, key ){
 				// join more elements like corporative colors
 					person = template.joinMoreElements(person, company);
+					var customStyles = "";
 					var tableTarget = template.elementTemplate;
 					var content = template.render_template([persons[key]], tableTarget.innerHTML);
 					content += versions[verseionKey].footer;
 					content += persons[key].button;
+					if(typeof versions[verseionKey].styleContainer === "string"){
+						customStyles = versions[verseionKey].styleContainer;
+					}
 
 					template.personCards.push(content); // STORE!!
 					var donwloadData = `html_layout(template.personCards[${point++}])`;
 					var html = `
-					<div class="col_12">
+					<div class="col_12" style="${customStyles}">
 						<div class="col_12">
 							<div class="col_12">
 								${content}
