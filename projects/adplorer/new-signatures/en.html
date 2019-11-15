@@ -509,7 +509,11 @@
 
 					cards += html;
 				});
-				containerVersions += `<div id="container-version-${verseionKey}" class="col_4">${cards}</div>`;
+				containerVersions += `
+				<div id="container-version-${verseionKey}" class="col_4">
+				<div class="col_12"><h3 style="text-align:center;color:#ff4500;">VERSION ${verseionKey+1}</h3></div>
+				${cards}
+				</div>`;
 			})
 			template.container.innerHTML = containerVersions;
 		});		
