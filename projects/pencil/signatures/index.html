@@ -39,17 +39,7 @@
 </head>
 <body>
 <template id="template" style="display: none;color:#000">
-<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;min-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-left:1px solid {{ color-primary }};border-right:1px solid {{ color-primary }};border-radius: 20px 20px 0 0">
-	<tr>
-		<td colspan="2" style="height: 36px;background-color: {{ color-primary }};border-radius:20px 20px 0 0;text-align: center;">
-			<img style="padding: 12px 0 0 0" src="https://i.postimg.cc/cC2TDPKj/logo.png" alt=" ">					
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">	
-			<img style="width: 100%;" src="https://i.postimg.cc/Zng6bZjY/bar.png" alt=" ">			
-		</td>
-	</tr>
+<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;min-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
 	<tr>
 		<td style="padding:0 12px">
 			<img title="{{ name }}" src="{{ photo }}" alt=" "/>
@@ -58,10 +48,9 @@
 			<table style="font-family: Calibri, sans-serif">				
 				<tr>
 					<td style="color:#004a7f;font-weight: lighter;">
-						<img src="https://i.postimg.cc/02y8xDJN/the-pen.png" alt=" ">
 						<span style="font-size:1.25rem;font-weight:700">{{ name }}</span><br>
 						<span style="font-size:0.88rem;">{{ whois }}</span>						
-						<hr style="border:1px solid #203b8a;width: 80%;margin: 5px 0 0px 0" />
+						<hr style="border:1px solid {{ color-primary }};background:{{ color-primary }};width: 80%;margin: 5px 0 0px 0" />
 					</td>
 				</tr>
 				<tr>
@@ -81,10 +70,18 @@
 						</tr>
 						<tr>
 							<td>
-								<img style="padding:0 2px 0 1px;" src="https://i.postimg.cc/4xk8vm0Z/address2.png">
-								<span style="position:relative;bottom:4px;">
-									{{ address }}
-								</span>
+								<table cellspacing="0" cellpadding="0" style="padding: 0px;margin:0px;">
+									<tr style="vertical-align: top;">
+										<td>
+											<img style="padding:0 2px 0 1px;" src="https://i.postimg.cc/4xk8vm0Z/address2.png">
+										</td>
+										<td>
+											<span style="position:relative;bottom:3px;">
+												{{ address }}
+											</span>
+										</td>
+									</tr>
+								</table>
 							</td>
 						</tr>								
 					</table>
@@ -93,32 +90,32 @@
 		</td>
 	</tr>	
 </table>
-<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;min-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-left:1px solid {{ color-secundary }};border-right:1px solid {{ color-secundary }};border-radius: 0 0 20px 20px;background-color: {{ color-secundary }};height: 40px">
+<table cellpadding="0" cellspacing="0" style="width: 100%;max-width: 320px;min-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;background-color: {{ color-primary }};border-radius:20px;height: 40px">
 	<tr>
 		<td style="text-align: center;font-size: 0.89rem">
 			<a style="text-decoration: none;color: #fff;font-weight: 400" href="https://pencildesigns.net">
-				pencildesigns.net
+				<img style="padding: 8px 0 6px 0;" src="https://i.postimg.cc/VkRFq0HT/logo-pencil-email.png" alt=" ">
 			</a>
 		</td>
 		<td style="text-align: center;">
-			<span style="padding:0 8px">
+			<span style="padding:0 5px">
 				<a style="text-decoration: inherit;" href="https://www.facebook.com/unlimited.pencil/">
-					<img src="https://i.postimg.cc/50D5fbrH/facebook.png" alt=" ">
+					<img src="https://i.postimg.cc/d0N8gt4W/facebook18.png" alt=" ">
 				</a>
 			</span>
-			<span style="padding:0 8px">
+			<span style="padding:0 5px">
 				<a style="text-decoration: inherit;" href="https://www.instagram.com/pencil.now/?hl=es">
-					<img src="https://i.postimg.cc/0QzdgbVR/instagram.png" alt=" ">
+					<img src="https://i.postimg.cc/GhjTZmpk/instagram18.png" alt=" ">
 				</a>
 			</span>
-			<span style="padding:0 8px">
+			<span style="padding:0 5px">
 				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/pencil-unlimited">
-					<img src="https://i.postimg.cc/brbxJ4Xm/linkedin.png" alt=" ">
+					<img src="https://i.postimg.cc/xT9cyVPq/linkedin18.png" alt=" ">
 				</a>
 			</span>
-			<span style="padding:0 8px">
+			<span style="padding:0 5px">
 				<a style="text-decoration: inherit;" href="https://twitter.com/Pencil_Now">
-					<img src="https://i.postimg.cc/fbTfKHXb/twitter.png" alt=" ">
+					<img src="https://i.postimg.cc/3J9WtfL1/twitter18.png" alt=" ">
 				</a>
 			</span>
 		</td>
@@ -146,31 +143,31 @@
 					</html>`
 		}
 		var company = {
-			address: "447 Broadway 2nd FL, New York 10013",
+			address: "1375 Peachtree Street NE Suite 300S Atlanta, GA 30309",
 			"color-primary": "#ffd900",
 			"color-secundary": "#203b8a",
 		};
 		var persons = [
 			{
 				name: 	"Diego Sabogal",
-				whois: 	"CEO - Business Manager",
+				whois: 	"CEO &nbsp;- Business Manager",
 				phone: 	"(800) 881-3763",
 				email: 	"diego.sagobal@pencildesign.net",
-				photo: 	"https://i.postimg.cc/mZj6sLhy/diego-sabogal.png",
+				photo: 	"https://i.ibb.co/8DJQPxZ/diego-sabogal.png",
 			},
 			{
 				name: 	"Santiago Rojas",
 				whois: 	"Director of Design",
 				phone: 	"(800) 881-3763",
 				email: 	"santiago.rojas@pencildesign.net",
-				photo: 	"https://i.postimg.cc/ncLSVyDb/santiago-rojas.png",
+				photo: 	"https://i.postimg.cc/vTs3hjCz/santiago-rojas.png",
 			},
 			{
 				name: 	"Anna Johnson",
 				whois: 	"Outreach Specialist",
 				phone: 	"(800) 881-3763",
 				email: 	"anna@pencildesign.net",
-				photo: 	"https://i.postimg.cc/PJX3wcVD/anna-sabogal.png",
+				photo: 	"https://i.ibb.co/cFybvbP/anna-johnson.png",
 			},
 			{
 				name: 	"Michael Sethi",
@@ -184,7 +181,7 @@
 				whois: 	"",
 				phone: 	"(800) 881-3763",
 				email: 	"support@pencildesign.net",
-				photo: 	"https://i.postimg.cc/8PnK7ZRF/support-pencil.png",
+				photo: 	"https://i.ibb.co/7gTg0rv/support-pencil.png",
 			},
 		];
 		
