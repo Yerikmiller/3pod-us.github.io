@@ -43,7 +43,7 @@
 <table style="width: 100%;max-width: 320px;min-width: 320px;font-family: Arial, Arial, sans-serif;font-weight: lighter;border-spacing: 0;">
 	<tr>
 		<td align="center" style="width:96px;height:96px;min-width: 96px;">
-			<div style="width: 100%;height: 100%;background-image: url('{{ photo }}');{{ backgroundProperties }}"></div>
+			<div style="width: 100%;height: 96px;background-image: url('{{ photo }}');{{ backgroundProperties }}"></div>
 		</td>
 		<td>
 			<table style="font-family: Arial, sans-serif;width: 100%;">
@@ -190,7 +190,7 @@
 			<span style="position:relative;bottom:3px;${company["font-small"]}">${data}</span>`
 		}
 		var company = {
-			backgroundProperties: "background-size:contain;background-repeat:no-repeat;background-position:center;",
+			backgroundProperties: "background-size:contain;background-position:center;",
 			"font-small": "font-family: Arial, Arial, sans-serif;font-weight: lighter;font-size:12px;",
 			"font-family": "font-family: Arial, Arial, sans-serif;",
 			colorPrimary: "#344eff",
