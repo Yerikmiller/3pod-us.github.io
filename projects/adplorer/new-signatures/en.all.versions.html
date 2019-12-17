@@ -42,8 +42,8 @@
 <template id="template" style="display: none;color:#434956">
 <table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
 	<tr>
-		<td align="center" style="width:96px;height:96px;min-width: 96px;background-image: url('{{ photo }}');{{ backgroundProperties }}">
-			<!-- main photo -->
+		<td align="center" style="width:96px;height:96px;min-width: 96px;">
+			<div height="96" style="width: 100%;height: 96px;background-image: url('{{ photo }}');{{ backgroundProperties }}"></div>
 		</td>
 		<td style="min-width: 214px;padding-left: 10px;">
 			<table style="font-family: Calibri, sans-serif;width: 100%;">
@@ -61,7 +61,7 @@
 								<table style="display: inline-block;" cellpadding="0" cellspacing="0" >
 									<tr>
 										<tbody cellpadding="0" cellspacing="0">
-											<td cellpadding="0" cellspacing="0" style="width:19px;height:10px;background-image: url('https://i.ibb.co/TRW9xjj/email.jpg');{{ backgroundProperties }}"></td>
+											<td cellpadding="0" cellspacing="0" style="width:16px;height:10px;background-image: url('https://i.ibb.co/TRW9xjj/email.jpg');{{ backgroundProperties }}"></td>
 										</tbody>
 									</tr>
 								</table>
@@ -188,7 +188,7 @@
 					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
 						<tr>
 							<tbody cellpadding="0" cellspacing="0">
-								<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/R0zxSFJr/fb-new.jpg');{{ backgroundProperties }}"></td>
+								<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/R0zxSFJr/fb-new.jpg');{{ backgroundProperties }}"></td>
 							</tbody>
 						</tr>
 					</table>
@@ -197,7 +197,7 @@
 					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
 						<tr>
 							<tbody cellpadding="0" cellspacing="0">
-								<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/8CBQjSL7/instagram.jpg');{{ backgroundProperties }}"></td>
+								<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/8CBQjSL7/instagram.jpg');{{ backgroundProperties }}"></td>
 							</tbody>
 						</tr>
 					</table>
@@ -206,7 +206,7 @@
 					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
 						<tr>
 							<tbody cellpadding="0" cellspacing="0">
-								<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/C1m3ssPY/linkedin.jpg');{{ backgroundProperties }}"></td>
+								<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/C1m3ssPY/linkedin.jpg');{{ backgroundProperties }}"></td>
 							</tbody>
 						</tr>
 					</table>
@@ -215,7 +215,7 @@
 					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
 						<tr>
 							<tbody cellpadding="0" cellspacing="0">
-								<td cellpadding="0" cellspacing="0" style="width:16px;height:16px;background-image: url('https://i.postimg.cc/qqq9b6SK/twitter.jpg');{{ backgroundProperties }}"></td>
+								<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/qqq9b6SK/twitter.jpg');{{ backgroundProperties }}"></td>
 							</tbody>
 						</tr>
 					</table>
@@ -328,7 +328,7 @@
 			</table>`;
 		}
 		var company = {
-			backgroundProperties: "background-size:contain;background-repeat:no-repeat;background-position:center;",
+			backgroundProperties: "background-size:contain;background-position:center;",
 			"font-small": "font-family: Calibri, Arial, sans-serif;font-weight: lighter;font-size:12px;",
 		}
 		var persons = [
