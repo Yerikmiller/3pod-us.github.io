@@ -1,464 +1,527 @@
-<?php 
-$files = Database::GetData("categories");
-$files = pencil::sorting($files, [
-	"sortby" => "asc",
-	"dataType" => "FILES",
-	"itemName" => FALSE
-]);
-$data = pencil::openFiles($files);
-$data = pencil::selectData($data, [
-	"__id__",
-	"name_category",
-	"subcategories",
-	"position"
-]);
 
-$data = pencil::sorting($data, [
-	"dataType" => "ARRAY",
-	"sortby" => "asc",
-	"itemName" => "position"
-]);
-
-?>
-<script>
-	var listCategories = <?= json_encode( $data, TRUE ) ?>;
-</script>
-
-<style>
-.modal__container{
-	min-width: 600px;
-}
-</style>
-<section class="columns is-multiline">
-	<div class="col_12 has-text-centered">
-		<h1 class="title bold">
-			<br>
-			Manage categories for requests <br>
-			<span class="is-size-5 lighter">
-				Pencil's Service Categories
-			</span>
-		</h1>
-	</div>
-	<div class="column offset-1 offset-1-r">
-		<button onclick="tableList.show('modal-creator-category')" class="button is-medium is-info has-text-primary bold is-rounded">
-			New Category
-		</button>		
-		<table class="responsive-table table" id="table-list" style="font-size: 92%;">
-		  <caption>Table List</caption>
-		  <thead>
-		    <tr>
-		      <th scope="col">Category Name</th>
-		      <th scope="col">Sub-Categories N°</th>
-		      <th scope="col">Actions</th>
-		    </tr>
-		  </thead>
-		  <tbody id="rows-of-categories">
-			<!-- will appear with javascript -->
-		  </tbody>
-		</table>
-		<div class="box rounded-message col_12" style="margin-top: 50px;display: none;" id="container-onShow">
-			<!-- will appear with javascript -->
-		</div>
-		<div id="modals-table-categories-created">
-			<!-- will appear with javascript -->
-		</div>
-	</div>
-</section>
-
-
-
-<style>
-	.modal__container{
-		max-width: 900px;
-		min-width: 320px;
-		width: 100%;
-	}
-	.sub-category-containers{
-		margin-top: 12px;
-	}
-	.global-container-styles{
-		margin-top: 0px !important;
-	}
-	.sub-category-containers .field{
-		margin-bottom: 0px !important; 
-	}
-	.styles-subcategory-containers{
-		margin-top: 6px;
-	}
-</style>
-<div id="container-modal-creator-category">
-	<!--  MODAL CREATOR FOR CATEGORIES -->
-</div>
-<script>
-function reload(){
-	setTimeout(function(){
-		window.location.href = "";
-	}, 500)
-}
-/*
- * 
- * 
- * This is for create and update categories.
- * Update - Create
- * 
- * 
-*/
-var category = {
-	PreviewImage: function(target, URL){
-		target = turpial.find(target);
-		target.src = URL;
-	},
-	removeFromDB: {
-		init: (_id_)=>{
-			var html = `
-				Are you sure?
-				<a data-spop="close" class="button is-small is-dark" onclick="category.removeFromDB.finalize('${_id_}')">YES</a> 
-				<a data-spop="close" class="button is-small is-light">NO</a>			
-			`;
-			spop({
-			  template: html,
-			  style: "error",
-			  position  : "bottom-right"
-			});
-		},
-		finalize: (_id_)=>{
-			pencil.database.push({
-				data: {
-					info: {},
-					_id_: _id_,
-					eliminate: "<?= md5("eliminate_category") ?>",
-					"setNewCategory": true
-				},
-				ready: function( response ){
-					if(response === "all-is-fine"){
-						toast("Succesfully Completed.", "success");
-						reload();					
-					}else{
-						toast("there's a critical error. 995.", "error");
-					}
-				}
-			})
+<!-- COPYRIGHT 2019 http://3pod.us -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Adplorer all signatures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<style>
+		body, html{
+			font-family: Calibri, Arial, sans-serif;
+			padding: 0;
+			margin:0;
 		}
-		
-	},
-	onsent: function( formHTML, _id_ ){
-		if(_id_ === "false"){
-			_id_ = false;
+		#container-cards{
+			max-width: 100vw;
 		}
-		var button = formHTML.querySelector(".button-edit-create");
-		button.setAttribute("disabled", "");
+		.button{
+			padding: 6px 18px;
+			border-radius: 25px;
+			text-decoration: none;
+			font-weight: 400;
+			font-size:16px;
+		}
+		.is-primary{
+			background-color: #ff4500;
+			color: #fff;
+		}
+		.is-blue{
+			background-color: #5d99e2;
+			color: #fff;
+		}
+		.is-secundary{
+			background-color: #728099;
+			color: #fff;
+		}
+		/*{outline: 1px solid #333;}*/
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/3pod-us/3pod-us.github.io@master/microcss.css">
+</head>
+<body>
+<template id="template" style="display: none;color:#434956">
+<table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
+	<tr>
+		<td align="center" style="width:96px;height:96px;min-width: 96px;">
+			<div height="96" style="width: 100%;height: 96px;background-image: url('{{ photo }}');{{ backgroundProperties }}"></div>
+		</td>
+		<td style="min-width: 214px;padding-left: 10px;">
+			<table style="font-family: Calibri, sans-serif;width: 100%;">
+				<tr>
+					<td style="color:#ff4500;font-weight: lighter;">
+						<span style="font-size:1.25rem;font-weight: 400">{{ name }}</span><br>
+						<span style="font-size:90%;">{{ whois }}</span>
+						<hr style="background:#ff4500;border:0.06rem solid #ff4500;width: 45px;max-width:45px;min-width:45px;margin: 4px 0 0px 0" />
+					</td>
+				</tr>
+				<tr>
+					<table style="color:#434956;font-size: 12px;font-weight: 200">
+						<tr>
+							<td >
+								<table style="display: inline-block;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td cellpadding="0" cellspacing="0" height="10" width="16" style="width:16px;height:10px;background-image: url('https://i.ibb.co/TRW9xjj/email.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
+								<a style="text-decoration: none;color: #434956" href="mailto:{{ email }}">
+									<span style="position:relative;bottom:1px;{{ font-small }}">{{ email }}</span>
+								</a>									
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{{ phone }}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table style="display: inline-block;padding:0 3px 0 2px;" cellpadding="0" cellspacing="0" >
+									<tr>
+										<tbody cellpadding="0" cellspacing="0">
+											<td width="14" height="14" cellpadding="0" cellspacing="0" style="width:14px;height:14px;background-image: url('https://i.postimg.cc/3RvpNDgF/website.jpg');{{ backgroundProperties }}"></td>
+										</tbody>
+									</tr>
+								</table>
+								<span style="position:relative;bottom:4px;{{ font-small }}">
+									<a style="color:#434956;text-decoration: none;" href="http://adplorer.com">www.adplorer.com</a>
+								</span>
+							</td>
+						</tr>								
+					</table>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</template>
 
-		var formData = {
-			category: formHTML.querySelector(".name-category").value,
-			position: formHTML.querySelector(".position-category").value,
-			subcategories: [], // will be filled below
-		};
+<!-- FOOTER 0 -->
+<template id="footer-0">
+	<table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
+	<tr>
+		<td colspan="2">
+			<hr style="background:#ff4500;border:0.06rem solid #ff4500;width: 100%;min-width: 320px;max-width: 320px;margin: 6px 0" />
+		</td>
+	</tr>
+	</table>
+	<table cellspacing="0" cellpadding="0"  style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-spacing: 0">
+		<tr>
+			<td>
+				<a style="color:#434956;text-decoration: none;" href="http://adplorer.com">
+					<table style="display: inline-block;" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" style="width:120px;height:60px;background-image: url('https://i.ibb.co/6rJLCSn/03-120.gif');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+			</td>
+			<td>
+				<a style="text-decoration: inherit;" href="https://www.facebook.com/adfinitely">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/R0zxSFJr/fb-new.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/8CBQjSL7/instagram.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/adfinitely/">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/C1m3ssPY/linkedin.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/qqq9b6SK/twitter.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+			</td>
+		</tr>
+	</table>
+</template>
+<!-- FOOTER 0 END-->
+<!-- FOOTER 1 -->
+<template id="footer-1">
+	<table style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;">
+	<tr>
+		<td colspan="2">
+			<hr style="background:#ff4500;border:0.06rem solid #ff4500;width: 100%;min-width: 320px;max-width: 320px;margin: 6px 0" />
+		</td>
+	</tr>
+	</table>
+	<table cellspacing="0" cellpadding="0"  style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-spacing: 0">
+		<tr>
+			<td>
+				<a style="color:#434956;text-decoration: none;" href="http://adplorer.com">
+					<table style="display: inline-block;" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" style="width:120px;height:60px;background-image: url('https://i.ibb.co/QNJQNQv/logo-adplorer.png');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+			</td>
+			<td>
+				<a style="text-decoration: inherit;" href="https://www.facebook.com/adfinitely">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/R0zxSFJr/fb-new.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/8CBQjSL7/instagram.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/adfinitely/">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/C1m3ssPY/linkedin.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/qqq9b6SK/twitter.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+			</td>
+		</tr>
+	</table>
+</template>
+<!-- FOOTER 1 END-->
 
-		var target = formHTML.querySelector(".subcategories");
-		var els = [...target.querySelectorAll(".sub-category-containers")];
-		
-		els.forEach(function( el ){				
-			var inputs = [...el.querySelectorAll("input")];
-			var subcategory = {
-				name: inputs[0].value,
-				img: inputs[1].value,
-				styles: []
-			}
 
-			var containerStyles = el.querySelector(".global-container-styles");
-			containerStyles = [...el.querySelectorAll(".styles-subcategory-containers")];
-			// Custom Idea (11.25"x11.25") Goods
-			containerStyles.forEach(function( style ){
-				var inputs = [...style.querySelectorAll("input")];
-				var settingStyle = {
-					name: inputs[0].value,
-					img: inputs[1].value
-				}
-				subcategory.styles.push( settingStyle );
-			});
-			formData.subcategories.push( subcategory );
-		});
-		pencil.database.push({
-			data: {
-				info: formData,
-				_id_: _id_,
-				"setNewCategory": true
+<!-- FOOTER 2 -->
+<template id="footer-2">
+	<table cellspacing="0" cellpadding="0"  style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-spacing: 0;min-width: 320px;padding:0px 0 10px 110px">
+		<tr>
+
+			<td>
+				<a style="text-decoration: inherit;" href="https://www.facebook.com/adfinitely">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/R0zxSFJr/fb-new.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://www.instagram.com/adfinitelymarketing/">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/8CBQjSL7/instagram.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://www.linkedin.com/company/adfinitely/">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/C1m3ssPY/linkedin.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+				<a style="text-decoration: inherit;" href="https://twitter.com/adfinitely">
+					<table style="display: inline-block;padding:0 8px" cellpadding="0" cellspacing="0" >
+						<tr>
+							<tbody cellpadding="0" cellspacing="0">
+								<td cellpadding="0" cellspacing="0" width="15" height="15" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/qqq9b6SK/twitter.jpg');{{ backgroundProperties }}"></td>
+							</tbody>
+						</tr>
+					</table>
+				</a>
+			</td>
+		</tr>
+	</table>
+</template>
+<!-- FOOTER 2 END-->
+	<main id="main" class="grid article-full">
+		<section class="col_12" id="container-cards"></section>
+	</main>
+	<script>
+		var html_layout = function(content){
+			return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+					<html>
+					<head>
+						<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+						<title>Email Signature</title>
+						<style>
+							a{text-decoration:none;}
+						</style>
+					</head>
+					<body>
+						${content}
+					</body>
+					</html>`
+		}
+		var createPhone = function(data){
+			if(data === false){return "";}
+			return `
+			<table style="display: inline-block;padding:0 2px 0 2px;" cellpadding="0" cellspacing="0" >
+				<tr>
+					<tbody cellpadding="0" cellspacing="0">
+						<td cellpadding="0" cellspacing="0" style="width:15px;height:15px;background-image: url('https://i.postimg.cc/SK5CmGzK/phone.jpg');${company.backgroundProperties}"></td>
+					</tbody>
+				</tr>
+			</table>
+			<span style="position:relative;bottom:3px;${company["font-small"]}">${data}</span>`
+		}
+		var buttonCall = function(data){
+			if(data === false){return "";}
+			return `
+			<table cellspacing="0" cellpadding="0"  style="width: 100%;max-width: 320px;font-family: Calibri, Arial, sans-serif;font-weight: lighter;border-spacing: 0">
+			<tr>
+				<td>
+					<div style="text-align: center;">
+						<a href="${data}" style="color: #fff;
+							text-decoration: none;
+							font-size: 16px;
+							padding: 3px 16px;
+							background-color: #ff4500;
+							border-radius: 5px;
+							cursor: pointer;
+						">
+							Schedule a calendar appointment
+						</a>
+					</div>
+				</td>
+			</tr>
+			</table>`;
+		}
+		var company = {
+			backgroundProperties: "background-size:contain;background-position:center;",
+			"font-small": "font-family: Calibri, Arial, sans-serif;font-weight: lighter;font-size:12px;",
+		}
+		var persons = [
+			{
+				name: "Dr. Constantin Lange",
+				whois: "CEO",
+				phone: createPhone("0049 170 456 1937"),
+				email: "constantin.lange@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/c4GDBCHZ/Constantin-Lange.png"
 			},
-			ready: function( response ){
-				if(response === "all-is-fine"){
-					toast("Succesfully Completed.", "success");
-					reload();						
-				}else{
-					toast("there's a critical error. 995.", "error");
+			{
+				name: "Deidre Brown",
+				whois: "Administrative/Billing",
+				phone: createPhone("470-481-3999"),
+				email: "deidre.brown@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/13JJSKK5/Deidre-Brown.png"
+			},
+			{
+				name: "Jack Owen",
+				whois: "Marketing Support Coordinator",
+				phone: createPhone(false),
+				email: "jack.owen@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/2Sx5Hmdy/avat-orange.png"
+			},
+			{
+				name: "Parker Bedore",
+				whois: "Marketing Support Coordinator",
+				phone: createPhone(false),
+				email: "parker.bedore@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/9QFYL7j3/Parker-Bedore.png"
+			},
+			{
+				name: "Katie Stackable",
+				whois: "SEO Specialist",
+				phone: createPhone(false),
+				email: "katie.stackable@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/yd9mDh0R/Katie-Stackable.png"
+			},
+			{
+				name: "Djénéba Cissé",
+				whois: "Search Engine Marketing Specialist",
+				phone: createPhone("470-446-7880"),
+				email: "djeneba.cisse@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/8CxdkXfD/Djeneba-Cisse.png"
+			},
+			{
+				name: "Diann Cattani",
+				whois: "VP, Business Growth",
+				phone: createPhone("678-523-6487"),
+				email: "diann.cattani@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/wMYDdtyk/Diann-Cattani.png"
+			},
+			{
+				name: "Julia Toole",
+				whois: "Customer Success Manager",
+				phone: createPhone("470-591-5563"),
+				email: "julia.toole@adplorer.com",
+				button: buttonCall("http://calendly.com/juliatoole"),
+				photo: "https://i.postimg.cc/KjDtNZqv/Julia-Toole.png"
+			},
+			{
+				name: "Ryan Stackable",
+				whois: "Business Development Manager",
+				phone: createPhone("678-733-9636"),
+				email: "ryan.stackable@adplorer.com",
+				button: buttonCall("https://calendly.com/ryanadfinitely/45min"),
+				photo: "https://i.postimg.cc/7ZsMdZx5/Ryan-Stackable.png"
+			},
+			{
+				name: "Matthew Reitz",
+				whois: "Search Engine Marketing Manager",
+				phone: createPhone("678-842-4800"),
+				email: "matthew.reitz@adplorer.com",
+				button: buttonCall(false),
+				photo: "https://i.postimg.cc/RhBcK3TD/Matt-Reitz.png"
+			},
+			{
+				name: "Matt Rister",
+				whois: "Implementation Specialist",
+				phone: createPhone("770-676-9314"),
+				email: "matt.rister@adplorer.com",
+				button: buttonCall("https://calendly.com/mattadfinitely/callwithmatt_adfinitely"),
+				photo: "https://i.postimg.cc/XqfkzKJW/Matt-Rister.png"
+			},			
+		];		
+		var template = {
+			personCards: [],
+			tablesString: [],
+			container: document.getElementById("container-cards"),
+			elementTemplate: document.getElementById("template"),
+			download: function( selector, content ){
+				selector.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(content);
+			},
+			toHTML: function( strings ){
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = strings;
+				dom_elem = dom_elem.content.firstElementChild;		
+				return dom_elem;
+			},
+			render_template: function(replacemets, html){
+				var template = function(template, searchall, replaceby){
+					return template.split(searchall).join(replaceby);
 				}
-				button.removeAttribute("disabled");
-			}
-		})
-	},
-	numberForSub: 0,
-	numberForStyle: 0,
-	removeInputStyle: function(input){
-		// this will control that not every style of being removed.
-		// the app need at least one style for each sub-category.
-		// let's:
-		input = turpial.find(input);
-		var length = input.parentNode.childElementCount;
-		if(length === 1){
-			toast("You need at least one style for a sub-category", "warning");
-			return;
-		}
-		input.remove();
-	},
-	remove: function(el){	
-		// this will remove an entire element with a filter.
-		var html = `
-			Are you sure?
-			<a data-spop="close" class="button is-small is-dark" onclick="turpial.find('${el}').remove();toast('Removed!', 'success');">YES</a> 
-			<a data-spop="close" class="button is-small is-light">NO</a>			
-		`;
-		spop({
-		  template: html,
-		  style: "error",
-		  position  : "bottom-right"
-		});
-	},
-	confirmRemoveStyle: function(button){
-		pencil.confirm.action("Do you want to remove this Style?", {
-			onConfirm: function(){
-				category.removeInputStyle(button.parentNode.parentNode.parentNode)
-				toast("Succesfully removed!", "success");
-			}
-		});
-
-
-	},
-	inputStyle: function(number, props){
-		props = turpial.un(props, {});
-		return `
-		<div class="column is-4">
-			<div id="style-container--${number}" class=" styles-subcategory-containers box">
-				<a onclick="category.confirmRemoveStyle(this)" class="delete has-background-danger float-r" onclick="category.remove('sub-category-container--${this.numberForSub}')"></a><br />
-				<p class="control helper-textarea-for-inputs">
-					<textarea class="textAreaHelper is-hidden">${turpial.un(props.name, "")}</textarea>	
-					<input class="styles-subcategories input is-small is-static" id="styles-subcategory--${number}" type="text" placeholder="name" required/>
-				</p>
-				<img style="width:100%;" id="show--image-style-${this.numberForSub}" src="${turpial.un(props.img, "")}" alt=" " />
-				<input onchange="category.PreviewImage('show--image-style-${this.numberForSub}', this.value)" value="${turpial.un(props.img, "")}" class="styles-subcategories-photos input is-small is-static is-fullwidth" id="styles-subcategories-photo--${number}" type="url" placeholder="image url" required/>
-			</div>
-		</div>`;
-	},
-	inputSubCategory: function(sub_edit){
-		var app = this;
-		sub_edit = turpial.un(sub_edit, []);
-
-		// on edit existence styles of subs!
-		var styles = {
-			set: ()=>{
-				if(sub_edit.length === 0){
-					// si no se esta en ambito de edición
-					return category.inputStyle(this.numberForSub);
-				}
-				// si no: construir!
-
-				var subsStylesToEdit = "";
-				sub_edit.styles.forEach(( sub )=>{
-					subsStylesToEdit += app.inputStyle(app.numberForSub, {
-						name: sub.name,
-						img: sub.img
-					});
+				var structure = html;		
+				replacemets.forEach(function( replacement ){
+					var items = Object.keys(replacement);
+					var values = Object.values(replacement);
+					items.forEach(function( item, key ){						
+						item = `{{ ${item} }}`;
+						if(html.search(item) >= 0){
+							structure = template(structure, item, values[key]);
+						}						
+					})
+				})				
+				return structure;
+			},
+			joinMoreElements: function(target, elements){
+				Object.values(elements).forEach(function(element, key){					
+					target[Object.keys(elements)[key]] = element;
 				})
-				return subsStylesToEdit; // execute below!
-			}
+				return target;
+			},
+			toString: function( html ){
+				html = html.cloneNode(true);
+				var dom_elem = document.createElement("template");
+				dom_elem.innerHTML = "<div></div>";
+				dom_elem = dom_elem.content.firstElementChild;
+				dom_elem.appendChild(html);
+				return dom_elem.innerHTML;
+			},
 		}
+		var versions = [
+			{
+				footer: template.render_template([company], document.getElementById("footer-0").innerHTML),
+			},
+			{
+				footer: template.render_template([company], document.getElementById("footer-1").innerHTML),
+			},
+			{
+				footer: template.render_template([company], document.getElementById("footer-2").innerHTML),
+				styleContainer: "padding-bottom:54px;"
+			},
+		];
+		window.addEventListener("load", function(){			
+			var containerVersions = "";			
+			versions.forEach(function(ver, verseionKey){
+				var cards = "";
+				var point = persons.length * verseionKey;			
+				persons.forEach(function( person, key ){
+				// join more elements like corporative colors
+					person = template.joinMoreElements(person, company);
+					var customStyles = "";
+					var tableTarget = template.elementTemplate;
+					var content = template.render_template([persons[key]], tableTarget.innerHTML);
+					content += versions[verseionKey].footer;
+					content += persons[key].button;
+					if(typeof versions[verseionKey].styleContainer === "string"){
+						customStyles = versions[verseionKey].styleContainer;
+					}
 
-		return `<div id="sub-category-container--${this.numberForSub}" class="field is-grouped is-grouped-multiline sub-category-containers">
-				<hr class="col_12" />
-				<div class="col_12">
-					<h2 id="subcategory-title--${this.numberForSub}" class="subtitle bold is-size-3 has-text-info has-text-centered is-marginless">${turpial.un(sub_edit.name, "Sub Category Name")}</h2>
-				</div>
-				<div class="col_12"></div>
-				<div class="columns is-multiline col_12">
-					<div class="column is-4">
-						<div class="box">
-							<a class="delete has-background-danger float-r" onclick="category.remove('sub-category-container--${this.numberForSub}')"></a><br />
-							<p class="control helper-textarea-for-inputs">
-								<textarea class="is-hidden textAreaHelper">${turpial.un(sub_edit.name, "")}</textarea>				
-								<input onkeyup="turpial.insert('subcategory-title--${this.numberForSub}', this.value)" class="sub-categories input is-static" id="subcategory--${this.numberForSub}" type="text" placeholder="name" required/>
-							</p>
-							<img style="width:100%;" id="show--image-subcategory-${this.numberForSub}" src="${turpial.un(sub_edit.img, "")}" alt=" " />	
-							<strong>Image</strong>			
-							<input onchange="category.PreviewImage('show--image-subcategory-${this.numberForSub}', this.value)" value="${turpial.un(sub_edit.img, "")}" class="sub-categories input is-static is-fullwidth" id="subcategoryPhoto--${this.numberForSub}" type="url" placeholder="IMAGE URL" required/>
-							<a onclick="turpial.mount('subcategory-style--${this.numberForSub}', category.inputStyle(${this.numberForSub}) )" class="button is-fullwidth is-primary has-text-info is-rounded bold">
-								Add Style
-							</a>
-						</div>						
-					</div>
-					<div class="column is-8 global-container-styles" id="subcategory-style--${this.numberForSub}">
-						<div class="columns is-multiline">
-							${styles.set()}
-							<span data-sum="${this.numberForSub++}"></span>
-						</div>
-					</div>
-				</div>				
-			</div>
-		`
-	},
-	creator: function( data ){
-		var app = this;
-		data.insert = turpial.un(data.insert, "default");
-		/* CREATE MODALS TO EDIT */
-		if(turpial.un(data.modal_edit, false) === true){
-			var subs = "";
-			var inputsSubsToEdit = "";
-			data.subs.forEach(( sub )=>{
-				inputsSubsToEdit += app.inputSubCategory(sub)
-			})
-		}
-		var html = modaltmpl({
-			id: data.id,
-			closeOnClickOverlay: false,
-			title: data.title,
-			content: `
-				<div class="col_12" id="category-creator-${data.id}">
-					<button onclick="tableList.back();" class="button is-primary has-text-info is-rounded bold">
-						Back to category list
-					</button>
-					<br /><br />
-					<form onsubmit="event.preventDefault();category.onsent(this, '${turpial.un(data._id_, false)}');" method="POST" action="">
-						<div class="field">
-							<div>
-								<label class="label">Category Name</label>
-								<div class="field has-addons">
-									<div class="control is-expanded">
-										<input value="${turpial.un(data.name, "")}" class="input is-fullwidth is-hovered name-category" placeholder="Category Name" type="text" required/>
-									</div>
-									<div class="control is-expanded">
-										<input value="${turpial.un(data.position, "")}" class="input is-hovered position-category" min="1" max="150" placeholder="Dropdown Position" type="number" required/>
-									</div>
-								</div>
-								
-															
-								<div class="field subcategories" id="subcategories-${data.id}">
-									${turpial.un(inputsSubsToEdit, "")}
-								</div>
-								<hr />
-								<a onclick="turpial.mount('subcategories-${data.id}', category.inputSubCategory());" class="button bold is-rounded is-primary has-text-info">
-										ADD NEW SUB CATEGORY
-								</a>
-								<hr />
-								
-								<div class="columns is-multiline" id="container--styles-">
-									<div class="column offset-3 offset-3-r is-6">
-										<button style="margin-top:20px;" class="button is-info is-rounded bold has-text-primary is-fullwidth button-edit-create">
-											SUBMIT
-										</button>
-									</div>
-								</div>
+					template.personCards.push(content); // STORE!!
+					var donwloadData = `html_layout(template.personCards[${point++}])`;
+					var html = `
+					<div class="col_12" style="${customStyles}">
+						<div class="col_12">
+							<div class="col_12">
+								${content}
+							</div>					
+							<div class="col_12" style="max-width:320px;">
+								Download:<br><br>
+								<a href="#" style="max-width:320px;" class="button is-primary is-rounded is-small is-outlined" download="${person.name}.txt" onclick="template.download(this, ${donwloadData} )">.txt</a>
+								<a href="#" class="button is-secundary is-rounded is-small is-outlined" download="${person.name}.html" onclick="template.download(this, ${donwloadData} )">.html</a>
 							</div>
 						</div>
-					</form>
-				</div>
-			`
-		})
-		if(data.insert === "default"){
-			turpial.insert(data.target, html);
-			return;
-		}
-		return html;
-	}
-}
-var defaultCreator = function(){
-	category.creator({
-		target: "container-modal-creator-category", 
-		id: "modal-creator-category",
-		title: "Create a new category->subcategory->style"		
-	});
-}
-defaultCreator();
-</script>
+					</div><hr style="max-width:350px;width:100%;margin:auto 0;border:1px dashed #bfbfbf" />`;
 
-
-
-<script>
-/*
- * 
- * 
- * This is for edit the categories
- * it will use the code above.
- * 
- * 
-*/
-
-tableList = {
-	show: function(target){
-		target = turpial.find( target );
-		target = target.querySelector(".modal__content div");
-		var container = turpial.find("container-onShow");
-		var listElements = turpial.find("table-list");		
-		container.innerHTML = target.outerHTML;
-		listElements.style.display = "none";
-		container.style.display = "block";
-	},
-	back: function(){
-		var container = turpial.find("container-onShow");
-		var listElements = turpial.find("table-list");
-		listElements.style.display = "table";
-		container.style.display = "none";
-		container.innerHTML = "";
-	},
-	template: function(category, number){
-		category.subcategories = pencil.json.parse(category.subcategories)
-		var length = category.subcategories.length;
-		return `
-		<tr>
-	      <td data-label="Category Name"><strong>${category.position})</strong> ${category.name_category}</td>
-	      <td data-label="Sub-Categories N°">${length}</td>
-	      <td data-label="Actions">
-			<div class="columns is-multiline is-mobile">
-				<div class="column">
-					<a onclick="tableList.show('${"modal-row-category-"+number}')" class="button is-small is-info is-rounded has-text-primary bold">
-						EDIT
-					</a>
-				</div>
-				<div class="column">
-					<a onclick="category.removeFromDB.init('${category.__id__}')" class="button is-small is-danger bold is-rounded">
-						REMOVE
-					</a>
-				</div>
-			</div>
-	      </td>
-	    </tr>
-	`
-	},
-	push: function(){
-		var app = this;
-		var html = "";
-		var modals = "";
-		listCategories.forEach(function( row, number ){
-			html  += app.template( row, number );
-			modals += category.creator({
-				id: "modal-row-category-"+number,
-				insert: false,
-				_id_: row.__id__,
-				name: row.name_category,
-				position: turpial.un(row.position, '0'),
-				subs: row.subcategories,
-				modal_edit: true
-			});
-		})
-		turpial.insert("rows-of-categories", html);
-		turpial.insert("modals-table-categories-created", modals)
-	}
-	}
-tableList.push();
-</script>
-<script>
-// helper for inputs
-// with errors on "" or '' signs.
-var containers = document.querySelectorAll(".helper-textarea-for-inputs");
-[...containers].forEach(function(cont){
-	var textarea = turpial.map(cont, [0]);
-	var input = turpial.map(cont, [1]);
-	input.setAttribute("value", textarea.value)
-})
-</script>
+					cards += html;
+				});
+				containerVersions += `
+				<div id="container-version-${verseionKey}" class="col_4">
+				<div class="col_12"><h3 style="text-align:center;color:#ff4500;">VERSION ${verseionKey+1}</h3></div>
+				${cards}
+				</div>`;
+			})
+			template.container.innerHTML = containerVersions;
+		});		
+	</script>
+</body>
+</html>
