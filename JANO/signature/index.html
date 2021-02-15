@@ -6,8 +6,8 @@
 	<meta name="robots" content="noindex, nofollow">
 	<meta property='og:locale' content='en_US' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/3pod-us/3pod-us.github.io@master/JANO/signature/application.min.css">
-	<script src="https://cdn.jsdelivr.net/gh/Yerikmiller/turpialjs@master/turpial.es5.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="application.min.css">
+	<script src="turpial.es5.min.js"></script>	
 	<script>
 		var turpial = new Turpial({
 		  core_path: null,  
@@ -16,6 +16,7 @@
 		var loadCSS = function(url){ turpial.linkCSS( { files: [url] } ); }
 		var includeCSS = function(url){ turpial.includeCSS( { files: [url] } ); }
 
+		includeCSS("materialize.css");
 		loadCSS("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 		loadCSS("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 	</script>		
@@ -28,7 +29,7 @@
 	<style>
 #preloader{text-align:center}body{font-family:Roboto,Calibri,sans-serif}.is-pointer{cursor:pointer}.is-pointerless{cursor:inherit}.is-flex-centered{align-items:center}.rounded-message{border-radius:20px;box-shadow:2px 6px 10px rgba(0,0,0,0.145)!important;transition:all .3s ease}.rounded-message .message-header{border-radius:20px 20px 0 0}.rounded-message .message-body{border-radius:0 0 20px 20px}.lighter{font-weight:200!important}.bold{font-weight:500!important}.bolder{font-weight:700!important}.light{font-weight:300!important}.normal{font-weight:400!important}.offset-0{margin-left:0}.offset-1{margin-left:8.333333333333332%!important}.offset-2{margin-left:16.666666666666664%!important}.offset-3{margin-left:25%}.offset-4{margin-left:33.33333333333333%}.offset-5{margin-left:41.66666666666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.333333333333336%}.offset-8{margin-left:66.66666666666666%}.offset-9{margin-left:75%}.offset-10{margin-left:83.33333333333334%}.offset-11{margin-left:91.66666666666666%}.offset-0-r{margin-right:0}.offset-1-r{margin-right:8.333333333333332%!important}.offset-2-r{margin-right:16.666666666666664%!important}.offset-3-r{margin-right:25%}.offset-4-r{margin-right:33.33333333333333%}.offset-5-r{margin-right:41.66666666666667%}.offset-6-r{margin-right:50%}.offset-7-r{margin-right:58.333333333333336%}.offset-8-r{margin-right:66.66666666666666%}.offset-9-r{margin-right:75%}.offset-10-r{margin-right:83.33333333333334%}.offset-11-r{margin-right:91.66666666666666%}@media only screen and (max-width:900px){*[class*="offset-"]{margin:auto 0.83333333333333%!important}}.input-field input[type=text]:focus + label,.input-field input[type=password]:focus + label{color:var(--color-primary)!important;font-weight:bolder}.input-field input[type=text]:focus,.input-field input[type=password]:focus{border-bottom:1px solid var(--color-primary)!important;box-shadow:0 1px 0 0 var(--color-primary)!important}
 
-	
+	/*table *{border:1px solid #333;}*/
 	</style>
 	</head>
 	<body>
@@ -36,7 +37,7 @@
 		 <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 540px;max-width: 540px;min-width: 540px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;">
 	        <tbody>
 	            <tr border="0" style="border:0 !important">
-	                <td style="padding-bottom: 0">
+	                <td>
 	                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;">
 	                        <tbody>
 	                            <tr border="0" style="border:0 !important">
@@ -45,63 +46,64 @@
 	                                        <img src="https://i.ibb.co/Q6H6DGc/S-Jano-logo-png.png" width="120" height="" style="display: inline-block;text-align: center;">
 	                                    </a>
 	                                </td>
-	                                <td width="2" align="left" style="padding-left: 5px;padding-right: 5px;">
+	                                <td width="2" align="left" style="padding-left: 20px;padding-right: 20px;">
 	                                    <img src="https://i.ibb.co/P4Mtt8j/br.png" width="2" height="90" style="display: block;">
 	                                </td>
-	                                <td align="left" valign="" style="padding-bottom:0;">
+	                                <td align="left" valign="" style="">
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 2px;margin-top: 0;font-size: 18px;line-height: 18px;font-family:Calibri,Arial,sans-serif;color: #3a3a63;">
-	                                        <span style="font-weight: bold;color:#3a3a63;"  id="signature-name" data-empty="{{ name }}">
+	                                        <strong id="signature-name" data-empty="{{ name }}">
 	                                        	<!-- ex: Diego Sabogal -->
 	                                        	{{ name }}
-	                                        </span>
+	                                        </strong>
 	                                    </p>
-	                                    <p style="margin-left: 0;margin:0 0 4px 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #aec90b;" id="signature-position" data-empty="{{ position }}">
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 15px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #aec90b;" id="signature-position" data-empty="{{ position }}">
 	                                        <!-- ex: Departamento de Marketing -->
 	                                        {{ position }}
 	                                    </p>
-	                                    <hr style="background-color: #13007c;border-color: #13007c;margin:0 0 10px 0;height: 3px" height="3" />
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
-	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/LrhRHJg/phone.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/vd3Y0jY/phone-call.png" border="0" width="12" height="12"></span>&nbsp;
 	                                        <a href="tel:{{ phone }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-phone" data-empty="{{ phone }}">
 	                                        	<!-- ex: +5786712413 -->
 	                                            {{ phone }}
 	                                        </a>
 	                                    </p>
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
-	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/ZM01p4f/email.png" border="0" width="12" height="11"></span>&nbsp;
+	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/jgh2Htg/email.png" border="0" width="12" height="11"></span>&nbsp;
 	                                        <a href="mailto:{{ email }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-email" data-empty="{{ email }}">
 	                                        	<!-- ex:  marketing@seguridadjano.com -->
 	                                           {{ email }}
 	                                        </a>
 	                                    </p>
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
-	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/mbQNkjD/globe.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/LQhY0Ng/worldwide.png" border="0" width="12" height="12"></span>&nbsp;
 	                                        <a id="signature-webpage" href="https://www.seguridadjano.com" style="text-decoration: none;outline: 0;color: #000;">
 	                                        	<!-- ex:  www.seguridadjano.com -->
 	                                        	www.seguridadjano.com
 	                                        </a>
 	                                    </p>
-	                                    <p style="margin-top: 9px">
-	                                    	<img id="signature-address" src="{{ address }}" width="365" style="width: 365px">
-	                                    </p>
 	                                </td>
-	                                <td align="right" valign="bottom" style="line-height: 0;font-size: 0; text-align: right;width:42px;">
-	                                    <p>
-	                                    	<a href="https://www.facebook.com/seguridadJANO/" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="https://i.ibb.co/rfwkVfV/facebook.png">
-	                                    	</a>
-	                                    	<br>
-	                                    	<a href="https://www.instagram.com/seguridadjano/" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="https://i.ibb.co/9gjPh61/instagram.png">
-	                                    	</a>
-	                                    	<br>
-	                                    	<a href="https://www.facebook.com/seguridadJANO/" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="https://i.ibb.co/vH6V1X1/twitter.png">
-	                                    	</a>
-	                                    	<br>
-	                                    	<a href="https://www.youtube.com/channel/UCNrJI5NjDoJdGzehWHF6S-w" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="https://i.ibb.co/MpB4pRQ/youtube.png">
-	                                    	</a>
+	                                <td align="right" valign="bottom" style="line-height: 0;font-size: 0; text-align: right;">
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 15px;margin-top: 0;font-size: 0px;">
+	                                        <a href="https://sibasc.wbasco.org/mod_consulta_pag_wbo/consulta_empresa.php?empresa_id=1534&capitulo_id=2&session_nomidioma=" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/MRjLKFf/cert1-1.png" border="0" width="35" height="">
+	                                        </a><span style="font-size: 13px;">&nbsp;&nbsp;</span>
+	                                        <a href="https://sibasc.wbasco.org/mod_consulta_pag_wbo/consulta_empresas_certificadas.php" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/vXrxJyR/veritas2-1.png" border="0" width="70" height="">
+	                                        </a>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 0px;">
+	                                        <a href="https://www.facebook.com/seguridadJANO/" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/GtSvP5J/facebook-logo-button.png" border="0" width="22" height="22">
+	                                        </a><span style="font-size: 13px;">&nbsp;</span>
+	                                        <a href="#" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/0t3FVvG/instagram-2.png" border="0" width="22" height="22">
+	                                        </a><span style="font-size: 13px;">&nbsp;</span>
+	                                        <a href="https://www.facebook.com/seguridadJANO/" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/D8PrQxy/twitter-4.png" border="0" width="22" height="22">
+	                                        </a><span style="font-size: 13px;">&nbsp;</span>
+	                                        <a href="#" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/hyrbRvz/youtube-1.png" border="0" width="22" height="22">
+	                                        </a>
 	                                    </p>
 	                                </td>
 	                            </tr>
@@ -109,30 +111,17 @@
 	                    </table>	                    
 	                </td>
 	            </tr>
+	            <tr border="0" style="border:0 !important">
+	                <td style="padding-top: 6px">
+	                    <img src="https://i.ibb.co/sjRkv2r/br.png" width="540">
+	                </td>
+	            </tr>
 	        </tbody>
 	    </table>
 	    <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 540px;min-width: 320px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;border:0;word-break: break-word;">
         	<tr border="0" style="border:0 !important">
-        		<td width="129" style="width: 129">
-        			<p style="font-size:9px;font-weight: bold;color:#13007c;">
-        				Certificaciones:
-        			</p>
-        		</td>
-        		<td valign="middle" style="vertical-align: middle;padding-top: 0">
-        			<img style="max-height: 88px;" src="https://i.ibb.co/jzTZfJB/bureau.png">
-        		</td>
-        		<td valign="middle" style="vertical-align: middle;padding-top: 0">
-        			<img style="max-height: 88px;" src="https://i.ibb.co/tpV83Dn/basc.png">
-        		</td>
-        	</tr>
-        </table>
-	    <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 540px;min-width: 320px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;border:0;word-break: break-word;">
-        	<tr border="0" style="border:0 !important">
-        		<td id="signature-container-footer-img" width="64" valign="middle" style="vertical-align: middle;">
-        			<img data-remove="signature-container-footer-img" width="64" style="width: 64px;display: none;" id="signature-footer-img" src="{{ footer-img }}">
-        		</td>
-        		<td valign="middle" style="font-size: 12px; line-height: 12px; font-family: Calibri,Arial,sans-serif; color: rgb(55, 45, 133);padding-top: 8px;vertical-align: middle;">        			
-        			<strong data-empty="{{ footer }}" id="signature-footer" style="color: rgb(55, 45, 133)">
+        		<td style="font-size: 12px; line-height: 12px; font-family: Calibri,Arial,sans-serif; color: rgb(58,58,99);padding-top: 8px;">
+        			<strong data-empty="{{ footer }}" id="signature-footer" style="color: rgb(58,58,99);">
         				{{ footer }}
         			</strong>
         		</td>
@@ -157,7 +146,7 @@
 						<h1 class="title is-size-4">
 			    			<span class="has-text-primary">SEGURIDAD JANO</span>
 			    			<br>
-			    			<span class="lighter">Aplicación de Firmas Digitales.</span>
+			    			<span class="lighter">Digital Signatures Application.</span>
 			    		</h1>
 					</div>					
 				</div>
@@ -169,49 +158,31 @@
 					<div class="column is-4">
 						<div class="box" style="height: 100%">
 							<h2 class="bolder">
-								Crear una firma
-								<span class="has-text-info" data-tooltip="Complete el formulario y descargue su firma digital para correo electrónico.">
+								Create a Single Signature
+								<span class="has-text-info" data-tooltip="Complete the form and download your signature.">
 									<i class="fas fa-info-circle"></i>
 								</span>
 							</h2>
-							<form onkeyup="coreApp.editOnWrite(this)" onchange="coreApp.editOnWrite(this)" id="form-main-card" method="POST" onsubmit="event.preventDefault();coreApp.singleDownload()" action="">
+							<form onkeyup="coreApp.editOnWrite(this)" id="form-main-card" method="POST" onsubmit="event.preventDefault();coreApp.singleDownload()" action="">
 								<div class="input-field">
 									<input class="formElements" autocomplete="off" id="signature-name-user" type="text" name="name" required="">
-									<label for="signature-name-user">Nombre</label>
+									<label for="signature-name-user">Your Name</label>
 								</div>
 								<div class="input-field">
 									<input class="formElements" autocomplete="off" id="signature-position-user" type="text" name="position" required="">
-									<label for="signature-position-user">Cargo</label>
+									<label for="signature-position-user">Your Position</label>
 								</div>
 								<div class="input-field">
 									<input class="formElements" autocomplete="off" id="signature-phone-user" type="text" name="phone" value="(8) 6712413 – 6688503" required="">
-									<label for="signature-phone-user">Teléfono</label>
+									<label for="signature-phone-user">Your Phone</label>
 								</div>
 								<div class="input-field">
 									<input class="formElements" autocomplete="off" id="signature-email-user" type="email" name="email" required="">
-									<label for="signature-email-user">E-mail</label>
-								</div>
-								<label>Dirección</label>
-								<div class="input-field">									
-									<select class="browser-default formElements" name="address">
-									  <option data-name="villavicencio" data-value="Carrera 40A N° 16-05 Barrio Villa María - Villavicencio, Meta." value="https://i.ibb.co/55nWDtJ/villaviciencio.png" selected>Oficina Villavicencio</option>
-									  <option data-name="bogota" data-value="Calle 45 # 54-30 Barrio La Esmeralda - Bogotá D,C." value="https://i.ibb.co/MsSwFRc/bogota.png">Oficina Bogotá</option>
-									  <option data-name="cali" data-value="Carrera 90 # 34-40 Barrio Caney - Cali." value="https://i.ibb.co/cwV5qgb/cali.png">Oficina Cali</option>
-									</select>									
-								</div>
-								<div class="input-field">
-									<br>
-									<p class="bolder has-text-centered has-text-primary" style="border-bottom: 1px solid var(--color-primary);">
-										OPCIONAL
-									</p>
+									<label for="signature-email-user">Your E-mail</label>
 								</div>
 								<div class="input-field">
 									 <textarea id="signature-footer-user" name="footer" class="materialize-textarea formElements" autocomplete="off"></textarea>
-									 <label for="signature-footer-user">Texto - Footer</label>
-								</div>
-								<div class="input-field">
-									 <input class="formElements" autocomplete="off" id="signature-footer-img-user" type="url" name="footer-img" >
-									 <label for="signature-footer-img-user">Imagen (URL) - Footer</label>
+									 <label for="signature-footer-user">Footer</label>
 								</div>
 								<button class="button is-primary is-outlined is-rounded">
 									Download Signature
@@ -221,24 +192,303 @@
 					</div>
 					<div class="column is-8">
 						<div class="box" style="height: 100%">
-							<h2>Resultado de Firma Digital: </h2>
+							<h2>Template Result: </h2>
 							<div id="mainCard" style="overflow-x: auto;">
 								<!-- javascript push -->
 							</div>							
+						</div>
+					</div>
+					<div class="column is-12 is-hidden">
+						<div class="box">
+							<h2 class="has-text-centered is-size-4 has-text-primary bolder">
+								Upload an Excel File and create many signatures in seconds.
+								<br>
+								<span class="lighter">
+									Excel Structure Example:
+								</span>
+							</h2>
+
+							<div class="table-container">
+								<table class="is-stripped table">
+									<tr> 
+										<th>correo corporativo</th> 
+										<th>celular corporativo</th>
+										<th>1er apellido</th>
+										<th>2do apellido</th>
+										<th>1er nombre</th>
+										<th>2do nombre</th>
+										<th>cargo</th>
+									</tr>
+									<tr> 
+										<td>hello@seguridadjano.com</td>
+										<td>6688503</td>
+										<td>LASTNAME 1</td>
+										<td>LASTNAME 2</td>
+										<td>NAME 1</td>
+										<td>NAME 2</td>
+										<td>Directora</td>
+									</tr>
+								</table>
+							</div>
+							<section class="columns is-multiline">
+								<div class="column is-12">
+									<hr>
+								</div>
+								<div class="column is-6">
+									<h3 class="has-text-right is-size-5 has-text-primary lighter">
+											After select your Excel file, a ZIP file will be downloaded to your device, decompress and see all your HTML signatures files.
+											<br />
+									</h3>
+								</div>
+								<div class="column is-6" id="upload-container">
+									<span></span>
+								</div>
+							</section>
 						</div>
 					</div>						
 				</div>
 			</section>
 		</main>
 		<footer class="columns is-multiline">
-			<div class="column is-12" id="footer-page">
-				<p class="has-text-centered">
-					Created by <a target="_blank" href="https://3pod.us">3pod.us</a>
-				</p>
-			</div>
+			
 		</footer>
 	</body>
 </html>
 <script>
-var _0x3c6f=['true','signature-template','preloader','values','retrieve','hide','zaXRlKSBmb3IgM3BvZC51cw==','#signature-','data-array-input','layout','body','display','keys','M3BvZC11cy5naXRodWIuaW8=','<!DOCTYPE\x20HTML\x20PUBLIC\x20\x22-//W3C//DTD\x20HTML\x204.0\x20Transitional//EN\x22>\x0a\x09\x09\x09<html>\x0a\x09\x09\x09<head>\x0a\x09\x09\x09\x09<meta\x20content=\x22text/html;\x20charset=utf-8\x22\x20http-equiv=\x22Content-Type\x22>\x0a\x09\x09\x09\x09<title>Email\x20Signature</title>\x0a\x09\x09\x09\x09<style>\x0a\x09\x09\x09\x09\x09a{text-decoration:none;}\x0a\x09\x09\x09\x09</style>\x0a\x09\x09\x09</head>\x0a\x09\x09\x09<body>\x0a\x09\x09\x09\x09','https://i.ibb.co/55nWDtJ/villaviciencio.png','.html','pdGUgQXBwbGljYXRpb24g','name','value','element','add','style','form','join','cssText','FormSelect','host','getElementById','forms','is-sr-only','5IFlvcm1hbiBNYXJpY3V0byAoaHR0cHM6L','querySelector','is-active','tagName','cssRules','innerText','Mi\x20E-mail','Mi\x20Nombre','IMG','.formElements','Mi\x20Cargo','radio','#preloader-text','root-styles','split','warn','data:text/plain;charset=UTF-8,','#preloader','object','querySelectorAll','mainCard','MTI3LjAuMC4xOjgwODA=','application.jano.min.js','remove','WW91IE5lZWQgQ3JlZGVudGlhbHMhIENvbnRhY3Q6IHllcmlrbWlsbGVyQGdtYWlsLmNvbQ==','sheet','mount','checked','type','none','M3BvZC51cw==','y9tYXJpY3V0by53ZWJ','forEach','bWFyaWN1dG8ud2Vic2l0ZQ==','download','\x0a\x09\x09\x09</body>\x0a\x09\x09\x09</html>','getAttribute','checkbox','find','render','insert','src','cssRoot','{{\x20','U2ltcGxlIFdlYnN','location','#signature-name','init','renderTemplate','classList','push','innerHTML'];(function(_0x52cc86,_0x3c6f5a){var _0x1069be=function(_0x4edaad){while(--_0x4edaad){_0x52cc86['push'](_0x52cc86['shift']());}};_0x1069be(++_0x3c6f5a);}(_0x3c6f,0x165));var _0x1069=function(_0x52cc86,_0x3c6f5a){_0x52cc86=_0x52cc86-0x0;var _0x1069be=_0x3c6f[_0x52cc86];return _0x1069be;};var _0x289852=_0x1069,creator=[_0x289852('0x32'),_0x289852('0x4b'),'U2lnbmF0dXJlcyBDcmVhdGVkIEJ',_0x289852('0x6'),_0x289852('0x25'),_0x289852('0x40')],IS_ONLINE=![],HOST=window[_0x289852('0x33')][_0x289852('0x2')];function bodyInner(_0x4edaad){var _0x3ce0ee=_0x289852;document[_0x3ce0ee('0x44')][_0x3ce0ee('0x39')]=_0x4edaad;};var allowed_websites=[_0x289852('0x1b'),_0x289852('0x27'),_0x289852('0x24'),_0x289852('0x47')];turpial['fetch']({'files':[_0x289852('0x1c')],'ready':function(){var _0x47b0ae=_0x289852,_0x2c9b91=document[_0x47b0ae('0x19')]('select'),_0x2cef2f=M[_0x47b0ae('0x1')][_0x47b0ae('0x35')](_0x2c9b91);coreApp[_0x47b0ae('0x3c')][_0x47b0ae('0x3f')]();}});var decode=function(_0x353a92){return atob(_0x353a92);},encode=function(_0x72da76){return btoa(_0x72da76);},coreApp={'elementTemplate':turpial[_0x289852('0x2c')](_0x289852('0x3b'))['innerHTML'],'form':{'forms':[],'retrieve':function(_0x1317ec){var _0xcf60b4=_0x289852,_0x36fffa=this;_0x1317ec[_0xcf60b4('0x51')]=turpial[_0xcf60b4('0x2c')](_0x1317ec['form']);var _0x3b95ad=_0x1317ec['form']['id'];_0x36fffa[_0xcf60b4('0x4')][_0x3b95ad]={};var _0x1e8e2a=_0x1317ec[_0xcf60b4('0x51')][_0xcf60b4('0x19')](_0x1317ec['targets']);return[..._0x1e8e2a][_0xcf60b4('0x26')](function(_0x531b40){var _0x4118bf=_0xcf60b4;if(_0x4118bf('0x3a')===_0x531b40[_0x4118bf('0x2a')](_0x4118bf('0x42')))return _0x4118bf('0x18')!=typeof _0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40['name']]&&(_0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]]=[]),void _0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]][_0x4118bf('0x38')](_0x531b40['value']);if(_0x4118bf('0x11')===_0x531b40[_0x4118bf('0x22')]){if(!0x1===_0x531b40[_0x4118bf('0x21')])return;_0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]]=_0x531b40[_0x4118bf('0x4d')];}else{if(_0x4118bf('0x2b')===_0x531b40[_0x4118bf('0x22')]){if(!0x0===_0x531b40[_0x4118bf('0x21')]&&_0x4118bf('0x3a')===_0x531b40[_0x4118bf('0x2a')]('data-boolean'))return void(_0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]]=!0x0);if(void 0x0===_0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]]&&(_0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]]={}),!0x1===_0x531b40[_0x4118bf('0x21')]&&'true'===_0x531b40[_0x4118bf('0x2a')]('data-boolean'))return void(_0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]]=!0x1);if(!0x1===_0x531b40['checked'])return void delete _0x36fffa['forms'][_0x3b95ad][_0x531b40['name']][_0x531b40[_0x4118bf('0x4d')]];_0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]][_0x531b40[_0x4118bf('0x4d')]]=_0x531b40[_0x4118bf('0x4d')];}else _0x36fffa[_0x4118bf('0x4')][_0x3b95ad][_0x531b40[_0x4118bf('0x4c')]]=_0x531b40[_0x4118bf('0x4d')];}}),_0x36fffa['forms'][_0x3b95ad];}},'layout':function(_0x3c2262){var _0x15465=_0x289852;return _0x15465('0x48')+_0x3c2262+_0x15465('0x29');},'singleDownload':function(){var _0x5e80d0=_0x289852,_0x4ddcaf=turpial['find'](_0x5e80d0('0x1a')),_0x3cb74b=this[_0x5e80d0('0x43')](_0x4ddcaf[_0x5e80d0('0x39')]),_0x4d33b0=_0x4ddcaf['querySelector'](_0x5e80d0('0x34')),_0x30e4cc=_0x4d33b0[_0x5e80d0('0xb')]['split']('\x20')[_0x5e80d0('0x52')]('-'),_0xd1d0db=turpial[_0x5e80d0('0x20')](document[_0x5e80d0('0x44')],turpial['el']('a',{'href':_0x5e80d0('0x16')+encodeURIComponent(_0x3cb74b)}));_0xd1d0db[_0x5e80d0('0x28')]=_0x30e4cc+_0x5e80d0('0x4a'),_0xd1d0db['click'](),_0xd1d0db[_0x5e80d0('0x1d')]();},'preloader':{'element':document[_0x289852('0x7')](_0x289852('0x17')),'hide':function(){var _0x3b2097=_0x289852;this[_0x3b2097('0x4e')]['classList']['remove'](_0x3b2097('0x8'));},'show':function(_0x2777c0){var _0xd8dfff=_0x289852;_0x2777c0=_0x2777c0||'Fetching\x20Components',this[_0xd8dfff('0x4e')][_0xd8dfff('0x7')](_0xd8dfff('0x12'))[_0xd8dfff('0xb')]=_0x2777c0,this[_0xd8dfff('0x4e')][_0xd8dfff('0x37')][_0xd8dfff('0x4f')](_0xd8dfff('0x8'));}},'editOnWrite':function(_0x3a544c){var _0x2e1e4b=_0x289852,_0x531121=coreApp[_0x2e1e4b('0x51')][_0x2e1e4b('0x3e')]({'form':_0x3a544c,'targets':_0x2e1e4b('0xf')});Object[_0x2e1e4b('0x3d')](_0x531121)[_0x2e1e4b('0x26')](function(_0x33fe7b,_0x3b1704){var _0xe39f51=_0x2e1e4b,_0x19a1a8=Object[_0xe39f51('0x46')](_0x531121)[_0x3b1704],_0x38e4ec=turpial[_0xe39f51('0x2c')]('mainCard'),_0x53cd82=_0x38e4ec[_0xe39f51('0x7')](_0xe39f51('0x41')+_0x19a1a8),_0xff83c7=_0x53cd82['getAttribute']('data-remove');if(_0x53cd82[_0xe39f51('0x9')]===_0xe39f51('0xe')){try{_0x33fe7b=new URL(_0x33fe7b)['href'];}catch{_0xff83c7!==null&&(turpial['find'](_0xff83c7)[_0xe39f51('0x50')]['display']=_0xe39f51('0x23')),_0x53cd82[_0xe39f51('0x50')]['display']=_0xe39f51('0x23'),_0x33fe7b=![];}if(_0x33fe7b===![])return;_0x53cd82[_0xe39f51('0x2f')]=_0x33fe7b,_0x53cd82[_0xe39f51('0x50')][_0xe39f51('0x45')]='';_0xff83c7!==null&&(turpial[_0xe39f51('0x2c')](_0xff83c7)[_0xe39f51('0x50')][_0xe39f51('0x45')]='');return;}if(_0x33fe7b===''){_0x33fe7b=_0x53cd82['getAttribute']('data-empty');if(_0x33fe7b===null)return;}turpial[_0xe39f51('0x2e')](_0x53cd82,_0x33fe7b);});},'v':function(){var _0x4e9278=_0x289852,_0x8e5058=enc(HOST);if(_0x8e5058===allowed_websites[0x0]||_0x8e5058===allowed_websites[0x1]||_0x8e5058===allowed_websites[0x2]||_0x8e5058===allowed_websites[0x3]){}else bodyInner(dec(_0x4e9278('0x1e')));},'renderTemplate':function(_0x4f88eb,_0x264e78){this['v'](),_0x264e78=_0x264e78||this['elementTemplate'];var _0xfebc1b=function(_0x2b59a6,_0x14180d,_0x1eb338){var _0x43cc68=_0x1069;return _0x2b59a6['split'](_0x14180d)[_0x43cc68('0x52')](_0x1eb338);},_0x3d39df=_0x264e78;return _0x4f88eb['forEach'](function(_0x294c38){var _0x29b463=_0x1069,_0x16eea7=Object[_0x29b463('0x46')](_0x294c38),_0x5b3d89=Object[_0x29b463('0x3d')](_0x294c38);_0x16eea7[_0x29b463('0x26')](function(_0x45ee17,_0xd5cc03){var _0x4ab8ff=_0x29b463;_0x45ee17=_0x4ab8ff('0x31')+_0x45ee17+'\x20}}',_0x264e78['search'](_0x45ee17)>=0x0&&(_0x3d39df=_0xfebc1b(_0x3d39df,_0x45ee17,_0x5b3d89[_0xd5cc03]));});}),_0x3d39df;}},dec=function(_0x35a1d2){return decode(_0x35a1d2);},enc=function(_0x34ca9a){return encode(_0x34ca9a);},mainCard=coreApp[_0x289852('0x36')]([{'name':_0x289852('0xd'),'position':_0x289852('0x10'),'phone':'(8)\x206712413\x20–\x206688503','email':_0x289852('0xc'),'address':_0x289852('0x49'),'footer':'','footer-img':''}]);turpial[_0x289852('0x2e')](_0x289852('0x1a'),mainCard);var rootStyles={'rules':{},'cssRoot':document[_0x289852('0x3')](_0x289852('0x13'))['sheet'][_0x289852('0xa')][0x0],'cssText':'','render':function(){var _0x1fad99=_0x289852,_0x55ea5b=this;this[_0x1fad99('0x30')]=document[_0x1fad99('0x3')](_0x1fad99('0x13'))[_0x1fad99('0x1f')]['cssRules'][0x0],this['cssText']=this[_0x1fad99('0x30')][_0x1fad99('0x0')],[...this[_0x1fad99('0x30')][_0x1fad99('0x50')]][_0x1fad99('0x26')](function(_0xf7dbf2){var _0x52ec4f=_0x1fad99;_0x55ea5b['rules'][_0xf7dbf2]=_0x55ea5b[_0x52ec4f('0x0')]['split'](_0xf7dbf2+':\x20')[0x1][_0x52ec4f('0x14')](';')[0x0];});}};console[_0x289852('0x15')](dec(creator[0x0]+creator[0x1]+creator[0x2]+creator[0x3]+creator[0x4]+creator[0x5])),console['log'](dec(creator[0x0]+creator[0x1]+creator[0x2]+creator[0x3]+creator[0x4]+creator[0x5])),turpial[_0x289852('0x20')](turpial[_0x289852('0x2c')]('footer-page'),turpial['el']('p',{'class':_0x289852('0x5')},dec(creator[0x0]+creator[0x1]+creator[0x2]+creator[0x3]+creator[0x4]+creator[0x5]))),rootStyles[_0x289852('0x2d')]();
+	/********** GLOBALS *********/
+	var IS_ONLINE = false;
+	var HOST = window.location.host;
+	function bodyInner(s){ document.body.innerHTML = s };
+	var allowed_websites = [
+		"MTI3LjAuMC4xOjgwODA=",
+		"bWFyaWN1dG8ud2Vic2l0ZQ==",
+	];
+	turpial.fetch({
+		files: [
+			"application.jano.min.js",
+		],
+		ready: function(){
+			coreApp.preloader.hide();
+		},
+	});
+	var decode = function(s){ return atob(s) };
+	var encode = function(s){ return btoa(s) };
+	var coreApp = {
+		elementTemplate: turpial.find("signature-template").innerHTML,
+		form: {
+			forms: [],
+			retrieve: function(props){
+				var app=this;props.form=turpial.find(props.form);var formName=props.form.id;app.forms[formName]={};var elements=props.form.querySelectorAll(props.targets);[...elements].forEach(function(e){if("true"===e.getAttribute("data-array-input"))return"object"!=typeof app.forms[formName][e.name]&&(app.forms[formName][e.name]=[]),void app.forms[formName][e.name].push(e.value);if("radio"===e.type){if(!1===e.checked)return;app.forms[formName][e.name]=e.value}else if("checkbox"===e.type){if(!0===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!0);if(void 0===app.forms[formName][e.name]&&(app.forms[formName][e.name]={}),!1===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!1);if(!1===e.checked)return void delete app.forms[formName][e.name][e.value];app.forms[formName][e.name][e.value]=e.value}else app.forms[formName][e.name]=e.value});
+				return app.forms[formName];
+			}
+		},
+		layout: function(content){
+			return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+			<html>
+			<head>
+				<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+				<title>Email Signature</title>
+				<style>
+					a{text-decoration:none;}
+				</style>
+			</head>
+			<body>
+				${content}
+			</body>
+			</html>`
+		},
+		singleDownload: function(){
+			var containerCard = turpial.find("mainCard");
+			var content = this.layout( containerCard.innerHTML );
+			var name = containerCard.querySelector("#signature-name");
+			var id = name.innerText.split(" ").join("-");
+			var button = turpial.mount(document.body, turpial.el("a", {href: 
+				`data:text/plain;charset=UTF-8,${encodeURIComponent(content)}`
+			}))
+			button.download = id+".html";
+			button.click();
+			button.remove();
+		},
+		preloader: {
+			element: document.querySelector("#preloader"),
+			hide: function(){
+				this.element.classList.remove("is-active")
+			},
+			show: function(text){
+				text = text || "Fetching Components";
+				this.element.querySelector("#preloader-text").innerText = text
+				this.element.classList.add("is-active")
+			}
+		},
+		zipNode: {},
+		excelRows: [],
+		zipRows: function(){
+			var app = this;
+			var employeers = this.excelRows;
+			var employeersRestructured = [];
+			employeers.forEach(function( employeer, keyEmployeer ){
+				var rows = Object.values(employeer);
+				var keyRows = Object.keys(employeer);
+				employeersRestructured[keyEmployeer] = {};
+
+				rows.forEach(function( columnValue, keyColumn ){
+					var newName = keyRows[keyColumn].toLowerCase().trim()
+					employeersRestructured[keyEmployeer][newName] = columnValue.trim();
+				})
+				
+			})
+
+			employeers = employeersRestructured;
+			var zip = new JSZip();
+			var htmlFolder = zip.folder("HTML FILES");
+			var txtFolder = zip.folder("TXT FILES");
+			employeers.forEach(function( employeer ){
+				if(typeof employeer["1er nombre"] === "undefined"){return;}
+				if(typeof employeer["1er apellido"] === "undefined"){return;}				
+
+				var name = `${employeer["1er nombre"]} ${employeer["1er apellido"]}`;
+				var position = employeer["cargo"];
+				var phone = "(8) 6712413 – 6688503";
+				var email = employeer["correo corporativo"];
+				var footer = employeer["footer"] || "";
+
+				var textFILE = app.renderTemplate([{
+					name: name,
+					position: position,
+					phone: phone,
+					email: email,
+					footer: footer,
+				}]);
+				var fileName = name.split(" ").join("-").trim().toLowerCase();
+
+				htmlFolder.file(fileName+".html", textFILE);				
+				txtFolder.file(fileName+".txt", textFILE);				
+			})
+			app.zipNode = zip;
+			app.preloader.show("getting data and compressing");						
+			setTimeout(function(){
+				var archive = app.zipNode.generate({type:"base64"});
+				var button = turpial.mount(document.body, turpial.el("a", {href: 
+					`data:application/zip;base64,${archive}`
+				}))
+				button.download = "jano-seguridad-signatures.zip";
+				button.click();
+				button.remove();
+			}, 500)			
+			setTimeout(function(){
+				app.preloader.hide();
+				coreApp.createUploadElement();
+			}, 3000)
+		},
+		excelToJSON: function(event){
+			var input = event.target;
+		    var reader = new FileReader();
+		    reader.onload = function(){
+		        var fileData = reader.result;
+		        var wb = XLSX.read(fileData, {type : 'binary'});
+
+		        wb.SheetNames.forEach(function(sheetName){
+		        	var rowObj =XLSX.utils.sheet_to_row_object_array(wb.Sheets[sheetName]);
+		        	var jsonObj = JSON.stringify(rowObj);
+		        	coreApp.excelRows = rowObj;
+		        	coreApp.zipRows();
+		        })
+
+		    };
+		    reader.readAsBinaryString(input.files[0]);
+		    
+		},
+		editOnWrite: function(form){
+			var data = coreApp.form.retrieve({
+				form: form,
+				targets: ".formElements",
+			});
+			Object.values(data).forEach(function(value, key){
+				var nameKey = Object.keys(data)[key];
+				var containerCard = turpial.find("mainCard");
+				var element = containerCard.querySelector(`#signature-${nameKey}`);
+				if(value === ""){
+					// insert variable instace of empty value.
+					value = element.getAttribute("data-empty");
+				}
+				turpial.insert(element, value);
+			})
+		},
+		v: function(){
+			var host = enc(HOST);			
+			if(	host === allowed_websites[0] 
+				|| host === allowed_websites[1]){
+				// do nothing
+			}else{
+				
+			}
+		},
+		createUploadElement: function(){
+			var element = turpial.find("upload-container");
+			turpial.map(element, [0]).remove();
+			var html = `<form enctype="multipart/form-data" onsubmit="event.preventDefault()">
+				<div class="file-field input-field">
+			      <div class="btn button">
+			        <span>File</span>
+			        <input type="file" id="upload" onchange="coreApp.excelToJSON(event)" name="files[]" accept=".xls,.xlsx,.csv">
+			      </div>
+			      <div class="file-path-wrapper">
+			        <input class="file-path validate" type="text" readonly="">
+			      </div>
+			    </div>
+			</form>`
+			turpial.insert(element,html)
+		},
+		renderTemplate: function(replacemets, html){
+			// this.v(); // uncomment to allow blocker.
+			html = html || this.elementTemplate;
+			var template = function(template, searchall, replaceby){
+				return template.split(searchall).join(replaceby);
+			}
+			var structure = html;
+			replacemets.forEach(function( replacement ){
+				var items = Object.keys(replacement);
+				var values = Object.values(replacement);
+				items.forEach(function( item, key ){						
+					item = `{{ ${item} }}`;
+					if(html.search(item) >= 0){
+						structure = template(structure, item, values[key]);
+					}						
+				})
+			})				
+			return structure;
+		}
+	}
+
+
+	// first card to create single signatures.
+	// "reactive" zone with turpial. 
+	var dec = function(s){ return decode(s) };
+	var enc = function(s){ return encode(s) };
+	var mainCard = coreApp.renderTemplate([{
+		name: "My Name & Last Name",
+		position: "My Position",
+		phone: "(8) 6712413 – 6688503",
+		email: "My E-mail",
+		footer: "",
+	}]);
+	coreApp.createUploadElement();
+	turpial.insert("mainCard", mainCard);
+
+
+
+	var rootStyles = {
+		rules: {},
+		cssRoot: document.getElementById("root-styles").sheet.cssRules[0],
+		cssText: "",
+		render: function(){
+			var app = this;
+			this.cssRoot = document.getElementById("root-styles").sheet.cssRules[0];
+			this.cssText = this.cssRoot.cssText;
+			[...this.cssRoot.style].forEach(function(rule){
+				app.rules[rule] = app.cssText.split(rule+": ")[1].split(";")[0];
+			})
+		}
+	};
+	rootStyles.render();
 </script>
