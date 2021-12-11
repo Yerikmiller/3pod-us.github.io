@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>SEGURIDAD JANO - DIGITAL SIGNATURES APPLICATION</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta property='og:locale' content='en_US' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="application.min.css">
+	<script src="turpial.es5.min.js"></script>	
+	<script>
+		var turpial = new Turpial({
+		  core_path: null,  
+		  public_path: null,
+		});		
+		var loadCSS = function(url){ turpial.linkCSS( { files: [url] } ); }
+		var includeCSS = function(url){ turpial.includeCSS( { files: [url] } ); }
+
+		loadCSS("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+		loadCSS("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
+	</script>		
+	<style id="root-styles">
+	/* all element need to be closed with semi-colon ";" */
+	/* do not join with another style tag. */
+:root{--color-primary:#312782;--color-secundary:#aec90b;--color-warning:#c9af0a;--color-yellow:#c9af0a;--color-black:#1a1a1a;--color-info:#312782;--color-link:#275082;--color-extralightGrey:#d3ddd9;--color-lightGrey:#a1b6ad;--color-grey:#4b5952;--color-darkGrey:#36403b;--color-error:#c9430a;--color-danger:#c9430a;--color-blue:#3352b8;--color-blue-second:#1948e2;--color-alt-1:#76c90a;--color-alt-2:#40c90a;--color-alt-3:#40c90a;--color-dark-1:#211772;--color-dark-2:#1a106b;--color-dark-3:#130964;--color-dark-4:#0c025d;--color-white:#ffffff;--color-success:#aec90b;--grid-maxWidth:120rem;--grid-gutter:2rem;--font-size:1.6rem;--padding-normal:.75rem;--padding-sides-normal:0 .75rem;--padding-updown-normal:.75rem 0;--font-family:"Roboto","Calibri",sans-serif;--swiper-theme-color:#203b8a;--special-gradient:radial-gradient(circle,rgba(255,255,255,1) 0%,rgba(197,204,241,1) 100%)}
+	</style>
+	<!-- @author: 3pod.us -->
+	<style>
+#preloader{text-align:center}body{font-family:Roboto,Calibri,sans-serif}.is-pointer{cursor:pointer}.is-pointerless{cursor:inherit}.is-flex-centered{align-items:center}.rounded-message{border-radius:20px;box-shadow:2px 6px 10px rgba(0,0,0,0.145)!important;transition:all .3s ease}.rounded-message .message-header{border-radius:20px 20px 0 0}.rounded-message .message-body{border-radius:0 0 20px 20px}.lighter{font-weight:200!important}.bold{font-weight:500!important}.bolder{font-weight:700!important}.light{font-weight:300!important}.normal{font-weight:400!important}.offset-0{margin-left:0}.offset-1{margin-left:8.333333333333332%!important}.offset-2{margin-left:16.666666666666664%!important}.offset-3{margin-left:25%}.offset-4{margin-left:33.33333333333333%}.offset-5{margin-left:41.66666666666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.333333333333336%}.offset-8{margin-left:66.66666666666666%}.offset-9{margin-left:75%}.offset-10{margin-left:83.33333333333334%}.offset-11{margin-left:91.66666666666666%}.offset-0-r{margin-right:0}.offset-1-r{margin-right:8.333333333333332%!important}.offset-2-r{margin-right:16.666666666666664%!important}.offset-3-r{margin-right:25%}.offset-4-r{margin-right:33.33333333333333%}.offset-5-r{margin-right:41.66666666666667%}.offset-6-r{margin-right:50%}.offset-7-r{margin-right:58.333333333333336%}.offset-8-r{margin-right:66.66666666666666%}.offset-9-r{margin-right:75%}.offset-10-r{margin-right:83.33333333333334%}.offset-11-r{margin-right:91.66666666666666%}@media only screen and (max-width:900px){*[class*="offset-"]{margin:auto 0.83333333333333%!important}}.input-field input[type=text]:focus + label,.input-field input[type=password]:focus + label{color:var(--color-primary)!important;font-weight:bolder}.input-field input[type=text]:focus,.input-field input[type=password]:focus{border-bottom:1px solid var(--color-primary)!important;box-shadow:0 1px 0 0 var(--color-primary)!important}
+
+	
+	</style>
+	</head>
+	<body>
+		<template id="signature-template" class="signature-templates">
+		 <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 540px;max-width: 540px;min-width: 540px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;">
+	        <tbody>
+	            <tr border="0" style="border:0 !important">
+	                <td style="padding-bottom: 0">
+	                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;">
+	                        <tbody>
+	                            <tr border="0" style="border:0 !important">
+	                                <td width="120" style="line-height: 0;font-size: 0; text-align: center;">
+	                                    <a href="https://seguridadjano.com/" style="text-decoration: none;outline: 0;">
+	                                        <img src="src/logo.png" width="120" height="" style="display: inline-block;text-align: center;">
+	                                    </a>
+	                                </td>
+	                                <td width="2" align="left" style="padding-left: 5px;padding-right: 5px;">
+	                                    <!--<img src="src/br.png" width="2" height="90" style="display: block;">-->
+	                                </td>
+	                                <td align="left" valign="" style="padding-bottom:0;">
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 2px;margin-top: 0;font-size: 18px;line-height: 18px;font-family:Calibri,Arial,sans-serif;color: #3a3a63;">
+	                                        <span style="font-weight: bold;color:#3a3a63;"  id="signature-name" data-empty="{{ name }}">
+	                                        	<!-- ex: Diego Sabogal -->
+	                                        	{{ name }}
+	                                        </span>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin:0 0 4px 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #aec90b;" id="signature-position" data-empty="{{ position }}">
+	                                        <!-- ex: Departamento de Marketing -->
+	                                        {{ position }}
+	                                    </p>
+	                                    <hr style="background-color: #13007c;border-color: #13007c;margin:0 0 10px 0;height: 3px" height="3" />
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
+	                                        <span style="font-size: 0;"><img src="src/phone.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <a href="tel:{{ phone }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-phone" data-empty="{{ phone }}">
+	                                        	<!-- ex: +5786712413 -->
+	                                            {{ phone }}
+	                                        </a>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
+	                                        <span style="font-size: 0;"><img src="src/email.png" border="0" width="12" height="11"></span>&nbsp;
+	                                        <a href="mailto:{{ email }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-email" data-empty="{{ email }}">
+	                                        	<!-- ex:  marketing@seguridadjano.com -->
+	                                           {{ email }}
+	                                        </a>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
+	                                        <span style="font-size: 0;"><img src="src/globe.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <a id="signature-webpage" href="https://www.seguridadjano.com" style="text-decoration: none;outline: 0;color: #000;">
+	                                        	<!-- ex:  www.seguridadjano.com -->
+	                                        	www.seguridadjano.com
+	                                        </a>
+	                                    </p>
+	                                    <p style="margin-top: 9px">
+	                                    	<img id="signature-address" src="{{ address }}" width="365" style="width: 365px">
+	                                    </p>
+	                                </td>
+	                                <td align="right" valign="bottom" style="line-height: 0;font-size: 0; text-align: right;width:42px;">
+	                                    <p>
+	                                    	<a href="https://www.facebook.com/seguridadJANO/" target="_blank">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/facebook.png">
+	                                    	</a>
+	                                    	<br>
+	                                    	<a href="https://www.instagram.com/seguridadjano/" target="_blank">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/instagram.png">
+	                                    	</a>
+	                                    	<br>
+	                                    	<a href="https://www.facebook.com/seguridadJANO/" target="_blank">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/twitter.png">
+	                                    	</a>
+	                                    	<br>
+	                                    	<a href="https://www.youtube.com/channel/UCNrJI5NjDoJdGzehWHF6S-w" target="_blank">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/youtube.png">
+	                                    	</a>
+	                                    </p>
+	                                </td>
+	                            </tr>
+	                        </tbody>
+	                    </table>	                    
+	                </td>
+	            </tr>
+	        </tbody>
+	    </table>
+	    <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 540px;min-width: 320px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;border:0;word-break: break-word;">
+        	<tr border="0" style="border:0 !important">
+        		<td width="129" style="width: 129">
+        			<p style="font-size:9px;font-weight: bold;color:#13007c;">
+        				Certificaciones:
+        			</p>
+        		</td>
+        		<td valign="middle" style="vertical-align: middle;padding-top: 0">
+        			<img style="max-height: 88px;" src="src/bureau.png">
+        		</td>
+        		<td valign="middle" style="vertical-align: middle;padding-top: 0">
+        			<img style="max-height: 88px;" src="src/basc.png">
+        		</td>
+        	</tr>
+        </table>
+	    <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 540px;min-width: 320px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;border:0;word-break: break-word;">
+        	<tr border="0" style="border:0 !important">
+        		<td id="signature-container-footer-img" width="64" valign="middle" style="vertical-align: middle;">
+        			<img data-remove="signature-container-footer-img" width="64" style="width: 64px;display: none;" id="signature-footer-img" src="{{ footer-img }}">
+        		</td>
+        		<td valign="middle" style="font-size: 12px; line-height: 12px; font-family: Calibri,Arial,sans-serif; color: rgb(55, 45, 133);padding-top: 8px;vertical-align: middle;">        			
+        			<strong data-empty="{{ footer }}" id="signature-footer" style="color: rgb(55, 45, 133)">
+        				{{ footer }}
+        			</strong>
+        		</td>
+        	</tr>
+        </table>
+	</template>
+		<div id="preloader" class="pageloader is-active">					
+			<span class="title lighter">
+				<img src="src/logowhite.png" style="width: 120px">
+				<br>
+					<span id="preloader-text">Fetching Components</span>
+				<br>...
+			</span>
+		</div>
+		<header class="column is-multiline">
+			<section class="column is-10 offset-1 offset-1-r">
+				<div class="columns is-multiline">
+					<div class="column is-4 is-flex is-flex-centered">
+						<img src="src/logov.png" style="width: 220px">
+					</div>
+					<div class="column is-8 is-flex is-flex-centered">
+						<h1 class="title is-size-4">
+			    			<span class="has-text-primary">SEGURIDAD JANO</span>
+			    			<br>
+			    			<span class="lighter">Aplicación de Firmas Digitales.</span>
+			    		</h1>
+					</div>					
+				</div>
+			</section>
+		</header>
+		<main class="columns is-multiline">
+			<section class="column is-10 offset-1 offset-1-r">
+				<div class="columns is-multiline">
+					<div class="column is-4">
+						<div class="box" style="height: 100%">
+							<h2 class="bolder">
+								Crear una firma
+								<span class="has-text-info" data-tooltip="Complete el formulario y descargue su firma digital para correo electrónico.">
+									<i class="fas fa-info-circle"></i>
+								</span>
+							</h2>
+							<form onkeyup="coreApp.editOnWrite(this)" onchange="coreApp.editOnWrite(this)" id="form-main-card" method="POST" onsubmit="event.preventDefault();coreApp.singleDownload()" action="">
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-name-user" type="text" name="name" required="">
+									<label for="signature-name-user">Nombre</label>
+								</div>
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-position-user" type="text" name="position" required="">
+									<label for="signature-position-user">Cargo</label>
+								</div>
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-phone-user" type="text" name="phone" value="(8) 6712413 – 6688503" required="">
+									<label for="signature-phone-user">Teléfono</label>
+								</div>
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-email-user" type="email" name="email" required="">
+									<label for="signature-email-user">E-mail</label>
+								</div>
+								<label>Dirección</label>
+								<div class="input-field">									
+									<select class="browser-default formElements" name="address">
+									  <option data-name="villavicencio" data-value="Carrera 40A N° 16-05 Barrio Villa María - Villavicencio, Meta." value="src/villaviciencio.png" selected>Oficina Villavicencio</option>
+									  <option data-name="bogota" data-value="Calle 45 # 54-30 Barrio La Esmeralda - Bogotá D,C." value="src/bogota.png">Oficina Bogotá</option>
+									  <option data-name="cali" data-value="Carrera 90 # 34-40 Barrio Caney - Cali." value="src/cali.png">Oficina Cali</option>
+									</select>									
+								</div>
+								<div class="input-field">
+									<br>
+									<p class="bolder has-text-centered has-text-primary" style="border-bottom: 1px solid var(--color-primary);">
+										OPCIONAL
+									</p>
+								</div>
+								<div class="input-field">
+									 <textarea id="signature-footer-user" name="footer" class="materialize-textarea formElements" autocomplete="off"></textarea>
+									 <label for="signature-footer-user">Texto - Footer</label>
+								</div>
+								<div class="input-field">
+									 <input class="formElements" autocomplete="off" id="signature-footer-img-user" type="url" name="footer-img" >
+									 <label for="signature-footer-img-user">Imagen (URL) - Footer</label>
+								</div>
+								<button class="button is-primary is-outlined is-rounded">
+									Download Signature
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="column is-8">
+						<div class="box" style="height: 100%">
+							<h2>Resultado de Firma Digital: </h2>
+							<div id="mainCard" style="overflow-x: auto;">
+								<!-- javascript push -->
+							</div>							
+						</div>
+					</div>						
+				</div>
+			</section>
+		</main>
+		<footer class="columns is-multiline">
+			<div class="column is-12" id="footer-page">
+				<p class="has-text-centered">
+					Created by <a target="_blank" href="https://3pod.us">3pod.us</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
+<script>
+	var creator = [
+		"U2ltcGxlIFdlYnN",
+		"pdGUgQXBwbGljYXRpb24g",
+		"U2lnbmF0dXJlcyBDcmVhdGVkIEJ",
+		"5IFlvcm1hbiBNYXJpY3V0byAoaHR0cHM6L",
+		"y9tYXJpY3V0by53ZWJ",
+		"zaXRlKSBmb3IgM3BvZC51cw=="
+	];
+	/********** GLOBALS *********/
+	var IS_ONLINE = false;
+	var HOST = window.location.host;
+	function bodyInner(s){ document.body.innerHTML = s };
+	// maricuto.website: bWFyaWN1dG8ud2Vic2l0ZQ== ;
+	// 127.0.0.1:8080: MTI3LjAuMC4xOjgwODA= ;
+	// 3pod.us: M3BvZC51cw== ;
+	// 3pod-us.github.io: M3BvZC11cy5naXRodWIuaW8=
+
+	var allowed_websites = [
+		"MTI3LjAuMC4xOjgwODA=",
+		"bWFyaWN1dG8ud2Vic2l0ZQ==",
+		"M3BvZC51cw==",
+		"M3BvZC11cy5naXRodWIuaW8=",
+	];
+	turpial.fetch({
+		files: [
+			"application.jano.min.js",
+		],
+		ready: function(){
+			var elems = document.querySelectorAll('select');
+			var instances = M.FormSelect.init( elems );
+			coreApp.preloader.hide();
+		},
+	});
+	var decode = function(s){ return atob(s) };
+	var encode = function(s){ return btoa(s) };
+	var coreApp = {
+		elementTemplate: turpial.find("signature-template").innerHTML,
+		form: {
+			forms: [],
+			retrieve: function(props){
+				var app=this;props.form=turpial.find(props.form);var formName=props.form.id;app.forms[formName]={};var elements=props.form.querySelectorAll(props.targets);[...elements].forEach(function(e){if("true"===e.getAttribute("data-array-input"))return"object"!=typeof app.forms[formName][e.name]&&(app.forms[formName][e.name]=[]),void app.forms[formName][e.name].push(e.value);if("radio"===e.type){if(!1===e.checked)return;app.forms[formName][e.name]=e.value}else if("checkbox"===e.type){if(!0===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!0);if(void 0===app.forms[formName][e.name]&&(app.forms[formName][e.name]={}),!1===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!1);if(!1===e.checked)return void delete app.forms[formName][e.name][e.value];app.forms[formName][e.name][e.value]=e.value}else app.forms[formName][e.name]=e.value});
+				return app.forms[formName];
+			}
+		},
+		layout: function(content){
+			return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+			<html>
+			<head>
+				<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+				<title>Email Signature</title>
+				<style>
+					a{text-decoration:none;}
+				</style>
+			</head>
+			<body>
+				${content}
+			</body>
+			</html>`
+		},
+		singleDownload: function(){
+			var containerCard = turpial.find("mainCard");
+			var content = this.layout( containerCard.innerHTML );
+			var name = containerCard.querySelector("#signature-name");
+			var id = name.innerText.split(" ").join("-");
+			var button = turpial.mount(document.body, turpial.el("a", {href: 
+				`data:text/plain;charset=UTF-8,${encodeURIComponent(content)}`
+			}))
+			button.download = id+".html";
+			button.click();
+			button.remove();
+		},
+		preloader: {
+			element: document.querySelector("#preloader"),
+			hide: function(){
+				this.element.classList.remove("is-active")
+			},
+			show: function(text){
+				text = text || "Fetching Components";
+				this.element.querySelector("#preloader-text").innerText = text
+				this.element.classList.add("is-active")
+			}
+		},
+		/*zipNode: {},
+		excelRows: [],
+		zipRows: function(){
+			var app = this;
+			var employeers = this.excelRows;
+			var employeersRestructured = [];
+			employeers.forEach(function( employeer, keyEmployeer ){
+				var rows = Object.values(employeer);
+				var keyRows = Object.keys(employeer);
+				employeersRestructured[keyEmployeer] = {};
+
+				rows.forEach(function( columnValue, keyColumn ){
+					var newName = keyRows[keyColumn].toLowerCase().trim()
+					employeersRestructured[keyEmployeer][newName] = columnValue.trim();
+				})
+				
+			})
+
+			employeers = employeersRestructured;
+			var zip = new JSZip();
+			var htmlFolder = zip.folder("HTML FILES");
+			var txtFolder = zip.folder("TXT FILES");
+			employeers.forEach(function( employeer ){
+				if(typeof employeer["1er nombre"] === "undefined"){return;}
+				if(typeof employeer["1er apellido"] === "undefined"){return;}				
+
+				var name = `${employeer["1er nombre"]} ${employeer["1er apellido"]}`;
+				var position = employeer["cargo"];
+				var phone = "(8) 6712413 – 6688503";
+				var email = employeer["correo corporativo"];
+				var footer = employeer["footer"] || "";
+
+				var textFILE = app.renderTemplate([{
+					name: name,
+					position: position,
+					phone: phone,
+					email: email,
+					footer: footer,
+				}]);
+				var fileName = name.split(" ").join("-").trim().toLowerCase();
+
+				htmlFolder.file(fileName+".html", textFILE);				
+				txtFolder.file(fileName+".txt", textFILE);				
+			})
+			app.zipNode = zip;
+			app.preloader.show("getting data and compressing");						
+			setTimeout(function(){
+				var archive = app.zipNode.generate({type:"base64"});
+				var button = turpial.mount(document.body, turpial.el("a", {href: 
+					`data:application/zip;base64,${archive}`
+				}))
+				button.download = "jano-seguridad-signatures.zip";
+				button.click();
+				button.remove();
+			}, 500)			
+			setTimeout(function(){
+				app.preloader.hide();
+				coreApp.createUploadElement();
+			}, 3000)
+		},
+		excelToJSON: function(event){
+			var input = event.target;
+		    var reader = new FileReader();
+		    reader.onload = function(){
+		        var fileData = reader.result;
+		        var wb = XLSX.read(fileData, {type : 'binary'});
+
+		        wb.SheetNames.forEach(function(sheetName){
+		        	var rowObj =XLSX.utils.sheet_to_row_object_array(wb.Sheets[sheetName]);
+		        	var jsonObj = JSON.stringify(rowObj);
+		        	coreApp.excelRows = rowObj;
+		        	coreApp.zipRows();
+		        })
+
+		    };
+		    reader.readAsBinaryString(input.files[0]);
+		    
+		},
+		createUploadElement: function(){
+			var element = turpial.find("upload-container");
+			turpial.map(element, [0]).remove();
+			var html = `<form enctype="multipart/form-data" onsubmit="event.preventDefault()">
+				<div class="file-field input-field">
+			      <div class="btn button">
+			        <span>File</span>
+			        <input type="file" id="upload" onchange="coreApp.excelToJSON(event)" name="files[]" accept=".xls,.xlsx,.csv">
+			      </div>
+			      <div class="file-path-wrapper">
+			        <input class="file-path validate" type="text" readonly="">
+			      </div>
+			    </div>
+			</form>`
+			turpial.insert(element,html)
+		},*/
+		editOnWrite: function(form){
+			var data = coreApp.form.retrieve({
+				form: form,
+				targets: ".formElements",
+			});
+			Object.values(data).forEach(function(value, key){
+				var nameKey = Object.keys(data)[key];
+				var containerCard = turpial.find("mainCard");
+				
+				var element = containerCard.querySelector(`#signature-${nameKey}`);
+				var removeToo = element.getAttribute("data-remove");
+				if(element.tagName === "IMG"){
+
+					try{
+					   	value = new URL(value).href;
+					}catch{
+						
+						if(removeToo !== null){
+							turpial.find(removeToo).style.display = "none"
+						}
+						element.style.display = "none";
+					    value = false;
+					}
+					if(value === false){ return; }
+					element.src = value;
+					element.style.display = "";
+					if(removeToo !== null){
+						turpial.find(removeToo).style.display = ""
+					}
+					return;
+				}
+
+				if(value === ""){
+					// insert variable instace of empty value.
+					value = element.getAttribute("data-empty");
+					if(value === null){return;}
+				}
+				turpial.insert(element, value);
+			})
+		},
+		v: function(){
+			var host = enc(HOST);			
+			if(	   host === allowed_websites[0] 
+				|| host === allowed_websites[1]
+				|| host === allowed_websites[2]
+				|| host === allowed_websites[3]
+				){
+				// do nothing
+			}else{
+				// block them all
+				bodyInner(dec("WW91IE5lZWQgQ3JlZGVudGlhbHMhIENvbnRhY3Q6IHllcmlrbWlsbGVyQGdtYWlsLmNvbQ=="));
+			}
+		},		
+		renderTemplate: function(replacemets, html){
+			//this.v(); block
+			html = html || this.elementTemplate;
+			var template = function(template, searchall, replaceby){
+				return template.split(searchall).join(replaceby);
+			}
+			var structure = html;
+			replacemets.forEach(function( replacement ){
+				var items = Object.keys(replacement);
+				var values = Object.values(replacement);
+				items.forEach(function( item, key ){						
+					item = `{{ ${item} }}`;
+					if(html.search(item) >= 0){
+						structure = template(structure, item, values[key]);
+					}						
+				})
+			})				
+			return structure;
+		}
+	}
+
+
+	// first card to create single signatures.
+	// "reactive" zone with turpial. 
+	var dec = function(s){ return decode(s) };
+	var enc = function(s){ return encode(s) };
+	var mainCard = coreApp.renderTemplate([{
+		name: "Mi Nombre",
+		position: "Mi Cargo",
+		phone: "(8) 6712413 – 6688503",
+		email: "Mi E-mail",
+		address: "src/villaviciencio.png",
+		footer: "",
+		"footer-img": "",
+	}]);
+	// coreApp.createUploadElement();
+	turpial.insert("mainCard", mainCard);	
+
+
+	var rootStyles = {
+		rules: {},
+		cssRoot: document.getElementById("root-styles").sheet.cssRules[0],
+		cssText: "",
+		render: function(){
+			var app = this;
+			this.cssRoot = document.getElementById("root-styles").sheet.cssRules[0];
+			this.cssText = this.cssRoot.cssText;
+			[...this.cssRoot.style].forEach(function(rule){
+				app.rules[rule] = app.cssText.split(rule+": ")[1].split(";")[0];
+			})
+		}
+	};
+	console.warn(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
+	console.log(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
+	turpial.mount(turpial.find("footer-page"), turpial.el("p", {class: "is-sr-only"}, 
+		dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5])
+	))
+	rootStyles.render();
+</script>
