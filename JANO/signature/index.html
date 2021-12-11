@@ -11,7 +11,7 @@
 	<script>
 		var turpial = new Turpial({
 		  core_path: null,  
-		  public_path: null,
+		  public_path: "JANO",
 		});		
 		var loadCSS = function(url){ turpial.linkCSS( { files: [url] } ); }
 		var includeCSS = function(url){ turpial.includeCSS( { files: [url] } ); }
@@ -193,7 +193,7 @@
 								</div>
 								<label>Dirección</label>
 								<div class="input-field">									
-									<select class="browser-default formElements" name="address">
+									<select class="browser-default formElements select-address" name="address">
 									  <option data-name="villavicencio" data-value="Carrera 40A N° 16-05 Barrio Villa María - Villavicencio, Meta." value="src/villaviciencio.png" selected>Oficina Villavicencio</option>
 									  <option data-name="bogota" data-value="Calle 45 # 54-30 Barrio La Esmeralda - Bogotá D,C." value="src/bogota.png">Oficina Bogotá</option>
 									  <option data-name="cali" data-value="Carrera 90 # 34-40 Barrio Caney - Cali." value="src/cali.png">Oficina Cali</option>
@@ -421,6 +421,11 @@
 				form: form,
 				targets: ".formElements",
 			});
+			var selectElement = document.querySelector("#signature-address");
+			selectElement.src = data.address
+			setTimeout(() => {
+				selectElement.style.display = "block";
+			}, 400);
 			Object.values(data).forEach(function(value, key){
 				var nameKey = Object.keys(data)[key];
 				var containerCard = turpial.find("mainCard");
@@ -505,10 +510,10 @@
 		"footer-img": "",
 	}]);
 	// coreApp.createUploadElement();
-	turpial.insert("mainCard", mainCard);	
-
-
-	var rootStyles = {
+	turpial.insert("mainCard", mainCard);
+	
+	
+	/*var rootStyles = {
 		rules: {},
 		cssRoot: document.getElementById("root-styles").sheet.cssRules[0],
 		cssText: "",
@@ -520,11 +525,11 @@
 				app.rules[rule] = app.cssText.split(rule+": ")[1].split(";")[0];
 			})
 		}
-	};
-	console.warn(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
+	};*/
+	/*console.warn(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
 	console.log(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
 	turpial.mount(turpial.find("footer-page"), turpial.el("p", {class: "is-sr-only"}, 
 		dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5])
-	))
-	rootStyles.render();
+	))*/
+	/*rootStyles.render();*/
 </script>
