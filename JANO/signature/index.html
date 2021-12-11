@@ -7,14 +7,14 @@
 	<meta property='og:locale' content='en_US' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="application.min.css">
-	<script src="turpial.es5.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/gh/Yerikmiller/turpialjs/turpial.es5.min.js"></script>	
 	<script>
 		var turpial = new Turpial({
 		  core_path: null,  
 		  public_path: "JANO",
 		});		
-		var loadCSS = function(url){ turpial.linkCSS( { files: [url] } ); }
-		var includeCSS = function(url){ turpial.includeCSS( { files: [url] } ); }
+		var loadCSS = function(url){ turpial.linkCSS( { files: [url], ready: ()=>{} } ); }
+		var includeCSS = function(url){ turpial.includeCSS( { files: [url], ready: ()=>{} } ); }
 
 		loadCSS("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 		loadCSS("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
@@ -42,11 +42,11 @@
 	                            <tr border="0" style="border:0 !important">
 	                                <td width="120" style="line-height: 0;font-size: 0; text-align: center;">
 	                                    <a href="https://seguridadjano.com/" style="text-decoration: none;outline: 0;">
-	                                        <img src="src/logo.png" width="120" height="" style="display: inline-block;text-align: center;">
+	                                        <img src="{{ host }}src/logo.png" width="120" height="" style="display: inline-block;text-align: center;">
 	                                    </a>
 	                                </td>
 	                                <td width="2" align="left" style="padding-left: 5px;padding-right: 5px;">
-	                                    <!--<img src="src/br.png" width="2" height="90" style="display: block;">-->
+	                                    <!--<img src="{{ host }}src/br.png" width="2" height="90" style="display: block;">-->
 	                                </td>
 	                                <td align="left" valign="" style="padding-bottom:0;">
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 2px;margin-top: 0;font-size: 18px;line-height: 18px;font-family:Calibri,Arial,sans-serif;color: #3a3a63;">
@@ -61,46 +61,46 @@
 	                                    </p>
 	                                    <hr style="background-color: #13007c;border-color: #13007c;margin:0 0 10px 0;height: 3px" height="3" />
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
-	                                        <span style="font-size: 0;"><img src="src/phone.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <span style="font-size: 0;"><img src="{{ host }}src/phone.png" border="0" width="12" height="12"></span>&nbsp;
 	                                        <a href="tel:{{ phone }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-phone" data-empty="{{ phone }}">
 	                                        	<!-- ex: +5786712413 -->
 	                                            {{ phone }}
 	                                        </a>
 	                                    </p>
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
-	                                        <span style="font-size: 0;"><img src="src/email.png" border="0" width="12" height="11"></span>&nbsp;
+	                                        <span style="font-size: 0;"><img src="{{ host }}src/email.png" border="0" width="12" height="11"></span>&nbsp;
 	                                        <a href="mailto:{{ email }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-email" data-empty="{{ email }}">
 	                                        	<!-- ex:  marketing@seguridadjano.com -->
 	                                           {{ email }}
 	                                        </a>
 	                                    </p>
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
-	                                        <span style="font-size: 0;"><img src="src/globe.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <span style="font-size: 0;"><img src="{{ host }}src/globe.png" border="0" width="12" height="12"></span>&nbsp;
 	                                        <a id="signature-webpage" href="https://www.seguridadjano.com" style="text-decoration: none;outline: 0;color: #000;">
 	                                        	<!-- ex:  www.seguridadjano.com -->
 	                                        	www.seguridadjano.com
 	                                        </a>
 	                                    </p>
 	                                    <p style="margin-top: 9px">
-	                                    	<img id="signature-address" src="{{ address }}" width="365" style="width: 365px">
+	                                    	<img id="signature-address" src="{{ host }}{{ address }}" width="365" style="width: 365px">
 	                                    </p>
 	                                </td>
 	                                <td align="right" valign="bottom" style="line-height: 0;font-size: 0; text-align: right;width:42px;">
 	                                    <p>
 	                                    	<a href="https://www.facebook.com/seguridadJANO/" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/facebook.png">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="{{ host }}src/facebook.png">
 	                                    	</a>
 	                                    	<br>
 	                                    	<a href="https://www.instagram.com/seguridadjano/" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/instagram.png">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="{{ host }}src/instagram.png">
 	                                    	</a>
 	                                    	<br>
 	                                    	<a href="https://www.facebook.com/seguridadJANO/" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/twitter.png">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="{{ host }}src/twitter.png">
 	                                    	</a>
 	                                    	<br>
 	                                    	<a href="https://www.youtube.com/channel/UCNrJI5NjDoJdGzehWHF6S-w" target="_blank">
-	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="src/youtube.png">
+	                                    		<img style="width: 25px;height: 25px;margin: 5px 0" width="25" height="25" src="{{ host }}src/youtube.png">
 	                                    	</a>
 	                                    </p>
 	                                </td>
@@ -119,10 +119,10 @@
         			</p>
         		</td>
         		<td valign="middle" style="vertical-align: middle;padding-top: 0">
-        			<img style="max-height: 88px;" src="src/bureau.png">
+        			<img style="max-height: 88px;" src="{{ host }}src/bureau.png">
         		</td>
         		<td valign="middle" style="vertical-align: middle;padding-top: 0">
-        			<img style="max-height: 88px;" src="src/basc.png">
+        			<img style="max-height: 88px;" src="{{ host }}src/basc.png">
         		</td>
         	</tr>
         </table>
@@ -214,7 +214,7 @@
 									 <label for="signature-footer-img-user">Imagen (URL) - Footer</label>
 								</div>
 								<button class="button is-primary is-outlined is-rounded">
-									Download Signature
+									Descargar
 								</button>
 							</form>
 						</div>
@@ -240,280 +240,420 @@
 	</body>
 </html>
 <script>
-	var creator = [
-		"U2ltcGxlIFdlYnN",
-		"pdGUgQXBwbGljYXRpb24g",
-		"U2lnbmF0dXJlcyBDcmVhdGVkIEJ",
-		"5IFlvcm1hbiBNYXJpY3V0byAoaHR0cHM6L",
-		"y9tYXJpY3V0by53ZWJ",
-		"zaXRlKSBmb3IgM3BvZC51cw=="
-	];
-	/********** GLOBALS *********/
-	var IS_ONLINE = false;
-	var HOST = window.location.host;
-	function bodyInner(s){ document.body.innerHTML = s };
-	// maricuto.website: bWFyaWN1dG8ud2Vic2l0ZQ== ;
-	// 127.0.0.1:8080: MTI3LjAuMC4xOjgwODA= ;
-	// 3pod.us: M3BvZC51cw== ;
-	// 3pod-us.github.io: M3BvZC11cy5naXRodWIuaW8=
+var creator = [
+	"U2ltcGxlIFdlYnN",
+	"pdGUgQXBwbGljYXRpb24g",
+	"U2lnbmF0dXJlcyBDcmVhdGVkIEJ",
+	"5IFlvcm1hbiBNYXJpY3V0byAoaHR0cHM6L",
+	"y9tYXJpY3V0by53ZWJ",
+	"zaXRlKSBmb3IgM3BvZC51cw=="
+];
+/********** GLOBALS *********/
+var IS_ONLINE = false;
+var HOST = window.location.host;
+function bodyInner(s){ document.body.innerHTML = s };
+// maricuto.website: bWFyaWN1dG8ud2Vic2l0ZQ== ;
+// 127.0.0.1:8080: MTI3LjAuMC4xOjgwODA= ;
+// 3pod.us: M3BvZC51cw== ;
+// 3pod-us.github.io: M3BvZC11cy5naXRodWIuaW8=
 
-	var allowed_websites = [
-		"MTI3LjAuMC4xOjgwODA=",
-		"bWFyaWN1dG8ud2Vic2l0ZQ==",
-		"M3BvZC51cw==",
-		"M3BvZC11cy5naXRodWIuaW8=",
-	];
-	turpial.fetch({
-		files: [
-			"application.jano.min.js",
-		],
-		ready: function(){
-			var elems = document.querySelectorAll('select');
-			var instances = M.FormSelect.init( elems );
-			coreApp.preloader.hide();
+var allowed_websites = [
+	"MTI3LjAuMC4xOjgwODA=",
+	"bWFyaWN1dG8ud2Vic2l0ZQ==",
+	"M3BvZC51cw==",
+	"M3BvZC11cy5naXRodWIuaW8=",
+];
+turpial.fetch({
+	files: [
+		"application.jano.min.js",
+	],
+	ready: function(){
+		var elems = document.querySelectorAll('select');
+		var instances = M.FormSelect.init( elems );
+		coreApp.preloader.hide();
+	},
+});
+var decode = function(s){ return atob(s) };
+var encode = function(s){ return btoa(s) };
+var coreApp = {
+	elementTemplate: turpial.find("signature-template").innerHTML,
+	form: {
+		forms: [],
+		retrieve: function(props){
+			var app=this;props.form=turpial.find(props.form);var formName=props.form.id;app.forms[formName]={};var elements=props.form.querySelectorAll(props.targets);[...elements].forEach(function(e){if("true"===e.getAttribute("data-array-input"))return"object"!=typeof app.forms[formName][e.name]&&(app.forms[formName][e.name]=[]),void app.forms[formName][e.name].push(e.value);if("radio"===e.type){if(!1===e.checked)return;app.forms[formName][e.name]=e.value}else if("checkbox"===e.type){if(!0===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!0);if(void 0===app.forms[formName][e.name]&&(app.forms[formName][e.name]={}),!1===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!1);if(!1===e.checked)return void delete app.forms[formName][e.name][e.value];app.forms[formName][e.name][e.value]=e.value}else app.forms[formName][e.name]=e.value});
+			return app.forms[formName];
+		}
+	},
+	layout: function(content){
+		return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+		<html>
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+			<title>Email Signature</title>
+			<style>
+				a{text-decoration:none;}
+			</style>
+		</head>
+		<body>
+			${content}
+		</body>
+		</html>`
+	},
+	singleDownload: function(){
+		var containerCard = turpial.find("mainCard");
+		var content = this.layout( containerCard.innerHTML );
+		var name = containerCard.querySelector("#signature-name");
+		var id = name.innerText.split(" ").join("-");
+		var button = turpial.mount(document.body, turpial.el("a", {href: 
+			`data:text/plain;charset=UTF-8,${encodeURIComponent(content)}`
+		}))
+		button.download = id+".html";
+		button.click();
+		button.remove();
+	},
+	preloader: {
+		element: document.querySelector("#preloader"),
+		hide: function(){
+			this.element.classList.remove("is-active")
 		},
-	});
-	var decode = function(s){ return atob(s) };
-	var encode = function(s){ return btoa(s) };
-	var coreApp = {
-		elementTemplate: turpial.find("signature-template").innerHTML,
-		form: {
-			forms: [],
-			retrieve: function(props){
-				var app=this;props.form=turpial.find(props.form);var formName=props.form.id;app.forms[formName]={};var elements=props.form.querySelectorAll(props.targets);[...elements].forEach(function(e){if("true"===e.getAttribute("data-array-input"))return"object"!=typeof app.forms[formName][e.name]&&(app.forms[formName][e.name]=[]),void app.forms[formName][e.name].push(e.value);if("radio"===e.type){if(!1===e.checked)return;app.forms[formName][e.name]=e.value}else if("checkbox"===e.type){if(!0===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!0);if(void 0===app.forms[formName][e.name]&&(app.forms[formName][e.name]={}),!1===e.checked&&"true"===e.getAttribute("data-boolean"))return void(app.forms[formName][e.name]=!1);if(!1===e.checked)return void delete app.forms[formName][e.name][e.value];app.forms[formName][e.name][e.value]=e.value}else app.forms[formName][e.name]=e.value});
-				return app.forms[formName];
-			}
-		},
-		layout: function(content){
-			return `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-			<html>
-			<head>
-				<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-				<title>Email Signature</title>
-				<style>
-					a{text-decoration:none;}
-				</style>
-			</head>
-			<body>
-				${content}
-			</body>
-			</html>`
-		},
-		singleDownload: function(){
-			var containerCard = turpial.find("mainCard");
-			var content = this.layout( containerCard.innerHTML );
-			var name = containerCard.querySelector("#signature-name");
-			var id = name.innerText.split(" ").join("-");
+		show: function(text){
+			text = text || "Fetching Components";
+			this.element.querySelector("#preloader-text").innerText = text
+			this.element.classList.add("is-active")
+		}
+	},
+	/*zipNode: {},
+	excelRows: [],
+	zipRows: function(){
+		var app = this;
+		var employeers = this.excelRows;
+		var employeersRestructured = [];
+		employeers.forEach(function( employeer, keyEmployeer ){
+			var rows = Object.values(employeer);
+			var keyRows = Object.keys(employeer);
+			employeersRestructured[keyEmployeer] = {};
+
+			rows.forEach(function( columnValue, keyColumn ){
+				var newName = keyRows[keyColumn].toLowerCase().trim()
+				employeersRestructured[keyEmployeer][newName] = columnValue.trim();
+			})
+			
+		})
+
+		employeers = employeersRestructured;
+		var zip = new JSZip();
+		var htmlFolder = zip.folder("HTML FILES");
+		var txtFolder = zip.folder("TXT FILES");
+		employeers.forEach(function( employeer ){
+			if(typeof employeer["1er nombre"] === "undefined"){return;}
+			if(typeof employeer["1er apellido"] === "undefined"){return;}				
+
+			var name = `${employeer["1er nombre"]} ${employeer["1er apellido"]}`;
+			var position = employeer["cargo"];
+			var phone = "(8) 6712413 – 6688503";
+			var email = employeer["correo corporativo"];
+			var footer = employeer["footer"] || "";
+
+			var textFILE = app.renderTemplate([{
+				name: name,
+				position: position,
+				phone: phone,
+				email: email,
+				footer: footer,
+			}]);
+			var fileName = name.split(" ").join("-").trim().toLowerCase();
+
+			htmlFolder.file(fileName+".html", textFILE);				
+			txtFolder.file(fileName+".txt", textFILE);				
+		})
+		app.zipNode = zip;
+		app.preloader.show("getting data and compressing");						
+		setTimeout(function(){
+			var archive = app.zipNode.generate({type:"base64"});
 			var button = turpial.mount(document.body, turpial.el("a", {href: 
-				`data:text/plain;charset=UTF-8,${encodeURIComponent(content)}`
+				`data:application/zip;base64,${archive}`
 			}))
-			button.download = id+".html";
+			button.download = "jano-seguridad-signatures.zip";
 			button.click();
 			button.remove();
-		},
-		preloader: {
-			element: document.querySelector("#preloader"),
-			hide: function(){
-				this.element.classList.remove("is-active")
-			},
-			show: function(text){
-				text = text || "Fetching Components";
-				this.element.querySelector("#preloader-text").innerText = text
-				this.element.classList.add("is-active")
-			}
-		},
-		/*zipNode: {},
-		excelRows: [],
-		zipRows: function(){
-			var app = this;
-			var employeers = this.excelRows;
-			var employeersRestructured = [];
-			employeers.forEach(function( employeer, keyEmployeer ){
-				var rows = Object.values(employeer);
-				var keyRows = Object.keys(employeer);
-				employeersRestructured[keyEmployeer] = {};
+		}, 500)			
+		setTimeout(function(){
+			app.preloader.hide();
+			coreApp.createUploadElement();
+		}, 3000)
+	},
+	excelToJSON: function(event){
+		var input = event.target;
+		var reader = new FileReader();
+		reader.onload = function(){
+			var fileData = reader.result;
+			var wb = XLSX.read(fileData, {type : 'binary'});
 
-				rows.forEach(function( columnValue, keyColumn ){
-					var newName = keyRows[keyColumn].toLowerCase().trim()
-					employeersRestructured[keyEmployeer][newName] = columnValue.trim();
-				})
-				
+			wb.SheetNames.forEach(function(sheetName){
+				var rowObj =XLSX.utils.sheet_to_row_object_array(wb.Sheets[sheetName]);
+				var jsonObj = JSON.stringify(rowObj);
+				coreApp.excelRows = rowObj;
+				coreApp.zipRows();
 			})
 
-			employeers = employeersRestructured;
-			var zip = new JSZip();
-			var htmlFolder = zip.folder("HTML FILES");
-			var txtFolder = zip.folder("TXT FILES");
-			employeers.forEach(function( employeer ){
-				if(typeof employeer["1er nombre"] === "undefined"){return;}
-				if(typeof employeer["1er apellido"] === "undefined"){return;}				
+		};
+		reader.readAsBinaryString(input.files[0]);
+		
+	},
+	createUploadElement: function(){
+		var element = turpial.find("upload-container");
+		turpial.map(element, [0]).remove();
+		var html = `<form enctype="multipart/form-data" onsubmit="event.preventDefault()">
+			<div class="file-field input-field">
+				<div class="btn button">
+				<span>File</span>
+				<input type="file" id="upload" onchange="coreApp.excelToJSON(event)" name="files[]" accept=".xls,.xlsx,.csv">
+				</div>
+				<div class="file-path-wrapper">
+				<input class="file-path validate" type="text" readonly="">
+				</div>
+			</div>
+		</form>`
+		turpial.insert(element,html)
+	},*/
+	capitalized: function(string){
+		return string.toLowerCase().trim().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+	},
+	proccessList: function(){
+		var app = this;
+		var list = [];
+		turpial.fetch({
+			url: ["list.json"],
+			type: "text",
+			method: "GET",
+			ready: function( data ){
+				data = JSON.parse(data[0]);
+				data.map(( user )=>{
+					var firstName = user["1er NOMBRE"];
+					var middleName = user["2do NOMBRE"];
+					var lastName = user["1er APELLIDO"];
+					var lastName2 = user["2do APELLIDO"];
+					var lastName2 = user["2do APELLIDO"];
+					var position = user["CARGO"];
+					var ID = user["CEDULA"];					
+					var address = user["MUNICIPIO DONDE LABORA"].toLowerCase();
 
-				var name = `${employeer["1er nombre"]} ${employeer["1er apellido"]}`;
-				var position = employeer["cargo"];
-				var phone = "(8) 6712413 – 6688503";
-				var email = employeer["correo corporativo"];
-				var footer = employeer["footer"] || "";
-
-				var textFILE = app.renderTemplate([{
-					name: name,
-					position: position,
-					phone: phone,
-					email: email,
-					footer: footer,
-				}]);
-				var fileName = name.split(" ").join("-").trim().toLowerCase();
-
-				htmlFolder.file(fileName+".html", textFILE);				
-				txtFolder.file(fileName+".txt", textFILE);				
-			})
-			app.zipNode = zip;
-			app.preloader.show("getting data and compressing");						
-			setTimeout(function(){
-				var archive = app.zipNode.generate({type:"base64"});
-				var button = turpial.mount(document.body, turpial.el("a", {href: 
-					`data:application/zip;base64,${archive}`
-				}))
-				button.download = "jano-seguridad-signatures.zip";
-				button.click();
-				button.remove();
-			}, 500)			
-			setTimeout(function(){
-				app.preloader.hide();
-				coreApp.createUploadElement();
-			}, 3000)
-		},
-		excelToJSON: function(event){
-			var input = event.target;
-		    var reader = new FileReader();
-		    reader.onload = function(){
-		        var fileData = reader.result;
-		        var wb = XLSX.read(fileData, {type : 'binary'});
-
-		        wb.SheetNames.forEach(function(sheetName){
-		        	var rowObj =XLSX.utils.sheet_to_row_object_array(wb.Sheets[sheetName]);
-		        	var jsonObj = JSON.stringify(rowObj);
-		        	coreApp.excelRows = rowObj;
-		        	coreApp.zipRows();
-		        })
-
-		    };
-		    reader.readAsBinaryString(input.files[0]);
-		    
-		},
-		createUploadElement: function(){
-			var element = turpial.find("upload-container");
-			turpial.map(element, [0]).remove();
-			var html = `<form enctype="multipart/form-data" onsubmit="event.preventDefault()">
-				<div class="file-field input-field">
-			      <div class="btn button">
-			        <span>File</span>
-			        <input type="file" id="upload" onchange="coreApp.excelToJSON(event)" name="files[]" accept=".xls,.xlsx,.csv">
-			      </div>
-			      <div class="file-path-wrapper">
-			        <input class="file-path validate" type="text" readonly="">
-			      </div>
-			    </div>
-			</form>`
-			turpial.insert(element,html)
-		},*/
-		editOnWrite: function(form){
-			var data = coreApp.form.retrieve({
-				form: form,
-				targets: ".formElements",
-			});
-			var selectElement = document.querySelector("#signature-address");
-			selectElement.src = data.address
-			setTimeout(() => {
-				selectElement.style.display = "block";
-			}, 400);
-			Object.values(data).forEach(function(value, key){
-				var nameKey = Object.keys(data)[key];
-				var containerCard = turpial.find("mainCard");
-				
-				var element = containerCard.querySelector(`#signature-${nameKey}`);
-				var removeToo = element.getAttribute("data-remove");
-				if(element.tagName === "IMG"){
-
-					try{
-					   	value = new URL(value).href;
-					}catch{
-						
-						if(removeToo !== null){
-							turpial.find(removeToo).style.display = "none"
-						}
-						element.style.display = "none";
-					    value = false;
+					if(address.search("cali") >= 0){
+						address = "cali";
+					}else if(address.search("bogota") >= 0 || address.search("bogotá") >= 0){
+						address = "bogota";
+					}else if(address.search("villavicencio") >= 0){
+						address = "villavicencio";
+					}else{
+						address = "villavicencio";
 					}
-					if(value === false){ return; }
-					element.src = value;
-					element.style.display = "";
+
+					
+					var middleNameShort = [];
+					firstName = app.capitalized(firstName);
+					position = app.capitalized(position);
+					
+					middleName.split(" ").map((word)=>{
+						var string = word.charAt(0)+".".toUpperCase();
+						if(typeof string !== "string"){ return; }
+						middleNameShort.push(word.charAt(0)+".".toUpperCase())
+					}).join(" ");
+					middleNameShort = middleNameShort.join(" ");
+					lastName = app.capitalized(lastName);
+					
+
+
+					var name = user?.name ?? `${firstName} ${middleNameShort} ${lastName}`;
+					var data_user = {
+						name: name,
+						position: position,
+						phone: "(8) 6712413 – 6688503",
+						email: "marketing@seguridadjano.com",
+						address: `src/${address}.png`,
+						footer: "",
+						"footer-img": "",
+					}
+					data_user.url = turpial.host+"?user="+encodeURIComponent(JSON.stringify(data_user));
+
+					list.push(data_user)
+				})
+				console.log(list)
+			}			
+		})
+		
+	},
+	editOnWrite: function(form){
+		var data = coreApp.form.retrieve({
+			form: form,
+			targets: ".formElements",
+		});
+		var selectElement = document.querySelector("#signature-address");
+		selectElement.src = data.address
+		setTimeout(() => {
+			selectElement.style.display = "block";
+		}, 400);
+		Object.values(data).forEach(function(value, key){
+			var nameKey = Object.keys(data)[key];
+			var containerCard = turpial.find("mainCard");
+			
+			var element = containerCard.querySelector(`#signature-${nameKey}`);
+			var removeToo = element.getAttribute("data-remove");
+			if(element.tagName === "IMG"){
+
+				try{
+					value = new URL(value).href;
+				}catch{
+					
 					if(removeToo !== null){
-						turpial.find(removeToo).style.display = ""
+						turpial.find(removeToo).style.display = "none"
 					}
-					return;
+					element.style.display = "none";
+					value = false;
 				}
+				if(value === false){ return; }
+				element.src = value;
+				element.style.display = "";
+				if(removeToo !== null){
+					turpial.find(removeToo).style.display = ""
+				}
+				return;
+			}
 
-				if(value === ""){
-					// insert variable instace of empty value.
-					value = element.getAttribute("data-empty");
-					if(value === null){return;}
-				}
-				turpial.insert(element, value);
-			})
-		},
-		v: function(){
-			var host = enc(HOST);			
-			if(	   host === allowed_websites[0] 
-				|| host === allowed_websites[1]
-				|| host === allowed_websites[2]
-				|| host === allowed_websites[3]
-				){
-				// do nothing
-			}else{
-				// block them all
-				bodyInner(dec("WW91IE5lZWQgQ3JlZGVudGlhbHMhIENvbnRhY3Q6IHllcmlrbWlsbGVyQGdtYWlsLmNvbQ=="));
+			if(value === ""){
+				// insert variable instace of empty value.
+				value = element.getAttribute("data-empty");
+				if(value === null){return;}
 			}
-		},		
-		renderTemplate: function(replacemets, html){
-			//this.v(); block
-			html = html || this.elementTemplate;
-			var template = function(template, searchall, replaceby){
-				return template.split(searchall).join(replaceby);
-			}
-			var structure = html;
-			replacemets.forEach(function( replacement ){
-				var items = Object.keys(replacement);
-				var values = Object.values(replacement);
-				items.forEach(function( item, key ){						
-					item = `{{ ${item} }}`;
-					if(html.search(item) >= 0){
-						structure = template(structure, item, values[key]);
-					}						
-				})
-			})				
-			return structure;
+			turpial.insert(element, value);
+		})
+	},
+	v: function(){
+		var host = enc(HOST);			
+		if(	   host === allowed_websites[0] 
+			|| host === allowed_websites[1]
+			|| host === allowed_websites[2]
+			|| host === allowed_websites[3]
+			){
+			// do nothing
+		}else{
+			// block them all
+			bodyInner(dec("WW91IE5lZWQgQ3JlZGVudGlhbHMhIENvbnRhY3Q6IHllcmlrbWlsbGVyQGdtYWlsLmNvbQ=="));
 		}
+	},		
+	renderTemplate: function(replacemets, html){
+		//this.v(); block
+		html = html || this.elementTemplate;
+		var template = function(template, searchall, replaceby){
+			return template.split(searchall).join(replaceby);
+		}
+		var structure = html;
+		replacemets.forEach(function( replacement ){
+			var items = Object.keys(replacement);
+			var values = Object.values(replacement);
+			items.forEach(function( item, key ){						
+				item = `{{ ${item} }}`;
+				if(html.search(item) >= 0){
+					structure = template(structure, item, values[key]);
+				}						
+			})
+		})				
+		return structure;
+	}
+}
+
+
+// first card to create single signatures.
+// "reactive" zone with turpial.
+
+
+
+var dec = function(s){ return decode(s) };
+var enc = function(s){ return encode(s) };
+var mainCard = coreApp.renderTemplate([{
+	host: turpial.host,
+	name: "Mi Nombre",
+	position: "Mi Cargo",
+	phone: "(8) 6712413 – 6688503",
+	email: "Mi E-mail",
+	address: "src/villaviciencio.png",
+	footer: "",
+	"footer-img": "",
+}]);
+
+
+// on user link
+function createByUrlParams(){
+	var queryString = window.location.search;
+	var urlParams = new URLSearchParams(queryString);
+	if(urlParams.has('user')){
+		var user = urlParams.get('user');
+		user = JSON.parse(decodeURIComponent(user));
+		var mainCard = coreApp.renderTemplate([{
+			host: turpial.host,
+			name: user.name,
+			position: user.position,
+			phone: user.phone,
+			email: user.email,
+			address: user.address,
+			footer: user.footer,
+			"footer-img": user["footer-img"],
+		}]);
+		var form = document.getElementById("form-main-card");
+		form.querySelector(`input[name='name']`).value = user.name||"";
+		form.querySelector(`input[name='position']`).value = user.position||"";
+		form.querySelector(`input[name='phone']`).value = user.phone||"";
+		form.querySelector(`input[name='email']`).value = user.email||"";
+		try {
+			form.querySelector(`input[name='footer']`).value = user.footer||"";
+			form.querySelector(`input[name='footer-img']`).value = user["footer-img"]||"";
+		} catch (error) {
+			
+		}
+
+		var optionAddress = [...form.querySelectorAll(".select-address option")];
+		optionAddress.map(( option )=>{
+			option.removeAttribute("selected")
+		})
+		optionAddress.map(( option )=>{
+			if(user.address === option.value){
+				option.selected = true;
+			}
+		})
+
+		return mainCard;
 	}
 
+	return false;
+}
+var currentUser = createByUrlParams();
+if(currentUser !== false){
+	mainCard = currentUser;
+}
 
-	// first card to create single signatures.
-	// "reactive" zone with turpial. 
-	var dec = function(s){ return decode(s) };
-	var enc = function(s){ return encode(s) };
-	var mainCard = coreApp.renderTemplate([{
-		name: "Mi Nombre",
-		position: "Mi Cargo",
-		phone: "(8) 6712413 – 6688503",
-		email: "Mi E-mail",
-		address: "src/villaviciencio.png",
-		footer: "",
-		"footer-img": "",
-	}]);
-	// coreApp.createUploadElement();
-	turpial.insert("mainCard", mainCard);
+
+// coreApp.createUploadElement();
+turpial.insert("mainCard", mainCard);
+
+try {
+	coreApp.proccessList();
+} catch (error) {
 	
-	
-	/*var rootStyles = {
+}
+
+
+
+
+
+</script>
+<script>
+console.warn(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
+console.log(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
+turpial.mount(turpial.find("footer-page"), turpial.el("p", {class: "is-sr-only"}, 
+	dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5])
+))
+
+try {
+	var rootStyles = {
 		rules: {},
 		cssRoot: document.getElementById("root-styles").sheet.cssRules[0],
 		cssText: "",
@@ -525,11 +665,9 @@
 				app.rules[rule] = app.cssText.split(rule+": ")[1].split(";")[0];
 			})
 		}
-	};*/
-	/*console.warn(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
-	console.log(dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5]));
-	turpial.mount(turpial.find("footer-page"), turpial.el("p", {class: "is-sr-only"}, 
-		dec(creator[0]+creator[1]+creator[2]+creator[3]+creator[4]+creator[5])
-	))*/
-	/*rootStyles.render();*/
+	};
+	rootStyles.render();
+} catch (error) {
+	
+}
 </script>
