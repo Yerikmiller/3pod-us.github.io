@@ -25,6 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.plan-icon-email .path1:before {
+  content: "\e923";
+  color: rgb(0, 0, 0);
+  opacity: 0.0600;
+}
+.plan-icon-email .path2:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
 .plan-icon-business .path1:before {
   content: "\e91c";
   color: rgb(0, 0, 0);
