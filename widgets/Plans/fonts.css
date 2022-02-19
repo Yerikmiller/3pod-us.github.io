@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'plans';
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/widgets/Plans/fonts/plans.eot?fyqu43');
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/widgets/Plans/fonts/plans.eot?fyqu43#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/widgets/Plans/fonts/plans.ttf?fyqu43') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/widgets/Plans/fonts/plans.woff?fyqu43') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/widgets/Plans/fonts/plans.svg?fyqu43#plans') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@5.4.4/widgets/Plans/fonts/plans.eot?fyqu43');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@5.4.4/widgets/Plans/fonts/plans.eot?fyqu43#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@5.4.4/widgets/Plans/fonts/plans.ttf?fyqu43') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@5.4.4/widgets/Plans/fonts/plans.woff?fyqu43') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@5.4.4/widgets/Plans/fonts/plans.svg?fyqu43#plans') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
