@@ -63,7 +63,7 @@
 	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
 	                                        <span style="font-size: 0;"><img src="{{ host }}src/phone.png" border="0" width="12" height="12"></span>&nbsp;
 	                                        <a href="tel:{{ phone }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-phone" data-empty="{{ phone }}">
-	                                        	<!-- ex: +5786712413 -->
+	                                        	<!-- ex: +576086712413 -->
 	                                            {{ phone }}
 	                                        </a>
 	                                    </p>
@@ -184,7 +184,7 @@
 									<label for="signature-position-user">Cargo</label>
 								</div>
 								<div class="input-field">
-									<input class="formElements" autocomplete="off" id="signature-phone-user" type="text" name="phone" value="(608) 6712413 – 6688503" required="">
+									<input class="formElements" autocomplete="off" id="signature-phone-user" type="text" name="phone" value="(608) 6712413 – (608) 6688503" required="">
 									<label for="signature-phone-user">Teléfono</label>
 								</div>
 								<div class="input-field">
@@ -350,7 +350,7 @@ var coreApp = {
 
 			var name = `${employeer["1er nombre"]} ${employeer["1er apellido"]}`;
 			var position = employeer["cargo"];
-			var phone = "(608) 6712413 – 6688503";
+			var phone = "(608) 6712413 – (608) 6688503";
 			var email = employeer["correo corporativo"];
 			var footer = employeer["footer"] || "";
 
@@ -467,7 +467,7 @@ var coreApp = {
 					var data_user = {
 						name: name,
 						position: position,
-						phone: "(608) 6712413 – 6688503",
+						phone: "(608) 6712413 – (608) 6688503",
 						email: "marketing@seguridadjano.com",
 						address: `src/${address}.png`,
 						footer: "",
@@ -573,7 +573,7 @@ var mainCard = coreApp.renderTemplate([{
 	host: turpial.host,
 	name: "Mi Nombre",
 	position: "Mi Cargo",
-	phone: "(608) 6712413 – 6688503",
+	phone: "(608) 6712413 – (608) 6688503",
 	email: "Mi E-mail",
 	address: "src/villaviciencio.png",
 	footer: "",

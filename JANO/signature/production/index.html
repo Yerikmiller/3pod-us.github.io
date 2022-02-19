@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>SEGURIDAD JANO - DIGITAL SIGNATURES APPLICATION</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta property='og:locale' content='en_US' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Yerikmiller/yerikmiller.github.io@master/projects/JANO/application.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/Yerikmiller/turpialjs@master/turpial.es5.min.js"></script>	
+	<script>
+		var turpial = new Turpial({
+		  core_path: null,  
+		  public_path: null,
+		});		
+		var loadCSS = function(url){ turpial.linkCSS( { files: [url] } ); }
+		var includeCSS = function(url){ turpial.includeCSS( { files: [url] } ); }
+
+		loadCSS("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+		loadCSS("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
+	</script>		
+	<style id="root-styles">
+	/* all element need to be closed with semi-colon ";" */
+	/* do not join with another style tag. */
+:root{--color-primary:#312782;--color-secundary:#aec90b;--color-warning:#c9af0a;--color-yellow:#c9af0a;--color-black:#1a1a1a;--color-info:#312782;--color-link:#275082;--color-extralightGrey:#d3ddd9;--color-lightGrey:#a1b6ad;--color-grey:#4b5952;--color-darkGrey:#36403b;--color-error:#c9430a;--color-danger:#c9430a;--color-blue:#3352b8;--color-blue-second:#1948e2;--color-alt-1:#76c90a;--color-alt-2:#40c90a;--color-alt-3:#40c90a;--color-dark-1:#211772;--color-dark-2:#1a106b;--color-dark-3:#130964;--color-dark-4:#0c025d;--color-white:#ffffff;--color-success:#aec90b;--grid-maxWidth:120rem;--grid-gutter:2rem;--font-size:1.6rem;--padding-normal:.75rem;--padding-sides-normal:0 .75rem;--padding-updown-normal:.75rem 0;--font-family:"Roboto","Calibri",sans-serif;--swiper-theme-color:#203b8a;--special-gradient:radial-gradient(circle,rgba(255,255,255,1) 0%,rgba(197,204,241,1) 100%)}
+	</style>
+	<!-- @author: 3pod.us -->
+	<style>
+#preloader{text-align:center}body{font-family:Roboto,Calibri,sans-serif}.is-pointer{cursor:pointer}.is-pointerless{cursor:inherit}.is-flex-centered{align-items:center}.rounded-message{border-radius:20px;box-shadow:2px 6px 10px rgba(0,0,0,0.145)!important;transition:all .3s ease}.rounded-message .message-header{border-radius:20px 20px 0 0}.rounded-message .message-body{border-radius:0 0 20px 20px}.lighter{font-weight:200!important}.bold{font-weight:500!important}.bolder{font-weight:700!important}.light{font-weight:300!important}.normal{font-weight:400!important}.offset-0{margin-left:0}.offset-1{margin-left:8.333333333333332%!important}.offset-2{margin-left:16.666666666666664%!important}.offset-3{margin-left:25%}.offset-4{margin-left:33.33333333333333%}.offset-5{margin-left:41.66666666666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.333333333333336%}.offset-8{margin-left:66.66666666666666%}.offset-9{margin-left:75%}.offset-10{margin-left:83.33333333333334%}.offset-11{margin-left:91.66666666666666%}.offset-0-r{margin-right:0}.offset-1-r{margin-right:8.333333333333332%!important}.offset-2-r{margin-right:16.666666666666664%!important}.offset-3-r{margin-right:25%}.offset-4-r{margin-right:33.33333333333333%}.offset-5-r{margin-right:41.66666666666667%}.offset-6-r{margin-right:50%}.offset-7-r{margin-right:58.333333333333336%}.offset-8-r{margin-right:66.66666666666666%}.offset-9-r{margin-right:75%}.offset-10-r{margin-right:83.33333333333334%}.offset-11-r{margin-right:91.66666666666666%}@media only screen and (max-width:900px){*[class*="offset-"]{margin:auto 0.83333333333333%!important}}.input-field input[type=text]:focus + label,.input-field input[type=password]:focus + label{color:var(--color-primary)!important;font-weight:bolder}.input-field input[type=text]:focus,.input-field input[type=password]:focus{border-bottom:1px solid var(--color-primary)!important;box-shadow:0 1px 0 0 var(--color-primary)!important}
+	</style>
+	</head>
+	<body>
+		<template id="signature-template" class="signature-templates">
+		 <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 540px;max-width: 540px;min-width: 540px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;">
+	        <tbody>
+	            <tr border="0" style="border:0 !important">
+	                <td>
+	                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;">
+	                        <tbody>
+	                            <tr border="0" style="border:0 !important">
+	                                <td width="120" style="line-height: 0;font-size: 0; text-align: center;">
+	                                    <a href="https://seguridadjano.com/" style="text-decoration: none;outline: 0;">
+	                                        <img src="https://i.ibb.co/Q6H6DGc/S-Jano-logo-png.png" width="120" height="" style="display: inline-block;text-align: center;">
+	                                    </a>
+	                                </td>
+	                                <td width="2" align="left" style="padding-left: 20px;padding-right: 20px;">
+	                                    <img src="https://i.ibb.co/P4Mtt8j/br.png" width="2" height="90" style="display: block;">
+	                                </td>
+	                                <td align="left" valign="" style="">
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 2px;margin-top: 0;font-size: 18px;line-height: 18px;font-family:Calibri,Arial,sans-serif;color: #3a3a63;">
+	                                        <strong id="signature-name" data-empty="{{ name }}">
+	                                        	<!-- ex: Diego Sabogal -->
+	                                        	{{ name }}
+	                                        </strong>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 15px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #aec90b;" id="signature-position" data-empty="{{ position }}">
+	                                        <!-- ex: Departamento de Marketing -->
+	                                        {{ position }}
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
+	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/vd3Y0jY/phone-call.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <a href="tel:{{ phone }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-phone" data-empty="{{ phone }}">
+	                                        	<!-- ex: +5786712413 -->
+	                                            {{ phone }}
+	                                        </a>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
+	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/jgh2Htg/email.png" border="0" width="12" height="11"></span>&nbsp;
+	                                        <a href="mailto:{{ email }}" style="text-decoration: none;outline: 0;color: #000;" id="signature-email" data-empty="{{ email }}">
+	                                        	<!-- ex:  marketing@seguridadjano.com -->
+	                                           {{ email }}
+	                                        </a>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 14px;line-height: 14px; font-weight: 400;font-family:Calibri,Arial,sans-serif;color: #000;">
+	                                        <span style="font-size: 0;"><img src="https://i.ibb.co/LQhY0Ng/worldwide.png" border="0" width="12" height="12"></span>&nbsp;
+	                                        <a id="signature-webpage" href="https://www.seguridadjano.com" style="text-decoration: none;outline: 0;color: #000;">
+	                                        	<!-- ex:  www.seguridadjano.com -->
+	                                        	www.seguridadjano.com
+	                                        </a>
+	                                    </p>
+	                                </td>
+	                                <td align="right" valign="bottom" style="line-height: 0;font-size: 0; text-align: right;">
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 15px;margin-top: 0;font-size: 0px;">
+	                                        <a href="https://sibasc.wbasco.org/mod_consulta_pag_wbo/consulta_empresa.php?empresa_id=1534&capitulo_id=2&session_nomidioma=" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/MRjLKFf/cert1-1.png" border="0" width="35" height="">
+	                                        </a><span style="font-size: 13px;">&nbsp;&nbsp;</span>
+	                                        <a href="https://sibasc.wbasco.org/mod_consulta_pag_wbo/consulta_empresas_certificadas.php" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/vXrxJyR/veritas2-1.png" border="0" width="70" height="">
+	                                        </a>
+	                                    </p>
+	                                    <p style="margin-left: 0;margin-right: 0; 0;margin-bottom: 0px;margin-top: 0;font-size: 0px;">
+	                                        <a href="https://www.facebook.com/seguridadJANO/" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/GtSvP5J/facebook-logo-button.png" border="0" width="22" height="22">
+	                                        </a><span style="font-size: 13px;">&nbsp;</span>
+	                                        <a href="https://www.instagram.com/seguridadjano/" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/0t3FVvG/instagram-2.png" border="0" width="22" height="22">
+	                                        </a><span style="font-size: 13px;">&nbsp;</span>
+	                                        <a href="https://www.facebook.com/seguridadJANO/" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/D8PrQxy/twitter-4.png" border="0" width="22" height="22">
+	                                        </a><span style="font-size: 13px;">&nbsp;</span>
+	                                        <a href="https://www.youtube.com/channel/UCNrJI5NjDoJdGzehWHF6S-w" style="text-decoration: none;outline: 0;color: #000;">
+	                                            <img src="https://i.ibb.co/hyrbRvz/youtube-1.png" border="0" width="22" height="22">
+	                                        </a>
+	                                    </p>
+	                                </td>
+	                            </tr>
+	                        </tbody>
+	                    </table>	                    
+	                </td>
+	            </tr>
+	            <tr border="0" style="border:0 !important">
+	                <td style="padding-top: 6px">
+	                    <img id="signature-address" src="{{ address }}" width="365" style="width:365px">
+	                </td>
+	            </tr>
+	        </tbody>
+	    </table>
+	    <table width="540" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 540px;min-width: 320px; font-family:Verdana,Arial,sans-serif;padding: 0px; border-spacing: 0px; margin: 0px; border-collapse: collapse;border:0;word-break: break-word;">
+        	<tr border="0" style="border:0 !important">
+        		<td id="signature-container-footer-img" width="64" valign="middle" style="vertical-align: middle;">
+        			<img data-remove="signature-container-footer-img" width="64" style="width: 64px;display: none;" id="signature-footer-img" src="{{ footer-img }}">
+        		</td>
+        		<td valign="middle" style="font-size: 12px; line-height: 12px; font-family: Calibri,Arial,sans-serif; color: rgb(55, 45, 133);padding-top: 8px;vertical-align: middle;">        			
+        			<strong data-empty="{{ footer }}" id="signature-footer" style="color: rgb(55, 45, 133)">
+        				{{ footer }}
+        			</strong>
+        		</td>
+        	</tr>
+        </table>
+	</template>
+		<div id="preloader" class="pageloader is-active">					
+			<span class="title lighter">
+				<img src="https://i.ibb.co/9wFs2Q2/Jano-Logo-White-Transparent.png" style="width: 120px">
+				<br>
+					<span id="preloader-text">Fetching Components</span>
+				<br>...
+			</span>
+		</div>
+		<header class="column is-multiline">
+			<section class="column is-10 offset-1 offset-1-r">
+				<div class="columns is-multiline">
+					<div class="column is-4 is-flex is-flex-centered">
+						<img src="https://i.ibb.co/Rbkqm00/Logo-Jano-seguridad-1.png" style="width: 220px">
+					</div>
+					<div class="column is-8 is-flex is-flex-centered">
+						<h1 class="title is-size-4">
+			    			<span class="has-text-primary">SEGURIDAD JANO</span>
+			    			<br>
+			    			<span class="lighter">Aplicación de Firmas Digitales.</span>
+			    		</h1>
+					</div>					
+				</div>
+			</section>
+		</header>
+		<main class="columns is-multiline">
+			<section class="column is-10 offset-1 offset-1-r">
+				<div class="columns is-multiline">
+					<div class="column is-4">
+						<div class="box" style="height: 100%">
+							<h2 class="bolder">
+								Crear una firma
+								<span class="has-text-info" data-tooltip="Complete el formulario y descargue su firma digital para correo electrónico.">
+									<i class="fas fa-info-circle"></i>
+								</span>
+							</h2>
+							<form onkeyup="coreApp.editOnWrite(this)" onchange="coreApp.editOnWrite(this)" id="form-main-card" method="POST" onsubmit="event.preventDefault();coreApp.singleDownload()" action="">
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-name-user" type="text" name="name" required="">
+									<label for="signature-name-user">Nombre</label>
+								</div>
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-position-user" type="text" name="position" required="">
+									<label for="signature-position-user">Cargo</label>
+								</div>
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-phone-user" type="text" name="phone" value="(8) 6712413 – 6688503" required="">
+									<label for="signature-phone-user">Teléfono</label>
+								</div>
+								<div class="input-field">
+									<input class="formElements" autocomplete="off" id="signature-email-user" type="email" name="email" required="">
+									<label for="signature-email-user">E-mail</label>
+								</div>
+								<label>Dirección</label>
+								<div class="input-field">									
+									<select class="browser-default formElements" name="address">
+									  <option data-name="villavicencio" data-value="Carrera 40A N° 16-05 Barrio Villa María - Villavicencio, Meta." value="https://i.ibb.co/DKcmFjK/br1.png" selected>Oficina Villavicencio</option>
+									  <option data-name="bogota" data-value="Calle 45 # 54-30 Barrio La Esmeralda - Bogotá D,C." value="https://i.ibb.co/hH8H1Bx/br2.png">Oficina Bogotá</option>
+									  <option data-name="cali" data-value="Carrera 90 # 34-40 Barrio Caney - Cali." value="https://i.ibb.co/WfwYnQH/br3.png">Oficina Cali</option>
+									</select>									
+								</div>
+								<div class="input-field">
+									<br>
+									<p class="bolder has-text-centered has-text-primary" style="border-bottom: 1px solid var(--color-primary);">
+										OPCIONAL
+									</p>
+								</div>
+								<div class="input-field">
+									 <textarea id="signature-footer-user" name="footer" class="materialize-textarea formElements" autocomplete="off"></textarea>
+									 <label for="signature-footer-user">Texto - Footer</label>
+								</div>
+								<div class="input-field">
+									 <input class="formElements" autocomplete="off" id="signature-footer-img-user" type="url" name="footer-img" >
+									 <label for="signature-footer-img-user">Imagen (URL) - Footer</label>
+								</div>
+								<button class="button is-primary is-outlined is-rounded">
+									Download Signature
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="column is-8">
+						<div class="box" style="height: 100%">
+							<h2>Resultado de Firma Digital: </h2>
+							<div id="mainCard" style="overflow-x: auto;">
+								<!-- javascript push -->
+							</div>							
+						</div>
+					</div>						
+				</div>
+			</section>
+		</main>
+		<footer class="columns is-multiline">
+			<div class="column is-12" id="footer-page">
+				<p class="has-text-centered">
+					Created by <a target="_blank" href="https://3pod.us">3pod.us</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
+<script>
+var _0xdee2=['getElementById','innerText','checkbox','signature-template','call','true','data-empty','5IFlvcm1hbiBNYXJpY3V0byAoaHR0cHM6L','.html','keys','toString','pdGUgQXBwbGljYXRpb24g','data-boolean','<!DOCTYPE\x20HTML\x20PUBLIC\x20\x22-//W3C//DTD\x20HTML\x204.0\x20Transitional//EN\x22>\x0a\x09\x09\x09<html>\x0a\x09\x09\x09<head>\x0a\x09\x09\x09\x09<meta\x20content=\x22text/html;\x20charset=utf-8\x22\x20http-equiv=\x22Content-Type\x22>\x0a\x09\x09\x09\x09<title>Email\x20Signature</title>\x0a\x09\x09\x09\x09<style>\x0a\x09\x09\x09\x09\x09a{text-decoration:none;}\x0a\x09\x09\x09\x09</style>\x0a\x09\x09\x09</head>\x0a\x09\x09\x09<body>\x0a\x09\x09\x09\x09','U2lnbmF0dXJlcyBDcmVhdGVkIEJ','length','element','select','y9tYXJpY3V0by53ZWJ','function','\x0a\x09\x09\x09</body>\x0a\x09\x09\x09</html>','@babel/helpers\x20-\x20typeof','concat','root-styles','style','#preloader','find','mount','querySelector','(8)\x206712413\x20–\x206688503','preloader','querySelectorAll','cssRules','display','layout','href','forms','footer-page','host','hide','data-array-input','radio','checked','fetch','isArray','cssRoot','values','IMG','form','is-active','split','constructor','warn','init','Arguments','innerHTML','Invalid\x20attempt\x20to\x20spread\x20non-iterable\x20instance.\x0aIn\x20order\x20to\x20be\x20iterable,\x20non-array\x20objects\x20must\x20have\x20a\x20[Symbol.iterator]()\x20method.','#signature-name','is-sr-only','join','targets','zaXRlKSBmb3IgM3BvZC51cw==','elementTemplate','rules','M3BvZC51cw==','getAttribute','iterator','string','Set','mainCard','Fetching\x20Components','https://cdn.jsdelivr.net/gh/Yerikmiller/yerikmiller.github.io@master/projects/JANO/application.jano2.min.js','search','location','renderTemplate','MTI3LjAuMC4xOjgwODA=','src','Mi\x20Nombre','data-remove','Mi\x20Cargo','push','undefined','download','classList','test','remove','sheet','symbol','forEach','type','body','name','.formElements','value','render','#signature-','object','cssText','none','from','data:text/plain;charset=UTF-8,'];(function(_0x359509,_0xdee2c7){var _0x594738=function(_0x15c4fc){while(--_0x15c4fc){_0x359509['push'](_0x359509['shift']());}};_0x594738(++_0xdee2c7);}(_0xdee2,0x145));var _0x5947=function(_0x359509,_0xdee2c7){_0x359509=_0x359509-0x0;var _0x594738=_0xdee2[_0x359509];return _0x594738;};'use strict';function _typeof(_0xdd1790){_0x5947('0x64');if(typeof Symbol===_0x5947('0x62')&&typeof Symbol[_0x5947('0x2c')]===_0x5947('0x41')){_typeof=function _0x117540(_0x100512){return typeof _0x100512;};}else{_typeof=function _0x51856e(_0xc6bbd2){return _0xc6bbd2&&typeof Symbol===_0x5947('0x62')&&_0xc6bbd2[_0x5947('0x1d')]===Symbol&&_0xc6bbd2!==Symbol['prototype']?'symbol':typeof _0xc6bbd2;};}return _typeof(_0xdd1790);}function _toConsumableArray(_0x2075a6){return _arrayWithoutHoles(_0x2075a6)||_iterableToArray(_0x2075a6)||_unsupportedIterableToArray(_0x2075a6)||_nonIterableSpread();}function _nonIterableSpread(){throw new TypeError(_0x5947('0x22'));}function _unsupportedIterableToArray(_0x3050d6,_0x3605f6){if(!_0x3050d6)return;if(typeof _0x3050d6===_0x5947('0x2d'))return _arrayLikeToArray(_0x3050d6,_0x3605f6);var _0x36474e=Object['prototype'][_0x5947('0x59')][_0x5947('0x53')](_0x3050d6)['slice'](0x8,-0x1);if(_0x36474e==='Object'&&_0x3050d6[_0x5947('0x1d')])_0x36474e=_0x3050d6[_0x5947('0x1d')][_0x5947('0x45')];if(_0x36474e==='Map'||_0x36474e===_0x5947('0x2e'))return Array['from'](_0x36474e);if(_0x36474e===_0x5947('0x20')||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/[_0x5947('0x3e')](_0x36474e))return _arrayLikeToArray(_0x3050d6,_0x3605f6);}function _iterableToArray(_0x339ead){if(typeof Symbol!==_0x5947('0x3b')&&Symbol[_0x5947('0x2c')]in Object(_0x339ead))return Array[_0x5947('0x4d')](_0x339ead);}function _arrayWithoutHoles(_0x1d98ca){if(Array[_0x5947('0x16')](_0x1d98ca))return _arrayLikeToArray(_0x1d98ca);}function _arrayLikeToArray(_0x59cd38,_0x29f5b0){if(_0x29f5b0==null||_0x29f5b0>_0x59cd38[_0x5947('0x5e')])_0x29f5b0=_0x59cd38['length'];for(var _0x51ed42=0x0,_0x59b821=new Array(_0x29f5b0);_0x51ed42<_0x29f5b0;_0x51ed42++){_0x59b821[_0x51ed42]=_0x59cd38[_0x51ed42];}return _0x59b821;}var creator=['U2ltcGxlIFdlYnN',_0x5947('0x5a'),_0x5947('0x5d'),_0x5947('0x56'),_0x5947('0x61'),_0x5947('0x27')];var IS_ONLINE=![];var HOST=window[_0x5947('0x33')][_0x5947('0x10')];function bodyInner(_0x1808ac){document[_0x5947('0x44')][_0x5947('0x21')]=_0x1808ac;};var allowed_websites=[_0x5947('0x35'),'bWFyaWN1dG8ud2Vic2l0ZQ==',_0x5947('0x2a'),'M3BvZC11cy5naXRodWIuaW8='];turpial[_0x5947('0x15')]({'files':[_0x5947('0x31')],'ready':function ready(){var _0x43821b=document[_0x5947('0x9')](_0x5947('0x60'));var _0x362ab5=M['FormSelect'][_0x5947('0x1f')](_0x43821b);coreApp[_0x5947('0x8')][_0x5947('0x11')]();}});var decode=function decode(_0x496cac){return atob(_0x496cac);};var encode=function encode(_0x150e31){return btoa(_0x150e31);};var coreApp={'elementTemplate':turpial[_0x5947('0x4')](_0x5947('0x52'))[_0x5947('0x21')],'form':{'forms':[],'retrieve':function retrieve(_0xa32737){var _0x2a5a1e=this;_0xa32737[_0x5947('0x1a')]=turpial['find'](_0xa32737['form']);var _0xfa50db=_0xa32737[_0x5947('0x1a')]['id'];_0x2a5a1e[_0x5947('0xe')][_0xfa50db]={};var _0x4d2236=_0xa32737[_0x5947('0x1a')][_0x5947('0x9')](_0xa32737[_0x5947('0x26')]);_toConsumableArray(_0x4d2236)[_0x5947('0x42')](function(_0x55ed0d){if(_0x5947('0x54')===_0x55ed0d[_0x5947('0x2b')](_0x5947('0x12')))return _0x5947('0x4a')!=_typeof(_0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d[_0x5947('0x45')]])&&(_0x2a5a1e['forms'][_0xfa50db][_0x55ed0d[_0x5947('0x45')]]=[]),void _0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d[_0x5947('0x45')]][_0x5947('0x3a')](_0x55ed0d['value']);if(_0x5947('0x13')===_0x55ed0d[_0x5947('0x43')]){if(!0x1===_0x55ed0d[_0x5947('0x14')])return;_0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d[_0x5947('0x45')]]=_0x55ed0d[_0x5947('0x47')];}else if(_0x5947('0x51')===_0x55ed0d[_0x5947('0x43')]){if(!0x0===_0x55ed0d[_0x5947('0x14')]&&_0x5947('0x54')===_0x55ed0d[_0x5947('0x2b')](_0x5947('0x5b')))return void(_0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d['name']]=!0x0);if(void 0x0===_0x2a5a1e['forms'][_0xfa50db][_0x55ed0d[_0x5947('0x45')]]&&(_0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d[_0x5947('0x45')]]={}),!0x1===_0x55ed0d[_0x5947('0x14')]&&_0x5947('0x54')===_0x55ed0d[_0x5947('0x2b')](_0x5947('0x5b')))return void(_0x2a5a1e['forms'][_0xfa50db][_0x55ed0d[_0x5947('0x45')]]=!0x1);if(!0x1===_0x55ed0d[_0x5947('0x14')])return void delete _0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d[_0x5947('0x45')]][_0x55ed0d[_0x5947('0x47')]];_0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d[_0x5947('0x45')]][_0x55ed0d['value']]=_0x55ed0d[_0x5947('0x47')];}else _0x2a5a1e[_0x5947('0xe')][_0xfa50db][_0x55ed0d[_0x5947('0x45')]]=_0x55ed0d[_0x5947('0x47')];});return _0x2a5a1e[_0x5947('0xe')][_0xfa50db];}},'layout':function layout(_0x2abc20){return _0x5947('0x5c')[_0x5947('0x0')](_0x2abc20,_0x5947('0x63'));},'singleDownload':function singleDownload(){var _0x26a578=turpial[_0x5947('0x4')](_0x5947('0x2f'));var _0x42b081=this[_0x5947('0xc')](_0x26a578[_0x5947('0x21')]);var _0x4abde9=_0x26a578['querySelector'](_0x5947('0x23'));var _0x587dfa=_0x4abde9[_0x5947('0x50')][_0x5947('0x1c')]('\x20')[_0x5947('0x25')]('-');var _0x365fa4=turpial[_0x5947('0x5')](document[_0x5947('0x44')],turpial['el']('a',{'href':_0x5947('0x4e')[_0x5947('0x0')](encodeURIComponent(_0x42b081))}));_0x365fa4[_0x5947('0x3c')]=_0x587dfa+_0x5947('0x57');_0x365fa4['click']();_0x365fa4[_0x5947('0x3f')]();},'preloader':{'element':document[_0x5947('0x6')](_0x5947('0x3')),'hide':function hide(){this['element'][_0x5947('0x3d')][_0x5947('0x3f')](_0x5947('0x1b'));},'show':function show(_0x3c1fef){_0x3c1fef=_0x3c1fef||_0x5947('0x30');this[_0x5947('0x5f')][_0x5947('0x6')]('#preloader-text')['innerText']=_0x3c1fef;this[_0x5947('0x5f')]['classList']['add']('is-active');}},'editOnWrite':function editOnWrite(_0x5dcf82){var _0x35b54d=coreApp[_0x5947('0x1a')]['retrieve']({'form':_0x5dcf82,'targets':_0x5947('0x46')});Object[_0x5947('0x18')](_0x35b54d)[_0x5947('0x42')](function(_0x584f81,_0x4bf7b9){var _0xd3fc70=Object[_0x5947('0x58')](_0x35b54d)[_0x4bf7b9];var _0x5686c8=turpial[_0x5947('0x4')](_0x5947('0x2f'));var _0x284ba6=_0x5686c8['querySelector'](_0x5947('0x49')['concat'](_0xd3fc70));var _0x517044=_0x284ba6[_0x5947('0x2b')](_0x5947('0x38'));if(_0x284ba6['tagName']===_0x5947('0x19')){try{_0x584f81=new URL(_0x584f81)[_0x5947('0xd')];}catch{if(_0x517044!==null){turpial[_0x5947('0x4')](_0x517044)[_0x5947('0x2')][_0x5947('0xb')]='none';}_0x284ba6[_0x5947('0x2')][_0x5947('0xb')]=_0x5947('0x4c');_0x584f81=![];}if(_0x584f81===![]){return;}_0x284ba6[_0x5947('0x36')]=_0x584f81;_0x284ba6[_0x5947('0x2')][_0x5947('0xb')]='';if(_0x517044!==null){turpial['find'](_0x517044)['style'][_0x5947('0xb')]='';}return;}if(_0x584f81===''){_0x584f81=_0x284ba6[_0x5947('0x2b')](_0x5947('0x55'));if(_0x584f81===null){return;}}turpial['insert'](_0x284ba6,_0x584f81);});},'v':function v(){var _0x1b0ed3=enc(HOST);if(_0x1b0ed3===allowed_websites[0x0]||_0x1b0ed3===allowed_websites[0x1]||_0x1b0ed3===allowed_websites[0x2]||_0x1b0ed3===allowed_websites[0x3]){}else{bodyInner(dec('WW91IE5lZWQgQ3JlZGVudGlhbHMhIENvbnRhY3Q6IHllcmlrbWlsbGVyQGdtYWlsLmNvbQ=='));}},'renderTemplate':function renderTemplate(_0x35da7c,_0x4761f5){this['v']();_0x4761f5=_0x4761f5||this[_0x5947('0x28')];var _0x26ed18=function _0x49793d(_0x5a5d7b,_0x56745a,_0x53d526){return _0x5a5d7b[_0x5947('0x1c')](_0x56745a)[_0x5947('0x25')](_0x53d526);};var _0x31b605=_0x4761f5;_0x35da7c[_0x5947('0x42')](function(_0x5cb82c){var _0x261efc=Object[_0x5947('0x58')](_0x5cb82c);var _0x3a7cac=Object[_0x5947('0x18')](_0x5cb82c);_0x261efc[_0x5947('0x42')](function(_0x4a38ed,_0x2806bf){_0x4a38ed='{{\x20'[_0x5947('0x0')](_0x4a38ed,'\x20}}');if(_0x4761f5[_0x5947('0x32')](_0x4a38ed)>=0x0){_0x31b605=_0x26ed18(_0x31b605,_0x4a38ed,_0x3a7cac[_0x2806bf]);}});});return _0x31b605;}};var dec=function dec(_0x2d706c){return decode(_0x2d706c);};var enc=function enc(_0x4f1cef){return encode(_0x4f1cef);};var mainCard=coreApp[_0x5947('0x34')]([{'name':_0x5947('0x37'),'position':_0x5947('0x39'),'phone':_0x5947('0x7'),'email':'Mi\x20E-mail','address':'https://i.ibb.co/DKcmFjK/br1.png','footer':'','footer-img':''}]);turpial['insert'](_0x5947('0x2f'),mainCard);var rootStyles={'rules':{},'cssRoot':document[_0x5947('0x4f')](_0x5947('0x1'))[_0x5947('0x40')]['cssRules'][0x0],'cssText':'','render':function render(){var _0x11b9c8=this;this[_0x5947('0x17')]=document['getElementById'](_0x5947('0x1'))[_0x5947('0x40')][_0x5947('0xa')][0x0];this[_0x5947('0x4b')]=this['cssRoot']['cssText'];_toConsumableArray(this['cssRoot'][_0x5947('0x2')])[_0x5947('0x42')](function(_0x3308df){_0x11b9c8[_0x5947('0x29')][_0x3308df]=_0x11b9c8[_0x5947('0x4b')][_0x5947('0x1c')](_0x3308df+':\x20')[0x1][_0x5947('0x1c')](';')[0x0];});}};console[_0x5947('0x1e')](dec(creator[0x0]+creator[0x1]+creator[0x2]+creator[0x3]+creator[0x4]+creator[0x5]));console['log'](dec(creator[0x0]+creator[0x1]+creator[0x2]+creator[0x3]+creator[0x4]+creator[0x5]));turpial['mount'](turpial[_0x5947('0x4')](_0x5947('0xf')),turpial['el']('p',{'class':_0x5947('0x24')},dec(creator[0x0]+creator[0x1]+creator[0x2]+creator[0x3]+creator[0x4]+creator[0x5])));rootStyles[_0x5947('0x48')]();
+</script>
