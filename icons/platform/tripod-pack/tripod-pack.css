@@ -9,10 +9,11 @@
   font-style: normal;
   font-display: block;
 }
-
-i[class*='icon-tripod'] {
+i[class*='icon-tripod'], i[class*='icon-tripod']:before i[class*='icon-tripod']:after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'tripod-pack' !important;
+}
+i[class*='icon-tripod'] {
   speak: never;
   font-style: normal;
   font-weight: normal;
