@@ -1,19 +1,17 @@
 @font-face {
   font-family: 'tripod-pack';
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.0.2/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.0.2/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.0.2/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.0.2/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.0.2/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-i[class*='icon-tripod'], i[class*='icon-tripod']:before, i[class*='icon-tripod']:after {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'tripod-pack' !important;
-}
-i[class*='icon-tripod'] {
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -26,6 +24,153 @@ i[class*='icon-tripod'] {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-tripod-star:before {
+  content: "\e979";
+}
+.icon-tripod-service:before {
+  content: "\e976";
+}
+.icon-tripod-download:before {
+  content: "\e977";
+}
+.icon-tripod-cube:before {
+  content: "\e978";
+}
+.icon-tripod-connect-people:before {
+  content: "\e974";
+}
+.icon-tripod-sell:before {
+  content: "\e975";
+}
+.icon-tripod-filter:before {
+  content: "\e971";
+}
+.icon-tripod-arrow-foward:before {
+  content: "\e972";
+}
+.icon-tripod-arrow-back:before {
+  content: "\e973";
+}
+.icon-tripod-navigation-left:before {
+  content: "\e964";
+}
+.icon-tripod-navigation-right:before {
+  content: "\e966";
+}
+.icon-tripod-search:before {
+  content: "\e967";
+}
+.icon-tripod-arrow-small-down:before {
+  content: "\e968";
+}
+.icon-tripod-arrow-left:before {
+  content: "\e96c";
+}
+.icon-tripod-arrow-up:before {
+  content: "\e969";
+}
+.icon-tripod-arrow-down:before {
+  content: "\e96b";
+}
+.icon-tripod-arrow-right:before {
+  content: "\e96d";
+}
+.icon-tripod-growth:before {
+  content: "\e96e";
+}
+.icon-tripod-bell:before {
+  content: "\e96f";
+}
+.icon-tripod-wallet:before {
+  content: "\e970";
+}
+.icon-tripod-world:before {
+  content: "\e957";
+}
+.icon-tripod-truck-moving:before {
+  content: "\e958";
+}
+.icon-tripod-warning:before {
+  content: "\e959";
+}
+.icon-tripod-calendar:before {
+  content: "\e95a";
+}
+.icon-tripod-checklist:before {
+  content: "\e95b";
+}
+.icon-tripod-shopping-cart:before {
+  content: "\e95c";
+}
+.icon-tripod-list:before {
+  content: "\e95d";
+}
+.icon-tripod-list-v2:before {
+  content: "\e95e";
+}
+.icon-tripod-package:before {
+  content: "\e95f";
+}
+.icon-tripod-shipped:before {
+  content: "\e960";
+}
+.icon-tripod-dashboard:before {
+  content: "\e961";
+}
+.icon-tripod-affiliate-user:before {
+  content: "\e962";
+}
+.icon-tripod-home:before {
+  content: "\e963";
+}
+.icon-tripod-speaker:before {
+  content: "\e965";
+}
+.icon-tripod-Pod_Icon_Afiliados:before {
+  content: "\e96a";
+}
+.icon-tripod-styles-settings:before {
+  content: "\e953";
+}
+.icon-tripod-drag:before {
+  content: "\e956";
+}
+.icon-tripod-cog:before {
+  content: "\e955";
+}
+.icon-tripod-animate:before {
+  content: "\e954";
+}
+.icon-tripod-col-25-25-25-25:before {
+  content: "\e94a";
+}
+.icon-tripod-col-25-25-50:before {
+  content: "\e94b";
+}
+.icon-tripod-col-25-50-25:before {
+  content: "\e94c";
+}
+.icon-tripod-col-25-75:before {
+  content: "\e94d";
+}
+.icon-tripod-col-33-33-33:before {
+  content: "\e94e";
+}
+.icon-tripod-col-50-25-25:before {
+  content: "\e94f";
+}
+.icon-tripod-col-50-50:before {
+  content: "\e950";
+}
+.icon-tripod-col-75-25:before {
+  content: "\e951";
+}
+.icon-tripod-col-100:before {
+  content: "\e952";
+}
+.icon-tripod-card-template:before {
+  content: "\e949";
+}
 .icon-tripod-edit:before {
   content: "\e900";
 }
@@ -297,7 +442,7 @@ i[class*='icon-tripod'] {
 .icon-tripod-background-color:before {
   content: "\e93d";
 }
-.icon-tripod-bag:before {
+.icon-tripod-trash:before {
   content: "\e93e";
 }
 .icon-tripod-business .path1:before {
@@ -320,7 +465,7 @@ i[class*='icon-tripod'] {
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
-.icon-tripod-copy:before {
+.icon-tripod-duplicate:before {
   content: "\e943";
 }
 .icon-tripod-designs .path1:before {
@@ -346,3 +491,4 @@ i[class*='icon-tripod'] {
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
+
