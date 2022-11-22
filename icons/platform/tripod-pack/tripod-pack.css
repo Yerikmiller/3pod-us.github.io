@@ -10,7 +10,7 @@
   font-display: block;
 }
 
-i {
+i[class*='icon-tripod-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'tripod-pack' !important;
   speak: never;
