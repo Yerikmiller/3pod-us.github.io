@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'tripod-pack';
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.8/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.8/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.8/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.8/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.8/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.9/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.9/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.9/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.9/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.2.9/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,48 @@ i[class*='icon-tripod-'] {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-tripod-T-world:before {
+  content: "\e9b3";
+}
+.icon-tripod-T-3PodAcademy:before {
+  content: "\e9b4";
+}
+.icon-tripod-v-empty-wallet:before {
+  content: "\e9b5";
+}
+.icon-tripod-T-afiliados:before {
+  content: "\e9b6";
+}
+.icon-tripod-T-admonvideo:before {
+  content: "\e9b7";
+}
+.icon-tripod-v-pen-tool:before {
+  content: "\e9b8";
+}
+.icon-tripod-v-designtools:before {
+  content: "\e9b9";
+}
+.icon-tripod-T-campaigns:before {
+  content: "\e9ba";
+}
+.icon-tripod-v-home:before {
+  content: "\e9bb";
+}
+.icon-tripod-v-notification:before {
+  content: "\e9bc";
+}
+.icon-tripod-v-video-square:before {
+  content: "\e9bd";
+}
+.icon-tripod-v-user:before {
+  content: "\e9be";
+}
+.icon-tripod-v-info-circle:before {
+  content: "\e9bf";
+}
+.icon-tripod-v-logout:before {
+  content: "\e9c0";
+}
 .icon-tripod-v-sort:before {
   content: "\e9ac";
 }
