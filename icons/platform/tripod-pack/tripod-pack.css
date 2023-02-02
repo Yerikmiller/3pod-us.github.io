@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'tripod-pack';
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.4/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.4/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.4/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.4/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.4/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.5/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.5/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.5/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.5/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.3.5/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,742 +25,756 @@ i[class*='icon-tripod-'] {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-.icon-tripod-v-empty-wallet1:before {
-  content: "\e9c7";
+.icon-tripod-v-bezier:before {
+  content: "\e9d5";
 }
-.icon-tripod-T-check:before {
-  content: "\e9c8";
+.icon-tripod-v-close-circle:before {
+  content: "\e9d6";
 }
-.icon-tripod-T-guardar:before {
-  content: "\e9c9";
-}
-.icon-tripod-v-paypal:before {
-  content: "\e9ca";
-}
-.icon-tripod-v-wallet:before {
-  content: "\e9cb";
-}
-.icon-tripod-v-speedometer:before {
-  content: "\e9cc";
-}
-.icon-tripod-v-sms:before {
-  content: "\e9cd";
-}
-.icon-tripod-v-document-text:before {
-  content: "\e9ce";
-}
-.icon-tripod-v-camera:before {
-  content: "\e9cf";
-}
-.icon-tripod-v-clock:before {
-  content: "\e9d0";
-}
-.icon-tripod-v-timer:before {
-  content: "\e9d1";
-}
-.icon-tripod-shipped:before {
-  content: "\e970";
-}
-.icon-tripod-truck-moving:before {
-  content: "\e98b";
-}
-.icon-tripod-package:before {
-  content: "\e968";
-}
-.icon-tripod-shopping-cart:before {
-  content: "\e971";
-}
-.icon-tripod-crown:before {
-  content: "\e991";
-}
-.icon-tripod-referral:before {
-  content: "\e9c4";
-}
-.icon-tripod-v-user:before {
-  content: "\e9be";
-}
-.icon-tripod-profile:before {
-  content: "\e98d";
-}
-.icon-tripod-reports:before {
-  content: "\e9c5";
-}
-.icon-tripod-url-alt-2:before {
-  content: "\e9c6";
-}
-.icon-tripod-T-searchv2:before {
-  content: "\e9c3";
-}
-.icon-tripod-T-apps:before {
-  content: "\e9c1";
-}
-.icon-tripod-filter:before {
-  content: "\e953";
-}
-.icon-tripod-T-world:before {
-  content: "\e9b3";
-}
-.icon-tripod-T-3PodAcademy:before {
-  content: "\e9b4";
-  color: #424b54;
-}
-.icon-tripod-v-empty-wallet:before {
-  content: "\e9b5";
-}
-.icon-tripod-T-afiliados:before {
-  content: "\e9b6";
-}
-.icon-tripod-T-admonvideo:before {
-  content: "\e9b7";
-}
-.icon-tripod-v-pen-tool:before {
-  content: "\e9b8";
-}
-.icon-tripod-v-designtools:before {
-  content: "\e9b9";
-}
-.icon-tripod-T-campaigns:before {
-  content: "\e9ba";
-}
-.icon-tripod-v-home:before {
-  content: "\e9bb";
-}
-.icon-tripod-v-notification:before {
-  content: "\e9bc";
-}
-.icon-tripod-v-video-square:before {
-  content: "\e9bd";
-}
-.icon-tripod-v-info-circle:before {
-  content: "\e9bf";
-}
-.icon-tripod-v-logout:before {
-  content: "\e9c0";
-}
-.icon-tripod-v-sort:before {
-  content: "\e9ac";
-}
-.icon-tripod-v-magicpen:before {
-  content: "\e9ad";
-}
-.icon-tripod-v-shopping-bag:before {
-  content: "\e9ae";
-}
-.icon-tripod-v-profile-2user:before {
-  content: "\e9af";
-}
-.icon-tripod-v-emoji-happy:before {
-  content: "\e9b0";
-}
-.icon-tripod-v-printer:before {
-  content: "\e9b1";
-}
-.icon-tripod-v-image:before {
-  content: "\e9b2";
-}
-.icon-tripod-T-plantilla:before {
-  content: "\e9a8";
-}
-.icon-tripod-v-gallery:before {
-  content: "\e9a9";
-}
-.icon-tripod-post-alt:before {
-  content: "\e99b";
-}
-.icon-tripod-v-gallery-add:before {
-  content: "\e9c2";
-}
-.icon-tripod-v-shop:before {
-  content: "\e9aa";
-}
-.icon-tripod-v-filter:before {
-  content: "\e9ab";
-}
-.icon-tripod-v-calendar:before {
-  content: "\e9a7";
-}
-.icon-tripod-vertical-dots:before {
-  content: "\e9a4";
-}
-.icon-tripod-link-alt:before {
-  content: "\e9a5";
-}
-.icon-tripod-video-play:before {
-  content: "\e9a6";
-}
-.icon-tripod-bills:before {
-  content: "\e98f";
-}
-.icon-tripod-number-one:before {
-  content: "\e9a2";
-}
-.icon-tripod-video-tick:before {
-  content: "\e9a3";
-}
-.icon-tripod-dollar-circle:before {
-  content: "\e99e";
-}
-.icon-tripod-design-tools:before {
-  content: "\e99f";
-}
-.icon-tripod-folder-video:before {
-  content: "\e9a0";
-}
-.icon-tripod-email-alt:before {
-  content: "\e9a1";
-}
-.icon-tripod-designs-alt:before {
-  content: "\e99c";
-}
-.icon-tripod-funnel-alt:before {
-  content: "\e99d";
-}
-.icon-tripod-success-circle1:before {
-  content: "\e903";
-}
-.icon-tripod-addition:before {
-  content: "\e95b";
-}
-.icon-tripod-addition-alt:before {
-  content: "\e98c";
-}
-.icon-tripod-repeat:before {
-  content: "\e999";
-}
-.icon-tripod-shopping-bag:before {
-  content: "\e98e";
-  color: #424b54;
-}
-.icon-tripod-logout:before {
-  content: "\e990";
-}
-.icon-tripod-send-message:before {
-  content: "\e992";
-}
-.icon-tripod-list:before {
-  content: "\e961";
-}
-.icon-tripod-growth:before {
-  content: "\e959";
-}
-.icon-tripod-marketplace:before {
-  content: "\e993";
-  color: #424b54;
-}
-.icon-tripod-products:before {
-  content: "\e994";
-  color: #424b54;
-}
-.icon-tripod-plans:before {
-  content: "\e995";
-  color: #424b54;
-}
-.icon-tripod-wallet:before {
-  content: "\e996";
-}
-.icon-tripod-cog-bold:before {
-  content: "\e997";
-  color: #424b54;
-}
-.icon-tripod-design:before {
-  content: "\e998";
-}
-.icon-tripod-speaker:before {
-  content: "\e972";
-}
-.icon-tripod-underline:before {
+.icon-tripod-tablet:before {
   content: "\e900";
 }
-.icon-tripod-undo:before {
+.icon-tripod-T-admonvideo:before {
   content: "\e901";
 }
-.icon-tripod-unordered-list:before {
+.icon-tripod-T-afiliados:before {
   content: "\e902";
 }
-.icon-tripod-warning:before {
+.icon-tripod-T-apps:before {
+  content: "\e903";
+}
+.icon-tripod-T-campaigns:before {
   content: "\e904";
 }
-.icon-tripod-warning-alt:before {
+.icon-tripod-T-check:before {
   content: "\e905";
 }
+.icon-tripod-text-align-center:before {
+  content: "\e906";
+}
+.icon-tripod-text-align-justify:before {
+  content: "\e907";
+}
+.icon-tripod-text-align-left:before {
+  content: "\e908";
+}
+.icon-tripod-text-align-right:before {
+  content: "\e909";
+}
+.icon-tripod-text-color:before {
+  content: "\e90a";
+}
+.icon-tripod-T-guardar:before {
+  content: "\e90b";
+}
+.icon-tripod-times:before {
+  content: "\e90c";
+}
+.icon-tripod-T-plantilla:before {
+  content: "\e90d";
+}
+.icon-tripod-trash:before {
+  content: "\e90e";
+}
+.icon-tripod-truck-moving:before {
+  content: "\e90f";
+}
+.icon-tripod-T-searchv2:before {
+  content: "\e910";
+}
+.icon-tripod-T-world:before {
+  content: "\e911";
+}
+.icon-tripod-underline:before {
+  content: "\e912";
+}
+.icon-tripod-undo:before {
+  content: "\e913";
+}
+.icon-tripod-unordered-list:before {
+  content: "\e914";
+}
+.icon-tripod-url-alt-2:before {
+  content: "\e915";
+}
+.icon-tripod-v-arrow-down:before {
+  content: "\e916";
+}
+.icon-tripod-v-arrow-up:before {
+  content: "\e917";
+}
+.icon-tripod-v-calendar:before {
+  content: "\e918";
+}
+.icon-tripod-v-camera:before {
+  content: "\e919";
+}
+.icon-tripod-v-clock:before {
+  content: "\e91a";
+}
+.icon-tripod-v-designtools:before {
+  content: "\e91b";
+}
+.icon-tripod-v-document-text:before {
+  content: "\e91c";
+}
+.icon-tripod-v-emoji-happy:before {
+  content: "\e91d";
+}
+.icon-tripod-v-empty-wallet:before {
+  content: "\e91e";
+}
+.icon-tripod-v-empty-wallet1:before {
+  content: "\e91f";
+}
+.icon-tripod-vertical-dots:before {
+  content: "\e920";
+}
+.icon-tripod-v-filter:before {
+  content: "\e921";
+}
+.icon-tripod-v-gallery:before {
+  content: "\e922";
+}
+.icon-tripod-v-gallery-add:before {
+  content: "\e923";
+}
+.icon-tripod-v-home:before {
+  content: "\e924";
+}
+.icon-tripod-video-play:before {
+  content: "\e925";
+}
+.icon-tripod-video-tick:before {
+  content: "\e926";
+}
+.icon-tripod-v-image:before {
+  content: "\e927";
+}
+.icon-tripod-v-info-circle:before {
+  content: "\e928";
+}
+.icon-tripod-v-logout:before {
+  content: "\e929";
+}
+.icon-tripod-v-magicpen:before {
+  content: "\e92a";
+}
+.icon-tripod-v-notification:before {
+  content: "\e92b";
+}
+.icon-tripod-v-paypal:before {
+  content: "\e92c";
+}
+.icon-tripod-v-pen-tool:before {
+  content: "\e92d";
+}
+.icon-tripod-v-printer:before {
+  content: "\e92e";
+}
+.icon-tripod-v-profile-2user:before {
+  content: "\e92f";
+}
+.icon-tripod-v-shop:before {
+  content: "\e930";
+}
+.icon-tripod-v-shopping-bag:before {
+  content: "\e931";
+}
+.icon-tripod-v-sms:before {
+  content: "\e932";
+}
+.icon-tripod-v-sort:before {
+  content: "\e933";
+}
+.icon-tripod-v-speedometer:before {
+  content: "\e934";
+}
+.icon-tripod-v-timer:before {
+  content: "\e935";
+}
+.icon-tripod-v-timer-alt-1:before {
+  content: "\e936";
+}
+.icon-tripod-v-user:before {
+  content: "\e937";
+}
+.icon-tripod-v-video-square:before {
+  content: "\e938";
+}
+.icon-tripod-v-wallet:before {
+  content: "\e939";
+}
+.icon-tripod-wallet:before {
+  content: "\e93a";
+}
+.icon-tripod-warning:before {
+  content: "\e93b";
+}
+.icon-tripod-warning-alt:before {
+  content: "\e93c";
+}
 .icon-tripod-warning-alt-2:before {
-  content: "\e99a";
+  content: "\e93d";
 }
 .icon-tripod-websites .path1:before {
-  content: "\e906";
+  content: "\e93e";
   color: rgb(0, 0, 0);
   opacity: 0.0700;
 }
 .icon-tripod-websites .path2:before {
-  content: "\e907";
+  content: "\e93f";
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-tripod-websites .path3:before {
-  content: "\e908";
+  content: "\e940";
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-tripod-websites .path4:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path5:before {
-  content: "\e90a";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path6:before {
-  content: "\e90b";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path7:before {
-  content: "\e90c";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path8:before {
-  content: "\e90d";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path9:before {
-  content: "\e90e";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path10:before {
-  content: "\e90f";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path11:before {
-  content: "\e910";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-websites .path12:before {
-  content: "\e911";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-world:before {
-  content: "\e912";
-}
-.icon-tripod-affiliate-user:before {
-  content: "\e913";
-}
-.icon-tripod-alert:before {
-  content: "\e914";
-}
-.icon-tripod-alert-outlined:before {
-  content: "\e915";
-}
-.icon-tripod-animate:before {
-  content: "\e916";
-}
-.icon-tripod-arrow-back:before {
-  content: "\e917";
-}
-.icon-tripod-arrow-down:before {
-  content: "\e918";
-}
-.icon-tripod-arrow-foward:before {
-  content: "\e919";
-}
-.icon-tripod-arrow-left:before {
-  content: "\e91a";
-}
-.icon-tripod-arrow-right:before {
-  content: "\e91b";
-}
-.icon-tripod-arrow-small-down:before {
-  content: "\e91c";
-}
-.icon-tripod-arrow-small-up:before {
-  content: "\e91d";
-}
-.icon-tripod-arrow-up:before {
-  content: "\e91e";
-}
-.icon-tripod-star:before {
-  content: "\e973";
-}
-.icon-tripod-star-outlined:before {
-  content: "\e974";
-}
-.icon-tripod-awards:before {
-  content: "\e91f";
-}
-.icon-tripod-background-color:before {
-  content: "\e920";
-}
-.icon-tripod-bell:before {
-  content: "\e921";
-  color: #424b54;
-}
-.icon-tripod-business .path1:before {
-  content: "\e922";
-  color: rgb(0, 0, 0);
-  opacity: 0.0600;
-}
-.icon-tripod-business .path2:before {
-  content: "\e923";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-calendar:before {
-  content: "\e924";
-}
-.icon-tripod-campaigns .path1:before {
-  content: "\e925";
-  color: rgb(0, 0, 0);
-  opacity: 0.0700;
-}
-.icon-tripod-campaigns .path2:before {
-  content: "\e926";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-card-template:before {
-  content: "\e927";
-}
-.icon-tripod-checklist:before {
-  content: "\e928";
-}
-.icon-tripod-checklist-alt:before {
-  content: "\e929";
-}
-.icon-tripod-cog:before {
-  content: "\e92a";
-}
-.icon-tripod-col-25-25-25-25:before {
-  content: "\e92b";
-}
-.icon-tripod-col-25-25-50:before {
-  content: "\e92c";
-}
-.icon-tripod-col-25-50-25:before {
-  content: "\e92d";
-}
-.icon-tripod-col-25-75:before {
-  content: "\e92e";
-}
-.icon-tripod-col-33-33-33:before {
-  content: "\e92f";
-}
-.icon-tripod-col-50-25-25:before {
-  content: "\e930";
-}
-.icon-tripod-col-50-50:before {
-  content: "\e931";
-}
-.icon-tripod-col-75-25:before {
-  content: "\e932";
-}
-.icon-tripod-col-100:before {
-  content: "\e933";
-}
-.icon-tripod-edit:before {
-  content: "\e93f";
-}
-.icon-tripod-connect-people:before {
-  content: "\e934";
-}
-.icon-tripod-cube:before {
-  content: "\e935";
-}
-.icon-tripod-dashboard:before {
-  content: "\e936";
-}
-.icon-tripod-desktop:before {
-  content: "\e939";
-}
-.icon-tripod-download:before {
-  content: "\e93a";
-}
-.icon-tripod-drag:before {
-  content: "\e93b";
-}
-.icon-tripod-duplicate:before {
-  content: "\e93c";
-}
-.icon-tripod-ecommerce .path1:before {
-  content: "\e93d";
-  color: rgb(0, 0, 0);
-  opacity: 0.0600;
-}
-.icon-tripod-ecommerce .path2:before {
-  content: "\e93e";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-funnel .path1:before {
-  content: "\e954";
-  color: rgb(0, 0, 0);
-  opacity: 0.0600;
-}
-.icon-tripod-funnel .path2:before {
-  content: "\e955";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-funnel .path3:before {
-  content: "\e956";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-funnel .path4:before {
-  content: "\e957";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-funnel .path5:before {
-  content: "\e958";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path1:before {
-  content: "\e946";
-  color: rgb(0, 0, 0);
-  opacity: 0.0600;
-}
-.icon-tripod-entrepreneur .path2:before {
-  content: "\e947";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path3:before {
-  content: "\e948";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path4:before {
-  content: "\e949";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path5:before {
-  content: "\e94a";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path6:before {
-  content: "\e94b";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path7:before {
-  content: "\e94c";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path8:before {
-  content: "\e94d";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path9:before {
-  content: "\e94e";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-entrepreneur .path10:before {
-  content: "\e94f";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-Pod_Icon_Afiliados:before {
-  content: "\e969";
-}
-.icon-tripod-designs .path1:before {
-  content: "\e937";
-  color: rgb(0, 0, 0);
-  opacity: 0.0700;
-}
-.icon-tripod-designs .path2:before {
-  content: "\e938";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-tripod-email .path1:before {
-  content: "\e940";
-  color: rgb(0, 0, 0);
-  opacity: 0.0600;
-}
-.icon-tripod-email .path2:before {
   content: "\e941";
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path1:before {
-  content: "\e975";
+.icon-tripod-websites .path5:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-websites .path6:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-websites .path7:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-websites .path8:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-websites .path9:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-websites .path10:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-websites .path11:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-websites .path12:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-world:before {
+  content: "\e94a";
+}
+.icon-tripod-addition:before {
+  content: "\e94b";
+}
+.icon-tripod-addition-alt:before {
+  content: "\e94c";
+}
+.icon-tripod-affiliate-user:before {
+  content: "\e94d";
+}
+.icon-tripod-alert:before {
+  content: "\e94e";
+}
+.icon-tripod-alert-outlined:before {
+  content: "\e94f";
+}
+.icon-tripod-animate:before {
+  content: "\e950";
+}
+.icon-tripod-arrow-back:before {
+  content: "\e951";
+}
+.icon-tripod-arrow-down:before {
+  content: "\e952";
+}
+.icon-tripod-arrow-foward:before {
+  content: "\e953";
+}
+.icon-tripod-arrow-left:before {
+  content: "\e954";
+}
+.icon-tripod-arrow-right:before {
+  content: "\e955";
+}
+.icon-tripod-arrow-small-down:before {
+  content: "\e956";
+}
+.icon-tripod-arrow-small-up:before {
+  content: "\e957";
+}
+.icon-tripod-arrow-up:before {
+  content: "\e958";
+}
+.icon-tripod-awards:before {
+  content: "\e959";
+}
+.icon-tripod-background-color:before {
+  content: "\e95a";
+}
+.icon-tripod-bell:before {
+  content: "\e95b";
+  color: #424b54;
+}
+.icon-tripod-bills:before {
+  content: "\e95c";
+}
+.icon-tripod-business .path1:before {
+  content: "\e95d";
   color: rgb(0, 0, 0);
   opacity: 0.0600;
 }
-.icon-tripod-startup .path2:before {
+.icon-tripod-business .path2:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-calendar:before {
+  content: "\e95f";
+}
+.icon-tripod-campaigns .path1:before {
+  content: "\e960";
+  color: rgb(0, 0, 0);
+  opacity: 0.0700;
+}
+.icon-tripod-campaigns .path2:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-card-template:before {
+  content: "\e962";
+}
+.icon-tripod-checklist:before {
+  content: "\e963";
+}
+.icon-tripod-checklist-alt:before {
+  content: "\e964";
+}
+.icon-tripod-cog:before {
+  content: "\e965";
+}
+.icon-tripod-cog-bold:before {
+  content: "\e966";
+  color: #424b54;
+}
+.icon-tripod-col-25-25-25-25:before {
+  content: "\e967";
+}
+.icon-tripod-col-25-25-50:before {
+  content: "\e968";
+}
+.icon-tripod-col-25-50-25:before {
+  content: "\e969";
+}
+.icon-tripod-col-25-75:before {
+  content: "\e96a";
+}
+.icon-tripod-col-33-33-33:before {
+  content: "\e96b";
+}
+.icon-tripod-col-50-25-25:before {
+  content: "\e96c";
+}
+.icon-tripod-col-50-50:before {
+  content: "\e96d";
+}
+.icon-tripod-col-75-25:before {
+  content: "\e96e";
+}
+.icon-tripod-col-100:before {
+  content: "\e96f";
+}
+.icon-tripod-connect-people:before {
+  content: "\e970";
+}
+.icon-tripod-crown:before {
+  content: "\e971";
+}
+.icon-tripod-cube:before {
+  content: "\e972";
+}
+.icon-tripod-dashboard:before {
+  content: "\e973";
+}
+.icon-tripod-design:before {
+  content: "\e974";
+}
+.icon-tripod-designs .path1:before {
+  content: "\e975";
+  color: rgb(0, 0, 0);
+  opacity: 0.0700;
+}
+.icon-tripod-designs .path2:before {
   content: "\e976";
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path3:before {
+.icon-tripod-designs-alt:before {
   content: "\e977";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path4:before {
+.icon-tripod-design-tools:before {
   content: "\e978";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path5:before {
+.icon-tripod-desktop:before {
   content: "\e979";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path6:before {
+.icon-tripod-dollar-circle:before {
   content: "\e97a";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path7:before {
+.icon-tripod-download:before {
   content: "\e97b";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path8:before {
+.icon-tripod-drag:before {
   content: "\e97c";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path9:before {
+.icon-tripod-duplicate:before {
   content: "\e97d";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
-.icon-tripod-startup .path10:before {
+.icon-tripod-ecommerce .path1:before {
   content: "\e97e";
+  color: rgb(0, 0, 0);
+  opacity: 0.0600;
+}
+.icon-tripod-ecommerce .path2:before {
+  content: "\e97f";
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
-.icon-tripod-exponential:before {
-  content: "\e950";
-}
-.icon-tripod-eye:before {
-  content: "\e951";
-}
-.icon-tripod-eye-slash:before {
-  content: "\e952";
-}
-.icon-tripod-home:before {
-  content: "\e95a";
-}
-.icon-tripod-info:before {
-  content: "\e95c";
-}
-.icon-tripod-info-alt:before {
-  content: "\e95d";
-}
-.icon-tripod-justify:before {
-  content: "\e95e";
-}
-.icon-tripod-line-height:before {
-  content: "\e95f";
-}
-.icon-tripod-link:before {
-  content: "\e960";
-}
-.icon-tripod-list-v2:before {
-  content: "\e962";
-}
-.icon-tripod-messenger:before {
-  content: "\e963";
-}
-.icon-tripod-mobile:before {
-  content: "\e964";
-}
-.icon-tripod-navigation-left:before {
-  content: "\e965";
-}
-.icon-tripod-navigation-right:before {
-  content: "\e966";
-}
-.icon-tripod-ordered-list:before {
-  content: "\e967";
-}
-.icon-tripod-safeguard:before {
-  content: "\e96a";
-}
-.icon-tripod-save:before {
-  content: "\e96b";
-}
-.icon-tripod-search:before {
-  content: "\e96c";
-}
-.icon-tripod-sell:before {
-  content: "\e96d";
-}
-.icon-tripod-service:before {
-  content: "\e96e";
-}
-.icon-tripod-shield:before {
-  content: "\e96f";
-}
-.icon-tripod-strikethrough:before {
-  content: "\e97f";
-}
-.icon-tripod-styles-settings:before {
+.icon-tripod-edit:before {
   content: "\e980";
 }
-.icon-tripod-subindex:before {
+.icon-tripod-email .path1:before {
   content: "\e981";
+  color: rgb(0, 0, 0);
+  opacity: 0.0600;
 }
-.icon-tripod-success-circle:before {
+.icon-tripod-email .path2:before {
   content: "\e982";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
 }
-.icon-tripod-tablet:before {
+.icon-tripod-email-alt:before {
   content: "\e983";
 }
-.icon-tripod-text-align-center:before {
-  content: "\e984";
-}
-.icon-tripod-text-align-justify:before {
-  content: "\e985";
-}
-.icon-tripod-text-align-left:before {
-  content: "\e986";
-}
-.icon-tripod-text-align-right:before {
-  content: "\e987";
-}
-.icon-tripod-text-color:before {
-  content: "\e988";
-}
-.icon-tripod-times:before {
-  content: "\e989";
-}
-.icon-tripod-trash:before {
-  content: "\e98a";
-}
 .icon-tripod-emoji .path1:before {
-  content: "\e942";
+  content: "\e984";
   color: rgb(251, 204, 88);
 }
 .icon-tripod-emoji .path2:before {
-  content: "\e943";
+  content: "\e985";
   margin-left: -1em;
   color: rgb(81, 38, 20);
 }
 .icon-tripod-emoji .path3:before {
-  content: "\e944";
+  content: "\e986";
   margin-left: -1em;
   color: rgb(239, 72, 100);
 }
 .icon-tripod-emoji .path4:before {
-  content: "\e945";
+  content: "\e987";
   margin-left: -1em;
   color: rgb(38, 52, 84);
+}
+.icon-tripod-entrepreneur .path1:before {
+  content: "\e988";
+  color: rgb(0, 0, 0);
+  opacity: 0.0600;
+}
+.icon-tripod-entrepreneur .path2:before {
+  content: "\e989";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path3:before {
+  content: "\e98a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path4:before {
+  content: "\e98b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path5:before {
+  content: "\e98c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path6:before {
+  content: "\e98d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path7:before {
+  content: "\e98e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path8:before {
+  content: "\e98f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path9:before {
+  content: "\e990";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-entrepreneur .path10:before {
+  content: "\e991";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-exponential:before {
+  content: "\e992";
+}
+.icon-tripod-eye:before {
+  content: "\e993";
+}
+.icon-tripod-eye-slash:before {
+  content: "\e994";
+}
+.icon-tripod-filter:before {
+  content: "\e995";
+}
+.icon-tripod-folder-video:before {
+  content: "\e996";
+}
+.icon-tripod-funnel .path1:before {
+  content: "\e997";
+  color: rgb(0, 0, 0);
+  opacity: 0.0600;
+}
+.icon-tripod-funnel .path2:before {
+  content: "\e998";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-funnel .path3:before {
+  content: "\e999";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-funnel .path4:before {
+  content: "\e99a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-funnel .path5:before {
+  content: "\e99b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-funnel-alt:before {
+  content: "\e99c";
+}
+.icon-tripod-growth:before {
+  content: "\e99d";
+}
+.icon-tripod-home:before {
+  content: "\e99e";
+}
+.icon-tripod-info:before {
+  content: "\e99f";
+}
+.icon-tripod-info-alt:before {
+  content: "\e9a0";
+}
+.icon-tripod-justify:before {
+  content: "\e9a1";
+}
+.icon-tripod-line-height:before {
+  content: "\e9a2";
+}
+.icon-tripod-link:before {
+  content: "\e9a3";
+}
+.icon-tripod-link-alt:before {
+  content: "\e9a4";
+}
+.icon-tripod-list:before {
+  content: "\e9a5";
+}
+.icon-tripod-list-v2:before {
+  content: "\e9a6";
+}
+.icon-tripod-logout:before {
+  content: "\e9a7";
+}
+.icon-tripod-marketplace:before {
+  content: "\e9a8";
+  color: #424b54;
+}
+.icon-tripod-messenger:before {
+  content: "\e9a9";
+}
+.icon-tripod-mobile:before {
+  content: "\e9aa";
+}
+.icon-tripod-navigation-left:before {
+  content: "\e9ab";
+}
+.icon-tripod-navigation-right:before {
+  content: "\e9ac";
+}
+.icon-tripod-number-one:before {
+  content: "\e9ad";
+}
+.icon-tripod-ordered-list:before {
+  content: "\e9ae";
+}
+.icon-tripod-package:before {
+  content: "\e9af";
+}
+.icon-tripod-plans:before {
+  content: "\e9b0";
+  color: #424b54;
+}
+.icon-tripod-Pod_Icon_Afiliados:before {
+  content: "\e9b1";
+}
+.icon-tripod-post-alt:before {
+  content: "\e9b2";
+}
+.icon-tripod-products:before {
+  content: "\e9b3";
+  color: #424b54;
+}
+.icon-tripod-profile:before {
+  content: "\e9b4";
+}
+.icon-tripod-referral:before {
+  content: "\e9b5";
+}
+.icon-tripod-repeat:before {
+  content: "\e9b6";
+}
+.icon-tripod-reports:before {
+  content: "\e9b7";
+}
+.icon-tripod-safeguard:before {
+  content: "\e9b8";
+}
+.icon-tripod-save:before {
+  content: "\e9b9";
+}
+.icon-tripod-search:before {
+  content: "\e9ba";
+}
+.icon-tripod-sell:before {
+  content: "\e9bb";
+}
+.icon-tripod-send-message:before {
+  content: "\e9bc";
+}
+.icon-tripod-service:before {
+  content: "\e9bd";
+}
+.icon-tripod-shield:before {
+  content: "\e9be";
+}
+.icon-tripod-shipped:before {
+  content: "\e9bf";
+}
+.icon-tripod-shopping-bag:before {
+  content: "\e9c0";
+  color: #424b54;
+}
+.icon-tripod-shopping-cart:before {
+  content: "\e9c1";
+}
+.icon-tripod-speaker:before {
+  content: "\e9c2";
+}
+.icon-tripod-star:before {
+  content: "\e9c3";
+}
+.icon-tripod-star-outlined:before {
+  content: "\e9c4";
+}
+.icon-tripod-startup .path1:before {
+  content: "\e9c5";
+  color: rgb(0, 0, 0);
+  opacity: 0.0600;
+}
+.icon-tripod-startup .path2:before {
+  content: "\e9c6";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path3:before {
+  content: "\e9c7";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path4:before {
+  content: "\e9c8";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path5:before {
+  content: "\e9c9";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path6:before {
+  content: "\e9ca";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path7:before {
+  content: "\e9cb";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path8:before {
+  content: "\e9cc";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path9:before {
+  content: "\e9cd";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-startup .path10:before {
+  content: "\e9ce";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-tripod-strikethrough:before {
+  content: "\e9cf";
+}
+.icon-tripod-styles-settings:before {
+  content: "\e9d0";
+}
+.icon-tripod-subindex:before {
+  content: "\e9d1";
+}
+.icon-tripod-success-circle:before {
+  content: "\e9d2";
+}
+.icon-tripod-success-circle1:before {
+  content: "\e9d3";
+}
+.icon-tripod-T-3PodAcademy:before {
+  content: "\e9d4";
+  color: #424b54;
 }
