@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'tripod-pack';
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.5/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.5/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.5/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.5/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.5/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,165 @@ i[class*='icon-tripod-'] {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-tripod-v-lock:before {
+  content: "\ea33";
+}
+.icon-tripod-v-unlock:before {
+  content: "\ea34";
+}
+.icon-tripod-scanning-right-bottom .path1:before {
+  content: "\ea13";
+  color: ;
+}
+.icon-tripod-scanning-right-bottom .path2:before {
+  content: "\ea14";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-scanning-right-bottom .path3:before {
+  content: "\ea15";
+  margin-left: -1em;
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-scanning-right-bottom .path4:before {
+  content: "\ea16";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-v-margin-top .path1:before {
+  content: "\ea17";
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-v-margin-top .path2:before {
+  content: "\ea18";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-v-margin-top .path3:before {
+  content: "\ea19";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-v-margin-top .path4:before {
+  content: "\ea1a";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-v-margin-right .path1:before {
+  content: "\ea1b";
+  color: ;
+}
+.icon-tripod-v-margin-right .path2:before {
+  content: "\ea1c";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-v-margin-right .path3:before {
+  content: "\ea1d";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-v-margin-right .path4:before {
+  content: "\ea1e";
+  margin-left: -1em;
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-v-margin-bottom .path1:before {
+  content: "\ea1f";
+  color: ;
+}
+.icon-tripod-v-margin-bottom .path2:before {
+  content: "\ea20";
+  margin-left: -0.94140625em;
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-v-margin-bottom .path3:before {
+  content: "\ea21";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-v-margin-bottom .path4:before {
+  content: "\ea22";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-v-margin-left .path1:before {
+  content: "\ea23";
+  color: ;
+}
+.icon-tripod-v-margin-left .path2:before {
+  content: "\ea24";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-v-margin-left .path3:before {
+  content: "\ea25";
+  margin-left: -1em;
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-v-margin-left .path4:before {
+  content: "\ea26";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-v-scanning-bottom-left .path1:before {
+  content: "\ea27";
+  color: ;
+}
+.icon-tripod-v-scanning-bottom-left .path2:before {
+  content: "\ea28";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-v-scanning-bottom-left .path3:before {
+  content: "\ea29";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-v-scanning-bottom-left .path4:before {
+  content: "\ea2a";
+  margin-left: -1em;
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-v-scanning-top-left .path1:before {
+  content: "\ea2b";
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-v-scanning-top-left .path2:before {
+  content: "\ea2c";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-v-scanning-top-left .path3:before {
+  content: "\ea2d";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-v-scanning-top-left .path4:before {
+  content: "\ea2e";
+  margin-left: -0.94140625em;
+  color: ;
+}
+.icon-tripod-scanning-top-right .path1:before {
+  content: "\ea2f";
+  color: ;
+}
+.icon-tripod-scanning-top-right .path2:before {
+  content: "\ea30";
+  margin-left: -1em;
+  color: rgb(41, 98, 255);
+}
+.icon-tripod-scanning-top-right .path3:before {
+  content: "\ea31";
+  margin-left: -1em;
+  color: ;
+}
+.icon-tripod-scanning-top-right .path4:before {
+  content: "\ea32";
+  margin-left: -1em;
+  color: ;
+}
 .icon-tripod-T-Mobile:before {
   content: "\ea10";
 }
