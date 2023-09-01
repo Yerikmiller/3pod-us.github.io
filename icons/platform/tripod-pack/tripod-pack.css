@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'tripod-pack';
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
-  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.6/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.7/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.7/icons/platform/tripod-pack/fonts/tripod-pack.eot?f0zlij#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.7/icons/platform/tripod-pack/fonts/tripod-pack.ttf?f0zlij') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.7/icons/platform/tripod-pack/fonts/tripod-pack.woff?f0zlij') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@tpi-1.6.7/icons/platform/tripod-pack/fonts/tripod-pack.svg?f0zlij#tripod-pack') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,12 @@ i[class*='icon-tripod-'] {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-tripod-language-circle:before {
+  content: "\ea35";
+}
+.icon-tripod-shield-search:before {
+  content: "\ea36";
+}
 .icon-tripod-v-lock:before {
   content: "\ea33";
 }
