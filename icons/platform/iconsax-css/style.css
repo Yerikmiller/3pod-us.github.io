@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'iconsax';
-  src:  url('iconsax.eot?yjegnn');
-  src:  url('iconsax.eot?yjegnn#iefix') format('embedded-opentype'),
-        url('iconsax.ttf?yjegnn') format('truetype'),
-        url('iconsax.woff?yjegnn') format('woff'),
-        url('iconsax.svg?yjegnn#iconsax') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/iconsax-css/fonts/iconsax.eot?v=isax1.0.1');
+  src:  url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/iconsax-css/fonts/iconsax.eot?v=isax1.0.1#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/iconsax-css/fonts/iconsax.ttf?v=isax1.0.1') format('truetype'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/iconsax-css/fonts/iconsax.woff?v=isax1.0.1') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/iconsax-css/fonts/iconsax.svg?v=isax1.0.1#iconsax') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: block;https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/platform/iconsax-css/style.css
 }
 
 .isax {
