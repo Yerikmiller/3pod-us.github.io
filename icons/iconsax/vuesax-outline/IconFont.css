@@ -1,8 +1,8 @@
 @font-face {
     font-family: "vuesax-outline";
-    src: url('IconFont.woff2?t=1701119805067') format('woff2'),
-        url('IconFont.woff?t=1701119805067') format('woff'),
-        url('IconFont.ttf?t=1701119805067') format('truetype');
+    src: url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/iconsax/vuesax-outline/IconFont.woff2?t=1701119805067') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/iconsax/vuesax-outline/IconFont.woff?t=1701119805067') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@latest/icons/iconsax/vuesax-outline/IconFont.ttf?t=1701119805067') format('truetype');
 }
 
 .iconfont {
