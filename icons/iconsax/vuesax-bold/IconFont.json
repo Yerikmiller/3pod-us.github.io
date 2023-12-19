@@ -1,0 +1,4987 @@
+[
+    {
+        "name": "x-bold-bank",
+        "className": "x-bold-bank",
+        "unicode": "e900"
+    },
+    {
+        "name": "x-bold-house",
+        "className": "x-bold-house",
+        "unicode": "e901"
+    },
+    {
+        "name": "x-bold-buliding",
+        "className": "x-bold-buliding",
+        "unicode": "e902"
+    },
+    {
+        "name": "x-bold-house-2",
+        "className": "x-bold-house-2",
+        "unicode": "e903"
+    },
+    {
+        "name": "x-bold-buildings-2",
+        "className": "x-bold-buildings-2",
+        "unicode": "e904"
+    },
+    {
+        "name": "x-bold-buildings",
+        "className": "x-bold-buildings",
+        "unicode": "e905"
+    },
+    {
+        "name": "x-bold-courthouse",
+        "className": "x-bold-courthouse",
+        "unicode": "e906"
+    },
+    {
+        "name": "x-bold-building-4",
+        "className": "x-bold-building-4",
+        "unicode": "e907"
+    },
+    {
+        "name": "x-bold-hospital",
+        "className": "x-bold-hospital",
+        "unicode": "e908"
+    },
+    {
+        "name": "x-bold-building-3",
+        "className": "x-bold-building-3",
+        "unicode": "e909"
+    },
+    {
+        "name": "x-bold-gemini",
+        "className": "x-bold-gemini",
+        "unicode": "e90a"
+    },
+    {
+        "name": "x-bold-aquarius",
+        "className": "x-bold-aquarius",
+        "unicode": "e90b"
+    },
+    {
+        "name": "x-bold-gemini-2",
+        "className": "x-bold-gemini-2",
+        "unicode": "e90c"
+    },
+    {
+        "name": "x-bold-sagittarius",
+        "className": "x-bold-sagittarius",
+        "unicode": "e90d"
+    },
+    {
+        "name": "x-bold-book-square",
+        "className": "x-bold-book-square",
+        "unicode": "e90e"
+    },
+    {
+        "name": "x-bold-receipt-square",
+        "className": "x-bold-receipt-square",
+        "unicode": "e90f"
+    },
+    {
+        "name": "x-bold-save-add",
+        "className": "x-bold-save-add",
+        "unicode": "e910"
+    },
+    {
+        "name": "x-bold-save-2",
+        "className": "x-bold-save-2",
+        "unicode": "e911"
+    },
+    {
+        "name": "x-bold-save-minus",
+        "className": "x-bold-save-minus",
+        "unicode": "e912"
+    },
+    {
+        "name": "x-bold-save-remove",
+        "className": "x-bold-save-remove",
+        "unicode": "e913"
+    },
+    {
+        "name": "x-bold-book-saved",
+        "className": "x-bold-book-saved",
+        "unicode": "e914"
+    },
+    {
+        "name": "x-bold-convert-3d-cube",
+        "className": "x-bold-convert-3d-cube",
+        "unicode": "e915"
+    },
+    {
+        "name": "x-bold-3d-cube-scan",
+        "className": "x-bold-3d-cube-scan",
+        "unicode": "e916"
+    },
+    {
+        "name": "x-bold-box16",
+        "className": "x-bold-box16",
+        "unicode": "e917"
+    },
+    {
+        "name": "x-bold-box-remove",
+        "className": "x-bold-box-remove",
+        "unicode": "e918"
+    },
+    {
+        "name": "x-bold-truck-tick",
+        "className": "x-bold-truck-tick",
+        "unicode": "e919"
+    },
+    {
+        "name": "x-bold-3d-square",
+        "className": "x-bold-3d-square",
+        "unicode": "e91a"
+    },
+    {
+        "name": "x-bold-3d-rotate",
+        "className": "x-bold-3d-rotate",
+        "unicode": "e91b"
+    },
+    {
+        "name": "x-bold-box-tick",
+        "className": "x-bold-box-tick",
+        "unicode": "e91c"
+    },
+    {
+        "name": "x-bold-box-search",
+        "className": "x-bold-box-search",
+        "unicode": "e91d"
+    },
+    {
+        "name": "x-bold-box-time",
+        "className": "x-bold-box-time",
+        "unicode": "e91e"
+    },
+    {
+        "name": "x-bold-box-add",
+        "className": "x-bold-box-add",
+        "unicode": "e91f"
+    },
+    {
+        "name": "x-bold-truck-remove",
+        "className": "x-bold-truck-remove",
+        "unicode": "e920"
+    },
+    {
+        "name": "x-bold-box15",
+        "className": "x-bold-box15",
+        "unicode": "e921"
+    },
+    {
+        "name": "x-bold-truck-fast",
+        "className": "x-bold-truck-fast",
+        "unicode": "e922"
+    },
+    {
+        "name": "x-bold-truck",
+        "className": "x-bold-truck",
+        "unicode": "e923"
+    },
+    {
+        "name": "x-bold-truck-time",
+        "className": "x-bold-truck-time",
+        "unicode": "e924"
+    },
+    {
+        "name": "x-bold-shopping-bag",
+        "className": "x-bold-shopping-bag",
+        "unicode": "e925"
+    },
+    {
+        "name": "x-bold-barcode",
+        "className": "x-bold-barcode",
+        "unicode": "e926"
+    },
+    {
+        "name": "x-bold-shop-remove",
+        "className": "x-bold-shop-remove",
+        "unicode": "e927"
+    },
+    {
+        "name": "x-bold-shopping-cart",
+        "className": "x-bold-shopping-cart",
+        "unicode": "e928"
+    },
+    {
+        "name": "x-bold-location-minus",
+        "className": "x-bold-location-minus",
+        "unicode": "e929"
+    },
+    {
+        "name": "x-bold-location-slash",
+        "className": "x-bold-location-slash",
+        "unicode": "e92a"
+    },
+    {
+        "name": "x-bold-location-tick",
+        "className": "x-bold-location-tick",
+        "unicode": "e92b"
+    },
+    {
+        "name": "x-bold-radar46",
+        "className": "x-bold-radar46",
+        "unicode": "e92c"
+    },
+    {
+        "name": "x-bold-global-edit",
+        "className": "x-bold-global-edit",
+        "unicode": "e92d"
+    },
+    {
+        "name": "x-bold-global-refresh",
+        "className": "x-bold-global-refresh",
+        "unicode": "e92e"
+    },
+    {
+        "name": "x-bold-direct-up",
+        "className": "x-bold-direct-up",
+        "unicode": "e92f"
+    },
+    {
+        "name": "x-bold-location-cross",
+        "className": "x-bold-location-cross",
+        "unicode": "e930"
+    },
+    {
+        "name": "x-bold-direct-down",
+        "className": "x-bold-direct-down",
+        "unicode": "e931"
+    },
+    {
+        "name": "x-bold-location",
+        "className": "x-bold-location",
+        "unicode": "e932"
+    },
+    {
+        "name": "x-bold-radar-2",
+        "className": "x-bold-radar-2",
+        "unicode": "e933"
+    },
+    {
+        "name": "x-bold-global",
+        "className": "x-bold-global",
+        "unicode": "e934"
+    },
+    {
+        "name": "x-bold-direct-left",
+        "className": "x-bold-direct-left",
+        "unicode": "e935"
+    },
+    {
+        "name": "x-bold-arrow-square",
+        "className": "x-bold-arrow-square",
+        "unicode": "e936"
+    },
+    {
+        "name": "x-bold-map45",
+        "className": "x-bold-map45",
+        "unicode": "e937"
+    },
+    {
+        "name": "x-bold-routing",
+        "className": "x-bold-routing",
+        "unicode": "e938"
+    },
+    {
+        "name": "x-bold-discover47",
+        "className": "x-bold-discover47",
+        "unicode": "e939"
+    },
+    {
+        "name": "x-bold-global-search",
+        "className": "x-bold-global-search",
+        "unicode": "e93a"
+    },
+    {
+        "name": "x-bold-location-add",
+        "className": "x-bold-location-add",
+        "unicode": "e93b"
+    },
+    {
+        "name": "x-bold-gps-slash",
+        "className": "x-bold-gps-slash",
+        "unicode": "e93c"
+    },
+    {
+        "name": "x-bold-direct-right",
+        "className": "x-bold-direct-right",
+        "unicode": "e93d"
+    },
+    {
+        "name": "x-bold-gps",
+        "className": "x-bold-gps",
+        "unicode": "e93e"
+    },
+    {
+        "name": "x-bold-picture-frame",
+        "className": "x-bold-picture-frame",
+        "unicode": "e93f"
+    },
+    {
+        "name": "x-bold-routing-2",
+        "className": "x-bold-routing-2",
+        "unicode": "e940"
+    },
+    {
+        "name": "x-bold-route-square",
+        "className": "x-bold-route-square",
+        "unicode": "e941"
+    },
+    {
+        "name": "x-bold-map44",
+        "className": "x-bold-map44",
+        "unicode": "e942"
+    },
+    {
+        "name": "x-bold-arrow",
+        "className": "x-bold-arrow",
+        "unicode": "e943"
+    },
+    {
+        "name": "x-bold-folder-connection",
+        "className": "x-bold-folder-connection",
+        "unicode": "e944"
+    },
+    {
+        "name": "x-bold-microscope",
+        "className": "x-bold-microscope",
+        "unicode": "e945"
+    },
+    {
+        "name": "x-bold-airdrop",
+        "className": "x-bold-airdrop",
+        "unicode": "e946"
+    },
+    {
+        "name": "x-bold-keyboard-open",
+        "className": "x-bold-keyboard-open",
+        "unicode": "e947"
+    },
+    {
+        "name": "x-bold-bluetooth",
+        "className": "x-bold-bluetooth",
+        "unicode": "e948"
+    },
+    {
+        "name": "x-bold-gameboy",
+        "className": "x-bold-gameboy",
+        "unicode": "e949"
+    },
+    {
+        "name": "x-bold-bluetooth-circle",
+        "className": "x-bold-bluetooth-circle",
+        "unicode": "e94a"
+    },
+    {
+        "name": "x-bold-watch-status",
+        "className": "x-bold-watch-status",
+        "unicode": "e94b"
+    },
+    {
+        "name": "x-bold-watch",
+        "className": "x-bold-watch",
+        "unicode": "e94c"
+    },
+    {
+        "name": "x-bold-mirroring-screen",
+        "className": "x-bold-mirroring-screen",
+        "unicode": "e94d"
+    },
+    {
+        "name": "x-bold-electricity",
+        "className": "x-bold-electricity",
+        "unicode": "e94e"
+    },
+    {
+        "name": "x-bold-simcard89",
+        "className": "x-bold-simcard89",
+        "unicode": "e94f"
+    },
+    {
+        "name": "x-bold-bluetooth-2",
+        "className": "x-bold-bluetooth-2",
+        "unicode": "e950"
+    },
+    {
+        "name": "x-bold-cloud-change",
+        "className": "x-bold-cloud-change",
+        "unicode": "e951"
+    },
+    {
+        "name": "x-bold-bluetooth-rectangle",
+        "className": "x-bold-bluetooth-rectangle",
+        "unicode": "e952"
+    },
+    {
+        "name": "x-bold-driver-2",
+        "className": "x-bold-driver-2",
+        "unicode": "e953"
+    },
+    {
+        "name": "x-bold-cloud-remove",
+        "className": "x-bold-cloud-remove",
+        "unicode": "e954"
+    },
+    {
+        "name": "x-bold-external-drive",
+        "className": "x-bold-external-drive",
+        "unicode": "e955"
+    },
+    {
+        "name": "x-bold-devices90",
+        "className": "x-bold-devices90",
+        "unicode": "e956"
+    },
+    {
+        "name": "x-bold-music-play",
+        "className": "x-bold-music-play",
+        "unicode": "e957"
+    },
+    {
+        "name": "x-bold-driver-refresh",
+        "className": "x-bold-driver-refresh",
+        "unicode": "e958"
+    },
+    {
+        "name": "x-bold-airpods",
+        "className": "x-bold-airpods",
+        "unicode": "e959"
+    },
+    {
+        "name": "x-bold-driver",
+        "className": "x-bold-driver",
+        "unicode": "e95a"
+    },
+    {
+        "name": "x-bold-cloud-add",
+        "className": "x-bold-cloud-add",
+        "unicode": "e95b"
+    },
+    {
+        "name": "x-bold-cloud-connection",
+        "className": "x-bold-cloud-connection",
+        "unicode": "e95c"
+    },
+    {
+        "name": "x-bold-headphones",
+        "className": "x-bold-headphones",
+        "unicode": "e95d"
+    },
+    {
+        "name": "x-bold-candle-2",
+        "className": "x-bold-candle-2",
+        "unicode": "e95e"
+    },
+    {
+        "name": "x-bold-menu123",
+        "className": "x-bold-menu123",
+        "unicode": "e95f"
+    },
+    {
+        "name": "x-bold-settings",
+        "className": "x-bold-settings",
+        "unicode": "e960"
+    },
+    {
+        "name": "x-bold-candle",
+        "className": "x-bold-candle",
+        "unicode": "e961"
+    },
+    {
+        "name": "x-bold-buy-crypto",
+        "className": "x-bold-buy-crypto",
+        "unicode": "e962"
+    },
+    {
+        "name": "x-bold-bitcoin-card",
+        "className": "x-bold-bitcoin-card",
+        "unicode": "e963"
+    },
+    {
+        "name": "x-bold-card-coin",
+        "className": "x-bold-card-coin",
+        "unicode": "e964"
+    },
+    {
+        "name": "x-bold-bitcoin-convert",
+        "className": "x-bold-bitcoin-convert",
+        "unicode": "e965"
+    },
+    {
+        "name": "x-bold-bitcoin-refresh",
+        "className": "x-bold-bitcoin-refresh",
+        "unicode": "e966"
+    },
+    {
+        "name": "x-bold-trade",
+        "className": "x-bold-trade",
+        "unicode": "e967"
+    },
+    {
+        "name": "x-bold-calendar-tick",
+        "className": "x-bold-calendar-tick",
+        "unicode": "e968"
+    },
+    {
+        "name": "x-bold-calendar-add",
+        "className": "x-bold-calendar-add",
+        "unicode": "e969"
+    },
+    {
+        "name": "x-bold-calendar-remove",
+        "className": "x-bold-calendar-remove",
+        "unicode": "e96a"
+    },
+    {
+        "name": "x-bold-calendar118",
+        "className": "x-bold-calendar118",
+        "unicode": "e96b"
+    },
+    {
+        "name": "x-bold-security-time",
+        "className": "x-bold-security-time",
+        "unicode": "e96c"
+    },
+    {
+        "name": "x-bold-calendar-search",
+        "className": "x-bold-calendar-search",
+        "unicode": "e96d"
+    },
+    {
+        "name": "x-bold-calendar-2",
+        "className": "x-bold-calendar-2",
+        "unicode": "e96e"
+    },
+    {
+        "name": "x-bold-calendar-circle",
+        "className": "x-bold-calendar-circle",
+        "unicode": "e96f"
+    },
+    {
+        "name": "x-bold-calendar-edit",
+        "className": "x-bold-calendar-edit",
+        "unicode": "e970"
+    },
+    {
+        "name": "x-bold-grid-eraser",
+        "className": "x-bold-grid-eraser",
+        "unicode": "e971"
+    },
+    {
+        "name": "x-bold-grid-edit",
+        "className": "x-bold-grid-edit",
+        "unicode": "e972"
+    },
+    {
+        "name": "x-bold-grid-lock",
+        "className": "x-bold-grid-lock",
+        "unicode": "e973"
+    },
+    {
+        "name": "x-bold-user-octagon",
+        "className": "x-bold-user-octagon",
+        "unicode": "e974"
+    },
+    {
+        "name": "x-bold-user-search",
+        "className": "x-bold-user-search",
+        "unicode": "e975"
+    },
+    {
+        "name": "x-bold-user-add",
+        "className": "x-bold-user-add",
+        "unicode": "e976"
+    },
+    {
+        "name": "x-bold-user-tag",
+        "className": "x-bold-user-tag",
+        "unicode": "e977"
+    },
+    {
+        "name": "x-bold-user-square",
+        "className": "x-bold-user-square",
+        "unicode": "e978"
+    },
+    {
+        "name": "x-bold-user-cirlce-add",
+        "className": "x-bold-user-cirlce-add",
+        "unicode": "e979"
+    },
+    {
+        "name": "x-bold-user-remove",
+        "className": "x-bold-user-remove",
+        "unicode": "e97a"
+    },
+    {
+        "name": "x-bold-tag-user",
+        "className": "x-bold-tag-user",
+        "unicode": "e97b"
+    },
+    {
+        "name": "x-bold-user-edit",
+        "className": "x-bold-user-edit",
+        "unicode": "e97c"
+    },
+    {
+        "name": "x-bold-user-tick",
+        "className": "x-bold-user-tick",
+        "unicode": "e97d"
+    },
+    {
+        "name": "x-bold-user-minus",
+        "className": "x-bold-user-minus",
+        "unicode": "e97e"
+    },
+    {
+        "name": "x-bold-people",
+        "className": "x-bold-people",
+        "unicode": "e97f"
+    },
+    {
+        "name": "x-bold-user",
+        "className": "x-bold-user",
+        "unicode": "e980"
+    },
+    {
+        "name": "x-bold-eraser193",
+        "className": "x-bold-eraser193",
+        "unicode": "e981"
+    },
+    {
+        "name": "x-bold-quote-up",
+        "className": "x-bold-quote-up",
+        "unicode": "e982"
+    },
+    {
+        "name": "x-bold-quote-down-circle",
+        "className": "x-bold-quote-down-circle",
+        "unicode": "e983"
+    },
+    {
+        "name": "x-bold-quote-down",
+        "className": "x-bold-quote-down",
+        "unicode": "e984"
+    },
+    {
+        "name": "x-bold-language-circle",
+        "className": "x-bold-language-circle",
+        "unicode": "e985"
+    },
+    {
+        "name": "x-bold-attach-circle",
+        "className": "x-bold-attach-circle",
+        "unicode": "e986"
+    },
+    {
+        "name": "x-bold-link-circle",
+        "className": "x-bold-link-circle",
+        "unicode": "e987"
+    },
+    {
+        "name": "x-bold-quote-down-square",
+        "className": "x-bold-quote-down-square",
+        "unicode": "e988"
+    },
+    {
+        "name": "x-bold-quote-up-square",
+        "className": "x-bold-quote-up-square",
+        "unicode": "e989"
+    },
+    {
+        "name": "x-bold-link192",
+        "className": "x-bold-link192",
+        "unicode": "e98a"
+    },
+    {
+        "name": "x-bold-quote-up-circle",
+        "className": "x-bold-quote-up-circle",
+        "unicode": "e98b"
+    },
+    {
+        "name": "x-bold-attach-square",
+        "className": "x-bold-attach-square",
+        "unicode": "e98c"
+    },
+    {
+        "name": "x-bold-link-square",
+        "className": "x-bold-link-square",
+        "unicode": "e98d"
+    },
+    {
+        "name": "x-bold-language-square",
+        "className": "x-bold-language-square",
+        "unicode": "e98e"
+    },
+    {
+        "name": "x-bold-translate",
+        "className": "x-bold-translate",
+        "unicode": "e98f"
+    },
+    {
+        "name": "x-bold-pen-add",
+        "className": "x-bold-pen-add",
+        "unicode": "e990"
+    },
+    {
+        "name": "x-bold-bucket-circle",
+        "className": "x-bold-bucket-circle",
+        "unicode": "e991"
+    },
+    {
+        "name": "x-bold-scissor81",
+        "className": "x-bold-scissor81",
+        "unicode": "e992"
+    },
+    {
+        "name": "x-bold-color-swatch",
+        "className": "x-bold-color-swatch",
+        "unicode": "e993"
+    },
+    {
+        "name": "x-bold-brush77",
+        "className": "x-bold-brush77",
+        "unicode": "e994"
+    },
+    {
+        "name": "x-bold-eraser78",
+        "className": "x-bold-eraser78",
+        "unicode": "e995"
+    },
+    {
+        "name": "x-bold-flash-circle89",
+        "className": "x-bold-flash-circle89",
+        "unicode": "e996"
+    },
+    {
+        "name": "x-bold-omega-circle",
+        "className": "x-bold-omega-circle",
+        "unicode": "e997"
+    },
+    {
+        "name": "x-bold-omega-square",
+        "className": "x-bold-omega-square",
+        "unicode": "e998"
+    },
+    {
+        "name": "x-bold-recovery-convert",
+        "className": "x-bold-recovery-convert",
+        "unicode": "e999"
+    },
+    {
+        "name": "x-bold-mask79",
+        "className": "x-bold-mask79",
+        "unicode": "e99a"
+    },
+    {
+        "name": "x-bold-colors-square",
+        "className": "x-bold-colors-square",
+        "unicode": "e99b"
+    },
+    {
+        "name": "x-bold-main-component",
+        "className": "x-bold-main-component",
+        "unicode": "e99c"
+    },
+    {
+        "name": "x-bold-blur",
+        "className": "x-bold-blur",
+        "unicode": "e99d"
+    },
+    {
+        "name": "x-bold-mask76",
+        "className": "x-bold-mask76",
+        "unicode": "e99e"
+    },
+    {
+        "name": "x-bold-forward-item",
+        "className": "x-bold-forward-item",
+        "unicode": "e99f"
+    },
+    {
+        "name": "x-bold-backward-item",
+        "className": "x-bold-backward-item",
+        "unicode": "e9a0"
+    },
+    {
+        "name": "x-bold-component",
+        "className": "x-bold-component",
+        "unicode": "e9a1"
+    },
+    {
+        "name": "x-bold-pen-remove",
+        "className": "x-bold-pen-remove",
+        "unicode": "e9a2"
+    },
+    {
+        "name": "x-bold-shapes82",
+        "className": "x-bold-shapes82",
+        "unicode": "e9a3"
+    },
+    {
+        "name": "x-bold-pen-close",
+        "className": "x-bold-pen-close",
+        "unicode": "e9a4"
+    },
+    {
+        "name": "x-bold-pen-tool-2",
+        "className": "x-bold-pen-tool-2",
+        "unicode": "e9a5"
+    },
+    {
+        "name": "x-bold-bezier",
+        "className": "x-bold-bezier",
+        "unicode": "e9a6"
+    },
+    {
+        "name": "x-bold-bucket-square",
+        "className": "x-bold-bucket-square",
+        "unicode": "e9a7"
+    },
+    {
+        "name": "x-bold-pen-tool",
+        "className": "x-bold-pen-tool",
+        "unicode": "e9a8"
+    },
+    {
+        "name": "x-bold-folder-cloud",
+        "className": "x-bold-folder-cloud",
+        "unicode": "e9a9"
+    },
+    {
+        "name": "x-bold-note-favorite",
+        "className": "x-bold-note-favorite",
+        "unicode": "e9aa"
+    },
+    {
+        "name": "x-bold-creative-commons",
+        "className": "x-bold-creative-commons",
+        "unicode": "e9ab"
+    },
+    {
+        "name": "x-bold-task-square",
+        "className": "x-bold-task-square",
+        "unicode": "e9ac"
+    },
+    {
+        "name": "x-bold-menu-board",
+        "className": "x-bold-menu-board",
+        "unicode": "e9ad"
+    },
+    {
+        "name": "x-bold-bill",
+        "className": "x-bold-bill",
+        "unicode": "e9ae"
+    },
+    {
+        "name": "x-bold-archive-book",
+        "className": "x-bold-archive-book",
+        "unicode": "e9af"
+    },
+    {
+        "name": "x-bold-note-text",
+        "className": "x-bold-note-text",
+        "unicode": "e9b0"
+    },
+    {
+        "name": "x-bold-document-filter",
+        "className": "x-bold-document-filter",
+        "unicode": "e9b1"
+    },
+    {
+        "name": "x-bold-copyright",
+        "className": "x-bold-copyright",
+        "unicode": "e9b2"
+    },
+    {
+        "name": "x-bold-messages-2",
+        "className": "x-bold-messages-2",
+        "unicode": "e9b3"
+    },
+    {
+        "name": "x-bold-sms-search",
+        "className": "x-bold-sms-search",
+        "unicode": "e9b4"
+    },
+    {
+        "name": "x-bold-message-tick",
+        "className": "x-bold-message-tick",
+        "unicode": "e9b5"
+    },
+    {
+        "name": "x-bold-message-add96",
+        "className": "x-bold-message-add96",
+        "unicode": "e9b6"
+    },
+    {
+        "name": "x-bold-messages97",
+        "className": "x-bold-messages97",
+        "unicode": "e9b7"
+    },
+    {
+        "name": "x-bold-sms",
+        "className": "x-bold-sms",
+        "unicode": "e9b8"
+    },
+    {
+        "name": "x-bold-messages-3",
+        "className": "x-bold-messages-3",
+        "unicode": "e9b9"
+    },
+    {
+        "name": "x-bold-sms-notification",
+        "className": "x-bold-sms-notification",
+        "unicode": "e9ba"
+    },
+    {
+        "name": "x-bold-message-time",
+        "className": "x-bold-message-time",
+        "unicode": "e9bb"
+    },
+    {
+        "name": "x-bold-message-circle",
+        "className": "x-bold-message-circle",
+        "unicode": "e9bc"
+    },
+    {
+        "name": "x-bold-messages95",
+        "className": "x-bold-messages95",
+        "unicode": "e9bd"
+    },
+    {
+        "name": "x-bold-message-square",
+        "className": "x-bold-message-square",
+        "unicode": "e9be"
+    },
+    {
+        "name": "x-bold-message-remove",
+        "className": "x-bold-message-remove",
+        "unicode": "e9bf"
+    },
+    {
+        "name": "x-bold-sms-edit",
+        "className": "x-bold-sms-edit",
+        "unicode": "e9c0"
+    },
+    {
+        "name": "x-bold-sms-star",
+        "className": "x-bold-sms-star",
+        "unicode": "e9c1"
+    },
+    {
+        "name": "x-bold-message-2",
+        "className": "x-bold-message-2",
+        "unicode": "e9c2"
+    },
+    {
+        "name": "x-bold-message-search",
+        "className": "x-bold-message-search",
+        "unicode": "e9c3"
+    },
+    {
+        "name": "x-bold-sms-tracking",
+        "className": "x-bold-sms-tracking",
+        "unicode": "e9c4"
+    },
+    {
+        "name": "x-bold-message-edit",
+        "className": "x-bold-message-edit",
+        "unicode": "e9c5"
+    },
+    {
+        "name": "x-bold-device-message",
+        "className": "x-bold-device-message",
+        "unicode": "e9c6"
+    },
+    {
+        "name": "x-bold-message-text94",
+        "className": "x-bold-message-text94",
+        "unicode": "e9c7"
+    },
+    {
+        "name": "x-bold-message-add93",
+        "className": "x-bold-message-add93",
+        "unicode": "e9c8"
+    },
+    {
+        "name": "x-bold-message-minus",
+        "className": "x-bold-message-minus",
+        "unicode": "e9c9"
+    },
+    {
+        "name": "x-bold-smart-car",
+        "className": "x-bold-smart-car",
+        "unicode": "e9ca"
+    },
+    {
+        "name": "x-bold-driving",
+        "className": "x-bold-driving",
+        "unicode": "e9cb"
+    },
+    {
+        "name": "x-bold-bus",
+        "className": "x-bold-bus",
+        "unicode": "e9cc"
+    },
+    {
+        "name": "x-bold-ship",
+        "className": "x-bold-ship",
+        "unicode": "e9cd"
+    },
+    {
+        "name": "x-bold-gas-station",
+        "className": "x-bold-gas-station",
+        "unicode": "e9ce"
+    },
+    {
+        "name": "x-bold-flash149",
+        "className": "x-bold-flash149",
+        "unicode": "e9cf"
+    },
+    {
+        "name": "x-bold-sun-fog",
+        "className": "x-bold-sun-fog",
+        "unicode": "e9d0"
+    },
+    {
+        "name": "x-bold-wind",
+        "className": "x-bold-wind",
+        "unicode": "e9d1"
+    },
+    {
+        "name": "x-bold-drop",
+        "className": "x-bold-drop",
+        "unicode": "e9d2"
+    },
+    {
+        "name": "x-bold-cloud-fog",
+        "className": "x-bold-cloud-fog",
+        "unicode": "e9d3"
+    },
+    {
+        "name": "x-bold-wind-2",
+        "className": "x-bold-wind-2",
+        "unicode": "e9d4"
+    },
+    {
+        "name": "x-bold-sun148",
+        "className": "x-bold-sun148",
+        "unicode": "e9d5"
+    },
+    {
+        "name": "x-bold-arrange-square-2",
+        "className": "x-bold-arrange-square-2",
+        "unicode": "e9d6"
+    },
+    {
+        "name": "x-bold-back-square",
+        "className": "x-bold-back-square",
+        "unicode": "e9d7"
+    },
+    {
+        "name": "x-bold-received",
+        "className": "x-bold-received",
+        "unicode": "e9d8"
+    },
+    {
+        "name": "x-bold-refresh-circle",
+        "className": "x-bold-refresh-circle",
+        "unicode": "e9d9"
+    },
+    {
+        "name": "x-bold-repeat-circle",
+        "className": "x-bold-repeat-circle",
+        "unicode": "e9da"
+    },
+    {
+        "name": "x-bold-arrange-circle",
+        "className": "x-bold-arrange-circle",
+        "unicode": "e9db"
+    },
+    {
+        "name": "x-bold-arrange-circle-2",
+        "className": "x-bold-arrange-circle-2",
+        "unicode": "e9dc"
+    },
+    {
+        "name": "x-bold-send-sqaure-2",
+        "className": "x-bold-send-sqaure-2",
+        "unicode": "e9dd"
+    },
+    {
+        "name": "x-bold-refresh-right-square",
+        "className": "x-bold-refresh-right-square",
+        "unicode": "e9de"
+    },
+    {
+        "name": "x-bold-forward-square",
+        "className": "x-bold-forward-square",
+        "unicode": "e9df"
+    },
+    {
+        "name": "x-bold-send-square",
+        "className": "x-bold-send-square",
+        "unicode": "e9e0"
+    },
+    {
+        "name": "x-bold-receive-square-2",
+        "className": "x-bold-receive-square-2",
+        "unicode": "e9e1"
+    },
+    {
+        "name": "x-bold-receive-square",
+        "className": "x-bold-receive-square",
+        "unicode": "e9e2"
+    },
+    {
+        "name": "x-bold-arrange-square",
+        "className": "x-bold-arrange-square",
+        "unicode": "e9e3"
+    },
+    {
+        "name": "x-bold-refresh-left-square",
+        "className": "x-bold-refresh-left-square",
+        "unicode": "e9e4"
+    },
+    {
+        "name": "x-bold-refresh-square-2",
+        "className": "x-bold-refresh-square-2",
+        "unicode": "e9e5"
+    },
+    {
+        "name": "x-bold-send180",
+        "className": "x-bold-send180",
+        "unicode": "e9e6"
+    },
+    {
+        "name": "x-bold-arrow-2",
+        "className": "x-bold-arrow-2",
+        "unicode": "e9e7"
+    },
+    {
+        "name": "x-bold-repeat",
+        "className": "x-bold-repeat",
+        "unicode": "e9e8"
+    },
+    {
+        "name": "x-bold-arrow-3",
+        "className": "x-bold-arrow-3",
+        "unicode": "e9e9"
+    },
+    {
+        "name": "x-bold-book36",
+        "className": "x-bold-book36",
+        "unicode": "e9ea"
+    },
+    {
+        "name": "x-bold-teacher",
+        "className": "x-bold-teacher",
+        "unicode": "e9eb"
+    },
+    {
+        "name": "x-bold-gift",
+        "className": "x-bold-gift",
+        "unicode": "e9ec"
+    },
+    {
+        "name": "x-bold-note-2",
+        "className": "x-bold-note-2",
+        "unicode": "e9ed"
+    },
+    {
+        "name": "x-bold-note35",
+        "className": "x-bold-note35",
+        "unicode": "e9ee"
+    },
+    {
+        "name": "x-bold-brifecase-timer",
+        "className": "x-bold-brifecase-timer",
+        "unicode": "e9ef"
+    },
+    {
+        "name": "x-bold-briefcase",
+        "className": "x-bold-briefcase",
+        "unicode": "e9f0"
+    },
+    {
+        "name": "x-bold-brifecase-cross",
+        "className": "x-bold-brifecase-cross",
+        "unicode": "e9f1"
+    },
+    {
+        "name": "x-bold-brifecase-tick",
+        "className": "x-bold-brifecase-tick",
+        "unicode": "e9f2"
+    },
+    {
+        "name": "x-bold-bookmark",
+        "className": "x-bold-bookmark",
+        "unicode": "e9f3"
+    },
+    {
+        "name": "x-bold-award",
+        "className": "x-bold-award",
+        "unicode": "e9f4"
+    },
+    {
+        "name": "x-bold-clipboard",
+        "className": "x-bold-clipboard",
+        "unicode": "e9f5"
+    },
+    {
+        "name": "x-bold-book37",
+        "className": "x-bold-book37",
+        "unicode": "e9f6"
+    },
+    {
+        "name": "x-bold-calculator",
+        "className": "x-bold-calculator",
+        "unicode": "e9f7"
+    },
+    {
+        "name": "x-bold-bookmark-2",
+        "className": "x-bold-bookmark-2",
+        "unicode": "e9f8"
+    },
+    {
+        "name": "x-bold-video-octagon",
+        "className": "x-bold-video-octagon",
+        "unicode": "e9f9"
+    },
+    {
+        "name": "x-bold-video-remove",
+        "className": "x-bold-video-remove",
+        "unicode": "e9fa"
+    },
+    {
+        "name": "x-bold-mini-music-sqaure",
+        "className": "x-bold-mini-music-sqaure",
+        "unicode": "e9fb"
+    },
+    {
+        "name": "x-bold-video-tick",
+        "className": "x-bold-video-tick",
+        "unicode": "e9fc"
+    },
+    {
+        "name": "x-bold-audio-square",
+        "className": "x-bold-audio-square",
+        "unicode": "e9fd"
+    },
+    {
+        "name": "x-bold-video-add",
+        "className": "x-bold-video-add",
+        "unicode": "e9fe"
+    },
+    {
+        "name": "x-bold-maximize-circle",
+        "className": "x-bold-maximize-circle",
+        "unicode": "e9ff"
+    },
+    {
+        "name": "x-bold-voice-cricle",
+        "className": "x-bold-voice-cricle",
+        "unicode": "ea00"
+    },
+    {
+        "name": "x-bold-music-square",
+        "className": "x-bold-music-square",
+        "unicode": "ea01"
+    },
+    {
+        "name": "x-bold-video-time",
+        "className": "x-bold-video-time",
+        "unicode": "ea02"
+    },
+    {
+        "name": "x-bold-voice-square",
+        "className": "x-bold-voice-square",
+        "unicode": "ea03"
+    },
+    {
+        "name": "x-bold-next",
+        "className": "x-bold-next",
+        "unicode": "ea04"
+    },
+    {
+        "name": "x-bold-play-cricle",
+        "className": "x-bold-play-cricle",
+        "unicode": "ea05"
+    },
+    {
+        "name": "x-bold-play-remove",
+        "className": "x-bold-play-remove",
+        "unicode": "ea06"
+    },
+    {
+        "name": "x-bold-backward-5-seconds",
+        "className": "x-bold-backward-5-seconds",
+        "unicode": "ea07"
+    },
+    {
+        "name": "x-bold-forward-15-seconds",
+        "className": "x-bold-forward-15-seconds",
+        "unicode": "ea08"
+    },
+    {
+        "name": "x-bold-previous",
+        "className": "x-bold-previous",
+        "unicode": "ea09"
+    },
+    {
+        "name": "x-bold-scissor187",
+        "className": "x-bold-scissor187",
+        "unicode": "ea0a"
+    },
+    {
+        "name": "x-bold-backward-10-seconds",
+        "className": "x-bold-backward-10-seconds",
+        "unicode": "ea0b"
+    },
+    {
+        "name": "x-bold-music-filter",
+        "className": "x-bold-music-filter",
+        "unicode": "ea0c"
+    },
+    {
+        "name": "x-bold-forward-10-seconds",
+        "className": "x-bold-forward-10-seconds",
+        "unicode": "ea0d"
+    },
+    {
+        "name": "x-bold-radio",
+        "className": "x-bold-radio",
+        "unicode": "ea0e"
+    },
+    {
+        "name": "x-bold-note-square",
+        "className": "x-bold-note-square",
+        "unicode": "ea0f"
+    },
+    {
+        "name": "x-bold-backward-15-seconds",
+        "className": "x-bold-backward-15-seconds",
+        "unicode": "ea10"
+    },
+    {
+        "name": "x-bold-music-circle",
+        "className": "x-bold-music-circle",
+        "unicode": "ea11"
+    },
+    {
+        "name": "x-bold-forward",
+        "className": "x-bold-forward",
+        "unicode": "ea12"
+    },
+    {
+        "name": "x-bold-play-add",
+        "className": "x-bold-play-add",
+        "unicode": "ea13"
+    },
+    {
+        "name": "x-bold-backward",
+        "className": "x-bold-backward",
+        "unicode": "ea14"
+    },
+    {
+        "name": "x-bold-music-square-search",
+        "className": "x-bold-music-square-search",
+        "unicode": "ea15"
+    },
+    {
+        "name": "x-bold-music-dashboard",
+        "className": "x-bold-music-dashboard",
+        "unicode": "ea16"
+    },
+    {
+        "name": "x-bold-music-library-2",
+        "className": "x-bold-music-library-2",
+        "unicode": "ea17"
+    },
+    {
+        "name": "x-bold-music-square-remove",
+        "className": "x-bold-music-square-remove",
+        "unicode": "ea18"
+    },
+    {
+        "name": "x-bold-repeate-one",
+        "className": "x-bold-repeate-one",
+        "unicode": "ea19"
+    },
+    {
+        "name": "x-bold-repeate-music",
+        "className": "x-bold-repeate-music",
+        "unicode": "ea1a"
+    },
+    {
+        "name": "x-bold-music-square-add",
+        "className": "x-bold-music-square-add",
+        "unicode": "ea1b"
+    },
+    {
+        "name": "x-bold-music-playlist",
+        "className": "x-bold-music-playlist",
+        "unicode": "ea1c"
+    },
+    {
+        "name": "x-bold-shuffle",
+        "className": "x-bold-shuffle",
+        "unicode": "ea1d"
+    },
+    {
+        "name": "x-bold-devices186",
+        "className": "x-bold-devices186",
+        "unicode": "ea1e"
+    },
+    {
+        "name": "x-bold-forward-5-seconds",
+        "className": "x-bold-forward-5-seconds",
+        "unicode": "ea1f"
+    },
+    {
+        "name": "x-bold-favorite-chart",
+        "className": "x-bold-favorite-chart",
+        "unicode": "ea20"
+    },
+    {
+        "name": "x-bold-chart33",
+        "className": "x-bold-chart33",
+        "unicode": "ea21"
+    },
+    {
+        "name": "x-bold-diagram",
+        "className": "x-bold-diagram",
+        "unicode": "ea22"
+    },
+    {
+        "name": "x-bold-presention-chart",
+        "className": "x-bold-presention-chart",
+        "unicode": "ea23"
+    },
+    {
+        "name": "x-bold-receipt-search",
+        "className": "x-bold-receipt-search",
+        "unicode": "ea24"
+    },
+    {
+        "name": "x-bold-cards",
+        "className": "x-bold-cards",
+        "unicode": "ea25"
+    },
+    {
+        "name": "x-bold-receipt-edit",
+        "className": "x-bold-receipt-edit",
+        "unicode": "ea26"
+    },
+    {
+        "name": "x-bold-empty-wallet-change",
+        "className": "x-bold-empty-wallet-change",
+        "unicode": "ea27"
+    },
+    {
+        "name": "x-bold-empty-wallet-time",
+        "className": "x-bold-empty-wallet-time",
+        "unicode": "ea28"
+    },
+    {
+        "name": "x-bold-receipt-discount",
+        "className": "x-bold-receipt-discount",
+        "unicode": "ea29"
+    },
+    {
+        "name": "x-bold-transaction-minus",
+        "className": "x-bold-transaction-minus",
+        "unicode": "ea2a"
+    },
+    {
+        "name": "x-bold-receipt-add",
+        "className": "x-bold-receipt-add",
+        "unicode": "ea2b"
+    },
+    {
+        "name": "x-bold-money-4",
+        "className": "x-bold-money-4",
+        "unicode": "ea2c"
+    },
+    {
+        "name": "x-bold-wallet-add02",
+        "className": "x-bold-wallet-add02",
+        "unicode": "ea2d"
+    },
+    {
+        "name": "x-bold-money",
+        "className": "x-bold-money",
+        "unicode": "ea2e"
+    },
+    {
+        "name": "x-bold-strongbox-2",
+        "className": "x-bold-strongbox-2",
+        "unicode": "ea2f"
+    },
+    {
+        "name": "x-bold-empty-wallet-tick",
+        "className": "x-bold-empty-wallet-tick",
+        "unicode": "ea30"
+    },
+    {
+        "name": "x-bold-empty-wallet-add",
+        "className": "x-bold-empty-wallet-add",
+        "unicode": "ea31"
+    },
+    {
+        "name": "x-bold-empty-wallet-remove",
+        "className": "x-bold-empty-wallet-remove",
+        "unicode": "ea32"
+    },
+    {
+        "name": "x-bold-percentage-square",
+        "className": "x-bold-percentage-square",
+        "unicode": "ea33"
+    },
+    {
+        "name": "x-bold-money-3",
+        "className": "x-bold-money-3",
+        "unicode": "ea34"
+    },
+    {
+        "name": "x-bold-wallet-search",
+        "className": "x-bold-wallet-search",
+        "unicode": "ea35"
+    },
+    {
+        "name": "x-bold-money-2",
+        "className": "x-bold-money-2",
+        "unicode": "ea36"
+    },
+    {
+        "name": "x-bold-wallet-check",
+        "className": "x-bold-wallet-check",
+        "unicode": "ea37"
+    },
+    {
+        "name": "x-bold-money-recive",
+        "className": "x-bold-money-recive",
+        "unicode": "ea38"
+    },
+    {
+        "name": "x-bold-strongbox",
+        "className": "x-bold-strongbox",
+        "unicode": "ea39"
+    },
+    {
+        "name": "x-bold-receipt-text",
+        "className": "x-bold-receipt-text",
+        "unicode": "ea3a"
+    },
+    {
+        "name": "x-bold-money-send",
+        "className": "x-bold-money-send",
+        "unicode": "ea3b"
+    },
+    {
+        "name": "x-bold-security-card",
+        "className": "x-bold-security-card",
+        "unicode": "ea3c"
+    },
+    {
+        "name": "x-bold-archive203",
+        "className": "x-bold-archive203",
+        "unicode": "ea3d"
+    },
+    {
+        "name": "x-bold-receipt11",
+        "className": "x-bold-receipt11",
+        "unicode": "ea3e"
+    },
+    {
+        "name": "x-bold-wallet0502",
+        "className": "x-bold-wallet0502",
+        "unicode": "ea3f"
+    },
+    {
+        "name": "x-bold-money-time",
+        "className": "x-bold-money-time",
+        "unicode": "ea40"
+    },
+    {
+        "name": "x-bold-money-change",
+        "className": "x-bold-money-change",
+        "unicode": "ea41"
+    },
+    {
+        "name": "x-bold-money-tick",
+        "className": "x-bold-money-tick",
+        "unicode": "ea42"
+    },
+    {
+        "name": "x-bold-money-forbidden",
+        "className": "x-bold-money-forbidden",
+        "unicode": "ea43"
+    },
+    {
+        "name": "x-bold-wallet-money",
+        "className": "x-bold-wallet-money",
+        "unicode": "ea44"
+    },
+    {
+        "name": "x-bold-wallet-2",
+        "className": "x-bold-wallet-2",
+        "unicode": "ea45"
+    },
+    {
+        "name": "x-bold-wallet-remove",
+        "className": "x-bold-wallet-remove",
+        "unicode": "ea46"
+    },
+    {
+        "name": "x-bold-receipt-210",
+        "className": "x-bold-receipt-210",
+        "unicode": "ea47"
+    },
+    {
+        "name": "x-bold-discount-shape",
+        "className": "x-bold-discount-shape",
+        "unicode": "ea48"
+    },
+    {
+        "name": "x-bold-convert-card",
+        "className": "x-bold-convert-card",
+        "unicode": "ea49"
+    },
+    {
+        "name": "x-bold-wallet-3",
+        "className": "x-bold-wallet-3",
+        "unicode": "ea4a"
+    },
+    {
+        "name": "x-bold-card-tick12",
+        "className": "x-bold-card-tick12",
+        "unicode": "ea4b"
+    },
+    {
+        "name": "x-bold-percentage-circle",
+        "className": "x-bold-percentage-circle",
+        "unicode": "ea4c"
+    },
+    {
+        "name": "x-bold-money-add",
+        "className": "x-bold-money-add",
+        "unicode": "ea4d"
+    },
+    {
+        "name": "x-bold-coin04",
+        "className": "x-bold-coin04",
+        "unicode": "ea4e"
+    },
+    {
+        "name": "x-bold-discount-circle",
+        "className": "x-bold-discount-circle",
+        "unicode": "ea4f"
+    },
+    {
+        "name": "x-bold-moneys",
+        "className": "x-bold-moneys",
+        "unicode": "ea50"
+    },
+    {
+        "name": "x-bold-chart-square",
+        "className": "x-bold-chart-square",
+        "unicode": "ea51"
+    },
+    {
+        "name": "x-bold-card-remove08",
+        "className": "x-bold-card-remove08",
+        "unicode": "ea52"
+    },
+    {
+        "name": "x-bold-money-remove",
+        "className": "x-bold-money-remove",
+        "unicode": "ea53"
+    },
+    {
+        "name": "x-bold-receipt-minus",
+        "className": "x-bold-receipt-minus",
+        "unicode": "ea54"
+    },
+    {
+        "name": "x-bold-receipt-item",
+        "className": "x-bold-receipt-item",
+        "unicode": "ea55"
+    },
+    {
+        "name": "x-bold-empty-wallet",
+        "className": "x-bold-empty-wallet",
+        "unicode": "ea56"
+    },
+    {
+        "name": "x-bold-eye",
+        "className": "x-bold-eye",
+        "unicode": "ea57"
+    },
+    {
+        "name": "x-bold-eye-slash",
+        "className": "x-bold-eye-slash",
+        "unicode": "ea58"
+    },
+    {
+        "name": "x-bold-shield-tick",
+        "className": "x-bold-shield-tick",
+        "unicode": "ea59"
+    },
+    {
+        "name": "x-bold-shield-cross",
+        "className": "x-bold-shield-cross",
+        "unicode": "ea5a"
+    },
+    {
+        "name": "x-bold-password-check",
+        "className": "x-bold-password-check",
+        "unicode": "ea5b"
+    },
+    {
+        "name": "x-bold-frame141",
+        "className": "x-bold-frame141",
+        "unicode": "ea5c"
+    },
+    {
+        "name": "x-bold-shield-slash",
+        "className": "x-bold-shield-slash",
+        "unicode": "ea5d"
+    },
+    {
+        "name": "x-bold-shield-security",
+        "className": "x-bold-shield-security",
+        "unicode": "ea5e"
+    },
+    {
+        "name": "x-bold-lock140",
+        "className": "x-bold-lock140",
+        "unicode": "ea5f"
+    },
+    {
+        "name": "x-bold-scan",
+        "className": "x-bold-scan",
+        "unicode": "ea60"
+    },
+    {
+        "name": "x-bold-lock-slash",
+        "className": "x-bold-lock-slash",
+        "unicode": "ea61"
+    },
+    {
+        "name": "x-bold-scanning",
+        "className": "x-bold-scanning",
+        "unicode": "ea62"
+    },
+    {
+        "name": "x-bold-scan-barcode",
+        "className": "x-bold-scan-barcode",
+        "unicode": "ea63"
+    },
+    {
+        "name": "x-bold-finger-cricle",
+        "className": "x-bold-finger-cricle",
+        "unicode": "ea64"
+    },
+    {
+        "name": "x-bold-finger-scan",
+        "className": "x-bold-finger-scan",
+        "unicode": "ea65"
+    },
+    {
+        "name": "x-bold-scanner",
+        "className": "x-bold-scanner",
+        "unicode": "ea66"
+    },
+    {
+        "name": "x-bold-shield-search",
+        "className": "x-bold-shield-search",
+        "unicode": "ea67"
+    },
+    {
+        "name": "x-bold-key",
+        "className": "x-bold-key",
+        "unicode": "ea68"
+    },
+    {
+        "name": "x-bold-radar138",
+        "className": "x-bold-radar138",
+        "unicode": "ea69"
+    },
+    {
+        "name": "x-bold-lock139",
+        "className": "x-bold-lock139",
+        "unicode": "ea6a"
+    },
+    {
+        "name": "x-bold-security-safe",
+        "className": "x-bold-security-safe",
+        "unicode": "ea6b"
+    },
+    {
+        "name": "x-bold-key-square",
+        "className": "x-bold-key-square",
+        "unicode": "ea6c"
+    },
+    {
+        "name": "x-bold-unlock",
+        "className": "x-bold-unlock",
+        "unicode": "ea6d"
+    },
+    {
+        "name": "x-bold-check",
+        "className": "x-bold-check",
+        "unicode": "ea6e"
+    },
+    {
+        "name": "x-bold-alarm",
+        "className": "x-bold-alarm",
+        "unicode": "ea6f"
+    },
+    {
+        "name": "x-bold-security-user",
+        "className": "x-bold-security-user",
+        "unicode": "ea70"
+    },
+    {
+        "name": "x-bold-lock-circle",
+        "className": "x-bold-lock-circle",
+        "unicode": "ea71"
+    },
+    {
+        "name": "x-bold-security",
+        "className": "x-bold-security",
+        "unicode": "ea72"
+    },
+    {
+        "name": "x-bold-message-question",
+        "className": "x-bold-message-question",
+        "unicode": "ea73"
+    },
+    {
+        "name": "x-bold-like-tag",
+        "className": "x-bold-like-tag",
+        "unicode": "ea74"
+    },
+    {
+        "name": "x-bold-lovely",
+        "className": "x-bold-lovely",
+        "unicode": "ea75"
+    },
+    {
+        "name": "x-bold-like-shapes",
+        "className": "x-bold-like-shapes",
+        "unicode": "ea76"
+    },
+    {
+        "name": "x-bold-heart-tick",
+        "className": "x-bold-heart-tick",
+        "unicode": "ea77"
+    },
+    {
+        "name": "x-bold-smileys",
+        "className": "x-bold-smileys",
+        "unicode": "ea78"
+    },
+    {
+        "name": "x-bold-like-dislike",
+        "className": "x-bold-like-dislike",
+        "unicode": "ea79"
+    },
+    {
+        "name": "x-bold-24-support",
+        "className": "x-bold-24-support",
+        "unicode": "ea7a"
+    },
+    {
+        "name": "x-bold-like101",
+        "className": "x-bold-like101",
+        "unicode": "ea7b"
+    },
+    {
+        "name": "x-bold-heart-circle",
+        "className": "x-bold-heart-circle",
+        "unicode": "ea7c"
+    },
+    {
+        "name": "x-bold-medal",
+        "className": "x-bold-medal",
+        "unicode": "ea7d"
+    },
+    {
+        "name": "x-bold-heart-remove",
+        "className": "x-bold-heart-remove",
+        "unicode": "ea7e"
+    },
+    {
+        "name": "x-bold-heart-add",
+        "className": "x-bold-heart-add",
+        "unicode": "ea7f"
+    },
+    {
+        "name": "x-bold-heart-slash",
+        "className": "x-bold-heart-slash",
+        "unicode": "ea80"
+    },
+    {
+        "name": "x-bold-heart-search",
+        "className": "x-bold-heart-search",
+        "unicode": "ea81"
+    },
+    {
+        "name": "x-bold-unlimited",
+        "className": "x-bold-unlimited",
+        "unicode": "ea82"
+    },
+    {
+        "name": "x-bold-medal-star",
+        "className": "x-bold-medal-star",
+        "unicode": "ea83"
+    },
+    {
+        "name": "x-bold-heart-edit",
+        "className": "x-bold-heart-edit",
+        "unicode": "ea84"
+    },
+    {
+        "name": "x-bold-ranking102",
+        "className": "x-bold-ranking102",
+        "unicode": "ea85"
+    },
+    {
+        "name": "x-bold-magic-star",
+        "className": "x-bold-magic-star",
+        "unicode": "ea86"
+    },
+    {
+        "name": "x-bold-star103",
+        "className": "x-bold-star103",
+        "unicode": "ea87"
+    },
+    {
+        "name": "x-bold-command-square",
+        "className": "x-bold-command-square",
+        "unicode": "ea88"
+    },
+    {
+        "name": "x-bold-programming-arrows",
+        "className": "x-bold-programming-arrows",
+        "unicode": "ea89"
+    },
+    {
+        "name": "x-bold-hierarchy-3",
+        "className": "x-bold-hierarchy-3",
+        "unicode": "ea8a"
+    },
+    {
+        "name": "x-bold-document-code",
+        "className": "x-bold-document-code",
+        "unicode": "ea8b"
+    },
+    {
+        "name": "x-bold-data-2",
+        "className": "x-bold-data-2",
+        "unicode": "ea8c"
+    },
+    {
+        "name": "x-bold-message-programming",
+        "className": "x-bold-message-programming",
+        "unicode": "ea8d"
+    },
+    {
+        "name": "x-bold-document-code-2",
+        "className": "x-bold-document-code-2",
+        "unicode": "ea8e"
+    },
+    {
+        "name": "x-bold-hierarchy-square",
+        "className": "x-bold-hierarchy-square",
+        "unicode": "ea8f"
+    },
+    {
+        "name": "x-bold-code-circle",
+        "className": "x-bold-code-circle",
+        "unicode": "ea90"
+    },
+    {
+        "name": "x-bold-mobile-programming",
+        "className": "x-bold-mobile-programming",
+        "unicode": "ea91"
+    },
+    {
+        "name": "x-bold-data",
+        "className": "x-bold-data",
+        "unicode": "ea92"
+    },
+    {
+        "name": "x-bold-programming-arrow",
+        "className": "x-bold-programming-arrow",
+        "unicode": "ea93"
+    },
+    {
+        "name": "x-bold-command",
+        "className": "x-bold-command",
+        "unicode": "ea94"
+    },
+    {
+        "name": "x-bold-hierarchy-square-3",
+        "className": "x-bold-hierarchy-square-3",
+        "unicode": "ea95"
+    },
+    {
+        "name": "x-bold-hierarchy-square-2",
+        "className": "x-bold-hierarchy-square-2",
+        "unicode": "ea96"
+    },
+    {
+        "name": "x-bold-hierarchy-2",
+        "className": "x-bold-hierarchy-2",
+        "unicode": "ea97"
+    },
+    {
+        "name": "x-bold-hierarchy",
+        "className": "x-bold-hierarchy",
+        "unicode": "ea98"
+    },
+    {
+        "name": "x-bold-grammerly",
+        "className": "x-bold-grammerly",
+        "unicode": "ea99"
+    },
+    {
+        "name": "x-bold-status",
+        "className": "x-bold-status",
+        "unicode": "ea9a"
+    },
+    {
+        "name": "x-bold-box-2",
+        "className": "x-bold-box-2",
+        "unicode": "ea9b"
+    },
+    {
+        "name": "x-bold-slider",
+        "className": "x-bold-slider",
+        "unicode": "ea9c"
+    },
+    {
+        "name": "x-bold-story",
+        "className": "x-bold-story",
+        "unicode": "ea9d"
+    },
+    {
+        "name": "x-bold-speedometer",
+        "className": "x-bold-speedometer",
+        "unicode": "ea9e"
+    },
+    {
+        "name": "x-bold-wifi",
+        "className": "x-bold-wifi",
+        "unicode": "ea9f"
+    },
+    {
+        "name": "x-bold-wifi-square",
+        "className": "x-bold-wifi-square",
+        "unicode": "eaa0"
+    },
+    {
+        "name": "x-bold-cd",
+        "className": "x-bold-cd",
+        "unicode": "eaa1"
+    },
+    {
+        "name": "x-bold-trush-square",
+        "className": "x-bold-trush-square",
+        "unicode": "eaa2"
+    },
+    {
+        "name": "x-bold-lamp67",
+        "className": "x-bold-lamp67",
+        "unicode": "eaa3"
+    },
+    {
+        "name": "x-bold-mirror",
+        "className": "x-bold-mirror",
+        "unicode": "eaa4"
+    },
+    {
+        "name": "x-bold-diamonds",
+        "className": "x-bold-diamonds",
+        "unicode": "eaa5"
+    },
+    {
+        "name": "x-bold-tag-right",
+        "className": "x-bold-tag-right",
+        "unicode": "eaa6"
+    },
+    {
+        "name": "x-bold-ranking66",
+        "className": "x-bold-ranking66",
+        "unicode": "eaa7"
+    },
+    {
+        "name": "x-bold-filter-remove",
+        "className": "x-bold-filter-remove",
+        "unicode": "eaa8"
+    },
+    {
+        "name": "x-bold-mouse-circle",
+        "className": "x-bold-mouse-circle",
+        "unicode": "eaa9"
+    },
+    {
+        "name": "x-bold-filter-edit",
+        "className": "x-bold-filter-edit",
+        "unicode": "eaaa"
+    },
+    {
+        "name": "x-bold-filter-search",
+        "className": "x-bold-filter-search",
+        "unicode": "eaab"
+    },
+    {
+        "name": "x-bold-home64",
+        "className": "x-bold-home64",
+        "unicode": "eaac"
+    },
+    {
+        "name": "x-bold-judge",
+        "className": "x-bold-judge",
+        "unicode": "eaad"
+    },
+    {
+        "name": "x-bold-level",
+        "className": "x-bold-level",
+        "unicode": "eaae"
+    },
+    {
+        "name": "x-bold-tree",
+        "className": "x-bold-tree",
+        "unicode": "eaaf"
+    },
+    {
+        "name": "x-bold-mouse-square",
+        "className": "x-bold-mouse-square",
+        "unicode": "eab0"
+    },
+    {
+        "name": "x-bold-forbidden",
+        "className": "x-bold-forbidden",
+        "unicode": "eab1"
+    },
+    {
+        "name": "x-bold-mouse65",
+        "className": "x-bold-mouse65",
+        "unicode": "eab2"
+    },
+    {
+        "name": "x-bold-warning-2",
+        "className": "x-bold-warning-2",
+        "unicode": "eab3"
+    },
+    {
+        "name": "x-bold-filter-tick",
+        "className": "x-bold-filter-tick",
+        "unicode": "eab4"
+    },
+    {
+        "name": "x-bold-home-wifi",
+        "className": "x-bold-home-wifi",
+        "unicode": "eab5"
+    },
+    {
+        "name": "x-bold-smart-home",
+        "className": "x-bold-smart-home",
+        "unicode": "eab6"
+    },
+    {
+        "name": "x-bold-safe-home",
+        "className": "x-bold-safe-home",
+        "unicode": "eab7"
+    },
+    {
+        "name": "x-bold-filter-add",
+        "className": "x-bold-filter-add",
+        "unicode": "eab8"
+    },
+    {
+        "name": "x-bold-broom",
+        "className": "x-bold-broom",
+        "unicode": "eab9"
+    },
+    {
+        "name": "x-bold-forbidden-2",
+        "className": "x-bold-forbidden-2",
+        "unicode": "eaba"
+    },
+    {
+        "name": "x-bold-milk",
+        "className": "x-bold-milk",
+        "unicode": "eabb"
+    },
+    {
+        "name": "x-bold-signpost",
+        "className": "x-bold-signpost",
+        "unicode": "eabc"
+    },
+    {
+        "name": "x-bold-bubble",
+        "className": "x-bold-bubble",
+        "unicode": "eabd"
+    },
+    {
+        "name": "x-bold-ghost",
+        "className": "x-bold-ghost",
+        "unicode": "eabe"
+    },
+    {
+        "name": "x-bold-building",
+        "className": "x-bold-building",
+        "unicode": "eabf"
+    },
+    {
+        "name": "x-bold-man",
+        "className": "x-bold-man",
+        "unicode": "eac0"
+    },
+    {
+        "name": "x-bold-woman",
+        "className": "x-bold-woman",
+        "unicode": "eac1"
+    },
+    {
+        "name": "x-bold-archive-add",
+        "className": "x-bold-archive-add",
+        "unicode": "eac2"
+    },
+    {
+        "name": "x-bold-archive-slash",
+        "className": "x-bold-archive-slash",
+        "unicode": "eac3"
+    },
+    {
+        "name": "x-bold-archive-tick",
+        "className": "x-bold-archive-tick",
+        "unicode": "eac4"
+    },
+    {
+        "name": "x-bold-archive-minus",
+        "className": "x-bold-archive-minus",
+        "unicode": "eac5"
+    },
+    {
+        "name": "x-bold-archive120",
+        "className": "x-bold-archive120",
+        "unicode": "eac6"
+    },
+    {
+        "name": "x-bold-bag-happy",
+        "className": "x-bold-bag-happy",
+        "unicode": "eac7"
+    },
+    {
+        "name": "x-bold-bag-tick",
+        "className": "x-bold-bag-tick",
+        "unicode": "eac8"
+    },
+    {
+        "name": "x-bold-bag-tick-2",
+        "className": "x-bold-bag-tick-2",
+        "unicode": "eac9"
+    },
+    {
+        "name": "x-bold-bag-cross41",
+        "className": "x-bold-bag-cross41",
+        "unicode": "eaca"
+    },
+    {
+        "name": "x-bold-bag",
+        "className": "x-bold-bag",
+        "unicode": "eacb"
+    },
+    {
+        "name": "x-bold-bag-cross40",
+        "className": "x-bold-bag-cross40",
+        "unicode": "eacc"
+    },
+    {
+        "name": "x-bold-shop-add",
+        "className": "x-bold-shop-add",
+        "unicode": "eacd"
+    },
+    {
+        "name": "x-bold-bag-2",
+        "className": "x-bold-bag-2",
+        "unicode": "eace"
+    },
+    {
+        "name": "x-bold-bag-timer",
+        "className": "x-bold-bag-timer",
+        "unicode": "eacf"
+    },
+    {
+        "name": "x-bold-shop",
+        "className": "x-bold-shop",
+        "unicode": "ead0"
+    },
+    {
+        "name": "x-bold-clock88",
+        "className": "x-bold-clock88",
+        "unicode": "ead1"
+    },
+    {
+        "name": "x-bold-mouse87",
+        "className": "x-bold-mouse87",
+        "unicode": "ead2"
+    },
+    {
+        "name": "x-bold-ram-2",
+        "className": "x-bold-ram-2",
+        "unicode": "ead3"
+    },
+    {
+        "name": "x-bold-keyboard",
+        "className": "x-bold-keyboard",
+        "unicode": "ead4"
+    },
+    {
+        "name": "x-bold-lamp86",
+        "className": "x-bold-lamp86",
+        "unicode": "ead5"
+    },
+    {
+        "name": "x-bold-mobile",
+        "className": "x-bold-mobile",
+        "unicode": "ead6"
+    },
+    {
+        "name": "x-bold-simcard85",
+        "className": "x-bold-simcard85",
+        "unicode": "ead7"
+    },
+    {
+        "name": "x-bold-simcard-2",
+        "className": "x-bold-simcard-2",
+        "unicode": "ead8"
+    },
+    {
+        "name": "x-bold-cpu-charge",
+        "className": "x-bold-cpu-charge",
+        "unicode": "ead9"
+    },
+    {
+        "name": "x-bold-headphone",
+        "className": "x-bold-headphone",
+        "unicode": "eada"
+    },
+    {
+        "name": "x-bold-cpu",
+        "className": "x-bold-cpu",
+        "unicode": "eadb"
+    },
+    {
+        "name": "x-bold-printer",
+        "className": "x-bold-printer",
+        "unicode": "eadc"
+    },
+    {
+        "name": "x-bold-cpu-setting",
+        "className": "x-bold-cpu-setting",
+        "unicode": "eadd"
+    },
+    {
+        "name": "x-bold-monitor",
+        "className": "x-bold-monitor",
+        "unicode": "eade"
+    },
+    {
+        "name": "x-bold-printer-slash",
+        "className": "x-bold-printer-slash",
+        "unicode": "eadf"
+    },
+    {
+        "name": "x-bold-monitor-mobbile",
+        "className": "x-bold-monitor-mobbile",
+        "unicode": "eae0"
+    },
+    {
+        "name": "x-bold-airpod",
+        "className": "x-bold-airpod",
+        "unicode": "eae1"
+    },
+    {
+        "name": "x-bold-monitor-recorder",
+        "className": "x-bold-monitor-recorder",
+        "unicode": "eae2"
+    },
+    {
+        "name": "x-bold-speaker",
+        "className": "x-bold-speaker",
+        "unicode": "eae3"
+    },
+    {
+        "name": "x-bold-game",
+        "className": "x-bold-game",
+        "unicode": "eae4"
+    },
+    {
+        "name": "x-bold-ram",
+        "className": "x-bold-ram",
+        "unicode": "eae5"
+    },
+    {
+        "name": "x-bold-weight84",
+        "className": "x-bold-weight84",
+        "unicode": "eae6"
+    },
+    {
+        "name": "x-bold-category",
+        "className": "x-bold-category",
+        "unicode": "eae7"
+    },
+    {
+        "name": "x-bold-category-2",
+        "className": "x-bold-category-2",
+        "unicode": "eae8"
+    },
+    {
+        "name": "x-bold-more",
+        "className": "x-bold-more",
+        "unicode": "eae9"
+    },
+    {
+        "name": "x-bold-toggle-on-circle",
+        "className": "x-bold-toggle-on-circle",
+        "unicode": "eaea"
+    },
+    {
+        "name": "x-bold-setting-4",
+        "className": "x-bold-setting-4",
+        "unicode": "eaeb"
+    },
+    {
+        "name": "x-bold-more-2",
+        "className": "x-bold-more-2",
+        "unicode": "eaec"
+    },
+    {
+        "name": "x-bold-setting",
+        "className": "x-bold-setting",
+        "unicode": "eaed"
+    },
+    {
+        "name": "x-bold-toggle-on",
+        "className": "x-bold-toggle-on",
+        "unicode": "eaee"
+    },
+    {
+        "name": "x-bold-toggle-off",
+        "className": "x-bold-toggle-off",
+        "unicode": "eaef"
+    },
+    {
+        "name": "x-bold-setting-3",
+        "className": "x-bold-setting-3",
+        "unicode": "eaf0"
+    },
+    {
+        "name": "x-bold-setting-2",
+        "className": "x-bold-setting-2",
+        "unicode": "eaf1"
+    },
+    {
+        "name": "x-bold-setting-5",
+        "className": "x-bold-setting-5",
+        "unicode": "eaf2"
+    },
+    {
+        "name": "x-bold-toggle-off-circle",
+        "className": "x-bold-toggle-off-circle",
+        "unicode": "eaf3"
+    },
+    {
+        "name": "x-bold-timer-start",
+        "className": "x-bold-timer-start",
+        "unicode": "eaf4"
+    },
+    {
+        "name": "x-bold-clock117",
+        "className": "x-bold-clock117",
+        "unicode": "eaf5"
+    },
+    {
+        "name": "x-bold-calendar116",
+        "className": "x-bold-calendar116",
+        "unicode": "eaf6"
+    },
+    {
+        "name": "x-bold-timer115",
+        "className": "x-bold-timer115",
+        "unicode": "eaf7"
+    },
+    {
+        "name": "x-bold-timer-pause",
+        "className": "x-bold-timer-pause",
+        "unicode": "eaf8"
+    },
+    {
+        "name": "x-bold-timer114",
+        "className": "x-bold-timer114",
+        "unicode": "eaf9"
+    },
+    {
+        "name": "x-bold-grid-2",
+        "className": "x-bold-grid-2",
+        "unicode": "eafa"
+    },
+    {
+        "name": "x-bold-fatrows",
+        "className": "x-bold-fatrows",
+        "unicode": "eafb"
+    },
+    {
+        "name": "x-bold-grid-4",
+        "className": "x-bold-grid-4",
+        "unicode": "eafc"
+    },
+    {
+        "name": "x-bold-slider-horizontal28",
+        "className": "x-bold-slider-horizontal28",
+        "unicode": "eafd"
+    },
+    {
+        "name": "x-bold-slider-vertical27",
+        "className": "x-bold-slider-vertical27",
+        "unicode": "eafe"
+    },
+    {
+        "name": "x-bold-slider-vertical26",
+        "className": "x-bold-slider-vertical26",
+        "unicode": "eaff"
+    },
+    {
+        "name": "x-bold-grid-9",
+        "className": "x-bold-grid-9",
+        "unicode": "eb00"
+    },
+    {
+        "name": "x-bold-slider-horizontal25",
+        "className": "x-bold-slider-horizontal25",
+        "unicode": "eb01"
+    },
+    {
+        "name": "x-bold-row-vertical",
+        "className": "x-bold-row-vertical",
+        "unicode": "eb02"
+    },
+    {
+        "name": "x-bold-row-horizontal",
+        "className": "x-bold-row-horizontal",
+        "unicode": "eb03"
+    },
+    {
+        "name": "x-bold-grid-3",
+        "className": "x-bold-grid-3",
+        "unicode": "eb04"
+    },
+    {
+        "name": "x-bold-grid-5",
+        "className": "x-bold-grid-5",
+        "unicode": "eb05"
+    },
+    {
+        "name": "x-bold-grid-6",
+        "className": "x-bold-grid-6",
+        "unicode": "eb06"
+    },
+    {
+        "name": "x-bold-grid-7",
+        "className": "x-bold-grid-7",
+        "unicode": "eb07"
+    },
+    {
+        "name": "x-bold-grid-8",
+        "className": "x-bold-grid-8",
+        "unicode": "eb08"
+    },
+    {
+        "name": "x-bold-element-2",
+        "className": "x-bold-element-2",
+        "unicode": "eb09"
+    },
+    {
+        "name": "x-bold-frame24",
+        "className": "x-bold-frame24",
+        "unicode": "eb0a"
+    },
+    {
+        "name": "x-bold-element-3",
+        "className": "x-bold-element-3",
+        "unicode": "eb0b"
+    },
+    {
+        "name": "x-bold-element-4",
+        "className": "x-bold-element-4",
+        "unicode": "eb0c"
+    },
+    {
+        "name": "x-bold-element-plus",
+        "className": "x-bold-element-plus",
+        "unicode": "eb0d"
+    },
+    {
+        "name": "x-bold-align-horizontally",
+        "className": "x-bold-align-horizontally",
+        "unicode": "eb0e"
+    },
+    {
+        "name": "x-bold-grid-1",
+        "className": "x-bold-grid-1",
+        "unicode": "eb0f"
+    },
+    {
+        "name": "x-bold-align-left",
+        "className": "x-bold-align-left",
+        "unicode": "eb10"
+    },
+    {
+        "name": "x-bold-format-square",
+        "className": "x-bold-format-square",
+        "unicode": "eb11"
+    },
+    {
+        "name": "x-bold-convertshape",
+        "className": "x-bold-convertshape",
+        "unicode": "eb12"
+    },
+    {
+        "name": "x-bold-maximize-4",
+        "className": "x-bold-maximize-4",
+        "unicode": "eb13"
+    },
+    {
+        "name": "x-bold-kanban",
+        "className": "x-bold-kanban",
+        "unicode": "eb14"
+    },
+    {
+        "name": "x-bold-frame23",
+        "className": "x-bold-frame23",
+        "unicode": "eb15"
+    },
+    {
+        "name": "x-bold-3square",
+        "className": "x-bold-3square",
+        "unicode": "eb16"
+    },
+    {
+        "name": "x-bold-maximize22",
+        "className": "x-bold-maximize22",
+        "unicode": "eb17"
+    },
+    {
+        "name": "x-bold-align-bottom",
+        "className": "x-bold-align-bottom",
+        "unicode": "eb18"
+    },
+    {
+        "name": "x-bold-maximize-2",
+        "className": "x-bold-maximize-2",
+        "unicode": "eb19"
+    },
+    {
+        "name": "x-bold-align-vertically",
+        "className": "x-bold-align-vertically",
+        "unicode": "eb1a"
+    },
+    {
+        "name": "x-bold-align-right",
+        "className": "x-bold-align-right",
+        "unicode": "eb1b"
+    },
+    {
+        "name": "x-bold-crop",
+        "className": "x-bold-crop",
+        "unicode": "eb1c"
+    },
+    {
+        "name": "x-bold-rotate-left21",
+        "className": "x-bold-rotate-left21",
+        "unicode": "eb1d"
+    },
+    {
+        "name": "x-bold-element-equal",
+        "className": "x-bold-element-equal",
+        "unicode": "eb1e"
+    },
+    {
+        "name": "x-bold-maximize-3",
+        "className": "x-bold-maximize-3",
+        "unicode": "eb1f"
+    },
+    {
+        "name": "x-bold-rotate-right20",
+        "className": "x-bold-rotate-right20",
+        "unicode": "eb20"
+    },
+    {
+        "name": "x-bold-format-circle",
+        "className": "x-bold-format-circle",
+        "unicode": "eb21"
+    },
+    {
+        "name": "x-bold-convertshape-2",
+        "className": "x-bold-convertshape-2",
+        "unicode": "eb22"
+    },
+    {
+        "name": "x-bold-maximize19",
+        "className": "x-bold-maximize19",
+        "unicode": "eb23"
+    },
+    {
+        "name": "x-bold-frame145",
+        "className": "x-bold-frame145",
+        "unicode": "eb24"
+    },
+    {
+        "name": "x-bold-profile-tick",
+        "className": "x-bold-profile-tick",
+        "unicode": "eb25"
+    },
+    {
+        "name": "x-bold-profile-remove",
+        "className": "x-bold-profile-remove",
+        "unicode": "eb26"
+    },
+    {
+        "name": "x-bold-profile-delete",
+        "className": "x-bold-profile-delete",
+        "unicode": "eb27"
+    },
+    {
+        "name": "x-bold-profile-add",
+        "className": "x-bold-profile-add",
+        "unicode": "eb28"
+    },
+    {
+        "name": "x-bold-profile-2user",
+        "className": "x-bold-profile-2user",
+        "unicode": "eb29"
+    },
+    {
+        "name": "x-bold-profile-circle",
+        "className": "x-bold-profile-circle",
+        "unicode": "eb2a"
+    },
+    {
+        "name": "x-bold-textalign-center",
+        "className": "x-bold-textalign-center",
+        "unicode": "eb2b"
+    },
+    {
+        "name": "x-bold-textalign-left",
+        "className": "x-bold-textalign-left",
+        "unicode": "eb2c"
+    },
+    {
+        "name": "x-bold-textalign-justifyright",
+        "className": "x-bold-textalign-justifyright",
+        "unicode": "eb2d"
+    },
+    {
+        "name": "x-bold-link191",
+        "className": "x-bold-link191",
+        "unicode": "eb2e"
+    },
+    {
+        "name": "x-bold-pharagraphspacing",
+        "className": "x-bold-pharagraphspacing",
+        "unicode": "eb2f"
+    },
+    {
+        "name": "x-bold-textalign-right",
+        "className": "x-bold-textalign-right",
+        "unicode": "eb30"
+    },
+    {
+        "name": "x-bold-link190",
+        "className": "x-bold-link190",
+        "unicode": "eb31"
+    },
+    {
+        "name": "x-bold-textalign-justifycenter",
+        "className": "x-bold-textalign-justifycenter",
+        "unicode": "eb32"
+    },
+    {
+        "name": "x-bold-textalign-justifyleft",
+        "className": "x-bold-textalign-justifyleft",
+        "unicode": "eb33"
+    },
+    {
+        "name": "x-bold-maximize189",
+        "className": "x-bold-maximize189",
+        "unicode": "eb34"
+    },
+    {
+        "name": "x-bold-text-bold",
+        "className": "x-bold-text-bold",
+        "unicode": "eb35"
+    },
+    {
+        "name": "x-bold-smallcaps",
+        "className": "x-bold-smallcaps",
+        "unicode": "eb36"
+    },
+    {
+        "name": "x-bold-link-2",
+        "className": "x-bold-link-2",
+        "unicode": "eb37"
+    },
+    {
+        "name": "x-bold-text-block",
+        "className": "x-bold-text-block",
+        "unicode": "eb38"
+    },
+    {
+        "name": "x-bold-text-underline",
+        "className": "x-bold-text-underline",
+        "unicode": "eb39"
+    },
+    {
+        "name": "x-bold-paperclip-2",
+        "className": "x-bold-paperclip-2",
+        "unicode": "eb3a"
+    },
+    {
+        "name": "x-bold-firstline",
+        "className": "x-bold-firstline",
+        "unicode": "eb3b"
+    },
+    {
+        "name": "x-bold-paperclip",
+        "className": "x-bold-paperclip",
+        "unicode": "eb3c"
+    },
+    {
+        "name": "x-bold-text-italic",
+        "className": "x-bold-text-italic",
+        "unicode": "eb3d"
+    },
+    {
+        "name": "x-bold-text",
+        "className": "x-bold-text",
+        "unicode": "eb3e"
+    },
+    {
+        "name": "x-bold-bucket",
+        "className": "x-bold-bucket",
+        "unicode": "eb3f"
+    },
+    {
+        "name": "x-bold-brush75",
+        "className": "x-bold-brush75",
+        "unicode": "eb40"
+    },
+    {
+        "name": "x-bold-designtools",
+        "className": "x-bold-designtools",
+        "unicode": "eb41"
+    },
+    {
+        "name": "x-bold-paintbucket",
+        "className": "x-bold-paintbucket",
+        "unicode": "eb42"
+    },
+    {
+        "name": "x-bold-additem",
+        "className": "x-bold-additem",
+        "unicode": "eb43"
+    },
+    {
+        "name": "x-bold-ruler",
+        "className": "x-bold-ruler",
+        "unicode": "eb44"
+    },
+    {
+        "name": "x-bold-path",
+        "className": "x-bold-path",
+        "unicode": "eb45"
+    },
+    {
+        "name": "x-bold-ruler-pen",
+        "className": "x-bold-ruler-pen",
+        "unicode": "eb46"
+    },
+    {
+        "name": "x-bold-shapes74",
+        "className": "x-bold-shapes74",
+        "unicode": "eb47"
+    },
+    {
+        "name": "x-bold-glass73",
+        "className": "x-bold-glass73",
+        "unicode": "eb48"
+    },
+    {
+        "name": "x-bold-blend-2",
+        "className": "x-bold-blend-2",
+        "unicode": "eb49"
+    },
+    {
+        "name": "x-bold-mask72",
+        "className": "x-bold-mask72",
+        "unicode": "eb4a"
+    },
+    {
+        "name": "x-bold-blend",
+        "className": "x-bold-blend",
+        "unicode": "eb4b"
+    },
+    {
+        "name": "x-bold-size",
+        "className": "x-bold-size",
+        "unicode": "eb4c"
+    },
+    {
+        "name": "x-bold-copy",
+        "className": "x-bold-copy",
+        "unicode": "eb4d"
+    },
+    {
+        "name": "x-bold-colorfilter",
+        "className": "x-bold-colorfilter",
+        "unicode": "eb4e"
+    },
+    {
+        "name": "x-bold-copy-success",
+        "className": "x-bold-copy-success",
+        "unicode": "eb4f"
+    },
+    {
+        "name": "x-bold-layer",
+        "className": "x-bold-layer",
+        "unicode": "eb50"
+    },
+    {
+        "name": "x-bold-magicpen",
+        "className": "x-bold-magicpen",
+        "unicode": "eb51"
+    },
+    {
+        "name": "x-bold-brush71",
+        "className": "x-bold-brush71",
+        "unicode": "eb52"
+    },
+    {
+        "name": "x-bold-path-2",
+        "className": "x-bold-path-2",
+        "unicode": "eb53"
+    },
+    {
+        "name": "x-bold-lifebuoy",
+        "className": "x-bold-lifebuoy",
+        "unicode": "eb54"
+    },
+    {
+        "name": "x-bold-brush85",
+        "className": "x-bold-brush85",
+        "unicode": "eb55"
+    },
+    {
+        "name": "x-bold-brush69",
+        "className": "x-bold-brush69",
+        "unicode": "eb56"
+    },
+    {
+        "name": "x-bold-folder",
+        "className": "x-bold-folder",
+        "unicode": "eb57"
+    },
+    {
+        "name": "x-bold-folder-favorite",
+        "className": "x-bold-folder-favorite",
+        "unicode": "eb58"
+    },
+    {
+        "name": "x-bold-folder-open",
+        "className": "x-bold-folder-open",
+        "unicode": "eb59"
+    },
+    {
+        "name": "x-bold-folder-cross",
+        "className": "x-bold-folder-cross",
+        "unicode": "eb5a"
+    },
+    {
+        "name": "x-bold-folder-minus",
+        "className": "x-bold-folder-minus",
+        "unicode": "eb5b"
+    },
+    {
+        "name": "x-bold-folder-add",
+        "className": "x-bold-folder-add",
+        "unicode": "eb5c"
+    },
+    {
+        "name": "x-bold-folder-2",
+        "className": "x-bold-folder-2",
+        "unicode": "eb5d"
+    },
+    {
+        "name": "x-bold-note-remove",
+        "className": "x-bold-note-remove",
+        "unicode": "eb5e"
+    },
+    {
+        "name": "x-bold-task",
+        "className": "x-bold-task",
+        "unicode": "eb5f"
+    },
+    {
+        "name": "x-bold-stickynote",
+        "className": "x-bold-stickynote",
+        "unicode": "eb60"
+    },
+    {
+        "name": "x-bold-note136",
+        "className": "x-bold-note136",
+        "unicode": "eb61"
+    },
+    {
+        "name": "x-bold-note-add",
+        "className": "x-bold-note-add",
+        "unicode": "eb62"
+    },
+    {
+        "name": "x-bold-document-forward",
+        "className": "x-bold-document-forward",
+        "unicode": "eb63"
+    },
+    {
+        "name": "x-bold-document-favorite",
+        "className": "x-bold-document-favorite",
+        "unicode": "eb64"
+    },
+    {
+        "name": "x-bold-document-upload",
+        "className": "x-bold-document-upload",
+        "unicode": "eb65"
+    },
+    {
+        "name": "x-bold-document-copy",
+        "className": "x-bold-document-copy",
+        "unicode": "eb66"
+    },
+    {
+        "name": "x-bold-document-text135",
+        "className": "x-bold-document-text135",
+        "unicode": "eb67"
+    },
+    {
+        "name": "x-bold-document-previous",
+        "className": "x-bold-document-previous",
+        "unicode": "eb68"
+    },
+    {
+        "name": "x-bold-clipboard-close",
+        "className": "x-bold-clipboard-close",
+        "unicode": "eb69"
+    },
+    {
+        "name": "x-bold-note134",
+        "className": "x-bold-note134",
+        "unicode": "eb6a"
+    },
+    {
+        "name": "x-bold-edit",
+        "className": "x-bold-edit",
+        "unicode": "eb6b"
+    },
+    {
+        "name": "x-bold-document-normal",
+        "className": "x-bold-document-normal",
+        "unicode": "eb6c"
+    },
+    {
+        "name": "x-bold-document133",
+        "className": "x-bold-document133",
+        "unicode": "eb6d"
+    },
+    {
+        "name": "x-bold-document-text132",
+        "className": "x-bold-document-text132",
+        "unicode": "eb6e"
+    },
+    {
+        "name": "x-bold-document-cloud",
+        "className": "x-bold-document-cloud",
+        "unicode": "eb6f"
+    },
+    {
+        "name": "x-bold-edit-2",
+        "className": "x-bold-edit-2",
+        "unicode": "eb70"
+    },
+    {
+        "name": "x-bold-document-sketch",
+        "className": "x-bold-document-sketch",
+        "unicode": "eb71"
+    },
+    {
+        "name": "x-bold-clipboard-text",
+        "className": "x-bold-clipboard-text",
+        "unicode": "eb72"
+    },
+    {
+        "name": "x-bold-clipboard-export",
+        "className": "x-bold-clipboard-export",
+        "unicode": "eb73"
+    },
+    {
+        "name": "x-bold-clipboard-tick",
+        "className": "x-bold-clipboard-tick",
+        "unicode": "eb74"
+    },
+    {
+        "name": "x-bold-document-like",
+        "className": "x-bold-document-like",
+        "unicode": "eb75"
+    },
+    {
+        "name": "x-bold-clipboard-import",
+        "className": "x-bold-clipboard-import",
+        "unicode": "eb76"
+    },
+    {
+        "name": "x-bold-document-download",
+        "className": "x-bold-document-download",
+        "unicode": "eb77"
+    },
+    {
+        "name": "x-bold-directbox-receive",
+        "className": "x-bold-directbox-receive",
+        "unicode": "eb78"
+    },
+    {
+        "name": "x-bold-directbox-default",
+        "className": "x-bold-directbox-default",
+        "unicode": "eb79"
+    },
+    {
+        "name": "x-bold-direct-inbox",
+        "className": "x-bold-direct-inbox",
+        "unicode": "eb7a"
+    },
+    {
+        "name": "x-bold-directbox-notif",
+        "className": "x-bold-directbox-notif",
+        "unicode": "eb7b"
+    },
+    {
+        "name": "x-bold-direct-normal",
+        "className": "x-bold-direct-normal",
+        "unicode": "eb7c"
+    },
+    {
+        "name": "x-bold-message-notif",
+        "className": "x-bold-message-notif",
+        "unicode": "eb7d"
+    },
+    {
+        "name": "x-bold-message-text92",
+        "className": "x-bold-message-text92",
+        "unicode": "eb7e"
+    },
+    {
+        "name": "x-bold-directbox-send",
+        "className": "x-bold-directbox-send",
+        "unicode": "eb7f"
+    },
+    {
+        "name": "x-bold-direct-notification",
+        "className": "x-bold-direct-notification",
+        "unicode": "eb80"
+    },
+    {
+        "name": "x-bold-direct",
+        "className": "x-bold-direct",
+        "unicode": "eb81"
+    },
+    {
+        "name": "x-bold-direct-send",
+        "className": "x-bold-direct-send",
+        "unicode": "eb82"
+    },
+    {
+        "name": "x-bold-message",
+        "className": "x-bold-message",
+        "unicode": "eb83"
+    },
+    {
+        "name": "x-bold-message-favorite",
+        "className": "x-bold-message-favorite",
+        "unicode": "eb84"
+    },
+    {
+        "name": "x-bold-airplane",
+        "className": "x-bold-airplane",
+        "unicode": "eb85"
+    },
+    {
+        "name": "x-bold-car",
+        "className": "x-bold-car",
+        "unicode": "eb86"
+    },
+    {
+        "name": "x-bold-airplane-square",
+        "className": "x-bold-airplane-square",
+        "unicode": "eb87"
+    },
+    {
+        "name": "x-bold-cloud-minus",
+        "className": "x-bold-cloud-minus",
+        "unicode": "eb88"
+    },
+    {
+        "name": "x-bold-cloud-notif",
+        "className": "x-bold-cloud-notif",
+        "unicode": "eb89"
+    },
+    {
+        "name": "x-bold-moon",
+        "className": "x-bold-moon",
+        "unicode": "eb8a"
+    },
+    {
+        "name": "x-bold-cloud-plus",
+        "className": "x-bold-cloud-plus",
+        "unicode": "eb8b"
+    },
+    {
+        "name": "x-bold-cloud",
+        "className": "x-bold-cloud",
+        "unicode": "eb8c"
+    },
+    {
+        "name": "x-bold-sun147",
+        "className": "x-bold-sun147",
+        "unicode": "eb8d"
+    },
+    {
+        "name": "x-bold-cloud-drizzle",
+        "className": "x-bold-cloud-drizzle",
+        "unicode": "eb8e"
+    },
+    {
+        "name": "x-bold-cloud-cross",
+        "className": "x-bold-cloud-cross",
+        "unicode": "eb8f"
+    },
+    {
+        "name": "x-bold-cloud-sunny",
+        "className": "x-bold-cloud-sunny",
+        "unicode": "eb90"
+    },
+    {
+        "name": "x-bold-cloud-snow",
+        "className": "x-bold-cloud-snow",
+        "unicode": "eb91"
+    },
+    {
+        "name": "x-bold-cloud-lightning",
+        "className": "x-bold-cloud-lightning",
+        "unicode": "eb92"
+    },
+    {
+        "name": "x-bold-login179",
+        "className": "x-bold-login179",
+        "unicode": "eb93"
+    },
+    {
+        "name": "x-bold-arrow-right178",
+        "className": "x-bold-arrow-right178",
+        "unicode": "eb94"
+    },
+    {
+        "name": "x-bold-rotate-right177",
+        "className": "x-bold-rotate-right177",
+        "unicode": "eb95"
+    },
+    {
+        "name": "x-bold-arrow-circle-left",
+        "className": "x-bold-arrow-circle-left",
+        "unicode": "eb96"
+    },
+    {
+        "name": "x-bold-undo",
+        "className": "x-bold-undo",
+        "unicode": "eb97"
+    },
+    {
+        "name": "x-bold-redo",
+        "className": "x-bold-redo",
+        "unicode": "eb98"
+    },
+    {
+        "name": "x-bold-arrow-up176",
+        "className": "x-bold-arrow-up176",
+        "unicode": "eb99"
+    },
+    {
+        "name": "x-bold-arrow-up175",
+        "className": "x-bold-arrow-up175",
+        "unicode": "eb9a"
+    },
+    {
+        "name": "x-bold-arrow-right174",
+        "className": "x-bold-arrow-right174",
+        "unicode": "eb9b"
+    },
+    {
+        "name": "x-bold-arrow-circle-right",
+        "className": "x-bold-arrow-circle-right",
+        "unicode": "eb9c"
+    },
+    {
+        "name": "x-bold-arrow-right173",
+        "className": "x-bold-arrow-right173",
+        "unicode": "eb9d"
+    },
+    {
+        "name": "x-bold-arrow-swap-horizontal",
+        "className": "x-bold-arrow-swap-horizontal",
+        "unicode": "eb9e"
+    },
+    {
+        "name": "x-bold-arrow-down172",
+        "className": "x-bold-arrow-down172",
+        "unicode": "eb9f"
+    },
+    {
+        "name": "x-bold-refresh-2",
+        "className": "x-bold-refresh-2",
+        "unicode": "eba0"
+    },
+    {
+        "name": "x-bold-arrow-up171",
+        "className": "x-bold-arrow-up171",
+        "unicode": "eba1"
+    },
+    {
+        "name": "x-bold-rotate-left170",
+        "className": "x-bold-rotate-left170",
+        "unicode": "eba2"
+    },
+    {
+        "name": "x-bold-arrow-left169",
+        "className": "x-bold-arrow-left169",
+        "unicode": "eba3"
+    },
+    {
+        "name": "x-bold-arrow-left168",
+        "className": "x-bold-arrow-left168",
+        "unicode": "eba4"
+    },
+    {
+        "name": "x-bold-arrow-down167",
+        "className": "x-bold-arrow-down167",
+        "unicode": "eba5"
+    },
+    {
+        "name": "x-bold-arrow-circle-up",
+        "className": "x-bold-arrow-circle-up",
+        "unicode": "eba6"
+    },
+    {
+        "name": "x-bold-arrow-square-down",
+        "className": "x-bold-arrow-square-down",
+        "unicode": "eba7"
+    },
+    {
+        "name": "x-bold-arrow-square-right",
+        "className": "x-bold-arrow-square-right",
+        "unicode": "eba8"
+    },
+    {
+        "name": "x-bold-import166",
+        "className": "x-bold-import166",
+        "unicode": "eba9"
+    },
+    {
+        "name": "x-bold-import165",
+        "className": "x-bold-import165",
+        "unicode": "ebaa"
+    },
+    {
+        "name": "x-bold-export164",
+        "className": "x-bold-export164",
+        "unicode": "ebab"
+    },
+    {
+        "name": "x-bold-export163",
+        "className": "x-bold-export163",
+        "unicode": "ebac"
+    },
+    {
+        "name": "x-bold-logout162",
+        "className": "x-bold-logout162",
+        "unicode": "ebad"
+    },
+    {
+        "name": "x-bold-refresh",
+        "className": "x-bold-refresh",
+        "unicode": "ebae"
+    },
+    {
+        "name": "x-bold-login161",
+        "className": "x-bold-login161",
+        "unicode": "ebaf"
+    },
+    {
+        "name": "x-bold-arrow-down160",
+        "className": "x-bold-arrow-down160",
+        "unicode": "ebb0"
+    },
+    {
+        "name": "x-bold-import159",
+        "className": "x-bold-import159",
+        "unicode": "ebb1"
+    },
+    {
+        "name": "x-bold-export158",
+        "className": "x-bold-export158",
+        "unicode": "ebb2"
+    },
+    {
+        "name": "x-bold-export157",
+        "className": "x-bold-export157",
+        "unicode": "ebb3"
+    },
+    {
+        "name": "x-bold-import156",
+        "className": "x-bold-import156",
+        "unicode": "ebb4"
+    },
+    {
+        "name": "x-bold-arrow-left155",
+        "className": "x-bold-arrow-left155",
+        "unicode": "ebb5"
+    },
+    {
+        "name": "x-bold-logout154",
+        "className": "x-bold-logout154",
+        "unicode": "ebb6"
+    },
+    {
+        "name": "x-bold-convert",
+        "className": "x-bold-convert",
+        "unicode": "ebb7"
+    },
+    {
+        "name": "x-bold-arrow-bottom",
+        "className": "x-bold-arrow-bottom",
+        "unicode": "ebb8"
+    },
+    {
+        "name": "x-bold-arrow-square-up",
+        "className": "x-bold-arrow-square-up",
+        "unicode": "ebb9"
+    },
+    {
+        "name": "x-bold-arrow-left153",
+        "className": "x-bold-arrow-left153",
+        "unicode": "ebba"
+    },
+    {
+        "name": "x-bold-arrow-swap",
+        "className": "x-bold-arrow-swap",
+        "unicode": "ebbb"
+    },
+    {
+        "name": "x-bold-arrow-up152",
+        "className": "x-bold-arrow-up152",
+        "unicode": "ebbc"
+    },
+    {
+        "name": "x-bold-arrow-square-left",
+        "className": "x-bold-arrow-square-left",
+        "unicode": "ebbd"
+    },
+    {
+        "name": "x-bold-arrow-right151",
+        "className": "x-bold-arrow-right151",
+        "unicode": "ebbe"
+    },
+    {
+        "name": "x-bold-arrow-circle-down",
+        "className": "x-bold-arrow-circle-down",
+        "unicode": "ebbf"
+    },
+    {
+        "name": "x-bold-microphone-slash185",
+        "className": "x-bold-microphone-slash185",
+        "unicode": "ebc0"
+    },
+    {
+        "name": "x-bold-microphone-2",
+        "className": "x-bold-microphone-2",
+        "unicode": "ebc1"
+    },
+    {
+        "name": "x-bold-volume-low184",
+        "className": "x-bold-volume-low184",
+        "unicode": "ebc2"
+    },
+    {
+        "name": "x-bold-volume-up",
+        "className": "x-bold-volume-up",
+        "unicode": "ebc3"
+    },
+    {
+        "name": "x-bold-volume-low183",
+        "className": "x-bold-volume-low183",
+        "unicode": "ebc4"
+    },
+    {
+        "name": "x-bold-video",
+        "className": "x-bold-video",
+        "unicode": "ebc5"
+    },
+    {
+        "name": "x-bold-volume-slash",
+        "className": "x-bold-volume-slash",
+        "unicode": "ebc6"
+    },
+    {
+        "name": "x-bold-video-slash",
+        "className": "x-bold-video-slash",
+        "unicode": "ebc7"
+    },
+    {
+        "name": "x-bold-volume-high",
+        "className": "x-bold-volume-high",
+        "unicode": "ebc8"
+    },
+    {
+        "name": "x-bold-gallery",
+        "className": "x-bold-gallery",
+        "unicode": "ebc9"
+    },
+    {
+        "name": "x-bold-video-circle",
+        "className": "x-bold-video-circle",
+        "unicode": "ebca"
+    },
+    {
+        "name": "x-bold-gallery-favorite",
+        "className": "x-bold-gallery-favorite",
+        "unicode": "ebcb"
+    },
+    {
+        "name": "x-bold-volume-mute",
+        "className": "x-bold-volume-mute",
+        "unicode": "ebcc"
+    },
+    {
+        "name": "x-bold-video-square",
+        "className": "x-bold-video-square",
+        "unicode": "ebcd"
+    },
+    {
+        "name": "x-bold-gallery-slash",
+        "className": "x-bold-gallery-slash",
+        "unicode": "ebce"
+    },
+    {
+        "name": "x-bold-gallery-import",
+        "className": "x-bold-gallery-import",
+        "unicode": "ebcf"
+    },
+    {
+        "name": "x-bold-gallery-tick",
+        "className": "x-bold-gallery-tick",
+        "unicode": "ebd0"
+    },
+    {
+        "name": "x-bold-gallery-export",
+        "className": "x-bold-gallery-export",
+        "unicode": "ebd1"
+    },
+    {
+        "name": "x-bold-gallery-add",
+        "className": "x-bold-gallery-add",
+        "unicode": "ebd2"
+    },
+    {
+        "name": "x-bold-play",
+        "className": "x-bold-play",
+        "unicode": "ebd3"
+    },
+    {
+        "name": "x-bold-musicnote",
+        "className": "x-bold-musicnote",
+        "unicode": "ebd4"
+    },
+    {
+        "name": "x-bold-stop",
+        "className": "x-bold-stop",
+        "unicode": "ebd5"
+    },
+    {
+        "name": "x-bold-screenmirroring",
+        "className": "x-bold-screenmirroring",
+        "unicode": "ebd6"
+    },
+    {
+        "name": "x-bold-music",
+        "className": "x-bold-music",
+        "unicode": "ebd7"
+    },
+    {
+        "name": "x-bold-video-play",
+        "className": "x-bold-video-play",
+        "unicode": "ebd8"
+    },
+    {
+        "name": "x-bold-record",
+        "className": "x-bold-record",
+        "unicode": "ebd9"
+    },
+    {
+        "name": "x-bold-gallery-edit",
+        "className": "x-bold-gallery-edit",
+        "unicode": "ebda"
+    },
+    {
+        "name": "x-bold-gallery-remove",
+        "className": "x-bold-gallery-remove",
+        "unicode": "ebdb"
+    },
+    {
+        "name": "x-bold-pause",
+        "className": "x-bold-pause",
+        "unicode": "ebdc"
+    },
+    {
+        "name": "x-bold-record-circle",
+        "className": "x-bold-record-circle",
+        "unicode": "ebdd"
+    },
+    {
+        "name": "x-bold-stop-circle",
+        "className": "x-bold-stop-circle",
+        "unicode": "ebde"
+    },
+    {
+        "name": "x-bold-microphone",
+        "className": "x-bold-microphone",
+        "unicode": "ebdf"
+    },
+    {
+        "name": "x-bold-volume-cross",
+        "className": "x-bold-volume-cross",
+        "unicode": "ebe0"
+    },
+    {
+        "name": "x-bold-microphone-slash182",
+        "className": "x-bold-microphone-slash182",
+        "unicode": "ebe1"
+    },
+    {
+        "name": "x-bold-camera-slash",
+        "className": "x-bold-camera-slash",
+        "unicode": "ebe2"
+    },
+    {
+        "name": "x-bold-camera",
+        "className": "x-bold-camera",
+        "unicode": "ebe3"
+    },
+    {
+        "name": "x-bold-image",
+        "className": "x-bold-image",
+        "unicode": "ebe4"
+    },
+    {
+        "name": "x-bold-video-vertical",
+        "className": "x-bold-video-vertical",
+        "unicode": "ebe5"
+    },
+    {
+        "name": "x-bold-video-horizontal",
+        "className": "x-bold-video-horizontal",
+        "unicode": "ebe6"
+    },
+    {
+        "name": "x-bold-subtitle",
+        "className": "x-bold-subtitle",
+        "unicode": "ebe7"
+    },
+    {
+        "name": "x-bold-play-circle",
+        "className": "x-bold-play-circle",
+        "unicode": "ebe8"
+    },
+    {
+        "name": "x-bold-pause-circle",
+        "className": "x-bold-pause-circle",
+        "unicode": "ebe9"
+    },
+    {
+        "name": "x-bold-trend-up",
+        "className": "x-bold-trend-up",
+        "unicode": "ebea"
+    },
+    {
+        "name": "x-bold-chart32",
+        "className": "x-bold-chart32",
+        "unicode": "ebeb"
+    },
+    {
+        "name": "x-bold-hashtag31",
+        "className": "x-bold-hashtag31",
+        "unicode": "ebec"
+    },
+    {
+        "name": "x-bold-status-up",
+        "className": "x-bold-status-up",
+        "unicode": "ebed"
+    },
+    {
+        "name": "x-bold-personalcard",
+        "className": "x-bold-personalcard",
+        "unicode": "ebee"
+    },
+    {
+        "name": "x-bold-home-trend-up",
+        "className": "x-bold-home-trend-up",
+        "unicode": "ebef"
+    },
+    {
+        "name": "x-bold-health",
+        "className": "x-bold-health",
+        "unicode": "ebf0"
+    },
+    {
+        "name": "x-bold-chart-2",
+        "className": "x-bold-chart-2",
+        "unicode": "ebf1"
+    },
+    {
+        "name": "x-bold-chart-success",
+        "className": "x-bold-chart-success",
+        "unicode": "ebf2"
+    },
+    {
+        "name": "x-bold-chart-fail",
+        "className": "x-bold-chart-fail",
+        "unicode": "ebf3"
+    },
+    {
+        "name": "x-bold-chart30",
+        "className": "x-bold-chart30",
+        "unicode": "ebf4"
+    },
+    {
+        "name": "x-bold-trend-down",
+        "className": "x-bold-trend-down",
+        "unicode": "ebf5"
+    },
+    {
+        "name": "x-bold-home-trend-down",
+        "className": "x-bold-home-trend-down",
+        "unicode": "ebf6"
+    },
+    {
+        "name": "x-bold-home-hashtag",
+        "className": "x-bold-home-hashtag",
+        "unicode": "ebf7"
+    },
+    {
+        "name": "x-bold-activity",
+        "className": "x-bold-activity",
+        "unicode": "ebf8"
+    },
+    {
+        "name": "x-bold-graph",
+        "className": "x-bold-graph",
+        "unicode": "ebf9"
+    },
+    {
+        "name": "x-bold-wallet0503",
+        "className": "x-bold-wallet0503",
+        "unicode": "ebfa"
+    },
+    {
+        "name": "x-bold-card-remove15",
+        "className": "x-bold-card-remove15",
+        "unicode": "ebfb"
+    },
+    {
+        "name": "x-bold-card-pos",
+        "className": "x-bold-card-pos",
+        "unicode": "ebfc"
+    },
+    {
+        "name": "x-bold-dollar-square",
+        "className": "x-bold-dollar-square",
+        "unicode": "ebfd"
+    },
+    {
+        "name": "x-bold-card-tick06",
+        "className": "x-bold-card-tick06",
+        "unicode": "ebfe"
+    },
+    {
+        "name": "x-bold-tag",
+        "className": "x-bold-tag",
+        "unicode": "ebff"
+    },
+    {
+        "name": "x-bold-coin199",
+        "className": "x-bold-coin199",
+        "unicode": "ec00"
+    },
+    {
+        "name": "x-bold-card-add",
+        "className": "x-bold-card-add",
+        "unicode": "ec01"
+    },
+    {
+        "name": "x-bold-card-send",
+        "className": "x-bold-card-send",
+        "unicode": "ec02"
+    },
+    {
+        "name": "x-bold-wallet-add198",
+        "className": "x-bold-wallet-add198",
+        "unicode": "ec03"
+    },
+    {
+        "name": "x-bold-card-receive",
+        "className": "x-bold-card-receive",
+        "unicode": "ec04"
+    },
+    {
+        "name": "x-bold-card",
+        "className": "x-bold-card",
+        "unicode": "ec05"
+    },
+    {
+        "name": "x-bold-card-slash",
+        "className": "x-bold-card-slash",
+        "unicode": "ec06"
+    },
+    {
+        "name": "x-bold-tag-2",
+        "className": "x-bold-tag-2",
+        "unicode": "ec07"
+    },
+    {
+        "name": "x-bold-card-edit",
+        "className": "x-bold-card-edit",
+        "unicode": "ec08"
+    },
+    {
+        "name": "x-bold-wallet-minus",
+        "className": "x-bold-wallet-minus",
+        "unicode": "ec09"
+    },
+    {
+        "name": "x-bold-receipt-2197",
+        "className": "x-bold-receipt-2197",
+        "unicode": "ec0a"
+    },
+    {
+        "name": "x-bold-receipt-disscount",
+        "className": "x-bold-receipt-disscount",
+        "unicode": "ec0b"
+    },
+    {
+        "name": "x-bold-receipt196",
+        "className": "x-bold-receipt196",
+        "unicode": "ec0c"
+    },
+    {
+        "name": "x-bold-ticket",
+        "className": "x-bold-ticket",
+        "unicode": "ec0d"
+    },
+    {
+        "name": "x-bold-ticket-expired",
+        "className": "x-bold-ticket-expired",
+        "unicode": "ec0e"
+    },
+    {
+        "name": "x-bold-ticket-star",
+        "className": "x-bold-ticket-star",
+        "unicode": "ec0f"
+    },
+    {
+        "name": "x-bold-dollar-circle",
+        "className": "x-bold-dollar-circle",
+        "unicode": "ec10"
+    },
+    {
+        "name": "x-bold-ticket-2",
+        "className": "x-bold-ticket-2",
+        "unicode": "ec11"
+    },
+    {
+        "name": "x-bold-math",
+        "className": "x-bold-math",
+        "unicode": "ec12"
+    },
+    {
+        "name": "x-bold-document195",
+        "className": "x-bold-document195",
+        "unicode": "ec13"
+    },
+    {
+        "name": "x-bold-ticket-discount",
+        "className": "x-bold-ticket-discount",
+        "unicode": "ec14"
+    },
+    {
+        "name": "x-bold-lamp-slash",
+        "className": "x-bold-lamp-slash",
+        "unicode": "ec15"
+    },
+    {
+        "name": "x-bold-notification-bing",
+        "className": "x-bold-notification-bing",
+        "unicode": "ec16"
+    },
+    {
+        "name": "x-bold-lamp-charge",
+        "className": "x-bold-lamp-charge",
+        "unicode": "ec17"
+    },
+    {
+        "name": "x-bold-notification-status",
+        "className": "x-bold-notification-status",
+        "unicode": "ec18"
+    },
+    {
+        "name": "x-bold-notification137",
+        "className": "x-bold-notification137",
+        "unicode": "ec19"
+    },
+    {
+        "name": "x-bold-notification129",
+        "className": "x-bold-notification129",
+        "unicode": "ec1a"
+    },
+    {
+        "name": "x-bold-frame128",
+        "className": "x-bold-frame128",
+        "unicode": "ec1b"
+    },
+    {
+        "name": "x-bold-lamp-on",
+        "className": "x-bold-lamp-on",
+        "unicode": "ec1c"
+    },
+    {
+        "name": "x-bold-notification-favorite",
+        "className": "x-bold-notification-favorite",
+        "unicode": "ec1d"
+    },
+    {
+        "name": "x-bold-dislike",
+        "className": "x-bold-dislike",
+        "unicode": "ec1e"
+    },
+    {
+        "name": "x-bold-heart",
+        "className": "x-bold-heart",
+        "unicode": "ec1f"
+    },
+    {
+        "name": "x-bold-like100",
+        "className": "x-bold-like100",
+        "unicode": "ec20"
+    },
+    {
+        "name": "x-bold-star-slash",
+        "className": "x-bold-star-slash",
+        "unicode": "ec21"
+    },
+    {
+        "name": "x-bold-star99",
+        "className": "x-bold-star99",
+        "unicode": "ec22"
+    },
+    {
+        "name": "x-bold-sidebar-top",
+        "className": "x-bold-sidebar-top",
+        "unicode": "ec23"
+    },
+    {
+        "name": "x-bold-sidebar-bottom",
+        "className": "x-bold-sidebar-bottom",
+        "unicode": "ec24"
+    },
+    {
+        "name": "x-bold-hashtag-down",
+        "className": "x-bold-hashtag-down",
+        "unicode": "ec25"
+    },
+    {
+        "name": "x-bold-hashtag-up",
+        "className": "x-bold-hashtag-up",
+        "unicode": "ec26"
+    },
+    {
+        "name": "x-bold-sidebar-right",
+        "className": "x-bold-sidebar-right",
+        "unicode": "ec27"
+    },
+    {
+        "name": "x-bold-code126",
+        "className": "x-bold-code126",
+        "unicode": "ec28"
+    },
+    {
+        "name": "x-bold-scroll",
+        "className": "x-bold-scroll",
+        "unicode": "ec29"
+    },
+    {
+        "name": "x-bold-code125",
+        "className": "x-bold-code125",
+        "unicode": "ec2a"
+    },
+    {
+        "name": "x-bold-hashtag124",
+        "className": "x-bold-hashtag124",
+        "unicode": "ec2b"
+    },
+    {
+        "name": "x-bold-sidebar-left",
+        "className": "x-bold-sidebar-left",
+        "unicode": "ec2c"
+    },
+    {
+        "name": "x-bold-call-slash",
+        "className": "x-bold-call-slash",
+        "unicode": "ec2d"
+    },
+    {
+        "name": "x-bold-call-incoming",
+        "className": "x-bold-call-incoming",
+        "unicode": "ec2e"
+    },
+    {
+        "name": "x-bold-call-outgoing",
+        "className": "x-bold-call-outgoing",
+        "unicode": "ec2f"
+    },
+    {
+        "name": "x-bold-call-minus",
+        "className": "x-bold-call-minus",
+        "unicode": "ec30"
+    },
+    {
+        "name": "x-bold-call-received",
+        "className": "x-bold-call-received",
+        "unicode": "ec31"
+    },
+    {
+        "name": "x-bold-call-add",
+        "className": "x-bold-call-add",
+        "unicode": "ec32"
+    },
+    {
+        "name": "x-bold-call-calling",
+        "className": "x-bold-call-calling",
+        "unicode": "ec33"
+    },
+    {
+        "name": "x-bold-call",
+        "className": "x-bold-call",
+        "unicode": "ec34"
+    },
+    {
+        "name": "x-bold-call-remove",
+        "className": "x-bold-call-remove",
+        "unicode": "ec35"
+    },
+    {
+        "name": "x-bold-add-circle",
+        "className": "x-bold-add-circle",
+        "unicode": "ec36"
+    },
+    {
+        "name": "x-bold-menu63",
+        "className": "x-bold-menu63",
+        "unicode": "ec37"
+    },
+    {
+        "name": "x-bold-flash62",
+        "className": "x-bold-flash62",
+        "unicode": "ec38"
+    },
+    {
+        "name": "x-bold-crown61",
+        "className": "x-bold-crown61",
+        "unicode": "ec39"
+    },
+    {
+        "name": "x-bold-sort",
+        "className": "x-bold-sort",
+        "unicode": "ec3a"
+    },
+    {
+        "name": "x-bold-send60",
+        "className": "x-bold-send60",
+        "unicode": "ec3b"
+    },
+    {
+        "name": "x-bold-minus-square",
+        "className": "x-bold-minus-square",
+        "unicode": "ec3c"
+    },
+    {
+        "name": "x-bold-tick-circle",
+        "className": "x-bold-tick-circle",
+        "unicode": "ec3d"
+    },
+    {
+        "name": "x-bold-close-circle",
+        "className": "x-bold-close-circle",
+        "unicode": "ec3e"
+    },
+    {
+        "name": "x-bold-home-2",
+        "className": "x-bold-home-2",
+        "unicode": "ec3f"
+    },
+    {
+        "name": "x-bold-more-square",
+        "className": "x-bold-more-square",
+        "unicode": "ec40"
+    },
+    {
+        "name": "x-bold-cake",
+        "className": "x-bold-cake",
+        "unicode": "ec41"
+    },
+    {
+        "name": "x-bold-minus",
+        "className": "x-bold-minus",
+        "unicode": "ec42"
+    },
+    {
+        "name": "x-bold-tick-square",
+        "className": "x-bold-tick-square",
+        "unicode": "ec43"
+    },
+    {
+        "name": "x-bold-home59",
+        "className": "x-bold-home59",
+        "unicode": "ec44"
+    },
+    {
+        "name": "x-bold-battery-disable",
+        "className": "x-bold-battery-disable",
+        "unicode": "ec45"
+    },
+    {
+        "name": "x-bold-add-square",
+        "className": "x-bold-add-square",
+        "unicode": "ec46"
+    },
+    {
+        "name": "x-bold-danger",
+        "className": "x-bold-danger",
+        "unicode": "ec47"
+    },
+    {
+        "name": "x-bold-flag-2",
+        "className": "x-bold-flag-2",
+        "unicode": "ec48"
+    },
+    {
+        "name": "x-bold-add",
+        "className": "x-bold-add",
+        "unicode": "ec49"
+    },
+    {
+        "name": "x-bold-minus-cirlce",
+        "className": "x-bold-minus-cirlce",
+        "unicode": "ec4a"
+    },
+    {
+        "name": "x-bold-battery-charging",
+        "className": "x-bold-battery-charging",
+        "unicode": "ec4b"
+    },
+    {
+        "name": "x-bold-info-circle",
+        "className": "x-bold-info-circle",
+        "unicode": "ec4c"
+    },
+    {
+        "name": "x-bold-send-2",
+        "className": "x-bold-send-2",
+        "unicode": "ec4d"
+    },
+    {
+        "name": "x-bold-flash-circle58",
+        "className": "x-bold-flash-circle58",
+        "unicode": "ec4e"
+    },
+    {
+        "name": "x-bold-more-circle",
+        "className": "x-bold-more-circle",
+        "unicode": "ec4f"
+    },
+    {
+        "name": "x-bold-battery-full",
+        "className": "x-bold-battery-full",
+        "unicode": "ec50"
+    },
+    {
+        "name": "x-bold-battery-empty57",
+        "className": "x-bold-battery-empty57",
+        "unicode": "ec51"
+    },
+    {
+        "name": "x-bold-battery-2-3full",
+        "className": "x-bold-battery-2-3full",
+        "unicode": "ec52"
+    },
+    {
+        "name": "x-bold-battery-empty56",
+        "className": "x-bold-battery-empty56",
+        "unicode": "ec53"
+    },
+    {
+        "name": "x-bold-trash",
+        "className": "x-bold-trash",
+        "unicode": "ec54"
+    },
+    {
+        "name": "x-bold-verify",
+        "className": "x-bold-verify",
+        "unicode": "ec55"
+    },
+    {
+        "name": "x-bold-information",
+        "className": "x-bold-information",
+        "unicode": "ec56"
+    },
+    {
+        "name": "x-bold-sound",
+        "className": "x-bold-sound",
+        "unicode": "ec57"
+    },
+    {
+        "name": "x-bold-triangle55",
+        "className": "x-bold-triangle55",
+        "unicode": "ec58"
+    },
+    {
+        "name": "x-bold-sticker",
+        "className": "x-bold-sticker",
+        "unicode": "ec59"
+    },
+    {
+        "name": "x-bold-computing",
+        "className": "x-bold-computing",
+        "unicode": "ec5a"
+    },
+    {
+        "name": "x-bold-happyemoji",
+        "className": "x-bold-happyemoji",
+        "unicode": "ec5b"
+    },
+    {
+        "name": "x-bold-filter",
+        "className": "x-bold-filter",
+        "unicode": "ec5c"
+    },
+    {
+        "name": "x-bold-discover54",
+        "className": "x-bold-discover54",
+        "unicode": "ec5d"
+    },
+    {
+        "name": "x-bold-weight53",
+        "className": "x-bold-weight53",
+        "unicode": "ec5e"
+    },
+    {
+        "name": "x-bold-filter-square",
+        "className": "x-bold-filter-square",
+        "unicode": "ec5f"
+    },
+    {
+        "name": "x-bold-reserve",
+        "className": "x-bold-reserve",
+        "unicode": "ec60"
+    },
+    {
+        "name": "x-bold-autobrightness",
+        "className": "x-bold-autobrightness",
+        "unicode": "ec61"
+    },
+    {
+        "name": "x-bold-chrome",
+        "className": "x-bold-chrome",
+        "unicode": "ec62"
+    },
+    {
+        "name": "x-bold-pet",
+        "className": "x-bold-pet",
+        "unicode": "ec63"
+    },
+    {
+        "name": "x-bold-3dcube",
+        "className": "x-bold-3dcube",
+        "unicode": "ec64"
+    },
+    {
+        "name": "x-bold-glass52",
+        "className": "x-bold-glass52",
+        "unicode": "ec65"
+    },
+    {
+        "name": "x-bold-instagram",
+        "className": "x-bold-instagram",
+        "unicode": "ec66"
+    },
+    {
+        "name": "x-bold-emoji-sad",
+        "className": "x-bold-emoji-sad",
+        "unicode": "ec67"
+    },
+    {
+        "name": "x-bold-archive51",
+        "className": "x-bold-archive51",
+        "unicode": "ec68"
+    },
+    {
+        "name": "x-bold-cup",
+        "className": "x-bold-cup",
+        "unicode": "ec69"
+    },
+    {
+        "name": "x-bold-coffee",
+        "className": "x-bold-coffee",
+        "unicode": "ec6a"
+    },
+    {
+        "name": "x-bold-slash",
+        "className": "x-bold-slash",
+        "unicode": "ec6b"
+    },
+    {
+        "name": "x-bold-share",
+        "className": "x-bold-share",
+        "unicode": "ec6c"
+    },
+    {
+        "name": "x-bold-crown50",
+        "className": "x-bold-crown50",
+        "unicode": "ec6d"
+    },
+    {
+        "name": "x-bold-emoji-happy",
+        "className": "x-bold-emoji-happy",
+        "unicode": "ec6e"
+    },
+    {
+        "name": "x-bold-flag",
+        "className": "x-bold-flag",
+        "unicode": "ec6f"
+    },
+    {
+        "name": "x-bold-chart49",
+        "className": "x-bold-chart49",
+        "unicode": "ec70"
+    },
+    {
+        "name": "x-bold-flash-slash",
+        "className": "x-bold-flash-slash",
+        "unicode": "ec71"
+    },
+    {
+        "name": "x-bold-emoji-normal",
+        "className": "x-bold-emoji-normal",
+        "unicode": "ec72"
+    },
+    {
+        "name": "x-bold-close-square",
+        "className": "x-bold-close-square",
+        "unicode": "ec73"
+    },
+    {
+        "name": "x-bold-tag-cross",
+        "className": "x-bold-tag-cross",
+        "unicode": "ec74"
+    },
+    {
+        "name": "x-bold-search-normal11",
+        "className": "x-bold-search-normal11",
+        "unicode": "ec75"
+    },
+    {
+        "name": "x-bold-search-zoom-in10",
+        "className": "x-bold-search-zoom-in10",
+        "unicode": "ec76"
+    },
+    {
+        "name": "x-bold-search-zoom-out09",
+        "className": "x-bold-search-zoom-out09",
+        "unicode": "ec77"
+    },
+    {
+        "name": "x-bold-search-favorite08",
+        "className": "x-bold-search-favorite08",
+        "unicode": "ec78"
+    },
+    {
+        "name": "x-bold-search-status07",
+        "className": "x-bold-search-status07",
+        "unicode": "ec79"
+    },
+    {
+        "name": "x-bold-search-normal06",
+        "className": "x-bold-search-normal06",
+        "unicode": "ec7a"
+    },
+    {
+        "name": "x-bold-search-zoom-in05",
+        "className": "x-bold-search-zoom-in05",
+        "unicode": "ec7b"
+    },
+    {
+        "name": "x-bold-search-zoom-out04",
+        "className": "x-bold-search-zoom-out04",
+        "unicode": "ec7c"
+    },
+    {
+        "name": "x-bold-search-favorite03",
+        "className": "x-bold-search-favorite03",
+        "unicode": "ec7d"
+    },
+    {
+        "name": "x-bold-search-status12",
+        "className": "x-bold-search-status12",
+        "unicode": "ec7e"
+    },
+    {
+        "name": "x-bold-path-square",
+        "className": "x-bold-path-square",
+        "unicode": "ec7f"
+    },
+    {
+        "name": "x-bold-thorchain-rune",
+        "className": "x-bold-thorchain-rune",
+        "unicode": "ec80"
+    },
+    {
+        "name": "x-bold-binance-coin-bnb",
+        "className": "x-bold-binance-coin-bnb",
+        "unicode": "ec81"
+    },
+    {
+        "name": "x-bold-google113",
+        "className": "x-bold-google113",
+        "unicode": "ec82"
+    },
+    {
+        "name": "x-bold-decred-dcr",
+        "className": "x-bold-decred-dcr",
+        "unicode": "ec83"
+    },
+    {
+        "name": "x-bold-ethereum-classic-etc",
+        "className": "x-bold-ethereum-classic-etc",
+        "unicode": "ec84"
+    },
+    {
+        "name": "x-bold-cardano-ada",
+        "className": "x-bold-cardano-ada",
+        "unicode": "ec85"
+    },
+    {
+        "name": "x-bold-ontology-ont",
+        "className": "x-bold-ontology-ont",
+        "unicode": "ec86"
+    },
+    {
+        "name": "x-bold-icon-icx",
+        "className": "x-bold-icon-icx",
+        "unicode": "ec87"
+    },
+    {
+        "name": "x-bold-binance-usd-busd",
+        "className": "x-bold-binance-usd-busd",
+        "unicode": "ec88"
+    },
+    {
+        "name": "x-bold-siacoin-sc",
+        "className": "x-bold-siacoin-sc",
+        "unicode": "ec89"
+    },
+    {
+        "name": "x-bold-chainlink-link",
+        "className": "x-bold-chainlink-link",
+        "unicode": "ec8a"
+    },
+    {
+        "name": "x-bold-harmony-one",
+        "className": "x-bold-harmony-one",
+        "unicode": "ec8b"
+    },
+    {
+        "name": "x-bold-solana-sol",
+        "className": "x-bold-solana-sol",
+        "unicode": "ec8c"
+    },
+    {
+        "name": "x-bold-ftx-token-ftt",
+        "className": "x-bold-ftx-token-ftt",
+        "unicode": "ec8d"
+    },
+    {
+        "name": "x-bold-quant-qnt",
+        "className": "x-bold-quant-qnt",
+        "unicode": "ec8e"
+    },
+    {
+        "name": "x-bold-xrp-xrp",
+        "className": "x-bold-xrp-xrp",
+        "unicode": "ec8f"
+    },
+    {
+        "name": "x-bold-ankr-ankr",
+        "className": "x-bold-ankr-ankr",
+        "unicode": "ec90"
+    },
+    {
+        "name": "x-bold-framer",
+        "className": "x-bold-framer",
+        "unicode": "ec91"
+    },
+    {
+        "name": "x-bold-huobi-token-ht",
+        "className": "x-bold-huobi-token-ht",
+        "unicode": "ec92"
+    },
+    {
+        "name": "x-bold-augur-rep",
+        "className": "x-bold-augur-rep",
+        "unicode": "ec93"
+    },
+    {
+        "name": "x-bold-be",
+        "className": "x-bold-be",
+        "unicode": "ec94"
+    },
+    {
+        "name": "x-bold-okb-okb",
+        "className": "x-bold-okb-okb",
+        "unicode": "ec95"
+    },
+    {
+        "name": "x-bold-monero-xmr",
+        "className": "x-bold-monero-xmr",
+        "unicode": "ec96"
+    },
+    {
+        "name": "x-bold-polkadot-dot",
+        "className": "x-bold-polkadot-dot",
+        "unicode": "ec97"
+    },
+    {
+        "name": "x-bold-velas-vlx",
+        "className": "x-bold-velas-vlx",
+        "unicode": "ec98"
+    },
+    {
+        "name": "x-bold-stellar-xlm",
+        "className": "x-bold-stellar-xlm",
+        "unicode": "ec99"
+    },
+    {
+        "name": "x-bold-dash-dash",
+        "className": "x-bold-dash-dash",
+        "unicode": "ec9a"
+    },
+    {
+        "name": "x-bold-nexo-nexo",
+        "className": "x-bold-nexo-nexo",
+        "unicode": "ec9b"
+    },
+    {
+        "name": "x-bold-bitcoin-btc",
+        "className": "x-bold-bitcoin-btc",
+        "unicode": "ec9c"
+    },
+    {
+        "name": "x-bold-dribbble",
+        "className": "x-bold-dribbble",
+        "unicode": "ec9d"
+    },
+    {
+        "name": "x-bold-civic-cvc",
+        "className": "x-bold-civic-cvc",
+        "unicode": "ec9e"
+    },
+    {
+        "name": "x-bold-messenger",
+        "className": "x-bold-messenger",
+        "unicode": "ec9f"
+    },
+    {
+        "name": "x-bold-wing-wing",
+        "className": "x-bold-wing-wing",
+        "unicode": "eca0"
+    },
+    {
+        "name": "x-bold-figma112",
+        "className": "x-bold-figma112",
+        "unicode": "eca1"
+    },
+    {
+        "name": "x-bold-educare-ekt",
+        "className": "x-bold-educare-ekt",
+        "unicode": "eca2"
+    },
+    {
+        "name": "x-bold-google-play",
+        "className": "x-bold-google-play",
+        "unicode": "eca3"
+    },
+    {
+        "name": "x-bold-polyswarm-nct",
+        "className": "x-bold-polyswarm-nct",
+        "unicode": "eca4"
+    },
+    {
+        "name": "x-bold-twitch",
+        "className": "x-bold-twitch",
+        "unicode": "eca5"
+    },
+    {
+        "name": "x-bold-autonio-niox",
+        "className": "x-bold-autonio-niox",
+        "unicode": "eca6"
+    },
+    {
+        "name": "x-bold-html-5",
+        "className": "x-bold-html-5",
+        "unicode": "eca7"
+    },
+    {
+        "name": "x-bold-java-script",
+        "className": "x-bold-java-script",
+        "unicode": "eca8"
+    },
+    {
+        "name": "x-bold-html-3",
+        "className": "x-bold-html-3",
+        "unicode": "eca9"
+    },
+    {
+        "name": "x-bold-slack",
+        "className": "x-bold-slack",
+        "unicode": "ecaa"
+    },
+    {
+        "name": "x-bold-js",
+        "className": "x-bold-js",
+        "unicode": "ecab"
+    },
+    {
+        "name": "x-bold-triangle111",
+        "className": "x-bold-triangle111",
+        "unicode": "ecac"
+    },
+    {
+        "name": "x-bold-android",
+        "className": "x-bold-android",
+        "unicode": "ecad"
+    },
+    {
+        "name": "x-bold-youtube",
+        "className": "x-bold-youtube",
+        "unicode": "ecae"
+    },
+    {
+        "name": "x-bold-whatsapp",
+        "className": "x-bold-whatsapp",
+        "unicode": "ecaf"
+    },
+    {
+        "name": "x-bold-windows",
+        "className": "x-bold-windows",
+        "unicode": "ecb0"
+    },
+    {
+        "name": "x-bold-tether-usdt",
+        "className": "x-bold-tether-usdt",
+        "unicode": "ecb1"
+    },
+    {
+        "name": "x-bold-maker-mkr",
+        "className": "x-bold-maker-mkr",
+        "unicode": "ecb2"
+    },
+    {
+        "name": "x-bold-usd-coin-usdc",
+        "className": "x-bold-usd-coin-usdc",
+        "unicode": "ecb3"
+    },
+    {
+        "name": "x-bold-aave-aave",
+        "className": "x-bold-aave-aave",
+        "unicode": "ecb4"
+    },
+    {
+        "name": "x-bold-enjin-coin-enj",
+        "className": "x-bold-enjin-coin-enj",
+        "unicode": "ecb5"
+    },
+    {
+        "name": "x-bold-dai-dai",
+        "className": "x-bold-dai-dai",
+        "unicode": "ecb6"
+    },
+    {
+        "name": "x-bold-theta-theta",
+        "className": "x-bold-theta-theta",
+        "unicode": "ecb7"
+    },
+    {
+        "name": "x-bold-litecoinltc",
+        "className": "x-bold-litecoinltc",
+        "unicode": "ecb8"
+    },
+    {
+        "name": "x-bold-the-graph-grt",
+        "className": "x-bold-the-graph-grt",
+        "unicode": "ecb9"
+    },
+    {
+        "name": "x-bold-polygon-matic",
+        "className": "x-bold-polygon-matic",
+        "unicode": "ecba"
+    },
+    {
+        "name": "x-bold-celsius-cel-",
+        "className": "x-bold-celsius-cel-",
+        "unicode": "ecbb"
+    },
+    {
+        "name": "x-bold-stacks-stx",
+        "className": "x-bold-stacks-stx",
+        "unicode": "ecbc"
+    },
+    {
+        "name": "x-bold-iost-iost",
+        "className": "x-bold-iost-iost",
+        "unicode": "ecbd"
+    },
+    {
+        "name": "x-bold-ocean-protocol-ocean",
+        "className": "x-bold-ocean-protocol-ocean",
+        "unicode": "ecbe"
+    },
+    {
+        "name": "x-bold-emercoin-emc",
+        "className": "x-bold-emercoin-emc",
+        "unicode": "ecbf"
+    },
+    {
+        "name": "x-bold-zel-zel",
+        "className": "x-bold-zel-zel",
+        "unicode": "ecc0"
+    },
+    {
+        "name": "x-bold-tenx-pay",
+        "className": "x-bold-tenx-pay",
+        "unicode": "ecc1"
+    },
+    {
+        "name": "x-bold-nebulas-nas",
+        "className": "x-bold-nebulas-nas",
+        "unicode": "ecc2"
+    },
+    {
+        "name": "x-bold-wanchain-wan64",
+        "className": "x-bold-wanchain-wan64",
+        "unicode": "ecc3"
+    },
+    {
+        "name": "x-bold-wanchain-wan63",
+        "className": "x-bold-wanchain-wan63",
+        "unicode": "ecc4"
+    },
+    {
+        "name": "x-bold-dent-dent",
+        "className": "x-bold-dent-dent",
+        "unicode": "ecc5"
+    },
+    {
+        "name": "x-bold-apple",
+        "className": "x-bold-apple",
+        "unicode": "ecc6"
+    },
+    {
+        "name": "x-bold-snapchat",
+        "className": "x-bold-snapchat",
+        "unicode": "ecc7"
+    },
+    {
+        "name": "x-bold-bootsrap",
+        "className": "x-bold-bootsrap",
+        "unicode": "ecc8"
+    },
+    {
+        "name": "x-bold-trello",
+        "className": "x-bold-trello",
+        "unicode": "ecc9"
+    },
+    {
+        "name": "x-bold-figma108",
+        "className": "x-bold-figma108",
+        "unicode": "ecca"
+    },
+    {
+        "name": "x-bold-icon62",
+        "className": "x-bold-icon62",
+        "unicode": "eccb"
+    },
+    {
+        "name": "x-bold-xiaomi",
+        "className": "x-bold-xiaomi",
+        "unicode": "eccc"
+    },
+    {
+        "name": "x-bold-spotify",
+        "className": "x-bold-spotify",
+        "unicode": "eccd"
+    },
+    {
+        "name": "x-bold-xd",
+        "className": "x-bold-xd",
+        "unicode": "ecce"
+    },
+    {
+        "name": "x-bold-photoshop",
+        "className": "x-bold-photoshop",
+        "unicode": "eccf"
+    },
+    {
+        "name": "x-bold-illustrator",
+        "className": "x-bold-illustrator",
+        "unicode": "ecd0"
+    },
+    {
+        "name": "x-bold-google106",
+        "className": "x-bold-google106",
+        "unicode": "ecd1"
+    },
+    {
+        "name": "x-bold-icon105",
+        "className": "x-bold-icon105",
+        "unicode": "ecd2"
+    },
+    {
+        "name": "x-bold-zoom",
+        "className": "x-bold-zoom",
+        "unicode": "ecd3"
+    },
+    {
+        "name": "x-bold-ethereum-eth",
+        "className": "x-bold-ethereum-eth",
+        "unicode": "ecd4"
+    },
+    {
+        "name": "x-bold-trontron-trx",
+        "className": "x-bold-trontron-trx",
+        "unicode": "ecd5"
+    },
+    {
+        "name": "x-bold-eos-eos",
+        "className": "x-bold-eos-eos",
+        "unicode": "ecd6"
+    },
+    {
+        "name": "x-bold-hedera-hashgraph-hbar",
+        "className": "x-bold-hedera-hashgraph-hbar",
+        "unicode": "ecd7"
+    },
+    {
+        "name": "x-bold-avalanche-avax",
+        "className": "x-bold-avalanche-avax",
+        "unicode": "ecd8"
+    },
+    {
+        "name": "x-bold-hex-hex",
+        "className": "x-bold-hex-hex",
+        "unicode": "ecd9"
+    },
+    {
+        "name": "x-bold-celo-celo",
+        "className": "x-bold-celo-celo",
+        "unicode": "ecda"
+    },
+    {
+        "name": "x-bold-blogger",
+        "className": "x-bold-blogger",
+        "unicode": "ecdb"
+    },
+    {
+        "name": "x-bold-vibe-vibe",
+        "className": "x-bold-vibe-vibe",
+        "unicode": "ecdc"
+    },
+    {
+        "name": "x-bold-ui8",
+        "className": "x-bold-ui8",
+        "unicode": "ecdd"
+    },
+    {
+        "name": "x-bold-facebook",
+        "className": "x-bold-facebook",
+        "unicode": "ecde"
+    },
+    {
+        "name": "x-bold-dropbox",
+        "className": "x-bold-dropbox",
+        "unicode": "ecdf"
+    },
+    {
+        "name": "x-bold-python",
+        "className": "x-bold-python",
+        "unicode": "ece0"
+    },
+    {
+        "name": "x-bold-paypal",
+        "className": "x-bold-paypal",
+        "unicode": "ece1"
+    },
+    {
+        "name": "x-bold-vuesax",
+        "className": "x-bold-vuesax",
+        "unicode": "ece2"
+    },
+    {
+        "name": "x-bold-nem-xem",
+        "className": "x-bold-nem-xem",
+        "unicode": "ece3"
+    },
+    {
+        "name": "x-bold-kyber-network-knc",
+        "className": "x-bold-kyber-network-knc",
+        "unicode": "ece4"
+    }
+]
