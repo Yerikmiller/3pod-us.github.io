@@ -1,8 +1,8 @@
 @font-face {
     font-family: "vuesax-outline";
-    src: url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/icons/iconsax/vuesax-outline/IconFont.woff2?t=1725559716913') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/icons/iconsax/vuesax-outline/IconFont.woff?t=1725559716913') format('woff'),
-        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/icons/iconsax/vuesax-outline/IconFont.ttf?t=1725559716913') format('truetype');
+    src: url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@x-1.0.1/icons/iconsax/vuesax-outline/IconFont.woff2?t=1725564403076') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@x-1.0.1/icons/iconsax/vuesax-outline/IconFont.woff?t=1725564403076') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@x-1.0.1/icons/iconsax/vuesax-outline/IconFont.ttf?t=1725564403076') format('truetype');
 }
 
 .iconfont {
@@ -1013,6 +1013,7 @@
 .x-outline-tiktok:before { content: "\ece5"; }
 .x-outline-telegram:before { content: "\ece6"; }
 .x-outline-twitter:before { content: "\ece7"; }
+.x-outline-rrss:before { content: "\ece8"; }
 
 
 /**
