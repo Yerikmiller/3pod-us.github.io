@@ -4983,5 +4983,25 @@
         "name": "x-outline-bucket",
         "className": "x-outline-bucket",
         "unicode": "ece4"
+    },
+    {
+        "name": "x-outline-tiktok",
+        "className": "x-outline-tiktok",
+        "unicode": "ece5"
+    },
+    {
+        "name": "x-outline-telegram",
+        "className": "x-outline-telegram",
+        "unicode": "ece6"
+    },
+    {
+        "name": "x-outline-twitter",
+        "className": "x-outline-twitter",
+        "unicode": "ece7"
+    },
+    {
+        "name": "x-outline-rrss",
+        "className": "x-outline-rrss",
+        "unicode": "ece8"
     }
 ]
