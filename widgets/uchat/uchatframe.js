@@ -20,14 +20,14 @@ class uchatframe_instance {
         </uchat-frame>
         <style>
         .uchat-frame-container{
-            position: absolute;
+            position: fixed;
             bottom: 32px;
             right: 32px;
             display: none;
             z-index: 200;
             opacity: 0;
         }
-        .uchat-frame{
+        .uchat-frame, .uchat-frame-container{
             border-radius: 8px;
             min-height: 380px;
             max-height: 595px;
@@ -54,6 +54,12 @@ class uchatframe_instance {
             font-weight: 100;
             color: #d02a2a;
             cursor: pointer;
+        }
+        @media only screen and (max-width: 768px){
+            .uchat-frame-container{
+                top: 0px;
+                right: 0px;
+            }
         }
         </style>`;
 
