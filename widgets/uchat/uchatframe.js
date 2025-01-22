@@ -27,7 +27,7 @@ class uchatframe_instance {
             z-index: 200;
             opacity: 0;
         }
-        .uchat-frame{
+        .uchat-frame, .uchat-frame-container{
             border-radius: 8px;
             min-height: 380px;
             max-height: 595px;
