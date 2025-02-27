@@ -5,7 +5,7 @@ class uchatframe_instance {
     create(){
         var exists = document.querySelector(".uchat-frame-container");
         if(exists){
-            exists.remove();
+            exists.remove(); 
         }
         var app = this;
         var nodeMain = document.createElement("div");
