@@ -12,6 +12,9 @@ class uchatframe_instance {
         nodeMain.classList.add("uchat-frame-container")
         this.container = nodeMain;
         nodeMain.innerHTML = `
+        <span class="closeuchat">
+            ×
+        </span>
         <uchat-frame>
             <iframe title="uchatframe" class="uchat-frame" src="https://uchatframe.my3pod.com" frameborder="0"></iframe>
         </uchat-frame>
@@ -46,6 +49,15 @@ class uchatframe_instance {
             opacity: 1;
             transition: all 0.3s ease-in;
         }
+        .closeuchat{
+            position: absolute;
+            right: 20px;
+            top: 7px;
+            font-size: 40px;
+            font-weight: 100;
+            color: #d02a2a;
+            cursor: pointer;
+        }
         @media only screen and (max-width: 768px){
             .uchat-frame-container{
                 top: 0px;
@@ -55,9 +67,18 @@ class uchatframe_instance {
         </style>`;
 
         document.body.appendChild(nodeMain);
+        this.closeuchat = this.container.querySelector(".closeuchat");
+
+        this.closeuchat.addEventListener("click", function(){
+            app.inactive();
+        })
     }
     active(){
         if(this.container === null){return;}
         this.container.classList.add("active");
+    }
+    inactive(){
+        if(this.container === null){return;}
+        this.container.classList.remove("active");
     }
 }
