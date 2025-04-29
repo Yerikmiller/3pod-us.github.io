@@ -49,7 +49,6 @@ class uchatframe_instance {
             opacity: 1;
             transition: all 0.3s ease-in;
         }
-
         .closeuchat{
             position: absolute;
             right: 20px;
@@ -59,7 +58,6 @@ class uchatframe_instance {
             color: #d02a2a;
             cursor: pointer;
         }
-
         @media only screen and (max-width: 768px){
             .uchat-frame-container{
                 top: 0px;
@@ -69,13 +67,11 @@ class uchatframe_instance {
         </style>`;
 
         document.body.appendChild(nodeMain);
-
         this.closeuchat = this.container.querySelector(".closeuchat");
 
         this.closeuchat.addEventListener("click", function(){
             app.inactive();
         })
-
     }
     active(){
         if(this.container === null){return;}
