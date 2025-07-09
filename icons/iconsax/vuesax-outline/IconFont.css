@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "iconfont";
-    src: url('IconFont.woff2?t=1752033665818') format('woff2'),
-        url('IconFont.woff?t=1752033665818') format('woff'),
-        url('IconFont.ttf?t=1752033665818') format('truetype');
+    font-family: "vuesax-outline";
+    src: url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/icons/iconsax/vuesax-outline/IconFont.woff2?t=1725559716913') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/icons/iconsax/vuesax-outline/IconFont.woff?t=1725559716913') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/Yerikmiller/3pod-us.github.io@master/icons/iconsax/vuesax-outline/IconFont.ttf?t=1725559716913') format('truetype');
 }
 
 .iconfont {
-    font-family: "iconfont" !important;
+    font-family: "vuesax-outline" !important;
     font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
