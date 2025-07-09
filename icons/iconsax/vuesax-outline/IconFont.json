@@ -5005,8 +5005,8 @@
         "unicode": "ece8"
     },
     {
-        "name": "x-star-filled",
-        "className": "x-star-filled",
+        "name": "x-outline-star-filled",
+        "className": "x-outline-star-filled",
         "unicode": "ece9"
     }
 ]

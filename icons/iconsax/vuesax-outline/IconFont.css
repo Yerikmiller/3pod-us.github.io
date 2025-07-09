@@ -1,8 +1,8 @@
 @font-face {
     font-family: "iconfont";
-    src: url('IconFont.woff2?t=1752033235635') format('woff2'),
-        url('IconFont.woff?t=1752033235635') format('woff'),
-        url('IconFont.ttf?t=1752033235635') format('truetype');
+    src: url('IconFont.woff2?t=1752033665818') format('woff2'),
+        url('IconFont.woff?t=1752033665818') format('woff'),
+        url('IconFont.ttf?t=1752033665818') format('truetype');
 }
 
 .iconfont {
@@ -1014,7 +1014,7 @@
 .x-outline-telegram:before { content: "\ece6"; }
 .x-outline-rrss:before { content: "\ece7"; }
 .x-outline-twitter:before { content: "\ece8"; }
-.x-star-filled:before { content: "\ece9"; }
+.x-outline-star-filled:before { content: "\ece9"; }
 
 
 /**
